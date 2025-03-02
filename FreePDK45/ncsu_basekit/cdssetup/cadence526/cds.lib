@@ -1,0 +1,32 @@
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE US_8ths   $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE basic     $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+DEFINE NCSU_TechLib_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE NCSU_Devices_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_Devices_FreePDK45
+#DEFINE AND_GATE /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND_GATE
+#DEFINE AND_GATE_1 /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND_GATE_1
+#DEFINE AND_GATE_TEST /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND_GATE_TEST
+DEFINE or_gate /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/New_Folder/or_gate
+#Removed by ddDeleteObj: DEFINE NAND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NAND
+#DEFINE NOR /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NOR
+DEFINE INVERTER /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/INVERTER
+#Removed by ddDeleteObj: DEFINE AND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND
+#Removed by ddDeleteObj: DEFINE AND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND
+DEFINE NAND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NAND
+DEFINE AND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND
+DEFINE OR /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/OR
+#DEFINE EX#2dOR /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/EX#2dOR
+DEFINE xor /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/xor
+DEFINE full_adder /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/full_adder
+#DEFINE full_adder /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/full_adder
+DEFINE NOR /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NOR
+#DEFINE OR /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/OR
+#DEFINE or_gate /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/or_gate
+#DEFINE xor /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/xor
+#DEFINE AND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/AND
+#DEFINE INVERTER /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/INVERTER
+#DEFINE NAND /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NAND
+DEFINE NAND_GATE /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/NAND_GATE
+DEFINE carry_look_adder /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/carry_look_adder
+DEFINE Ripple_carry_adder /u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/Ripple_carry_adder

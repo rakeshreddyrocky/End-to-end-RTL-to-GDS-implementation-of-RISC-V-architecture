@@ -1,0 +1,92 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 08/16/2019 17:05 (sjfhw025) $
+\o Sub version:		sub-version  s053 
+\o Arguments:		-mpssession virtuoso26266 -mpshost auto.ece.pdx.edu 
+\o Working Directory:	auto.ece.pdx.edu:/u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(188 104 602 491))
+\o changeWorkingDir("/u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\w Warning: The directory: '/u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/EX#2dOR' does not exist
+\w 	but was defined in libFile '/u/kunduru/FreePDK45/ncsu_basekit/cdssetup/cadence526/cds.lib' for Lib 'EX#2dOR'.
+\a nrSetCurrentWindow(cdsLibManager)
+\o DB was auto refreshed.
+\a cdsLibManager->libListBox->value = "Ripple_carry_adder"
+\a cdsLibManager->libLineEdit->value = "Ripple_carry_adder"
+\a cdsLibManager->cellListBox->value = "4bit_ripple"
+\a cdsLibManager->cellLineEdit->value = "4bit_ripple"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Ripple_carry_adder"
+\a cdsLibManager->libLineEdit->value = "Ripple_carry_adder"
+\a cdsLibManager->cellListBox->value = "4bit_ripple"
+\a cdsLibManager->cellLineEdit->value = "4bit_ripple"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Ripple_carry_adder"
+\a cdsLibManager->libLineEdit->value = "Ripple_carry_adder"
+\a cdsLibManager->cellListBox->value = "4bit_ripple"
+\a cdsLibManager->cellLineEdit->value = "4bit_ripple"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Ripple_carry_adder"
+\a cdsLibManager->libLineEdit->value = "Ripple_carry_adder"
+\a cdsLibManager->cellListBox->value = "4bit_ripple"
+\a cdsLibManager->cellLineEdit->value = "4bit_ripple"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Ripple_carry_adder"
+\a cdsLibManager->libLineEdit->value = "Ripple_carry_adder"
+\a cdsLibManager->cellListBox->value = "4bit_ripple"
+\a cdsLibManager->cellLineEdit->value = "4bit_ripple"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
