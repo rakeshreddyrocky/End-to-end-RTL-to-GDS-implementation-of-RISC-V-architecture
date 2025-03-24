@@ -1,0 +1,158 @@
+# vsim -voptargs="+acc" -work work -c -do "run 10 ms" top "+UVM_TESTNAME=fibonacci" -sv_lib riscv_iss 
+# Start time: 19:28:02 on Mar 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "memory_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_rv32i(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.cpu_state_i(fast)
+# Loading work.config_data_i(fast)
+# Loading work.cpu_trace_i(fast)
+# Loading work.cpu_if_i(fast)
+# Loading work.iss_pkg(fast)
+# Loading work.code_memory_i(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.opcodes(fast)
+# Loading work.riscv_test_pkg(fast)
+# Loading work.riscv_design_test_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.riscv_test_interfaces_sv_unit(fast)
+# Loading work.code_memory_i(fast__1)
+# Loading work.cpu_if_i(fast__2)
+# Loading work.cpu_trace_i(fast__2)
+# Loading work.cpu_state_i(fast__2)
+# Loading work.config_data_i(fast__2)
+# Loading work.cpu_design_sv_unit(fast)
+# Loading work.cpu_design(fast)
+# Loading work.riscv_rv32i_sv_unit(fast)
+# Loading work.riscv_rv32i(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_ctrl_sv_unit(fast)
+# Loading work.branch_unit(fast)
+# Loading work.memory_ctrl_sv_unit(fast)
+# Loading work.memory_ctrl(fast)
+# Loading work.ssram(fast)
+# Loading ./riscv_iss.so
+# Loading /u/release/questa/2024.2/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run 10 ms
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO ./tb_sources/riscv_design_test.sv(16) @ 0: reporter [Start] Hello, World!
+# UVM_INFO @ 0: reporter [RNTST] Running test fibonacci...
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(23) @ 0: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] In scoreboard build phase
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------------
+# Name                     Type                                Size  Value
+# ------------------------------------------------------------------------
+# uvm_test_top             fibonacci                           -     @496 
+#   execute_env            execute_env_c                       -     @503 
+#     execute_agent        execute_agent_c                     -     @556 
+#       execute_driver     execute_driver_c                    -     @571 
+#         rsp_port         uvm_analysis_port                   -     @586 
+#         seq_item_port    uvm_seq_item_pull_port              -     @578 
+#       riscv_monitor      riscv_monitor_c                     -     @564 
+#         cpu_exec_port    uvm_analysis_port                   -     @595 
+#     riscv_scoreboard     riscv_scoreboard_c                  -     @511 
+#       rtl_exec_port      uvm_analysis_imp_rtl_exec_port      -     @518 
+#     riscv_tracer         riscv_tracer_c                      -     @526 
+#       rtl_trace_port     uvm_analysis_imp_rtl_trace_port     -     @533 
+#     risv_coverage        riscv_coverage_c                    -     @541 
+#       rtl_coverage_port  uvm_analysis_imp_rtl_coverage_port  -     @548 
+# ------------------------------------------------------------------------
+# 
+# UVM_INFO ./tb_sources/fibonacci.svh(11) @ 0: uvm_test_top [fibonacci] Loading program to design memory
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000000: 00100093 : ADDI   x1,  x0, 1         
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000001: 00102023 : SW     x1, 0(x0)          
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000002: 00102223 : SW     x1, 4(x0)          
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000003: 00000413 : ADDI   x8,  x0, 0         
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000004: 03000493 : ADDI   x9,  x0, 48        
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000005: 00042203 : LW     x4, 0(x8)          
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000006: 00442283 : LW     x5, 4(x8)          
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000007: 00428333 : ADD    x6,  x5,  x4       
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000008: 00642423 : SW     x6, 8(x8)          
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000009: 00440413 : ADDI   x8,  x8, 4         
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000a: fe9446e3 : BLT    x8,  x9, 4086      
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000b: 17900513 : ADDI  x10,  x0, 377       
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000c: 00a31a63 : BNE    x6, x10, 10        
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000d: 600d0537 : LUI   x10, 393424         
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000e: 01055493 : SRLI   x9, x10, 16        
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 0000000f: 00956533 : OR    x10, x10,  x9       
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000010: 00100073 : EBREAK                    
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000011: dead0537 : LUI   x10, 912080         
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000012: 01055493 : SRLI   x9, x10, 16        
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000013: 00956533 : OR    x10, x10,  x9       
+# UVM_INFO ./tb_sources/execute_test.svh(35) @ 0: uvm_test_top [fibonacci] Load instruction: 00000014: 00100073 : EBREAK                    
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(42) @ 0: uvm_test_top.execute_env.riscv_scoreboard [SCB] Loading program into ISS memory from design code_memory
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1400: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(88) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] =======================================================
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(89) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(90) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(92) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] || UVM Program execution test passed!                ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(96) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(97) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(98) @ 1400: uvm_test_top.execute_env.riscv_scoreboard [riscv_scoreboard_c] =======================================================
+# UVM_INFO ./tb_sources/riscv_coverage.svh(89) @ 1400: uvm_test_top.execute_env.risv_coverage [riscv_coverage_c] Coverage percentage: 0.000000 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  120
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCB]     1
+# [Start]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [fibonacci]    22
+# [riscv_coverage_c]     1
+# [riscv_scoreboard_c]     8
+# [riscv_tracer_c]    82
+# ** Note: $finish    : /u/release/questa/2024.2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1400 ns  Iteration: 59  Instance: /top
+# End time: 19:28:06 on Mar 04,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1

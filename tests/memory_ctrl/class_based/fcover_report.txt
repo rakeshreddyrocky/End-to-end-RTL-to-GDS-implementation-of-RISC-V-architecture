@@ -1,0 +1,364 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT
+=== Design Unit: work.memory_ctrl
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    86.05%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        176        89        87    50.56%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /top/DUT/mcu_cg                                  86.05%        100          -    Uncovered            
+    covered/total bins:                                    89        176          -                      
+    missing/total bins:                                    87        176          -                      
+    % Hit:                                             50.56%        100          -                      
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross #cross__0#                                   44.23%        100          -    Uncovered            
+        covered/total bins:                                69        156          -                      
+        missing/total bins:                                87        156          -                      
+        % Hit:                                         44.23%        100          -                      
+ Covergroup instance \/top/DUT/mcu_cg_inst             86.05%        100          -    Uncovered            
+    covered/total bins:                                    89        176          -                      
+    missing/total bins:                                    87        176          -                      
+    % Hit:                                             50.56%        100          -                      
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lw                                           1536          1          -    Covered              
+        bin lh                                           1536          1          -    Covered              
+        bin lhu                                          1536          1          -    Covered              
+        bin lb                                           1536          1          -    Covered              
+        bin lbu                                          1536          1          -    Covered              
+        bin sw                                           1536          1          -    Covered              
+        bin sh                                           1536          1          -    Covered              
+        bin sb                                           1536          1          -    Covered              
+        bin read_bin                                     7680          1          -    Covered              
+        bin write_bin                                    4608          1          -    Covered              
+        bin word_bin                                     3072          1          -    Covered              
+        bin halfword_bin                                 4608          1          -    Covered              
+        bin byte_bin                                     4608          1          -    Covered              
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin positive                                     9953          1          -    Covered              
+        bin zero                                         1578          1          -    Covered              
+        bin negative                                      768          1          -    Covered              
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin offset[0]                                   10379          1          -    Covered              
+        bin offset[1]                                     384          1          -    Covered              
+        bin offset[2]                                    1152          1          -    Covered              
+        bin offset[3]                                     384          1          -    Covered              
+    Cross #cross__0#                                   44.23%        100          -    Uncovered            
+        covered/total bins:                                69        156          -                      
+        missing/total bins:                                87        156          -                      
+        % Hit:                                         44.23%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <byte_bin,negative,offset[3]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[2]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[1]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[0]>             576          1          -    Covered              
+            bin <read_bin,negative,offset[3]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[2]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[1]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[0]>             576          1          -    Covered              
+            bin <lbu,negative,offset[0]>                    1          1          -    Covered              
+            bin <lb,negative,offset[3]>                    64          1          -    Covered              
+            bin <lb,negative,offset[2]>                    64          1          -    Covered              
+            bin <lb,negative,offset[1]>                    64          1          -    Covered              
+            bin <lb,negative,offset[0]>                   575          1          -    Covered              
+            bin <byte_bin,zero,offset[3]>                 128          1          -    Covered              
+            bin <byte_bin,zero,offset[2]>                 128          1          -    Covered              
+            bin <byte_bin,zero,offset[1]>                 130          1          -    Covered              
+            bin <byte_bin,zero,offset[0]>                1163          1          -    Covered              
+            bin <halfword_bin,zero,offset[2]>               2          1          -    Covered              
+            bin <halfword_bin,zero,offset[0]>              10          1          -    Covered              
+            bin <word_bin,zero,offset[0]>                   6          1          -    Covered              
+            bin <write_bin,zero,offset[3]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[2]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[1]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[0]>               1152          1          -    Covered              
+            bin <read_bin,zero,offset[2]>                   2          1          -    Covered              
+            bin <read_bin,zero,offset[1]>                   2          1          -    Covered              
+            bin <read_bin,zero,offset[0]>                  27          1          -    Covered              
+            bin <sb,zero,offset[3]>                       128          1          -    Covered              
+            bin <sb,zero,offset[2]>                       128          1          -    Covered              
+            bin <sb,zero,offset[1]>                       128          1          -    Covered              
+            bin <sb,zero,offset[0]>                      1152          1          -    Covered              
+            bin <lbu,zero,offset[1]>                        1          1          -    Covered              
+            bin <lbu,zero,offset[0]>                        5          1          -    Covered              
+            bin <lb,zero,offset[1]>                         1          1          -    Covered              
+            bin <lb,zero,offset[0]>                         6          1          -    Covered              
+            bin <lhu,zero,offset[2]>                        1          1          -    Covered              
+            bin <lhu,zero,offset[0]>                        5          1          -    Covered              
+            bin <lh,zero,offset[2]>                         1          1          -    Covered              
+            bin <lh,zero,offset[0]>                         5          1          -    Covered              
+            bin <lw,zero,offset[0]>                         6          1          -    Covered              
+            bin <byte_bin,positive,offset[3]>             192          1          -    Covered              
+            bin <byte_bin,positive,offset[2]>             192          1          -    Covered              
+            bin <byte_bin,positive,offset[1]>             190          1          -    Covered              
+            bin <byte_bin,positive,offset[0]>            1717          1          -    Covered              
+            bin <halfword_bin,positive,offset[2]>         766          1          -    Covered              
+            bin <halfword_bin,positive,offset[0]>        3830          1          -    Covered              
+            bin <word_bin,positive,offset[0]>            3066          1          -    Covered              
+            bin <write_bin,positive,offset[2]>            256          1          -    Covered              
+            bin <write_bin,positive,offset[0]>           2816          1          -    Covered              
+            bin <read_bin,positive,offset[3]>             192          1          -    Covered              
+            bin <read_bin,positive,offset[2]>             702          1          -    Covered              
+            bin <read_bin,positive,offset[1]>             190          1          -    Covered              
+            bin <read_bin,positive,offset[0]>            5797          1          -    Covered              
+            bin <sh,positive,offset[2]>                   256          1          -    Covered              
+            bin <sh,positive,offset[0]>                  1280          1          -    Covered              
+            bin <sw,positive,offset[0]>                  1536          1          -    Covered              
+            bin <lbu,positive,offset[3]>                  128          1          -    Covered              
+            bin <lbu,positive,offset[2]>                  128          1          -    Covered              
+            bin <lbu,positive,offset[1]>                  127          1          -    Covered              
+            bin <lbu,positive,offset[0]>                 1146          1          -    Covered              
+            bin <lb,positive,offset[3]>                    64          1          -    Covered              
+            bin <lb,positive,offset[2]>                    64          1          -    Covered              
+            bin <lb,positive,offset[1]>                    63          1          -    Covered              
+            bin <lb,positive,offset[0]>                   571          1          -    Covered              
+            bin <lhu,positive,offset[2]>                  255          1          -    Covered              
+            bin <lhu,positive,offset[0]>                 1275          1          -    Covered              
+            bin <lh,positive,offset[2]>                   255          1          -    Covered              
+            bin <lh,positive,offset[0]>                  1275          1          -    Covered              
+            bin <lw,positive,offset[0]>                  1530          1          -    Covered              
+            bin <halfword_bin,negative,*>                   0          1          4    ZERO                 
+            bin <word_bin,negative,*>                       0          1          4    ZERO                 
+            bin <write_bin,negative,*>                      0          1          4    ZERO                 
+            bin <sb,negative,*>                             0          1          4    ZERO                 
+            bin <sh,negative,*>                             0          1          4    ZERO                 
+            bin <sw,negative,*>                             0          1          4    ZERO                 
+            bin <lhu,negative,*>                            0          1          4    ZERO                 
+            bin <lh,negative,*>                             0          1          4    ZERO                 
+            bin <lw,negative,*>                             0          1          4    ZERO                 
+            bin <sh,zero,*>                                 0          1          4    ZERO                 
+            bin <sw,zero,*>                                 0          1          4    ZERO                 
+            bin <sb,positive,*>                             0          1          4    ZERO                 
+            bin <halfword_bin,*,offset[3]>                  0          1          3    ZERO                 
+            bin <word_bin,*,offset[3]>                      0          1          3    ZERO                 
+            bin <sh,*,offset[3]>                            0          1          3    ZERO                 
+            bin <sw,*,offset[3]>                            0          1          3    ZERO                 
+            bin <lhu,*,offset[3]>                           0          1          3    ZERO                 
+            bin <lh,*,offset[3]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[3]>                            0          1          3    ZERO                 
+            bin <word_bin,*,offset[2]>                      0          1          3    ZERO                 
+            bin <sw,*,offset[2]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[2]>                            0          1          3    ZERO                 
+            bin <halfword_bin,*,offset[1]>                  0          1          3    ZERO                 
+            bin <word_bin,*,offset[1]>                      0          1          3    ZERO                 
+            bin <sh,*,offset[1]>                            0          1          3    ZERO                 
+            bin <sw,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lhu,*,offset[1]>                           0          1          3    ZERO                 
+            bin <lh,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lbu,negative,offset[3]>                    0          1          1    ZERO                 
+            bin <read_bin,zero,offset[3]>                   0          1          1    ZERO                 
+            bin <lbu,zero,offset[3]>                        0          1          1    ZERO                 
+            bin <lb,zero,offset[3]>                         0          1          1    ZERO                 
+            bin <write_bin,positive,offset[3]>              0          1          1    ZERO                 
+            bin <lbu,negative,offset[2]>                    0          1          1    ZERO                 
+            bin <lbu,zero,offset[2]>                        0          1          1    ZERO                 
+            bin <lb,zero,offset[2]>                         0          1          1    ZERO                 
+            bin <lbu,negative,offset[1]>                    0          1          1    ZERO                 
+            bin <write_bin,positive,offset[1]>              0          1          1    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /top/DUT/mcu_cg                                  86.05%        100          -    Uncovered            
+    covered/total bins:                                    89        176          -                      
+    missing/total bins:                                    87        176          -                      
+    % Hit:                                             50.56%        100          -                      
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross #cross__0#                                   44.23%        100          -    Uncovered            
+        covered/total bins:                                69        156          -                      
+        missing/total bins:                                87        156          -                      
+        % Hit:                                         44.23%        100          -                      
+ Covergroup instance \/top/DUT/mcu_cg_inst             86.05%        100          -    Uncovered            
+    covered/total bins:                                    89        176          -                      
+    missing/total bins:                                    87        176          -                      
+    % Hit:                                             50.56%        100          -                      
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lw                                           1536          1          -    Covered              
+        bin lh                                           1536          1          -    Covered              
+        bin lhu                                          1536          1          -    Covered              
+        bin lb                                           1536          1          -    Covered              
+        bin lbu                                          1536          1          -    Covered              
+        bin sw                                           1536          1          -    Covered              
+        bin sh                                           1536          1          -    Covered              
+        bin sb                                           1536          1          -    Covered              
+        bin read_bin                                     7680          1          -    Covered              
+        bin write_bin                                    4608          1          -    Covered              
+        bin word_bin                                     3072          1          -    Covered              
+        bin halfword_bin                                 4608          1          -    Covered              
+        bin byte_bin                                     4608          1          -    Covered              
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin positive                                     9953          1          -    Covered              
+        bin zero                                         1578          1          -    Covered              
+        bin negative                                      768          1          -    Covered              
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin offset[0]                                   10379          1          -    Covered              
+        bin offset[1]                                     384          1          -    Covered              
+        bin offset[2]                                    1152          1          -    Covered              
+        bin offset[3]                                     384          1          -    Covered              
+    Cross #cross__0#                                   44.23%        100          -    Uncovered            
+        covered/total bins:                                69        156          -                      
+        missing/total bins:                                87        156          -                      
+        % Hit:                                         44.23%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <byte_bin,negative,offset[3]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[2]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[1]>              64          1          -    Covered              
+            bin <byte_bin,negative,offset[0]>             576          1          -    Covered              
+            bin <read_bin,negative,offset[3]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[2]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[1]>              64          1          -    Covered              
+            bin <read_bin,negative,offset[0]>             576          1          -    Covered              
+            bin <lbu,negative,offset[0]>                    1          1          -    Covered              
+            bin <lb,negative,offset[3]>                    64          1          -    Covered              
+            bin <lb,negative,offset[2]>                    64          1          -    Covered              
+            bin <lb,negative,offset[1]>                    64          1          -    Covered              
+            bin <lb,negative,offset[0]>                   575          1          -    Covered              
+            bin <byte_bin,zero,offset[3]>                 128          1          -    Covered              
+            bin <byte_bin,zero,offset[2]>                 128          1          -    Covered              
+            bin <byte_bin,zero,offset[1]>                 130          1          -    Covered              
+            bin <byte_bin,zero,offset[0]>                1163          1          -    Covered              
+            bin <halfword_bin,zero,offset[2]>               2          1          -    Covered              
+            bin <halfword_bin,zero,offset[0]>              10          1          -    Covered              
+            bin <word_bin,zero,offset[0]>                   6          1          -    Covered              
+            bin <write_bin,zero,offset[3]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[2]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[1]>                128          1          -    Covered              
+            bin <write_bin,zero,offset[0]>               1152          1          -    Covered              
+            bin <read_bin,zero,offset[2]>                   2          1          -    Covered              
+            bin <read_bin,zero,offset[1]>                   2          1          -    Covered              
+            bin <read_bin,zero,offset[0]>                  27          1          -    Covered              
+            bin <sb,zero,offset[3]>                       128          1          -    Covered              
+            bin <sb,zero,offset[2]>                       128          1          -    Covered              
+            bin <sb,zero,offset[1]>                       128          1          -    Covered              
+            bin <sb,zero,offset[0]>                      1152          1          -    Covered              
+            bin <lbu,zero,offset[1]>                        1          1          -    Covered              
+            bin <lbu,zero,offset[0]>                        5          1          -    Covered              
+            bin <lb,zero,offset[1]>                         1          1          -    Covered              
+            bin <lb,zero,offset[0]>                         6          1          -    Covered              
+            bin <lhu,zero,offset[2]>                        1          1          -    Covered              
+            bin <lhu,zero,offset[0]>                        5          1          -    Covered              
+            bin <lh,zero,offset[2]>                         1          1          -    Covered              
+            bin <lh,zero,offset[0]>                         5          1          -    Covered              
+            bin <lw,zero,offset[0]>                         6          1          -    Covered              
+            bin <byte_bin,positive,offset[3]>             192          1          -    Covered              
+            bin <byte_bin,positive,offset[2]>             192          1          -    Covered              
+            bin <byte_bin,positive,offset[1]>             190          1          -    Covered              
+            bin <byte_bin,positive,offset[0]>            1717          1          -    Covered              
+            bin <halfword_bin,positive,offset[2]>         766          1          -    Covered              
+            bin <halfword_bin,positive,offset[0]>        3830          1          -    Covered              
+            bin <word_bin,positive,offset[0]>            3066          1          -    Covered              
+            bin <write_bin,positive,offset[2]>            256          1          -    Covered              
+            bin <write_bin,positive,offset[0]>           2816          1          -    Covered              
+            bin <read_bin,positive,offset[3]>             192          1          -    Covered              
+            bin <read_bin,positive,offset[2]>             702          1          -    Covered              
+            bin <read_bin,positive,offset[1]>             190          1          -    Covered              
+            bin <read_bin,positive,offset[0]>            5797          1          -    Covered              
+            bin <sh,positive,offset[2]>                   256          1          -    Covered              
+            bin <sh,positive,offset[0]>                  1280          1          -    Covered              
+            bin <sw,positive,offset[0]>                  1536          1          -    Covered              
+            bin <lbu,positive,offset[3]>                  128          1          -    Covered              
+            bin <lbu,positive,offset[2]>                  128          1          -    Covered              
+            bin <lbu,positive,offset[1]>                  127          1          -    Covered              
+            bin <lbu,positive,offset[0]>                 1146          1          -    Covered              
+            bin <lb,positive,offset[3]>                    64          1          -    Covered              
+            bin <lb,positive,offset[2]>                    64          1          -    Covered              
+            bin <lb,positive,offset[1]>                    63          1          -    Covered              
+            bin <lb,positive,offset[0]>                   571          1          -    Covered              
+            bin <lhu,positive,offset[2]>                  255          1          -    Covered              
+            bin <lhu,positive,offset[0]>                 1275          1          -    Covered              
+            bin <lh,positive,offset[2]>                   255          1          -    Covered              
+            bin <lh,positive,offset[0]>                  1275          1          -    Covered              
+            bin <lw,positive,offset[0]>                  1530          1          -    Covered              
+            bin <halfword_bin,negative,*>                   0          1          4    ZERO                 
+            bin <word_bin,negative,*>                       0          1          4    ZERO                 
+            bin <write_bin,negative,*>                      0          1          4    ZERO                 
+            bin <sb,negative,*>                             0          1          4    ZERO                 
+            bin <sh,negative,*>                             0          1          4    ZERO                 
+            bin <sw,negative,*>                             0          1          4    ZERO                 
+            bin <lhu,negative,*>                            0          1          4    ZERO                 
+            bin <lh,negative,*>                             0          1          4    ZERO                 
+            bin <lw,negative,*>                             0          1          4    ZERO                 
+            bin <sh,zero,*>                                 0          1          4    ZERO                 
+            bin <sw,zero,*>                                 0          1          4    ZERO                 
+            bin <sb,positive,*>                             0          1          4    ZERO                 
+            bin <halfword_bin,*,offset[3]>                  0          1          3    ZERO                 
+            bin <word_bin,*,offset[3]>                      0          1          3    ZERO                 
+            bin <sh,*,offset[3]>                            0          1          3    ZERO                 
+            bin <sw,*,offset[3]>                            0          1          3    ZERO                 
+            bin <lhu,*,offset[3]>                           0          1          3    ZERO                 
+            bin <lh,*,offset[3]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[3]>                            0          1          3    ZERO                 
+            bin <word_bin,*,offset[2]>                      0          1          3    ZERO                 
+            bin <sw,*,offset[2]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[2]>                            0          1          3    ZERO                 
+            bin <halfword_bin,*,offset[1]>                  0          1          3    ZERO                 
+            bin <word_bin,*,offset[1]>                      0          1          3    ZERO                 
+            bin <sh,*,offset[1]>                            0          1          3    ZERO                 
+            bin <sw,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lhu,*,offset[1]>                           0          1          3    ZERO                 
+            bin <lh,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lw,*,offset[1]>                            0          1          3    ZERO                 
+            bin <lbu,negative,offset[3]>                    0          1          1    ZERO                 
+            bin <read_bin,zero,offset[3]>                   0          1          1    ZERO                 
+            bin <lbu,zero,offset[3]>                        0          1          1    ZERO                 
+            bin <lb,zero,offset[3]>                         0          1          1    ZERO                 
+            bin <write_bin,positive,offset[3]>              0          1          1    ZERO                 
+            bin <lbu,negative,offset[2]>                    0          1          1    ZERO                 
+            bin <lbu,zero,offset[2]>                        0          1          1    ZERO                 
+            bin <lb,zero,offset[2]>                         0          1          1    ZERO                 
+            bin <lbu,negative,offset[1]>                    0          1          1    ZERO                 
+            bin <write_bin,positive,offset[1]>              0          1          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 86.05%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 86.05%
+

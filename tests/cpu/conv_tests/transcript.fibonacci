@@ -1,0 +1,273 @@
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" -work work -do "run_gui.do" cpu_tb -sv_lib riscv_iss 
+# Start time: 14:25:51 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "memory_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_rv32i(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.iss_pkg(fast)
+# Loading work.opcodes(fast)
+# Loading work.cpu_tb_sv_unit(fast)
+# Loading work.cpu_tb(fast)
+# Loading work.cpu_design_sv_unit(fast)
+# Loading work.cpu_design(fast)
+# Loading work.riscv_rv32i_sv_unit(fast)
+# Loading work.riscv_rv32i(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_ctrl_sv_unit(fast)
+# Loading work.branch_unit(fast)
+# Loading work.memory_ctrl_sv_unit(fast)
+# Loading work.memory_ctrl(fast)
+# Loading work.ssram(fast)
+# Loading ./riscv_iss.so
+# do run_gui.do
+# [ISS] trace: 00000000: 00100093 : ADDI    x1, x0, 1          x1 = 00000001  
+# [ISS] trace: 00000004: 00102023 : SW      x1, 0(x0)          write @00000000 = 00000001  
+# [ISS] trace: 00000008: 00102223 : SW      x1, 4(x0)          write @00000004 = 00000001  
+# [ISS] trace: 0000000c: 00000413 : ADDI    x8, x0, 0          x8 = 00000000  
+# [ISS] trace: 00000010: 03000493 : ADDI    x9, x0, 48         x9 = 00000030  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000001  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000001  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000002  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000008 = 00000002  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000004  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000001  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000002  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000003  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @0000000c = 00000003  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000008  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000002  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000003  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000005  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000010 = 00000005  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 0000000c  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000003  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000005  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000008  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000014 = 00000008  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000010  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000005  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000008  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 0000000d  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000018 = 0000000d  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000014  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000008  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 0000000d  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000015  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @0000001c = 00000015  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000018  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 0000000d  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000015  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000022  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000020 = 00000022  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 0000001c  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000015  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000022  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000037  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000024 = 00000037  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000020  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000022  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000037  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000059  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000028 = 00000059  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000024  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000037  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000059  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000090  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @0000002c = 00000090  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000028  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000059  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 00000090  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 000000e9  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000030 = 000000e9  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 0000002c  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 00000014: 00042203 : LW      x4, x8, 0          x4 = 00000090  
+# [ISS] trace: 00000018: 00442283 : LW      x5, x8, 4          x5 = 000000e9  
+# [ISS] trace: 0000001c: 00428333 : ADD     x6, x5, x4         x6 = 00000179  
+# [ISS] trace: 00000020: 00642423 : SW      x6, 8(x8)          write @00000034 = 00000179  
+# [ISS] trace: 00000024: 00440413 : ADDI    x8, x8, 4          x8 = 00000030  
+# [ISS] trace: 00000028: fe9446e3 : BLT     x8, x9, -20  
+# [ISS] trace: 0000002c: 17900513 : ADDI    x10, x0, 377       x10 = 00000179  
+# [ISS] trace: 00000030: 00a31a63 : BNE     x6, x10, 20  
+# [ISS] trace: 00000034: 600d0537 : LUI     x10, 1611464704    x10 = 600d0000  
+# [ISS] trace: 00000038: 01055493 : SRLI    x9, x10, 16        x9 = 0000600d  
+# [ISS] trace: 0000003c: 00956533 : OR      x10, x10, x9       x10 = 600d600d  
+# [ISS] trace: 00000040: 00100073 : EBREAK - Machine Halted 
+# 
+# 
+# 
+# 
+# [HDL] trace: 00000000: 00100093 : ADDI   x1,  x0, 1          x1 = 00000001 
+# [HDL] trace: 00000004: 00102023 : SW     x1, 0(x0)           write @00000000 = 00000001 
+# [HDL] trace: 00000008: 00102223 : SW     x1, 4(x0)           write @00000004 = 00000001 
+# [HDL] trace: 0000000c: 00000413 : ADDI   x8,  x0, 0          x8 = 00000000 
+# [HDL] trace: 00000010: 03000493 : ADDI   x9,  x0, 48         x9 = 00000030 
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000001 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000001 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000002 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000008 = 00000002 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000004 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000001 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000002 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000003 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @0000000c = 00000003 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000008 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000002 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000003 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000005 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000010 = 00000005 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 0000000c 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000003 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000005 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000008 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000014 = 00000008 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000010 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000005 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000008 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 0000000d 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000018 = 0000000d 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000014 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000008 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 0000000d 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000015 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @0000001c = 00000015 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000018 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 0000000d 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000015 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000022 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000020 = 00000022 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 0000001c 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000015 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000022 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000037 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000024 = 00000037 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000020 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000022 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000037 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000059 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000028 = 00000059 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000024 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000037 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000059 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000090 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @0000002c = 00000090 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000028 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000059 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 00000090 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 000000e9 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000030 = 000000e9 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 0000002c 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 00000014: 00042203 : LW     x4, 0(x8)           x4 = 00000090 
+# [HDL] trace: 00000018: 00442283 : LW     x5, 4(x8)           x5 = 000000e9 
+# [HDL] trace: 0000001c: 00428333 : ADD    x6,  x5,  x4        x6 = 00000179 
+# [HDL] trace: 00000020: 00642423 : SW     x6, 8(x8)           write @00000034 = 00000179 
+# [HDL] trace: 00000024: 00440413 : ADDI   x8,  x8, 4          x8 = 00000030 
+# [HDL] trace: 00000028: fe9446e3 : BLT    x8,  x9, 4086       
+# [HDL] trace: 0000002c: 17900513 : ADDI  x10,  x0, 377        x10 = 00000179 
+# [HDL] trace: 00000030: 00a31a63 : BNE    x6, x10, 10         
+# [HDL] trace: 00000034: 600d0537 : LUI   x10, 393424          x10 = 600d0000 
+# [HDL] trace: 00000038: 01055493 : SRLI   x9, x10, 16         x9 = 0000600d 
+# [HDL] trace: 0000003c: 00956533 : OR    x10, x10,  x9        x10 = 600d600d 
+# [HDL] trace: 00000040: 00100073 : EBREAK                    
+# 
+# fibonacci test finished 
+# reg[ 0] iss: 00000000 rtl: 00000000  matches! 
+# reg[ 1] iss: 00000001 rtl: 00000001  matches! 
+# reg[ 2] iss: 00000000 rtl: 00000000  matches! 
+# reg[ 3] iss: 00000000 rtl: 00000000  matches! 
+# reg[ 4] iss: 00000090 rtl: 00000090  matches! 
+# reg[ 5] iss: 000000e9 rtl: 000000e9  matches! 
+# reg[ 6] iss: 00000179 rtl: 00000179  matches! 
+# reg[ 7] iss: 00000000 rtl: 00000000  matches! 
+# reg[ 8] iss: 00000030 rtl: 00000030  matches! 
+# reg[ 9] iss: 0000600d rtl: 0000600d  matches! 
+# reg[10] iss: 600d600d rtl: 600d600d  matches! 
+# reg[11] iss: 00000000 rtl: 00000000  matches! 
+# reg[12] iss: 00000000 rtl: 00000000  matches! 
+# reg[13] iss: 00000000 rtl: 00000000  matches! 
+# reg[14] iss: 00000000 rtl: 00000000  matches! 
+# reg[15] iss: 00000000 rtl: 00000000  matches! 
+# reg[16] iss: 00000000 rtl: 00000000  matches! 
+# reg[17] iss: 00000000 rtl: 00000000  matches! 
+# reg[18] iss: 00000000 rtl: 00000000  matches! 
+# reg[19] iss: 00000000 rtl: 00000000  matches! 
+# reg[20] iss: 00000000 rtl: 00000000  matches! 
+# reg[21] iss: 00000000 rtl: 00000000  matches! 
+# reg[22] iss: 00000000 rtl: 00000000  matches! 
+# reg[23] iss: 00000000 rtl: 00000000  matches! 
+# reg[24] iss: 00000000 rtl: 00000000  matches! 
+# reg[25] iss: 00000000 rtl: 00000000  matches! 
+# reg[26] iss: 00000000 rtl: 00000000  matches! 
+# reg[27] iss: 00000000 rtl: 00000000  matches! 
+# reg[28] iss: 00000000 rtl: 00000000  matches! 
+# reg[29] iss: 00000000 rtl: 00000000  matches! 
+# reg[30] iss: 00000000 rtl: 00000000  matches! 
+# reg[31] iss: 00000000 rtl: 00000000  matches! 
+# 
+# memory[00000000] iss: 00000001 rtl: 00000001 matches! 
+# memory[00000004] iss: 00000001 rtl: 00000001 matches! 
+# memory[00000008] iss: 00000002 rtl: 00000002 matches! 
+# memory[0000000c] iss: 00000003 rtl: 00000003 matches! 
+# memory[00000010] iss: 00000005 rtl: 00000005 matches! 
+# memory[00000014] iss: 00000008 rtl: 00000008 matches! 
+# memory[00000018] iss: 0000000d rtl: 0000000d matches! 
+# memory[0000001c] iss: 00000015 rtl: 00000015 matches! 
+# memory[00000020] iss: 00000022 rtl: 00000022 matches! 
+# memory[00000024] iss: 00000037 rtl: 00000037 matches! 
+# memory[00000028] iss: 00000059 rtl: 00000059 matches! 
+# memory[0000002c] iss: 00000090 rtl: 00000090 matches! 
+# memory[00000030] iss: 000000e9 rtl: 000000e9 matches! 
+# memory[00000034] iss: 00000179 rtl: 00000179 matches! 
+# 
+# 
+# 
+# >>> Test passed
+# 
+# ** Note: $finish    : .//cpu_tb.sv(334)
+#    Time: 1364 ns  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at .//cpu_tb.sv line 334
+# End time: 14:34:00 on Feb 19,2025, Elapsed time: 0:08:09
+# Errors: 0, Warnings: 1

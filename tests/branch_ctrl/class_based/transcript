@@ -1,0 +1,338 @@
+# vsim -voptargs="+acc" -work work -c -do "run -all" top 
+# Start time: 19:17:19 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.opcodes(fast)
+# Loading work.pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.interface_sv_unit(fast)
+# Loading work.branch_if(fast__2)
+# Loading work.branch_ctrl_sv_unit(fast)
+# Loading work.branch_unit(fast)
+# Loading work.branch_if(fast)
+# run -all
+# ENV: Starting testbench
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=1,txn.op2=24,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=14,txn.op2=30,txn.op3=27
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=11,txn.op2=0,txn.op3=27
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=31,txn.op2=12,txn.op3=28
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=13,txn.op2=20,txn.op3=2
+# [ GENERATOR]:  after randomization txn.instr=5,txn.op1=31,txn.op2=3,txn.op3=1
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=6,txn.op2=17,txn.op3=21
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=27,txn.op2=30,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=26,txn.op2=2,txn.op3=4
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=29,txn.op2=8,txn.op3=30
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=18,txn.op2=27,txn.op3=3
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=4,txn.op2=30,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=5,txn.op1=29,txn.op2=19,txn.op3=24
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=30,txn.op2=0,txn.op3=11
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=15,txn.op2=0,txn.op3=22
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=1,txn.op2=3,txn.op3=9
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=22,txn.op2=28,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=20,txn.op2=5,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=19,txn.op2=2,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=5,txn.op1=16,txn.op2=1,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=25,txn.op2=11,txn.op3=9
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=21,txn.op2=28,txn.op3=5
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=19,txn.op2=1,txn.op3=28
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=9,txn.op2=9,txn.op3=30
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=8,txn.op2=25,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=30,txn.op2=16,txn.op3=24
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=17,txn.op2=4,txn.op3=26
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=9,txn.op2=20,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=24,txn.op2=21,txn.op3=1
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=6,txn.op2=23,txn.op3=21
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=14,txn.op2=3,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=20,txn.op2=7,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=8,txn.op1=3,txn.op2=31,txn.op3=23
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=16,txn.op2=11,txn.op3=2
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=22,txn.op2=2,txn.op3=2
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=10,txn.op2=31,txn.op3=12
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=18,txn.op2=2,txn.op3=24
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=8,txn.op2=29,txn.op3=15
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=31,txn.op2=25,txn.op3=30
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=7,txn.op2=30,txn.op3=31
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=23,txn.op2=13,txn.op3=16
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=14,txn.op2=8,txn.op3=22
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=6,txn.op2=5,txn.op3=17
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=0,txn.op2=20,txn.op3=29
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=22,txn.op2=23,txn.op3=28
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=22,txn.op2=17,txn.op3=30
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=30,txn.op2=28,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=7,txn.op2=5,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=29,txn.op2=31,txn.op3=24
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=2,txn.op2=10,txn.op3=28
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=16,txn.op2=29,txn.op3=22
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=5,txn.op2=13,txn.op3=8
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=1,txn.op2=4,txn.op3=1
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=22,txn.op2=26,txn.op3=4
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=5,txn.op2=10,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=17,txn.op2=8,txn.op3=24
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=8,txn.op2=14,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=22,txn.op2=23,txn.op3=17
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=27,txn.op2=25,txn.op3=5
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=6,txn.op2=16,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=18,txn.op2=31,txn.op3=19
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=3,txn.op2=9,txn.op3=2
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=27,txn.op2=6,txn.op3=4
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=22,txn.op2=30,txn.op3=14
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=26,txn.op2=28,txn.op3=3
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=20,txn.op2=14,txn.op3=8
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=10,txn.op2=29,txn.op3=1
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=8,txn.op2=24,txn.op3=20
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=16,txn.op2=9,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=4,txn.op2=6,txn.op3=19
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=4,txn.op2=5,txn.op3=12
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=7,txn.op2=0,txn.op3=2
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=26,txn.op2=27,txn.op3=15
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=22,txn.op2=17,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=11,txn.op2=11,txn.op3=7
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=28,txn.op2=1,txn.op3=9
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=14,txn.op2=13,txn.op3=26
+# [ GENERATOR]:  after randomization txn.instr=5,txn.op1=17,txn.op2=22,txn.op3=15
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=16,txn.op2=9,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=17,txn.op2=25,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=13,txn.op2=2,txn.op3=14
+# [ GENERATOR]:  after randomization txn.instr=7,txn.op1=14,txn.op2=29,txn.op3=10
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=28,txn.op2=1,txn.op3=1
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=25,txn.op2=20,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=4,txn.op2=29,txn.op3=9
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=30,txn.op2=2,txn.op3=22
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=27,txn.op2=20,txn.op3=5
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=31,txn.op2=28,txn.op3=0
+# [ GENERATOR]:  after randomization txn.instr=4,txn.op1=25,txn.op2=19,txn.op3=15
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=9,txn.op2=3,txn.op3=17
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=18,txn.op2=24,txn.op3=31
+# [ GENERATOR]:  after randomization txn.instr=10,txn.op1=19,txn.op2=26,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=15,txn.op2=11,txn.op3=25
+# [ GENERATOR]:  after randomization txn.instr=0,txn.op1=3,txn.op2=2,txn.op3=19
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=15,txn.op2=29,txn.op3=11
+# [ GENERATOR]:  after randomization txn.instr=2,txn.op1=1,txn.op2=3,txn.op3=5
+# [ GENERATOR]:  after randomization txn.instr=6,txn.op1=1,txn.op2=18,txn.op3=17
+# [ GENERATOR]:  after randomization txn.instr=9,txn.op1=2,txn.op2=27,txn.op3=18
+# [ GENERATOR]:  after randomization txn.instr=1,txn.op1=20,txn.op2=16,txn.op3=27
+# [ GENERATOR]:  after randomization txn.instr=3,txn.op1=20,txn.op2=12,txn.op3=21
+# [Interface] : received vif.instr=3, vif.op1=1, vif.op2=24, vif.op3=7,vif.pc_out=0,vif.ret_addr=x
+# [DUT] Processing Transaction: instr=3, op1=1, op2=24
+# [DUT] Enable=1, instr=3, op1=1, op2=24, op3=7
+# [DUT] PC Updated: pc=0, ret_addr=x
+# [DRIVER] Sent: instr=3, op1=1, op2=24, op3=7, enable=0
+# [Monitor]: received txn.instr=3, txn.op1=1, txn.op2=24, txn.op3=7,pc_out=4,ret_addr=4
+# SCB: Received txn - instr=3, op1=1, op2=24, op3=7, enable=1,pc_out=4
+# SCB: Match! Expected PC: 4, Actual PC: 4, Expected Ret Addr: 4, Actual Ret Addr: 4,txn.instr=3
+# [Interface] : received vif.instr=7, vif.op1=14, vif.op2=30, vif.op3=27,vif.pc_out=4,vif.ret_addr=4
+# [DUT] Processing Transaction: instr=7, op1=14, op2=30
+# [DUT] Enable=1, instr=7, op1=14, op2=30, op3=27
+# [DUT] PC Updated: pc=4, ret_addr=4
+# [DRIVER] Sent: instr=7, op1=14, op2=30, op3=27, enable=0
+# [Monitor]: received txn.instr=7, txn.op1=14, txn.op2=30, txn.op3=27,pc_out=8,ret_addr=8
+# SCB: Received txn - instr=7, op1=14, op2=30, op3=27, enable=1,pc_out=8
+# SCB: Match! Expected PC: 8, Actual PC: 8, Expected Ret Addr: 8, Actual Ret Addr: 8,txn.instr=7
+# [Interface] : received vif.instr=1, vif.op1=11, vif.op2=0, vif.op3=27,vif.pc_out=8,vif.ret_addr=8
+# [DUT] Processing Transaction: instr=1, op1=11, op2=0
+# [DUT] Enable=1, instr=1, op1=11, op2=0, op3=27
+# [DUT] PC Updated: pc=8, ret_addr=8
+# [DRIVER] Sent: instr=1, op1=11, op2=0, op3=27, enable=0
+# [Monitor]: received txn.instr=1, txn.op1=11, txn.op2=0, txn.op3=27,pc_out=12,ret_addr=12
+# SCB: Received txn - instr=1, op1=11, op2=0, op3=27, enable=1,pc_out=12
+# SCB: Match! Expected PC: c, Actual PC: c, Expected Ret Addr: c, Actual Ret Addr: c,txn.instr=1
+# [Interface] : received vif.instr=3, vif.op1=31, vif.op2=12, vif.op3=28,vif.pc_out=12,vif.ret_addr=12
+# [DUT] Processing Transaction: instr=3, op1=31, op2=12
+# [DUT] Enable=1, instr=3, op1=31, op2=12, op3=28
+# [DUT] PC Updated: pc=c, ret_addr=c
+# [DRIVER] Sent: instr=3, op1=31, op2=12, op3=28, enable=0
+# [Monitor]: received txn.instr=3, txn.op1=31, txn.op2=12, txn.op3=28,pc_out=16,ret_addr=16
+# SCB: Received txn - instr=3, op1=31, op2=12, op3=28, enable=1,pc_out=16
+# SCB: Match! Expected PC: 10, Actual PC: 10, Expected Ret Addr: 10, Actual Ret Addr: 10,txn.instr=3
+# [Interface] : received vif.instr=1, vif.op1=13, vif.op2=20, vif.op3=2,vif.pc_out=16,vif.ret_addr=16
+# [DUT] Processing Transaction: instr=1, op1=13, op2=20
+# [DUT] Enable=1, instr=1, op1=13, op2=20, op3=2
+# [DUT] PC Updated: pc=10, ret_addr=10
+# [DRIVER] Sent: instr=1, op1=13, op2=20, op3=2, enable=0
+# [Monitor]: received txn.instr=1, txn.op1=13, txn.op2=20, txn.op3=2,pc_out=20,ret_addr=20
+# SCB: Received txn - instr=1, op1=13, op2=20, op3=2, enable=1,pc_out=20
+# SCB: Match! Expected PC: 14, Actual PC: 14, Expected Ret Addr: 14, Actual Ret Addr: 14,txn.instr=1
+# [Interface] : received vif.instr=5, vif.op1=31, vif.op2=3, vif.op3=1,vif.pc_out=20,vif.ret_addr=20
+# [DUT] Processing Transaction: instr=5, op1=31, op2=3
+# [DUT] Enable=1, instr=5, op1=31, op2=3, op3=1
+# [DUT] PC Updated: pc=14, ret_addr=14
+# [DRIVER] Sent: instr=5, op1=31, op2=3, op3=1, enable=0
+# [Monitor]: received txn.instr=5, txn.op1=31, txn.op2=3, txn.op3=1,pc_out=24,ret_addr=24
+# SCB: Received txn - instr=5, op1=31, op2=3, op3=1, enable=1,pc_out=24
+# SCB: Match! Expected PC: 18, Actual PC: 18, Expected Ret Addr: 18, Actual Ret Addr: 18,txn.instr=5
+# [Interface] : received vif.instr=0, vif.op1=6, vif.op2=17, vif.op3=21,vif.pc_out=24,vif.ret_addr=24
+# [DUT] Processing Transaction: instr=0, op1=6, op2=17
+# [DUT] Enable=1, instr=0, op1=6, op2=17, op3=21
+# [DUT] PC Updated: pc=18, ret_addr=18
+# [DRIVER] Sent: instr=0, op1=6, op2=17, op3=21, enable=0
+# [Monitor]: received txn.instr=0, txn.op1=6, txn.op2=17, txn.op3=21,pc_out=28,ret_addr=28
+# SCB: Received txn - instr=0, op1=6, op2=17, op3=21, enable=1,pc_out=28
+# SCB: Match! Expected PC: 1c, Actual PC: 1c, Expected Ret Addr: 1c, Actual Ret Addr: 1c,txn.instr=0
+# [Interface] : received vif.instr=1, vif.op1=27, vif.op2=30, vif.op3=0,vif.pc_out=28,vif.ret_addr=28
+# [DUT] Processing Transaction: instr=1, op1=27, op2=30
+# [DUT] Enable=1, instr=1, op1=27, op2=30, op3=0
+# [DUT] PC Updated: pc=1c, ret_addr=1c
+# [DRIVER] Sent: instr=1, op1=27, op2=30, op3=0, enable=0
+# [Monitor]: received txn.instr=1, txn.op1=27, txn.op2=30, txn.op3=0,pc_out=32,ret_addr=32
+# SCB: Received txn - instr=1, op1=27, op2=30, op3=0, enable=1,pc_out=32
+# SCB: Match! Expected PC: 20, Actual PC: 20, Expected Ret Addr: 20, Actual Ret Addr: 20,txn.instr=1
+# [Interface] : received vif.instr=4, vif.op1=26, vif.op2=2, vif.op3=4,vif.pc_out=32,vif.ret_addr=32
+# [DUT] Processing Transaction: instr=4, op1=26, op2=2
+# [DUT] Enable=1, instr=4, op1=26, op2=2, op3=4
+# [DUT] PC Updated: pc=20, ret_addr=20
+# [DRIVER] Sent: instr=4, op1=26, op2=2, op3=4, enable=0
+# [Monitor]: received txn.instr=4, txn.op1=26, txn.op2=2, txn.op3=4,pc_out=36,ret_addr=36
+# SCB: Received txn - instr=4, op1=26, op2=2, op3=4, enable=1,pc_out=36
+# SCB: Match! Expected PC: 24, Actual PC: 24, Expected Ret Addr: 24, Actual Ret Addr: 24,txn.instr=4
+# [Interface] : received vif.instr=0, vif.op1=29, vif.op2=8, vif.op3=30,vif.pc_out=36,vif.ret_addr=36
+# [DUT] Processing Transaction: instr=0, op1=29, op2=8
+# [DUT] Enable=1, instr=0, op1=29, op2=8, op3=30
+# [DUT] PC Updated: pc=24, ret_addr=24
+# [DRIVER] Sent: instr=0, op1=29, op2=8, op3=30, enable=0
+# [Monitor]: received txn.instr=0, txn.op1=29, txn.op2=8, txn.op3=30,pc_out=40,ret_addr=40
+# SCB: Received txn - instr=0, op1=29, op2=8, op3=30, enable=1,pc_out=40
+# SCB: Match! Expected PC: 28, Actual PC: 28, Expected Ret Addr: 28, Actual Ret Addr: 28,txn.instr=0
+# [Interface] : received vif.instr=8, vif.op1=18, vif.op2=27, vif.op3=3,vif.pc_out=40,vif.ret_addr=40
+# [DUT] Processing Transaction: instr=8, op1=18, op2=27
+# [DUT] Enable=1, instr=8, op1=18, op2=27, op3=3
+# [DUT] PC Updated: pc=28, ret_addr=28
+# [DRIVER] Sent: instr=8, op1=18, op2=27, op3=3, enable=0
+# [Monitor]: received txn.instr=8, txn.op1=18, txn.op2=27, txn.op3=3,pc_out=44,ret_addr=44
+# SCB: Received txn - instr=8, op1=18, op2=27, op3=3, enable=1,pc_out=44
+# SCB: Match! Expected PC: 2c, Actual PC: 2c, Expected Ret Addr: 2c, Actual Ret Addr: 2c,txn.instr=8
+# [Interface] : received vif.instr=1, vif.op1=4, vif.op2=30, vif.op3=18,vif.pc_out=44,vif.ret_addr=44
+# [DUT] Processing Transaction: instr=1, op1=4, op2=30
+# [DUT] Enable=1, instr=1, op1=4, op2=30, op3=18
+# [DUT] PC Updated: pc=2c, ret_addr=2c
+# [DRIVER] Sent: instr=1, op1=4, op2=30, op3=18, enable=0
+# [Monitor]: received txn.instr=1, txn.op1=4, txn.op2=30, txn.op3=18,pc_out=48,ret_addr=48
+# SCB: Received txn - instr=1, op1=4, op2=30, op3=18, enable=1,pc_out=48
+# SCB: Match! Expected PC: 30, Actual PC: 30, Expected Ret Addr: 30, Actual Ret Addr: 30,txn.instr=1
+# [Interface] : received vif.instr=5, vif.op1=29, vif.op2=19, vif.op3=24,vif.pc_out=48,vif.ret_addr=48
+# [DUT] Processing Transaction: instr=5, op1=29, op2=19
+# [DUT] Enable=1, instr=5, op1=29, op2=19, op3=24
+# [DUT] PC Updated: pc=30, ret_addr=30
+# [DRIVER] Sent: instr=5, op1=29, op2=19, op3=24, enable=0
+# [Monitor]: received txn.instr=5, txn.op1=29, txn.op2=19, txn.op3=24,pc_out=52,ret_addr=52
+# SCB: Received txn - instr=5, op1=29, op2=19, op3=24, enable=1,pc_out=52
+# SCB: Match! Expected PC: 34, Actual PC: 34, Expected Ret Addr: 34, Actual Ret Addr: 34,txn.instr=5
+# [Interface] : received vif.instr=2, vif.op1=30, vif.op2=0, vif.op3=11,vif.pc_out=52,vif.ret_addr=52
+# [DUT] Processing Transaction: instr=2, op1=30, op2=0
+# [DUT] Enable=1, instr=2, op1=30, op2=0, op3=11
+# [DUT] PC Updated: pc=34, ret_addr=34
+# [DRIVER] Sent: instr=2, op1=30, op2=0, op3=11, enable=0
+# [Monitor]: received txn.instr=2, txn.op1=30, txn.op2=0, txn.op3=11,pc_out=56,ret_addr=56
+# SCB: Received txn - instr=2, op1=30, op2=0, op3=11, enable=1,pc_out=56
+# SCB: Match! Expected PC: 38, Actual PC: 38, Expected Ret Addr: 38, Actual Ret Addr: 38,txn.instr=2
+# [Interface] : received vif.instr=2, vif.op1=15, vif.op2=0, vif.op3=22,vif.pc_out=56,vif.ret_addr=56
+# [DUT] Processing Transaction: instr=2, op1=15, op2=0
+# [DUT] Enable=1, instr=2, op1=15, op2=0, op3=22
+# [DUT] PC Updated: pc=38, ret_addr=38
+# [DRIVER] Sent: instr=2, op1=15, op2=0, op3=22, enable=0
+# [Monitor]: received txn.instr=2, txn.op1=15, txn.op2=0, txn.op3=22,pc_out=60,ret_addr=60
+# SCB: Received txn - instr=2, op1=15, op2=0, op3=22, enable=1,pc_out=60
+# SCB: Match! Expected PC: 3c, Actual PC: 3c, Expected Ret Addr: 3c, Actual Ret Addr: 3c,txn.instr=2
+# [Interface] : received vif.instr=0, vif.op1=1, vif.op2=3, vif.op3=9,vif.pc_out=60,vif.ret_addr=60
+# [DUT] Processing Transaction: instr=0, op1=1, op2=3
+# [DUT] Enable=1, instr=0, op1=1, op2=3, op3=9
+# [DUT] PC Updated: pc=3c, ret_addr=3c
+# [DRIVER] Sent: instr=0, op1=1, op2=3, op3=9, enable=0
+# [Monitor]: received txn.instr=0, txn.op1=1, txn.op2=3, txn.op3=9,pc_out=64,ret_addr=64
+# SCB: Received txn - instr=0, op1=1, op2=3, op3=9, enable=1,pc_out=64
+# SCB: Match! Expected PC: 40, Actual PC: 40, Expected Ret Addr: 40, Actual Ret Addr: 40,txn.instr=0
+# [Interface] : received vif.instr=6, vif.op1=22, vif.op2=28, vif.op3=0,vif.pc_out=64,vif.ret_addr=64
+# [DUT] Processing Transaction: instr=6, op1=22, op2=28
+# [DUT] Enable=1, instr=6, op1=22, op2=28, op3=0
+# [DUT] PC Updated: pc=40, ret_addr=40
+# [DRIVER] Sent: instr=6, op1=22, op2=28, op3=0, enable=0
+# [Monitor]: received txn.instr=6, txn.op1=22, txn.op2=28, txn.op3=0,pc_out=68,ret_addr=68
+# SCB: Received txn - instr=6, op1=22, op2=28, op3=0, enable=1,pc_out=68
+# SCB: Match! Expected PC: 44, Actual PC: 44, Expected Ret Addr: 44, Actual Ret Addr: 44,txn.instr=6
+# [Interface] : received vif.instr=8, vif.op1=20, vif.op2=5, vif.op3=18,vif.pc_out=68,vif.ret_addr=68
+# [DUT] Processing Transaction: instr=8, op1=20, op2=5
+# [DUT] Enable=1, instr=8, op1=20, op2=5, op3=18
+# [DUT] PC Updated: pc=44, ret_addr=44
+# [DRIVER] Sent: instr=8, op1=20, op2=5, op3=18, enable=0
+# [Monitor]: received txn.instr=8, txn.op1=20, txn.op2=5, txn.op3=18,pc_out=72,ret_addr=72
+# SCB: Received txn - instr=8, op1=20, op2=5, op3=18, enable=1,pc_out=72
+# SCB: Match! Expected PC: 48, Actual PC: 48, Expected Ret Addr: 48, Actual Ret Addr: 48,txn.instr=8
+# [Interface] : received vif.instr=2, vif.op1=19, vif.op2=2, vif.op3=7,vif.pc_out=72,vif.ret_addr=72
+# [DUT] Processing Transaction: instr=2, op1=19, op2=2
+# [DUT] Enable=1, instr=2, op1=19, op2=2, op3=7
+# [DUT] PC Updated: pc=48, ret_addr=48
+# [DRIVER] Sent: instr=2, op1=19, op2=2, op3=7, enable=0
+# [Monitor]: received txn.instr=2, txn.op1=19, txn.op2=2, txn.op3=7,pc_out=76,ret_addr=76
+# SCB: Received txn - instr=2, op1=19, op2=2, op3=7, enable=1,pc_out=76
+# SCB: Match! Expected PC: 4c, Actual PC: 4c, Expected Ret Addr: 4c, Actual Ret Addr: 4c,txn.instr=2
+# [Interface] : received vif.instr=5, vif.op1=16, vif.op2=1, vif.op3=0,vif.pc_out=76,vif.ret_addr=76
+# [DUT] Processing Transaction: instr=5, op1=16, op2=1
+# [DUT] Enable=1, instr=5, op1=16, op2=1, op3=0
+# [DUT] PC Updated: pc=4c, ret_addr=4c
+# [DRIVER] Sent: instr=5, op1=16, op2=1, op3=0, enable=0
+# [Monitor]: received txn.instr=5, txn.op1=16, txn.op2=1, txn.op3=0,pc_out=80,ret_addr=80
+# SCB: Received txn - instr=5, op1=16, op2=1, op3=0, enable=1,pc_out=80
+# SCB: Match! Expected PC: 50, Actual PC: 50, Expected Ret Addr: 50, Actual Ret Addr: 50,txn.instr=5
+# [Interface] : received vif.instr=4, vif.op1=25, vif.op2=11, vif.op3=9,vif.pc_out=80,vif.ret_addr=80
+# [DUT] Processing Transaction: instr=4, op1=25, op2=11
+# [DUT] Enable=1, instr=4, op1=25, op2=11, op3=9
+# [DUT] PC Updated: pc=50, ret_addr=50
+# [DRIVER] Sent: instr=4, op1=25, op2=11, op3=9, enable=0
+# [Monitor]: received txn.instr=4, txn.op1=25, txn.op2=11, txn.op3=9,pc_out=84,ret_addr=84
+# SCB: Received txn - instr=4, op1=25, op2=11, op3=9, enable=1,pc_out=84
+# SCB: Match! Expected PC: 54, Actual PC: 54, Expected Ret Addr: 54, Actual Ret Addr: 54,txn.instr=4
+# [Interface] : received vif.instr=3, vif.op1=21, vif.op2=28, vif.op3=5,vif.pc_out=84,vif.ret_addr=84
+# [DUT] Processing Transaction: instr=3, op1=21, op2=28
+# [DUT] Enable=1, instr=3, op1=21, op2=28, op3=5
+# [DUT] PC Updated: pc=54, ret_addr=54
+# [DRIVER] Sent: instr=3, op1=21, op2=28, op3=5, enable=0
+# [Monitor]: received txn.instr=3, txn.op1=21, txn.op2=28, txn.op3=5,pc_out=88,ret_addr=88
+# SCB: Received txn - instr=3, op1=21, op2=28, op3=5, enable=1,pc_out=88
+# SCB: Match! Expected PC: 58, Actual PC: 58, Expected Ret Addr: 58, Actual Ret Addr: 58,txn.instr=3
+# [Interface] : received vif.instr=8, vif.op1=19, vif.op2=1, vif.op3=28,vif.pc_out=88,vif.ret_addr=88
+# [DUT] Processing Transaction: instr=8, op1=19, op2=1
+# [DUT] Enable=1, instr=8, op1=19, op2=1, op3=28
+# [DUT] PC Updated: pc=58, ret_addr=58
+# [DRIVER] Sent: instr=8, op1=19, op2=1, op3=28, enable=0
+# [Monitor]: received txn.instr=8, txn.op1=19, txn.op2=1, txn.op3=28,pc_out=92,ret_addr=92
+# SCB: Received txn - instr=8, op1=19, op2=1, op3=28, enable=1,pc_out=92
+# SCB: Match! Expected PC: 5c, Actual PC: 5c, Expected Ret Addr: 5c, Actual Ret Addr: 5c,txn.instr=8
+# [Interface] : received vif.instr=6, vif.op1=9, vif.op2=9, vif.op3=30,vif.pc_out=92,vif.ret_addr=92
+# [DUT] Processing Transaction: instr=6, op1=9, op2=9
+# [DUT] Enable=1, instr=6, op1=9, op2=9, op3=30
+# [DUT] PC Updated: pc=5c, ret_addr=5c
+# [DRIVER] Sent: instr=6, op1=9, op2=9, op3=30, enable=0
+# [Monitor]: received txn.instr=6, txn.op1=9, txn.op2=9, txn.op3=30,pc_out=96,ret_addr=96
+# SCB: Received txn - instr=6, op1=9, op2=9, op3=30, enable=1,pc_out=96
+# SCB: Match! Expected PC: 60, Actual PC: 60, Expected Ret Addr: 60, Actual Ret Addr: 60,txn.instr=6
+# [Interface] : received vif.instr=8, vif.op1=8, vif.op2=25, vif.op3=7,vif.pc_out=96,vif.ret_addr=96
+# [DUT] Processing Transaction: instr=8, op1=8, op2=25
+# [DUT] Enable=1, instr=8, op1=8, op2=25, op3=7
+# [DUT] PC Updated: pc=60, ret_addr=60
+# [DRIVER] Sent: instr=8, op1=8, op2=25, op3=7, enable=0
+# [Monitor]: received txn.instr=8, txn.op1=8, txn.op2=25, txn.op3=7,pc_out=100,ret_addr=100
+# SCB: Received txn - instr=8, op1=8, op2=25, op3=7, enable=1,pc_out=100
+# SCB: Match! Expected PC: 64, Actual PC: 64, Expected Ret Addr: 64, Actual Ret Addr: 64,txn.instr=8
+# [TB] Test finished. PC=64, Ret Addr=64
+# ** Note: $finish    : ./top.sv(29)
+#    Time: 545 ns  Iteration: 0  Instance: /top
+# End time: 19:17:22 on Feb 19,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

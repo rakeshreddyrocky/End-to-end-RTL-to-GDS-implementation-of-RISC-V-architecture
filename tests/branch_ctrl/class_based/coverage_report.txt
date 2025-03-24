@@ -1,0 +1,71 @@
+QuestaSim-64 vcover 2021.3_1 Coverage Utility 2021.08 Aug 15 2021
+Start time: 18:04:53 on Feb 17,2025
+vcover report coverage.ucdb 
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /top/vif
+=== Design Unit: work.branch_if
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        390        25       365     6.41%
+
+=================================================================================
+=== Instance: /top/uut
+=== Design Unit: work.branch_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        25         5        20    20.00%
+    Conditions                       6         0         6     0.00%
+    Covergroups                      2        na        na    27.77%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         38         3        35     7.89%
+    Statements                      16         8         8    50.00%
+    Toggles                        491        36       455     7.33%
+
+=================================================================================
+=== Instance: /top
+=== Design Unit: work.top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      12        12         0   100.00%
+    Toggles                          4         3         1    75.00%
+
+=================================================================================
+=== Instance: /opcodes
+=== Design Unit: work.opcodes
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       202         4       198     1.98%
+    Conditions                       2         0         2     0.00%
+    Statements                     189        11       178     5.82%
+
+=================================================================================
+=== Instance: /pkg
+=== Design Unit: work.pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         0         1     0.00%
+
+=================================================================================
+=== Instance: /top_sv_unit
+=== Design Unit: work.top_sv_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        29         5        24    17.24%
+    Conditions                       9         0         9     0.00%
+    Statements                      75        57        18    76.00%
+
+
+TOTAL COVERGROUP COVERAGE: 27.77%  COVERGROUP TYPES: 2
+
+Total Coverage By Instance (filtered view): 14.04%
+
+End time: 18:04:53 on Feb 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

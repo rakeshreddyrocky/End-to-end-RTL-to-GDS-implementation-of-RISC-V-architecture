@@ -1,0 +1,139 @@
+# vsim -voptargs="+acc" -work work -c -do "run 10 ms" top "+UVM_TESTNAME=opcode_test_c" -sv_lib riscv_iss 
+# Start time: 20:46:21 on Mar 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "memory_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_rv32i(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.cpu_state_i(fast)
+# Loading work.config_data_i(fast)
+# Loading work.cpu_trace_i(fast)
+# Loading work.cpu_if_i(fast)
+# Loading work.iss_pkg(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.opcodes(fast)
+# Loading work.riscv_opcode_test_pkg(fast)
+# Loading work.riscv_core_test_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.riscv_test_interfaces_sv_unit(fast)
+# Loading work.cpu_if_i(fast__2)
+# Loading work.cpu_trace_i(fast__2)
+# Loading work.cpu_state_i(fast__2)
+# Loading work.config_data_i(fast__2)
+# Loading work.riscv_rv32i_sv_unit(fast)
+# Loading work.riscv_rv32i(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_ctrl_sv_unit(fast)
+# Loading work.branch_unit(fast)
+# Loading work.memory_ctrl_sv_unit(fast)
+# Loading work.memory_ctrl(fast)
+# Loading ./riscv_iss.so
+# Loading /u/release/questa/2024.2/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run 10 ms
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO ./tb_sources/riscv_core_test.sv(16) @ 0: reporter [Start] Hello, World!
+# UVM_INFO @ 0: reporter [RNTST] Running test opcode_test_c...
+# UVM_INFO ./tb_sources/opcode_driver.svh(15) @ 0: uvm_test_top.opcode_env.opcode_agent.opcode_driver [opcode_driver_c] Starting driver build phase
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(23) @ 0: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] In scoreboard build phase
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------------------
+# Name                       Type                                Size  Value
+# --------------------------------------------------------------------------
+# uvm_test_top               opcode_test_c                       -     @491 
+#   opcode_env               opcode_env_c                        -     @498 
+#     opcode_agent           opcode_agent_c                      -     @539 
+#       opcode_driver        opcode_driver_c                     -     @562 
+#         rsp_port           uvm_analysis_port                   -     @577 
+#         seq_item_port      uvm_seq_item_pull_port              -     @569 
+#       opcode_sequencer     opcode_sequencer_c                  -     @592 
+#         rsp_export         uvm_analysis_export                 -     @599 
+#         seq_item_export    uvm_seq_item_pull_imp               -     @693 
+#         arbitration_queue  array                               0     -    
+#         lock_queue         array                               0     -    
+#         num_last_reqs      integral                            32    'd1  
+#         num_last_rsps      integral                            32    'd1  
+#       riscv_monitor        riscv_monitor_c                     -     @585 
+#         cpu_exec_port      uvm_analysis_port                   -     @708 
+#     riscv_scoreboard       riscv_scoreboard_c                  -     @509 
+#       rtl_exec_port        uvm_analysis_imp_rtl_exec_port      -     @516 
+#     riscv_tracer           riscv_tracer_c                      -     @524 
+#       rtl_trace_port       uvm_analysis_imp_rtl_trace_port     -     @531 
+#     risv_coverage          riscv_coverage_c                    -     @546 
+#       rtl_coverage_port    uvm_analysis_imp_rtl_coverage_port  -     @553 
+# --------------------------------------------------------------------------
+# 
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(42) @ 0: uvm_test_top.opcode_env.riscv_scoreboard [SCB] Loading program into ISS memory from design code_memory
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 320068: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(88) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] =======================================================
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(89) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(90) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(92) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] || UVM Program execution test passed!                ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(96) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(97) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] ||                                                   ||
+# UVM_INFO ./tb_sources/riscv_scoreboard.svh(98) @ 320068: uvm_test_top.opcode_env.riscv_scoreboard [riscv_scoreboard_c] =======================================================
+# UVM_INFO ./tb_sources/riscv_coverage.svh(89) @ 320068: uvm_test_top.opcode_env.risv_coverage [riscv_coverage_c] Coverage percentage: 100.000000 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :20016
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCB]     1
+# [Start]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [opcode_driver_c]     1
+# [riscv_coverage_c]     1
+# [riscv_scoreboard_c]     8
+# [riscv_tracer_c] 19999
+# ** Note: $finish    : /u/release/questa/2024.2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 320068 ns  Iteration: 54  Instance: /top
+# End time: 20:46:28 on Mar 04,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 1

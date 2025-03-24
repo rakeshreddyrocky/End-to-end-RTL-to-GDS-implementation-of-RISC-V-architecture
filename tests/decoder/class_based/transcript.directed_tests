@@ -1,0 +1,467 @@
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" -work work -do "run_gui.do" top 
+# Start time: 11:56:04 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: .//top.sv(36): (vopt-8386) An enum variable 'decoder_test' may only be assigned the same enum typed variable or one of its values. Parameter TEST_NO requires an explicit cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.decoder_if_i(fast)
+# Loading work.opcodes(fast)
+# Loading work.decoder_oo_tb_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.decoder_interface_sv_unit(fast)
+# Loading work.decoder_if_i(fast__2)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# do run_gui.do
+# generator: started
+# generator: in instruction_tests
+# [GENERATOR  ]     0 instruction: ADD    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     1 instruction: SUB    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     2 instruction: AND    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     3 instruction: OR     x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     4 instruction: XOR    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     5 instruction: SLL    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     6 instruction: SRL    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     7 instruction: SRA    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     8 instruction: STL    x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]     9 instruction: STLU   x5,  x1,  x2       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    10 instruction: ADDI   x5,  x1, 1656      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    11 instruction: ANDI   x5,  x1, 1656      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    12 instruction: ORI    x5,  x1, 1656      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    13 instruction: XORI   x5,  x1, 1656      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    14 instruction: SLLI   x5,  x1, 24        register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    15 instruction: SRLI   x5,  x1, 24        register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    16 instruction: SRLI   x5,  x1, 24        register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    17 instruction: LW     x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    18 instruction: LH     x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    19 instruction: LHU    x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    20 instruction: LB     x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    21 instruction: LBU    x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    22 instruction: JALR   x5, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    23 instruction: STLI   x5,  x1, 24        register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    24 instruction: STLUI  x5,  x1, 24        register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    25 instruction: LUI    x5, 284280         register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    26 instruction: AUIPC  x5, 284280         register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    27 instruction: SW     x2, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    28 instruction: SH     x2, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    29 instruction: SB     x2, 1656(x1)       register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    30 instruction: BEQ    x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    31 instruction: BNE    x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    32 instruction: BLT    x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    33 instruction: BGE    x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    34 instruction: BLTU   x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    35 instruction: BGEU   x1,  x2, 2876      register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# [GENERATOR  ]    36 instruction: JAL    x5, 666428         register[1]: 00000001 register[2]: 00000001 register[3]: 00000002 
+# Sending EBREAK
+# [GENERATOR  ] --- end of test sent
+# generator: finished
+# [MONITOR IN ]     0 instruction: ADD    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     0 instruction: ADD    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     0 instruction: ADD    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     0 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     0 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: ADD    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     1 instruction: SUB    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     1 instruction: SUB    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     1 instruction: SUB    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     1 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     1 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: SUB    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     2 instruction: AND    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     2 instruction: AND    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     2 instruction: AND    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     2 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     2 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: AND    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     3 instruction: OR     x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     3 instruction: OR     x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     3 instruction: OR     x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     3 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     3 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: OR     x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     4 instruction: XOR    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     4 instruction: XOR    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     4 instruction: XOR    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     4 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     4 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: XOR    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     5 instruction: SLL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     5 instruction: SLL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     5 instruction: SLL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     5 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     5 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: SLL    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     6 instruction: SRL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     6 instruction: SRL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     6 instruction: SRL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     6 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     6 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: SRL    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     7 instruction: SRA    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     7 instruction: SRA    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     7 instruction: SRA    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     7 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     7 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: SRA    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     8 instruction: STL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     8 instruction: STL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     8 instruction: STL    x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     8 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     8 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: STL    x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     9 instruction: STLU   x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]     9 instruction: STLU   x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]     9 instruction: STLU   x5,  x1,  x2       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]     9 op1: 00000001 op2: 00000002 op3: 00000000 , rd: 05
+# [SCOREBOARD ]     9 operands: op1: 00000001 op2: 00000002 op3: 00000000 rd: 05 
+#                  instruction: STLU   x5,  x1,  x2 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    10 instruction: ADDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    10 instruction: ADDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    10 instruction: ADDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    10 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    10 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: ADDI   x5,  x1, 1656 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    11 instruction: ANDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    11 instruction: ANDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    11 instruction: ANDI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    11 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    11 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: ANDI   x5,  x1, 1656 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    12 instruction: ORI    x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    12 instruction: ORI    x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    12 instruction: ORI    x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    12 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    12 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: ORI    x5,  x1, 1656 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    13 instruction: XORI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    13 instruction: XORI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    13 instruction: XORI   x5,  x1, 1656      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    13 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    13 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: XORI   x5,  x1, 1656 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    14 instruction: SLLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    14 instruction: SLLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    14 instruction: SLLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    14 op1: 00000001 op2: 00000018 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    14 operands: op1: 00000001 op2: 00000018 op3: 00000000 rd: 05 
+#                  instruction: SLLI   x5,  x1, 24 
+#                    expected:  op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    15 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    15 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    15 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    15 op1: 00000001 op2: 00000018 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    15 operands: op1: 00000001 op2: 00000018 op3: 00000000 rd: 05 
+#                  instruction: SRLI   x5,  x1, 24 
+#                    expected:  op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    16 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    16 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    16 instruction: SRLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    16 op1: 00000001 op2: 00000018 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    16 operands: op1: 00000001 op2: 00000018 op3: 00000000 rd: 05 
+#                  instruction: SRLI   x5,  x1, 24 
+#                    expected:  op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000018 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    17 instruction: LW     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    17 instruction: LW     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    17 instruction: LW     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    17 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    17 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: LW     x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    18 instruction: LH     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    18 instruction: LH     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    18 instruction: LH     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    18 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    18 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: LH     x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    19 instruction: LHU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    19 instruction: LHU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    19 instruction: LHU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    19 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    19 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: LHU    x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    20 instruction: LB     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    20 instruction: LB     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    20 instruction: LB     x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    20 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    20 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: LB     x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    21 instruction: LBU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    21 instruction: LBU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    21 instruction: LBU    x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    21 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    21 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: LBU    x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    22 instruction: JALR   x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    22 instruction: JALR   x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    22 instruction: JALR   x5, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    22 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    22 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: JALR   x5, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    23 instruction: STLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    23 instruction: STLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    23 instruction: STLI   x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    23 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    23 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: STLI   x5,  x1, 24 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    24 instruction: STLUI  x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    24 instruction: STLUI  x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    24 instruction: STLUI  x5,  x1, 24        registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    24 op1: 00000001 op2: 00000678 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    24 operands: op1: 00000001 op2: 00000678 op3: 00000000 rd: 05 
+#                  instruction: STLUI  x5,  x1, 24 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    25 instruction: LUI    x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    25 instruction: LUI    x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    25 instruction: LUI    x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    25 op1: 45678000 op2: 00000000 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    25 operands: op1: 45678000 op2: 00000000 op3: 00000000 rd: 05 
+#                  instruction: LUI    x5, 284280 
+#                    expected:  op1: 45678000 op2: 00000000 op3: 00000000 rd: 5 
+#                    actual:    op1: 45678000 op2: 00000000 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    26 instruction: AUIPC  x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    26 instruction: AUIPC  x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    26 instruction: AUIPC  x5, 284280         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    26 op1: 45678000 op2: 00000000 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    26 operands: op1: 45678000 op2: 00000000 op3: 00000000 rd: 05 
+#                  instruction: AUIPC  x5, 284280 
+#                    expected:  op1: 45678000 op2: 00000000 op3: 00000000 rd: 5 
+#                    actual:    op1: 45678000 op2: 00000000 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    27 instruction: SW     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    27 instruction: SW     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    27 instruction: SW     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    27 op1: 00000001 op2: 00000678 op3: 00000002 , rd: 00
+# [SCOREBOARD ]    27 operands: op1: 00000001 op2: 00000678 op3: 00000002 rd: 00 
+#                  instruction: SW     x2, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    28 instruction: SH     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    28 instruction: SH     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    28 instruction: SH     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    28 op1: 00000001 op2: 00000678 op3: 00000002 , rd: 00
+# [SCOREBOARD ]    28 operands: op1: 00000001 op2: 00000678 op3: 00000002 rd: 00 
+#                  instruction: SH     x2, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    29 instruction: SB     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    29 instruction: SB     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    29 instruction: SB     x2, 1656(x1)       registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    29 op1: 00000001 op2: 00000678 op3: 00000002 , rd: 00
+# [SCOREBOARD ]    29 operands: op1: 00000001 op2: 00000678 op3: 00000002 rd: 00 
+#                  instruction: SB     x2, 1656(x1) 
+#                    expected:  op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000678 op3: 00000002 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    30 instruction: BEQ    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    30 instruction: BEQ    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    30 instruction: BEQ    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    30 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    30 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BEQ    x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    31 instruction: BNE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    31 instruction: BNE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    31 instruction: BNE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    31 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    31 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BNE    x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    32 instruction: BLT    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    32 instruction: BLT    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    32 instruction: BLT    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    32 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    32 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BLT    x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    33 instruction: BGE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    33 instruction: BGE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    33 instruction: BGE    x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    33 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    33 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BGE    x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    34 instruction: BLTU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    34 instruction: BLTU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    34 instruction: BLTU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    34 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    34 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BLTU   x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    35 instruction: BGEU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    35 instruction: BGEU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    35 instruction: BGEU   x1,  x2, 2876      registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    35 op1: 00000001 op2: 00000002 op3: 00000678 , rd: 00
+# [SCOREBOARD ]    35 operands: op1: 00000001 op2: 00000002 op3: 00000678 rd: 00 
+#                  instruction: BGEU   x1,  x2, 2876 
+#                    expected:  op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                    actual:    op1: 00000001 op2: 00000002 op3: 00000678 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    36 instruction: JAL    x5, 666428         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [SCOREBOARD ]    36 instruction: JAL    x5, 666428         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003 
+# [DRIVER     ]    36 instruction: JAL    x5, 666428         registers[1]: 00000001 registers[2]: 00000002 registers[3]: 00000003
+# [MONITOR OUT]    36 op1: 00045678 op2: 00000000 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    36 operands: op1: 00045678 op2: 00000000 op3: 00000000 rd: 05 
+#                  instruction: JAL    x5, 666428 
+#                    expected:  op1: 00045678 op2: 00000000 op3: 00000000 rd: 5 
+#                    actual:    op1: 00045678 op2: 00000000 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR OUT] End of test marker received 
+# [MONITOR IN ]     0 instruction: EBREAK                    registers[1]: 00000000 registers[2]: 00000000 registers[3]: 00000000 
+# [SCOREBOARD ]     0 operands: op1: 00000000 op2: 00000000 op3: 00000000 rd: 00 
+# [SCOREBOARD ]     0 instruction: EBREAK                    registers[1]: 00000000 registers[2]: 00000000 registers[3]: 00000000 
+# [SCOREBOARD ] --- End of test received 
+# ==================================================
+# ||                                              ||
+# || Decoder Object Oriented Test Case Complete   ||
+# || Test Name: Instruciton_Test                  ||
+# ||                                              ||
+# || Tests Run:      37                           ||
+# || Errors:          0                           ||
+# ||                                              ||
+# ||  >>> Test Passed! <<<                        ||
+# ||                                              ||
+# ==================================================
+# ** Note: $finish    : environment.sv(77)
+#    Time: 933 ns  Iteration: 2  Instance: /top
+# 1
+# Break in Task decoder_oo_tb_pkg/environment_c::run at environment.sv line 77
+# End time: 11:56:30 on Feb 19,2025, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 2

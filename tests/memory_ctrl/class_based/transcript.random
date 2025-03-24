@@ -1,0 +1,1759 @@
+# vsim -voptargs="+acc" -work work -c -do "run.do" top -gTEST_NO=1 
+# Start time: 12:43:22 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "memory_ctrl(fast)".
+# ** Warning: .//top.sv(41): (vopt-8386) An enum variable 'mem_test' may only be assigned the same enum typed variable or one of its values. Parameter TEST_NO requires an explicit cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.mem_if_i(fast)
+# Loading work.opcodes(fast)
+# Loading work.mem_oo_tb_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.mem_interface_sv_unit(fast)
+# Loading work.mem_if_i(fast__2)
+# Loading work.memory_ctrl_sv_unit(fast)
+# Loading work.memory_ctrl(fast)
+# Loading work.ssram(fast)
+# do run.do
+# generator: started
+# generator: in main
+# New instruction created: SH    x24, 3902(x19) 
+#                          LHU   x24, 3902(x19) 
+# base = 00006a48 offset = 00003a84 address = 0000a4cc  
+# [GENERATOR  ]     0 instruction: SH    x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 9f2a4336 
+# [GENERATOR  ]     1 instruction: LHU   x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 00000000 
+# New instruction created: SW    x31, 1492(x3) 
+#                          LW     x4, 1492(x3) 
+# base = 0000786c offset = 0000377c address = 0000afe8  
+# [GENERATOR  ]     2 instruction: SW    x31, 1492(x3)       op1: 0000786c op2: 0000377c op3: b9aa01c9 
+# [GENERATOR  ]     3 instruction: LW     x4, 1492(x3)       op1: 0000786c op2: 0000377c op3: 00000000 
+# New instruction created: SH    x29, 754(x14) 
+#                          LH     x7, 754(x14) 
+# base = 00007a18 offset = 00006138 address = 0000db50  
+# [GENERATOR  ]     4 instruction: SH    x29, 754(x14)       op1: 00007a18 op2: 00006138 op3: 89077809 
+# [GENERATOR  ]     5 instruction: LH     x7, 754(x14)       op1: 00007a18 op2: 00006138 op3: 00000000 
+# New instruction created: SW    x24, 1084(x7) 
+#                          LW    x27, 1084(x7) 
+# base = 00003a28 offset = 000013fc address = 00004e24  
+# [GENERATOR  ]     6 instruction: SW    x24, 1084(x7)       op1: 00003a28 op2: 000013fc op3: c07bd16b 
+# [GENERATOR  ]     7 instruction: LW    x27, 1084(x7)       op1: 00003a28 op2: 000013fc op3: 00000000 
+# New instruction created: SW    x24, 3044(x9) 
+#                          LW    x24, 3044(x9) 
+# base = 00001abc offset = 000071d0 address = 00008c8c  
+# [GENERATOR  ]     8 instruction: SW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 11e2f19d 
+# [GENERATOR  ]     9 instruction: LW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 00000000 
+# New instruction created: SH    x21, 2888(x15) 
+#                          LH    x29, 2888(x15) 
+# base = 00007ace offset = 00002eb2 address = 0000a980  
+# [GENERATOR  ]    10 instruction: SH    x21, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 4d1500f4 
+# [GENERATOR  ]    11 instruction: LH    x29, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 00000000 
+# New instruction created: SW    x30, 1476(x25) 
+#                          LW    x20, 1476(x25) 
+# base = 00000800 offset = 00006b9c address = 0000739c  
+# [GENERATOR  ]    12 instruction: SW    x30, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 54f9237d 
+# [GENERATOR  ]    13 instruction: LW    x20, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 00000000 
+# New instruction created: SH    x16, 2696(x19) 
+#                          LHU   x21, 2696(x19) 
+# base = 000061d0 offset = 00004b80 address = 0000ad50  
+# [GENERATOR  ]    14 instruction: SH    x16, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 45d52427 
+# [GENERATOR  ]    15 instruction: LHU   x21, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 00000000 
+# New instruction created: SB     x8, 3518(x12) 
+#                          LB    x30, 3518(x12) 
+# base = 00004b76 offset = 00007971 address = 0000c4e7  
+# [GENERATOR  ]    16 instruction: SB     x8, 3518(x12)      op1: 00004b76 op2: 00007971 op3: cbd94460 
+# [GENERATOR  ]    17 instruction: LB    x30, 3518(x12)      op1: 00004b76 op2: 00007971 op3: 00000000 
+# New instruction created: SB    x24, 1283(x14) 
+#                          LB    x24, 1283(x14) 
+# base = 000013f8 offset = 00007a94 address = 00008e8c  
+# [GENERATOR  ]    18 instruction: SB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: a348e452 
+# [GENERATOR  ]    19 instruction: LB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: 00000000 
+# New instruction created: SW    x16, 1928(x13) 
+#                          LW    x14, 1928(x13) 
+# base = 00005a88 offset = 00004738 address = 0000a1c0  
+# [GENERATOR  ]    20 instruction: SW    x16, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 79e31aa3 
+# [GENERATOR  ]    21 instruction: LW    x14, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 00000000 
+# New instruction created: SB     x6, 3907(x8) 
+#                          LB     x5, 3907(x8) 
+# base = 00003954 offset = 00005158 address = 00008aac  
+# [GENERATOR  ]    22 instruction: SB     x6, 3907(x8)       op1: 00003954 op2: 00005158 op3: e0b2e881 
+# [GENERATOR  ]    23 instruction: LB     x5, 3907(x8)       op1: 00003954 op2: 00005158 op3: 00000000 
+# New instruction created: SW    x17, 3732(x18) 
+#                          LW     x2, 3732(x18) 
+# base = 00003cfc offset = 00005dd0 address = 00009acc  
+# [GENERATOR  ]    24 instruction: SW    x17, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 33ddb923 
+# [GENERATOR  ]    25 instruction: LW     x2, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 00000000 
+# New instruction created: SW    x31, 772(x19) 
+#                          LW    x16, 772(x19) 
+# base = 0000323c offset = 00005194 address = 000083d0  
+# [GENERATOR  ]    26 instruction: SW    x31, 772(x19)       op1: 0000323c op2: 00005194 op3: 9a2ca15c 
+# [GENERATOR  ]    27 instruction: LW    x16, 772(x19)       op1: 0000323c op2: 00005194 op3: 00000000 
+# New instruction created: SH    x19, 2254(x7) 
+#                          LHU   x29, 2254(x7) 
+# base = 0000652e offset = 00005838 address = 0000bd66  
+# [GENERATOR  ]    28 instruction: SH    x19, 2254(x7)       op1: 0000652e op2: 00005838 op3: e5aa831d 
+# [GENERATOR  ]    29 instruction: LHU   x29, 2254(x7)       op1: 0000652e op2: 00005838 op3: 00000000 
+# New instruction created: SB    x23, 2660(x2) 
+#                          LB    x19, 2660(x2) 
+# base = 000019b3 offset = 00007dee address = 000097a1  
+# [GENERATOR  ]    30 instruction: SB    x23, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 5b7f0674 
+# [GENERATOR  ]    31 instruction: LB    x19, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 00000000 
+# New instruction created: SW    x14, 3980(x29) 
+#                          LW     x2, 3980(x29) 
+# base = 000018c4 offset = 00006bd0 address = 00008494  
+# [GENERATOR  ]    32 instruction: SW    x14, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 910ae9d0 
+# [GENERATOR  ]    33 instruction: LW     x2, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 00000000 
+# New instruction created: SB    x24, 1956(x12) 
+#                          LBU    x5, 1956(x12) 
+# base = 00000c2a offset = 000041d3 address = 00004dfd  
+# [GENERATOR  ]    34 instruction: SB    x24, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: fe687f26 
+# [GENERATOR  ]    35 instruction: LBU    x5, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: 00000000 
+# New instruction created: SH    x21, 1332(x24) 
+#                          LH    x20, 1332(x24) 
+# base = 000057d8 offset = 0000366a address = 00008e42  
+# [GENERATOR  ]    36 instruction: SH    x21, 1332(x24)      op1: 000057d8 op2: 0000366a op3: a4e60b16 
+# [GENERATOR  ]    37 instruction: LH    x20, 1332(x24)      op1: 000057d8 op2: 0000366a op3: 00000000 
+# New instruction created: SW    x30, 2852(x26) 
+#                          LW    x30, 2852(x26) 
+# base = 00001998 offset = 00002e90 address = 00004828  
+# [GENERATOR  ]    38 instruction: SW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: cd110dcc 
+# [GENERATOR  ]    39 instruction: LW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: 00000000 
+# New instruction created: SB     x0, 1296(x28) 
+#                          LBU    x0, 1296(x28) 
+# base = 000002d7 offset = 00001dff address = 000020d6  
+# [GENERATOR  ]    40 instruction: SB     x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: b92cef00 
+# [GENERATOR  ]    41 instruction: LBU    x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: 00000000 
+# New instruction created: SB    x14, 3101(x9) 
+#                          LBU   x29, 3101(x9) 
+# base = 00002249 offset = 00007e5a address = 0000a0a3  
+# [GENERATOR  ]    42 instruction: SB    x14, 3101(x9)       op1: 00002249 op2: 00007e5a op3: eead9513 
+# [GENERATOR  ]    43 instruction: LBU   x29, 3101(x9)       op1: 00002249 op2: 00007e5a op3: 00000000 
+# New instruction created: SW     x2, 3976(x27) 
+#                          LW    x28, 3976(x27) 
+# base = 00003c88 offset = 00000574 address = 000041fc  
+# [GENERATOR  ]    44 instruction: SW     x2, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 3e2d9d7e 
+# [GENERATOR  ]    45 instruction: LW    x28, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 00000000 
+# New instruction created: SB     x7, 4091(x22) 
+#                          LBU   x19, 4091(x22) 
+# base = 000013ff offset = 00003e06 address = 00005205  
+# [GENERATOR  ]    46 instruction: SB     x7, 4091(x22)      op1: 000013ff op2: 00003e06 op3: a1e4538f 
+# [GENERATOR  ]    47 instruction: LBU   x19, 4091(x22)      op1: 000013ff op2: 00003e06 op3: 00000000 
+# New instruction created: SB    x31, 53(x1) 
+#                          LB    x26, 53(x1) 
+# base = 00004aec offset = 00002782 address = 0000726e  
+# [GENERATOR  ]    48 instruction: SB    x31, 53(x1)         op1: 00004aec op2: 00002782 op3: b3f981f2 
+# [GENERATOR  ]    49 instruction: LB    x26, 53(x1)         op1: 00004aec op2: 00002782 op3: 00000000 
+# New instruction created: SB    x14, 1345(x21) 
+#                          LBU   x22, 1345(x21) 
+# base = 000018a0 offset = 000062ab address = 00007b4b  
+# [GENERATOR  ]    50 instruction: SB    x14, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 8505a1d3 
+# [GENERATOR  ]    51 instruction: LBU   x22, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 00000000 
+# New instruction created: SW    x11, 3464(x27) 
+#                          LW    x10, 3464(x27) 
+# base = 000068b4 offset = 00004f08 address = 0000b7bc  
+# [GENERATOR  ]    52 instruction: SW    x11, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 725c8ae2 
+# [GENERATOR  ]    53 instruction: LW    x10, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 00000000 
+# New instruction created: SB     x4, 3082(x25) 
+#                          LB    x28, 3082(x25) 
+# base = 00004c01 offset = 00005f0b address = 0000ab0c  
+# [GENERATOR  ]    54 instruction: SB     x4, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: d1fa3c1e 
+# [GENERATOR  ]    55 instruction: LB    x28, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: 00000000 
+# New instruction created: SW    x15, 1176(x24) 
+#                          LW    x23, 1176(x24) 
+# base = 00000618 offset = 000034d8 address = 00003af0  
+# [GENERATOR  ]    56 instruction: SW    x15, 1176(x24)      op1: 00000618 op2: 000034d8 op3: d0e0d3cf 
+# [GENERATOR  ]    57 instruction: LW    x23, 1176(x24)      op1: 00000618 op2: 000034d8 op3: 00000000 
+# New instruction created: SH    x30, 486(x3) 
+#                          LHU   x30, 486(x3) 
+# base = 00007c14 offset = 00004c62 address = 0000c876  
+# [GENERATOR  ]    58 instruction: SH    x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: a8613a21 
+# [GENERATOR  ]    59 instruction: LHU   x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: 00000000 
+# New instruction created: SH    x17, 932(x30) 
+#                          LHU    x7, 932(x30) 
+# base = 000025a0 offset = 00002b6e address = 0000510e  
+# [GENERATOR  ]    60 instruction: SH    x17, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 42cadd66 
+# [GENERATOR  ]    61 instruction: LHU    x7, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 00000000 
+# New instruction created: SW    x17, 1248(x16) 
+#                          LW    x25, 1248(x16) 
+# base = 00001b10 offset = 00002d78 address = 00004888  
+# [GENERATOR  ]    62 instruction: SW    x17, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 59533ea9 
+# [GENERATOR  ]    63 instruction: LW    x25, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 00000000 
+# New instruction created: SB     x1, 244(x15) 
+#                          LBU   x30, 244(x15) 
+# base = 0000396e offset = 00003641 address = 00006faf  
+# [GENERATOR  ]    64 instruction: SB     x1, 244(x15)       op1: 0000396e op2: 00003641 op3: 3c470ac4 
+# [GENERATOR  ]    65 instruction: LBU   x30, 244(x15)       op1: 0000396e op2: 00003641 op3: 00000000 
+# New instruction created: SW    x28, 988(x11) 
+#                          LW    x25, 988(x11) 
+# base = 000037c8 offset = 0000321c address = 000069e4  
+# [GENERATOR  ]    66 instruction: SW    x28, 988(x11)       op1: 000037c8 op2: 0000321c op3: 826cf247 
+# [GENERATOR  ]    67 instruction: LW    x25, 988(x11)       op1: 000037c8 op2: 0000321c op3: 00000000 
+# New instruction created: SH    x21, 2304(x20) 
+#                          LHU   x23, 2304(x20) 
+# base = 00005d9e offset = 00007ea8 address = 0000dc46  
+# [GENERATOR  ]    68 instruction: SH    x21, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: f6fda8ec 
+# [GENERATOR  ]    69 instruction: LHU   x23, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: 00000000 
+# New instruction created: SB    x28, 3698(x9) 
+#                          LB     x7, 3698(x9) 
+# base = 000074ba offset = 00004d0f address = 0000c1c9  
+# [GENERATOR  ]    70 instruction: SB    x28, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 4589e427 
+# [GENERATOR  ]    71 instruction: LB     x7, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 00000000 
+# New instruction created: SH    x29, 2864(x7) 
+#                          LHU   x20, 2864(x7) 
+# base = 00007a30 offset = 00004072 address = 0000baa2  
+# [GENERATOR  ]    72 instruction: SH    x29, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 9d3aca19 
+# [GENERATOR  ]    73 instruction: LHU   x20, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 00000000 
+# New instruction created: SB     x7, 1468(x14) 
+#                          LB    x15, 1468(x14) 
+# base = 00003e8b offset = 00002d69 address = 00006bf4  
+# [GENERATOR  ]    74 instruction: SB     x7, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: c35af387 
+# [GENERATOR  ]    75 instruction: LB    x15, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: 00000000 
+# New instruction created: SH    x26, 2902(x26) 
+#                          LH    x14, 2902(x26) 
+# base = 00005c54 offset = 00002bca address = 0000881e  
+# [GENERATOR  ]    76 instruction: SH    x26, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 21114875 
+# [GENERATOR  ]    77 instruction: LH    x14, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 00000000 
+# New instruction created: SW    x14, 1284(x12) 
+#                          LW     x0, 1284(x12) 
+# base = 00006238 offset = 000072bc address = 0000d4f4  
+# [GENERATOR  ]    78 instruction: SW    x14, 1284(x12)      op1: 00006238 op2: 000072bc op3: 43126b90 
+# [GENERATOR  ]    79 instruction: LW     x0, 1284(x12)      op1: 00006238 op2: 000072bc op3: 00000000 
+# New instruction created: SH    x11, 810(x25) 
+#                          LHU    x1, 810(x25) 
+# base = 000047ba offset = 00003e48 address = 00008602  
+# [GENERATOR  ]    80 instruction: SH    x11, 810(x25)       op1: 000047ba op2: 00003e48 op3: 8af0a691 
+# [GENERATOR  ]    81 instruction: LHU    x1, 810(x25)       op1: 000047ba op2: 00003e48 op3: 00000000 
+# New instruction created: SB    x15, 99(x17) 
+#                          LB    x27, 99(x17) 
+# base = 000033dd offset = 00002f89 address = 00006366  
+# [GENERATOR  ]    82 instruction: SB    x15, 99(x17)        op1: 000033dd op2: 00002f89 op3: 618f5826 
+# [GENERATOR  ]    83 instruction: LB    x27, 99(x17)        op1: 000033dd op2: 00002f89 op3: 00000000 
+# New instruction created: SH    x30, 2698(x11) 
+#                          LH    x11, 2698(x11) 
+# base = 00007bfc offset = 000049f6 address = 0000c5f2  
+# [GENERATOR  ]    84 instruction: SH    x30, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 89cef644 
+# [GENERATOR  ]    85 instruction: LH    x11, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 00000000 
+# New instruction created: SW     x9, 76(x31) 
+#                          LW    x28, 76(x31) 
+# base = 00006f88 offset = 00007fb4 address = 0000ef3c  
+# [GENERATOR  ]    86 instruction: SW     x9, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 63e0e54d 
+# [GENERATOR  ]    87 instruction: LW    x28, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 00000000 
+# New instruction created: SH     x2, 358(x26) 
+#                          LHU   x26, 358(x26) 
+# base = 0000614e offset = 00005676 address = 0000b7c4  
+# [GENERATOR  ]    88 instruction: SH     x2, 358(x26)       op1: 0000614e op2: 00005676 op3: e3e971ff 
+# [GENERATOR  ]    89 instruction: LHU   x26, 358(x26)       op1: 0000614e op2: 00005676 op3: 00000000 
+# New instruction created: SW     x7, 2876(x31) 
+#                          LW    x28, 2876(x31) 
+# base = 00001ae0 offset = 00003660 address = 00005140  
+# [GENERATOR  ]    90 instruction: SW     x7, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: a02aaf93 
+# [GENERATOR  ]    91 instruction: LW    x28, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: 00000000 
+# New instruction created: SW     x4, 920(x0) 
+#                          LW    x28, 920(x0) 
+# base = 000057c8 offset = 00002ef0 address = 000086b8  
+# [GENERATOR  ]    92 instruction: SW     x4, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: b0459546 
+# [GENERATOR  ]    93 instruction: LW    x28, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: 00000000 
+# New instruction created: SW    x21, 1504(x16) 
+#                          LW    x10, 1504(x16) 
+# base = 00004ee0 offset = 00006380 address = 0000b260  
+# [GENERATOR  ]    94 instruction: SW    x21, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 302d7650 
+# [GENERATOR  ]    95 instruction: LW    x10, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 00000000 
+# New instruction created: SB    x29, 4085(x17) 
+#                          LB    x19, 4085(x17) 
+# base = 000055ec offset = 00005128 address = 0000a714  
+# [GENERATOR  ]    96 instruction: SB    x29, 4085(x17)      op1: 000055ec op2: 00005128 op3: 09b70cbf 
+# [GENERATOR  ]    97 instruction: LB    x19, 4085(x17)      op1: 000055ec op2: 00005128 op3: 00000000 
+# New instruction created: SB     x9, 705(x10) 
+#                          LB    x28, 705(x10) 
+# base = 000039a3 offset = 0000020d address = 00003bb0  
+# [GENERATOR  ]    98 instruction: SB     x9, 705(x10)       op1: 000039a3 op2: 0000020d op3: 0c80d384 
+# [GENERATOR  ]    99 instruction: LB    x28, 705(x10)       op1: 000039a3 op2: 0000020d op3: 00000000 
+# New instruction created: SW    x15, 656(x16) 
+#                          LW    x21, 656(x16) 
+# base = 000020b4 offset = 00004ed4 address = 00006f88  
+# [GENERATOR  ]   100 instruction: SW    x15, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: da43cd33 
+# [GENERATOR  ]   101 instruction: LW    x21, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: 00000000 
+# New instruction created: SH    x15, 2360(x11) 
+#                          LHU   x27, 2360(x11) 
+# base = 0000458c offset = 00003dcc address = 00008358  
+# [GENERATOR  ]   102 instruction: SH    x15, 2360(x11)      op1: 0000458c op2: 00003dcc op3: cc763bfd 
+# [GENERATOR  ]   103 instruction: LHU   x27, 2360(x11)      op1: 0000458c op2: 00003dcc op3: 00000000 
+# New instruction created: SW    x31, 1480(x7) 
+#                          LW    x28, 1480(x7) 
+# base = 00001fe0 offset = 00001afc address = 00003adc  
+# [GENERATOR  ]   104 instruction: SW    x31, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: ff6cdb30 
+# [GENERATOR  ]   105 instruction: LW    x28, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: 00000000 
+# New instruction created: SB    x15, 2258(x10) 
+#                          LBU   x13, 2258(x10) 
+# base = 00004052 offset = 000033ff address = 00007451  
+# [GENERATOR  ]   106 instruction: SB    x15, 2258(x10)      op1: 00004052 op2: 000033ff op3: 1b1f01d3 
+# [GENERATOR  ]   107 instruction: LBU   x13, 2258(x10)      op1: 00004052 op2: 000033ff op3: 00000000 
+# New instruction created: SW    x12, 3204(x28) 
+#                          LW     x9, 3204(x28) 
+# base = 00007a90 offset = 0000123c address = 00008ccc  
+# [GENERATOR  ]   108 instruction: SW    x12, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 8edace27 
+# [GENERATOR  ]   109 instruction: LW     x9, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 00000000 
+# New instruction created: SH     x1, 2830(x31) 
+#                          LHU   x17, 2830(x31) 
+# base = 0000536c offset = 00001788 address = 00006af4  
+# [GENERATOR  ]   110 instruction: SH     x1, 2830(x31)      op1: 0000536c op2: 00001788 op3: 0bb261bd 
+# [GENERATOR  ]   111 instruction: LHU   x17, 2830(x31)      op1: 0000536c op2: 00001788 op3: 00000000 
+# New instruction created: SW    x27, 860(x2) 
+#                          LW    x14, 860(x2) 
+# base = 000001ac offset = 00000de4 address = 00000f90  
+# [GENERATOR  ]   112 instruction: SW    x27, 860(x2)        op1: 000001ac op2: 00000de4 op3: 4d28a975 
+# [GENERATOR  ]   113 instruction: LW    x14, 860(x2)        op1: 000001ac op2: 00000de4 op3: 00000000 
+# New instruction created: SB     x5, 137(x31) 
+#                          LB    x28, 137(x31) 
+# base = 000008f2 offset = 0000757a address = 00007e6c  
+# [GENERATOR  ]   114 instruction: SB     x5, 137(x31)       op1: 000008f2 op2: 0000757a op3: 5f47fcbd 
+# [GENERATOR  ]   115 instruction: LB    x28, 137(x31)       op1: 000008f2 op2: 0000757a op3: 00000000 
+# New instruction created: SW     x0, 2888(x19) 
+#                          LW    x26, 2888(x19) 
+# base = 00004708 offset = 000014c8 address = 00005bd0  
+# [GENERATOR  ]   116 instruction: SW     x0, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 7dd09552 
+# [GENERATOR  ]   117 instruction: LW    x26, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 00000000 
+# New instruction created: SB    x17, 658(x17) 
+#                          LBU   x13, 658(x17) 
+# base = 00006b3f offset = 00004d06 address = 0000b845  
+# [GENERATOR  ]   118 instruction: SB    x17, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 9fbd9c46 
+# [GENERATOR  ]   119 instruction: LBU   x13, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 00000000 
+# New instruction created: SB    x14, 1154(x31) 
+#                          LB    x16, 1154(x31) 
+# base = 00000cb6 offset = 00005bfa address = 000068b0  
+# [GENERATOR  ]   120 instruction: SB    x14, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: a00b27e8 
+# [GENERATOR  ]   121 instruction: LB    x16, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: 00000000 
+# New instruction created: SB     x8, 3821(x2) 
+#                          LBU    x7, 3821(x2) 
+# base = 00004355 offset = 00007206 address = 0000b55b  
+# [GENERATOR  ]   122 instruction: SB     x8, 3821(x2)       op1: 00004355 op2: 00007206 op3: b1ed59d5 
+# [GENERATOR  ]   123 instruction: LBU    x7, 3821(x2)       op1: 00004355 op2: 00007206 op3: 00000000 
+# New instruction created: SH     x0, 2640(x25) 
+#                          LH    x12, 2640(x25) 
+# base = 00004e52 offset = 000063d0 address = 0000b222  
+# [GENERATOR  ]   124 instruction: SH     x0, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 6576ebd5 
+# [GENERATOR  ]   125 instruction: LH    x12, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 00000000 
+# New instruction created: SH     x1, 3882(x2) 
+#                          LH    x19, 3882(x2) 
+# base = 00005ff8 offset = 00004c2a address = 0000ac22  
+# [GENERATOR  ]   126 instruction: SH     x1, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: d892ed8c 
+# [GENERATOR  ]   127 instruction: LH    x19, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: 00000000 
+# New instruction created: SW    x28, 1096(x20) 
+#                          LW    x20, 1096(x20) 
+# base = 00003440 offset = 000051cc address = 0000860c  
+# [GENERATOR  ]   128 instruction: SW    x28, 1096(x20)      op1: 00003440 op2: 000051cc op3: 62d0ea89 
+# [GENERATOR  ]   129 instruction: LW    x20, 1096(x20)      op1: 00003440 op2: 000051cc op3: 00000000 
+# New instruction created: SW    x29, 1164(x14) 
+#                          LW    x31, 1164(x14) 
+# base = 00003574 offset = 000033e8 address = 0000695c  
+# [GENERATOR  ]   130 instruction: SW    x29, 1164(x14)      op1: 00003574 op2: 000033e8 op3: e0c67396 
+# [GENERATOR  ]   131 instruction: LW    x31, 1164(x14)      op1: 00003574 op2: 000033e8 op3: 00000000 
+# New instruction created: SH     x4, 3148(x2) 
+#                          LH    x19, 3148(x2) 
+# base = 000001b2 offset = 00000680 address = 00000832  
+# [GENERATOR  ]   132 instruction: SH     x4, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 8980fcf3 
+# [GENERATOR  ]   133 instruction: LH    x19, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 00000000 
+# New instruction created: SB    x17, 2694(x16) 
+#                          LBU   x30, 2694(x16) 
+# base = 000079c8 offset = 00006215 address = 0000dbdd  
+# [GENERATOR  ]   134 instruction: SB    x17, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 8aeb597d 
+# [GENERATOR  ]   135 instruction: LBU   x30, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 00000000 
+# New instruction created: SB    x23, 1628(x0) 
+#                          LB    x21, 1628(x0) 
+# base = 00000dfa offset = 00002c67 address = 00003a61  
+# [GENERATOR  ]   136 instruction: SB    x23, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 61375fef 
+# [GENERATOR  ]   137 instruction: LB    x21, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 00000000 
+# New instruction created: SH    x19, 3522(x2) 
+#                          LH     x0, 3522(x2) 
+# base = 00001df4 offset = 000046f2 address = 000064e6  
+# [GENERATOR  ]   138 instruction: SH    x19, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: b5491fed 
+# [GENERATOR  ]   139 instruction: LH     x0, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: 00000000 
+# New instruction created: SB     x3, 2611(x2) 
+#                          LBU   x18, 2611(x2) 
+# base = 00003000 offset = 00005ed4 address = 00008ed4  
+# [GENERATOR  ]   140 instruction: SB     x3, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 236ebc1f 
+# [GENERATOR  ]   141 instruction: LBU   x18, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 00000000 
+# New instruction created: SB    x11, 3747(x11) 
+#                          LB    x31, 3747(x11) 
+# base = 0000748b offset = 00007ce2 address = 0000f16d  
+# [GENERATOR  ]   142 instruction: SB    x11, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 9e8c4bc9 
+# [GENERATOR  ]   143 instruction: LB    x31, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 00000000 
+# New instruction created: SW    x25, 1600(x6) 
+#                          LW    x29, 1600(x6) 
+# base = 00007258 offset = 00007514 address = 0000e76c  
+# [GENERATOR  ]   144 instruction: SW    x25, 1600(x6)       op1: 00007258 op2: 00007514 op3: fc7f15c1 
+# [GENERATOR  ]   145 instruction: LW    x29, 1600(x6)       op1: 00007258 op2: 00007514 op3: 00000000 
+# New instruction created: SW    x26, 1040(x23) 
+#                          LW    x21, 1040(x23) 
+# base = 00001800 offset = 00003ee8 address = 000056e8  
+# [GENERATOR  ]   146 instruction: SW    x26, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 5074d912 
+# [GENERATOR  ]   147 instruction: LW    x21, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 00000000 
+# New instruction created: SH     x0, 1280(x24) 
+#                          LH    x17, 1280(x24) 
+# base = 00007a26 offset = 00001754 address = 0000917a  
+# [GENERATOR  ]   148 instruction: SH     x0, 1280(x24)      op1: 00007a26 op2: 00001754 op3: fbfe817c 
+# [GENERATOR  ]   149 instruction: LH    x17, 1280(x24)      op1: 00007a26 op2: 00001754 op3: 00000000 
+# New instruction created: SH    x24, 1462(x11) 
+#                          LHU   x16, 1462(x11) 
+# base = 00002074 offset = 00001ae6 address = 00003b5a  
+# [GENERATOR  ]   150 instruction: SH    x24, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 1a4c934c 
+# [GENERATOR  ]   151 instruction: LHU   x16, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 00000000 
+# New instruction created: SB     x8, 630(x3) 
+#                          LB    x11, 630(x3) 
+# base = 0000087f offset = 00000008 address = 00000887  
+# [GENERATOR  ]   152 instruction: SB     x8, 630(x3)        op1: 0000087f op2: 00000008 op3: 9c124d04 
+# [GENERATOR  ]   153 instruction: LB    x11, 630(x3)        op1: 0000087f op2: 00000008 op3: 00000000 
+# New instruction created: SB    x15, 2934(x28) 
+#                          LB    x31, 2934(x28) 
+# base = 000032c7 offset = 00003092 address = 00006359  
+# [GENERATOR  ]   154 instruction: SB    x15, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 901ba4b7 
+# [GENERATOR  ]   155 instruction: LB    x31, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 00000000 
+# New instruction created: SB    x14, 1036(x14) 
+#                          LBU   x31, 1036(x14) 
+# base = 00005e41 offset = 00002347 address = 00008188  
+# [GENERATOR  ]   156 instruction: SB    x14, 1036(x14)      op1: 00005e41 op2: 00002347 op3: d18121e4 
+# [GENERATOR  ]   157 instruction: LBU   x31, 1036(x14)      op1: 00005e41 op2: 00002347 op3: 00000000 
+# New instruction created: SB    x28, 3835(x26) 
+#                          LB    x19, 3835(x26) 
+# base = 0000462a offset = 00002ef3 address = 0000751d  
+# [GENERATOR  ]   158 instruction: SB    x28, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 5bd7bbe8 
+# [GENERATOR  ]   159 instruction: LB    x19, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 00000000 
+# New instruction created: SW     x9, 3804(x12) 
+#                          LW     x3, 3804(x12) 
+# base = 00006dac offset = 000012f8 address = 000080a4  
+# [GENERATOR  ]   160 instruction: SW     x9, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 19df3ca6 
+# [GENERATOR  ]   161 instruction: LW     x3, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 00000000 
+# New instruction created: SW    x21, 816(x25) 
+#                          LW    x20, 816(x25) 
+# base = 00004550 offset = 00001830 address = 00005d80  
+# [GENERATOR  ]   162 instruction: SW    x21, 816(x25)       op1: 00004550 op2: 00001830 op3: cc0efc45 
+# [GENERATOR  ]   163 instruction: LW    x20, 816(x25)       op1: 00004550 op2: 00001830 op3: 00000000 
+# New instruction created: SW    x16, 2988(x31) 
+#                          LW    x20, 2988(x31) 
+# base = 00007a38 offset = 00003a54 address = 0000b48c  
+# [GENERATOR  ]   164 instruction: SW    x16, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: a654edd2 
+# [GENERATOR  ]   165 instruction: LW    x20, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: 00000000 
+# New instruction created: SB    x16, 1808(x18) 
+#                          LBU   x26, 1808(x18) 
+# base = 00002d93 offset = 00006a56 address = 000097e9  
+# [GENERATOR  ]   166 instruction: SB    x16, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: bb8d83a1 
+# [GENERATOR  ]   167 instruction: LBU   x26, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: 00000000 
+# New instruction created: SW    x27, 2828(x8) 
+#                          LW    x29, 2828(x8) 
+# base = 00003af4 offset = 0000426c address = 00007d60  
+# [GENERATOR  ]   168 instruction: SW    x27, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 1debe26e 
+# [GENERATOR  ]   169 instruction: LW    x29, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 00000000 
+# New instruction created: SB    x25, 2416(x9) 
+#                          LB     x3, 2416(x9) 
+# base = 00001ca2 offset = 00005b2c address = 000077ce  
+# [GENERATOR  ]   170 instruction: SB    x25, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 4774ffd8 
+# [GENERATOR  ]   171 instruction: LB     x3, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 00000000 
+# New instruction created: SB    x26, 3388(x8) 
+#                          LB    x19, 3388(x8) 
+# base = 0000421f offset = 00000914 address = 00004b33  
+# [GENERATOR  ]   172 instruction: SB    x26, 3388(x8)       op1: 0000421f op2: 00000914 op3: bd05a0d4 
+# [GENERATOR  ]   173 instruction: LB    x19, 3388(x8)       op1: 0000421f op2: 00000914 op3: 00000000 
+# New instruction created: SW    x21, 1832(x22) 
+#                          LW     x4, 1832(x22) 
+# base = 00004804 offset = 00006150 address = 0000a954  
+# [GENERATOR  ]   174 instruction: SW    x21, 1832(x22)      op1: 00004804 op2: 00006150 op3: b564cdae 
+# [GENERATOR  ]   175 instruction: LW     x4, 1832(x22)      op1: 00004804 op2: 00006150 op3: 00000000 
+# New instruction created: SB    x13, 3843(x12) 
+#                          LBU   x26, 3843(x12) 
+# base = 000006f5 offset = 00005547 address = 00005c3c  
+# [GENERATOR  ]   176 instruction: SB    x13, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00f97111 
+# [GENERATOR  ]   177 instruction: LBU   x26, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00000000 
+# New instruction created: SW     x8, 2160(x23) 
+#                          LW    x29, 2160(x23) 
+# base = 00007504 offset = 00006838 address = 0000dd3c  
+# [GENERATOR  ]   178 instruction: SW     x8, 2160(x23)      op1: 00007504 op2: 00006838 op3: f0bf3745 
+# [GENERATOR  ]   179 instruction: LW    x29, 2160(x23)      op1: 00007504 op2: 00006838 op3: 00000000 
+# New instruction created: SW     x5, 392(x4) 
+#                          LW    x16, 392(x4) 
+# base = 00003094 offset = 00007754 address = 0000a7e8  
+# [GENERATOR  ]   180 instruction: SW     x5, 392(x4)        op1: 00003094 op2: 00007754 op3: f054a2f2 
+# [GENERATOR  ]   181 instruction: LW    x16, 392(x4)        op1: 00003094 op2: 00007754 op3: 00000000 
+# New instruction created: SB     x1, 3917(x12) 
+#                          LBU    x5, 3917(x12) 
+# base = 00003094 offset = 00003bba address = 00006c4e  
+# [GENERATOR  ]   182 instruction: SB     x1, 3917(x12)      op1: 00003094 op2: 00003bba op3: 8d22e8e7 
+# [GENERATOR  ]   183 instruction: LBU    x5, 3917(x12)      op1: 00003094 op2: 00003bba op3: 00000000 
+# New instruction created: SW     x7, 1540(x11) 
+#                          LW     x8, 1540(x11) 
+# base = 00006004 offset = 00001fc0 address = 00007fc4  
+# [GENERATOR  ]   184 instruction: SW     x7, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: c9128391 
+# [GENERATOR  ]   185 instruction: LW     x8, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: 00000000 
+# New instruction created: SW    x14, 1296(x1) 
+#                          LW    x13, 1296(x1) 
+# base = 00001708 offset = 00001038 address = 00002740  
+# [GENERATOR  ]   186 instruction: SW    x14, 1296(x1)       op1: 00001708 op2: 00001038 op3: 80f54b96 
+# [GENERATOR  ]   187 instruction: LW    x13, 1296(x1)       op1: 00001708 op2: 00001038 op3: 00000000 
+# New instruction created: SB    x12, 1307(x3) 
+#                          LB    x23, 1307(x3) 
+# base = 000077b9 offset = 0000378d address = 0000af46  
+# [GENERATOR  ]   188 instruction: SB    x12, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 570accde 
+# [GENERATOR  ]   189 instruction: LB    x23, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 00000000 
+# New instruction created: SW    x25, 392(x1) 
+#                          LW    x18, 392(x1) 
+# base = 00001a08 offset = 00006154 address = 00007b5c  
+# [GENERATOR  ]   190 instruction: SW    x25, 392(x1)        op1: 00001a08 op2: 00006154 op3: 7149db7e 
+# [GENERATOR  ]   191 instruction: LW    x18, 392(x1)        op1: 00001a08 op2: 00006154 op3: 00000000 
+# New instruction created: SB    x26, 1610(x9) 
+#                          LBU    x5, 1610(x9) 
+# base = 000034a8 offset = 000068bb address = 00009d63  
+# [GENERATOR  ]   192 instruction: SB    x26, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 4d8c542c 
+# [GENERATOR  ]   193 instruction: LBU    x5, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 00000000 
+# New instruction created: SB     x8, 3815(x16) 
+#                          LBU   x15, 3815(x16) 
+# base = 000014d8 offset = 000040b6 address = 0000558e  
+# [GENERATOR  ]   194 instruction: SB     x8, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 18e1fa94 
+# [GENERATOR  ]   195 instruction: LBU   x15, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 00000000 
+# New instruction created: SW    x22, 2956(x3) 
+#                          LW    x26, 2956(x3) 
+# base = 000040bc offset = 00001d54 address = 00005e10  
+# [GENERATOR  ]   196 instruction: SW    x22, 2956(x3)       op1: 000040bc op2: 00001d54 op3: fd65bb19 
+# [GENERATOR  ]   197 instruction: LW    x26, 2956(x3)       op1: 000040bc op2: 00001d54 op3: 00000000 
+# New instruction created: SW    x29, 2596(x28) 
+#                          LW    x28, 2596(x28) 
+# base = 00001c18 offset = 00002488 address = 000040a0  
+# [GENERATOR  ]   198 instruction: SW    x29, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 6e97921e 
+# [GENERATOR  ]   199 instruction: LW    x28, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 00000000 
+# [GENERATOR  ] --- end of test sent
+# Sending EBREAK
+# [MONITOR OUT]     0 instruction: WRITE, value: 00004336 
+# [MONITOR IN ]     0 instruction: SH    x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 9f2a4336 
+# [SCOREBOARD ]     0 Write response: 00004336 
+# [SCOREBOARD ]     0 instruction: SH    x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 9f2a4336
+# [SCOREBOARD ]     0 - success - instruction: SH    x24, 3902(x19)      expected=00004336 actual=00004336 
+# [DRIVER     ]     0 instruction: SH    x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 9f2a4336
+# [MONITOR IN ]     1 instruction: LHU   x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 00000000 
+# [SCOREBOARD ]     1 instruction: LHU   x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 00000000
+# [DRIVER     ]     1 instruction: LHU   x24, 3902(x19)      op1: 00006a48 op2: 00003a84 op3: 00000000
+# [MONITOR OUT]     1 instruction: READ, value: 00004336 
+# [SCOREBOARD ]     1  Read response: 00004336 
+# [SCOREBOARD ]     1 - success - instruction: LHU   x24, 3902(x19)      expected=00004336 actual=00004336 
+# [MONITOR OUT]     2 instruction: WRITE, value: b9aa01c9 
+# [MONITOR IN ]     2 instruction: SW    x31, 1492(x3)       op1: 0000786c op2: 0000377c op3: b9aa01c9 
+# [SCOREBOARD ]     1 Write response: b9aa01c9 
+# [SCOREBOARD ]     2 instruction: SW    x31, 1492(x3)       op1: 0000786c op2: 0000377c op3: b9aa01c9
+# [SCOREBOARD ]     2 - success - instruction: SW    x31, 1492(x3)       expected=b9aa01c9 actual=b9aa01c9 
+# [DRIVER     ]     2 instruction: SW    x31, 1492(x3)       op1: 0000786c op2: 0000377c op3: b9aa01c9
+# [MONITOR IN ]     3 instruction: LW     x4, 1492(x3)       op1: 0000786c op2: 0000377c op3: 00000000 
+# [SCOREBOARD ]     3 instruction: LW     x4, 1492(x3)       op1: 0000786c op2: 0000377c op3: 00000000
+# [DRIVER     ]     3 instruction: LW     x4, 1492(x3)       op1: 0000786c op2: 0000377c op3: 00000000
+# [MONITOR OUT]     3 instruction: READ, value: b9aa01c9 
+# [SCOREBOARD ]     3  Read response: b9aa01c9 
+# [SCOREBOARD ]     3 - success - instruction: LW     x4, 1492(x3)       expected=b9aa01c9 actual=b9aa01c9 
+# [MONITOR OUT]     4 instruction: WRITE, value: 00007809 
+# [MONITOR IN ]     4 instruction: SH    x29, 754(x14)       op1: 00007a18 op2: 00006138 op3: 89077809 
+# [SCOREBOARD ]     3 Write response: 00007809 
+# [SCOREBOARD ]     4 instruction: SH    x29, 754(x14)       op1: 00007a18 op2: 00006138 op3: 89077809
+# [SCOREBOARD ]     4 - success - instruction: SH    x29, 754(x14)       expected=00007809 actual=00007809 
+# [DRIVER     ]     4 instruction: SH    x29, 754(x14)       op1: 00007a18 op2: 00006138 op3: 89077809
+# [MONITOR IN ]     5 instruction: LH     x7, 754(x14)       op1: 00007a18 op2: 00006138 op3: 00000000 
+# [SCOREBOARD ]     5 instruction: LH     x7, 754(x14)       op1: 00007a18 op2: 00006138 op3: 00000000
+# [DRIVER     ]     5 instruction: LH     x7, 754(x14)       op1: 00007a18 op2: 00006138 op3: 00000000
+# [MONITOR OUT]     5 instruction: READ, value: 00007809 
+# [SCOREBOARD ]     5  Read response: 00007809 
+# [SCOREBOARD ]     5 - success - instruction: LH     x7, 754(x14)       expected=00007809 actual=00007809 
+# [MONITOR OUT]     6 instruction: WRITE, value: c07bd16b 
+# [MONITOR IN ]     6 instruction: SW    x24, 1084(x7)       op1: 00003a28 op2: 000013fc op3: c07bd16b 
+# [SCOREBOARD ]     5 Write response: c07bd16b 
+# [SCOREBOARD ]     6 instruction: SW    x24, 1084(x7)       op1: 00003a28 op2: 000013fc op3: c07bd16b
+# [SCOREBOARD ]     6 - success - instruction: SW    x24, 1084(x7)       expected=c07bd16b actual=c07bd16b 
+# [DRIVER     ]     6 instruction: SW    x24, 1084(x7)       op1: 00003a28 op2: 000013fc op3: c07bd16b
+# [MONITOR IN ]     7 instruction: LW    x27, 1084(x7)       op1: 00003a28 op2: 000013fc op3: 00000000 
+# [SCOREBOARD ]     7 instruction: LW    x27, 1084(x7)       op1: 00003a28 op2: 000013fc op3: 00000000
+# [DRIVER     ]     7 instruction: LW    x27, 1084(x7)       op1: 00003a28 op2: 000013fc op3: 00000000
+# [MONITOR OUT]     7 instruction: READ, value: c07bd16b 
+# [SCOREBOARD ]     7  Read response: c07bd16b 
+# [SCOREBOARD ]     7 - success - instruction: LW    x27, 1084(x7)       expected=c07bd16b actual=c07bd16b 
+# [MONITOR OUT]     8 instruction: WRITE, value: 11e2f19d 
+# [MONITOR IN ]     8 instruction: SW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 11e2f19d 
+# [SCOREBOARD ]     7 Write response: 11e2f19d 
+# [SCOREBOARD ]     8 instruction: SW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 11e2f19d
+# [SCOREBOARD ]     8 - success - instruction: SW    x24, 3044(x9)       expected=11e2f19d actual=11e2f19d 
+# [DRIVER     ]     8 instruction: SW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 11e2f19d
+# [MONITOR IN ]     9 instruction: LW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 00000000 
+# [SCOREBOARD ]     9 instruction: LW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 00000000
+# [DRIVER     ]     9 instruction: LW    x24, 3044(x9)       op1: 00001abc op2: 000071d0 op3: 00000000
+# [MONITOR OUT]     9 instruction: READ, value: 11e2f19d 
+# [SCOREBOARD ]     9  Read response: 11e2f19d 
+# [SCOREBOARD ]     9 - success - instruction: LW    x24, 3044(x9)       expected=11e2f19d actual=11e2f19d 
+# [MONITOR OUT]    10 instruction: WRITE, value: 000000f4 
+# [MONITOR IN ]    10 instruction: SH    x21, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 4d1500f4 
+# [SCOREBOARD ]     9 Write response: 000000f4 
+# [SCOREBOARD ]    10 instruction: SH    x21, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 4d1500f4
+# [SCOREBOARD ]    10 - success - instruction: SH    x21, 2888(x15)      expected=000000f4 actual=000000f4 
+# [DRIVER     ]    10 instruction: SH    x21, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 4d1500f4
+# [MONITOR IN ]    11 instruction: LH    x29, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 00000000 
+# [SCOREBOARD ]    11 instruction: LH    x29, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 00000000
+# [DRIVER     ]    11 instruction: LH    x29, 2888(x15)      op1: 00007ace op2: 00002eb2 op3: 00000000
+# [MONITOR OUT]    11 instruction: READ, value: 000000f4 
+# [SCOREBOARD ]    11  Read response: 000000f4 
+# [SCOREBOARD ]    11 - success - instruction: LH    x29, 2888(x15)      expected=000000f4 actual=000000f4 
+# [MONITOR OUT]    12 instruction: WRITE, value: 54f9237d 
+# [MONITOR IN ]    12 instruction: SW    x30, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 54f9237d 
+# [SCOREBOARD ]    11 Write response: 54f9237d 
+# [SCOREBOARD ]    12 instruction: SW    x30, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 54f9237d
+# [SCOREBOARD ]    12 - success - instruction: SW    x30, 1476(x25)      expected=54f9237d actual=54f9237d 
+# [DRIVER     ]    12 instruction: SW    x30, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 54f9237d
+# [MONITOR IN ]    13 instruction: LW    x20, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 00000000 
+# [SCOREBOARD ]    13 instruction: LW    x20, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 00000000
+# [DRIVER     ]    13 instruction: LW    x20, 1476(x25)      op1: 00000800 op2: 00006b9c op3: 00000000
+# [MONITOR OUT]    13 instruction: READ, value: 54f9237d 
+# [SCOREBOARD ]    13  Read response: 54f9237d 
+# [SCOREBOARD ]    13 - success - instruction: LW    x20, 1476(x25)      expected=54f9237d actual=54f9237d 
+# [MONITOR OUT]    14 instruction: WRITE, value: 00002427 
+# [MONITOR IN ]    14 instruction: SH    x16, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 45d52427 
+# [SCOREBOARD ]    13 Write response: 00002427 
+# [SCOREBOARD ]    14 instruction: SH    x16, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 45d52427
+# [SCOREBOARD ]    14 - success - instruction: SH    x16, 2696(x19)      expected=00002427 actual=00002427 
+# [DRIVER     ]    14 instruction: SH    x16, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 45d52427
+# [MONITOR IN ]    15 instruction: LHU   x21, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 00000000 
+# [SCOREBOARD ]    15 instruction: LHU   x21, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 00000000
+# [DRIVER     ]    15 instruction: LHU   x21, 2696(x19)      op1: 000061d0 op2: 00004b80 op3: 00000000
+# [MONITOR OUT]    15 instruction: READ, value: 00002427 
+# [SCOREBOARD ]    15  Read response: 00002427 
+# [SCOREBOARD ]    15 - success - instruction: LHU   x21, 2696(x19)      expected=00002427 actual=00002427 
+# [MONITOR OUT]    16 instruction: WRITE, value: 60000000 
+# [MONITOR IN ]    16 instruction: SB     x8, 3518(x12)      op1: 00004b76 op2: 00007971 op3: cbd94460 
+# [SCOREBOARD ]    15 Write response: 60000000 
+# [SCOREBOARD ]    16 instruction: SB     x8, 3518(x12)      op1: 00004b76 op2: 00007971 op3: cbd94460
+# [SCOREBOARD ]    16 - success - instruction: SB     x8, 3518(x12)      expected=60000000 actual=60000000 
+# [DRIVER     ]    16 instruction: SB     x8, 3518(x12)      op1: 00004b76 op2: 00007971 op3: cbd94460
+# [MONITOR IN ]    17 instruction: LB    x30, 3518(x12)      op1: 00004b76 op2: 00007971 op3: 00000000 
+# [SCOREBOARD ]    17 instruction: LB    x30, 3518(x12)      op1: 00004b76 op2: 00007971 op3: 00000000
+# [DRIVER     ]    17 instruction: LB    x30, 3518(x12)      op1: 00004b76 op2: 00007971 op3: 00000000
+# [MONITOR OUT]    17 instruction: READ, value: 00000060 
+# [SCOREBOARD ]    17  Read response: 00000060 
+# [SCOREBOARD ]    17 - success - instruction: LB    x30, 3518(x12)      expected=00000060 actual=00000060 
+# [MONITOR OUT]    18 instruction: WRITE, value: 00000052 
+# [MONITOR IN ]    18 instruction: SB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: a348e452 
+# [SCOREBOARD ]    17 Write response: 00000052 
+# [SCOREBOARD ]    18 instruction: SB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: a348e452
+# [SCOREBOARD ]    18 - success - instruction: SB    x24, 1283(x14)      expected=00000052 actual=00000052 
+# [DRIVER     ]    18 instruction: SB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: a348e452
+# [MONITOR IN ]    19 instruction: LB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: 00000000 
+# [SCOREBOARD ]    19 instruction: LB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: 00000000
+# [DRIVER     ]    19 instruction: LB    x24, 1283(x14)      op1: 000013f8 op2: 00007a94 op3: 00000000
+# [MONITOR OUT]    19 instruction: READ, value: 00000052 
+# [SCOREBOARD ]    19  Read response: 00000052 
+# [SCOREBOARD ]    19 - success - instruction: LB    x24, 1283(x14)      expected=00000052 actual=00000052 
+# [MONITOR OUT]    20 instruction: WRITE, value: 79e31aa3 
+# [MONITOR IN ]    20 instruction: SW    x16, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 79e31aa3 
+# [SCOREBOARD ]    19 Write response: 79e31aa3 
+# [SCOREBOARD ]    20 instruction: SW    x16, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 79e31aa3
+# [SCOREBOARD ]    20 - success - instruction: SW    x16, 1928(x13)      expected=79e31aa3 actual=79e31aa3 
+# [DRIVER     ]    20 instruction: SW    x16, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 79e31aa3
+# [MONITOR IN ]    21 instruction: LW    x14, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 00000000 
+# [SCOREBOARD ]    21 instruction: LW    x14, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 00000000
+# [DRIVER     ]    21 instruction: LW    x14, 1928(x13)      op1: 00005a88 op2: 00004738 op3: 00000000
+# [MONITOR OUT]    21 instruction: READ, value: 79e31aa3 
+# [SCOREBOARD ]    21  Read response: 79e31aa3 
+# [SCOREBOARD ]    21 - success - instruction: LW    x14, 1928(x13)      expected=79e31aa3 actual=79e31aa3 
+# [MONITOR OUT]    22 instruction: WRITE, value: 00000081 
+# [MONITOR IN ]    22 instruction: SB     x6, 3907(x8)       op1: 00003954 op2: 00005158 op3: e0b2e881 
+# [SCOREBOARD ]    21 Write response: 00000081 
+# [SCOREBOARD ]    22 instruction: SB     x6, 3907(x8)       op1: 00003954 op2: 00005158 op3: e0b2e881
+# [SCOREBOARD ]    22 - success - instruction: SB     x6, 3907(x8)       expected=00000081 actual=00000081 
+# [DRIVER     ]    22 instruction: SB     x6, 3907(x8)       op1: 00003954 op2: 00005158 op3: e0b2e881
+# [MONITOR IN ]    23 instruction: LB     x5, 3907(x8)       op1: 00003954 op2: 00005158 op3: 00000000 
+# [SCOREBOARD ]    23 instruction: LB     x5, 3907(x8)       op1: 00003954 op2: 00005158 op3: 00000000
+# [DRIVER     ]    23 instruction: LB     x5, 3907(x8)       op1: 00003954 op2: 00005158 op3: 00000000
+# [MONITOR OUT]    23 instruction: READ, value: ffffff81 
+# [SCOREBOARD ]    23  Read response: ffffff81 
+# [SCOREBOARD ]    23 - success - instruction: LB     x5, 3907(x8)       expected=ffffff81 actual=ffffff81 
+# [MONITOR OUT]    24 instruction: WRITE, value: 33ddb923 
+# [MONITOR IN ]    24 instruction: SW    x17, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 33ddb923 
+# [SCOREBOARD ]    23 Write response: 33ddb923 
+# [SCOREBOARD ]    24 instruction: SW    x17, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 33ddb923
+# [SCOREBOARD ]    24 - success - instruction: SW    x17, 3732(x18)      expected=33ddb923 actual=33ddb923 
+# [DRIVER     ]    24 instruction: SW    x17, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 33ddb923
+# [MONITOR IN ]    25 instruction: LW     x2, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 00000000 
+# [SCOREBOARD ]    25 instruction: LW     x2, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 00000000
+# [DRIVER     ]    25 instruction: LW     x2, 3732(x18)      op1: 00003cfc op2: 00005dd0 op3: 00000000
+# [MONITOR OUT]    25 instruction: READ, value: 33ddb923 
+# [SCOREBOARD ]    25  Read response: 33ddb923 
+# [SCOREBOARD ]    25 - success - instruction: LW     x2, 3732(x18)      expected=33ddb923 actual=33ddb923 
+# [MONITOR OUT]    26 instruction: WRITE, value: 9a2ca15c 
+# [MONITOR IN ]    26 instruction: SW    x31, 772(x19)       op1: 0000323c op2: 00005194 op3: 9a2ca15c 
+# [SCOREBOARD ]    25 Write response: 9a2ca15c 
+# [SCOREBOARD ]    26 instruction: SW    x31, 772(x19)       op1: 0000323c op2: 00005194 op3: 9a2ca15c
+# [SCOREBOARD ]    26 - success - instruction: SW    x31, 772(x19)       expected=9a2ca15c actual=9a2ca15c 
+# [DRIVER     ]    26 instruction: SW    x31, 772(x19)       op1: 0000323c op2: 00005194 op3: 9a2ca15c
+# [MONITOR IN ]    27 instruction: LW    x16, 772(x19)       op1: 0000323c op2: 00005194 op3: 00000000 
+# [SCOREBOARD ]    27 instruction: LW    x16, 772(x19)       op1: 0000323c op2: 00005194 op3: 00000000
+# [DRIVER     ]    27 instruction: LW    x16, 772(x19)       op1: 0000323c op2: 00005194 op3: 00000000
+# [MONITOR OUT]    27 instruction: READ, value: 9a2ca15c 
+# [SCOREBOARD ]    27  Read response: 9a2ca15c 
+# [SCOREBOARD ]    27 - success - instruction: LW    x16, 772(x19)       expected=9a2ca15c actual=9a2ca15c 
+# [MONITOR OUT]    28 instruction: WRITE, value: 831d0000 
+# [MONITOR IN ]    28 instruction: SH    x19, 2254(x7)       op1: 0000652e op2: 00005838 op3: e5aa831d 
+# [SCOREBOARD ]    27 Write response: 831d0000 
+# [SCOREBOARD ]    28 instruction: SH    x19, 2254(x7)       op1: 0000652e op2: 00005838 op3: e5aa831d
+# [SCOREBOARD ]    28 - success - instruction: SH    x19, 2254(x7)       expected=831d0000 actual=831d0000 
+# [DRIVER     ]    28 instruction: SH    x19, 2254(x7)       op1: 0000652e op2: 00005838 op3: e5aa831d
+# [MONITOR IN ]    29 instruction: LHU   x29, 2254(x7)       op1: 0000652e op2: 00005838 op3: 00000000 
+# [SCOREBOARD ]    29 instruction: LHU   x29, 2254(x7)       op1: 0000652e op2: 00005838 op3: 00000000
+# [DRIVER     ]    29 instruction: LHU   x29, 2254(x7)       op1: 0000652e op2: 00005838 op3: 00000000
+# [MONITOR OUT]    29 instruction: READ, value: 0000831d 
+# [SCOREBOARD ]    29  Read response: 0000831d 
+# [SCOREBOARD ]    29 - success - instruction: LHU   x29, 2254(x7)       expected=0000831d actual=0000831d 
+# [MONITOR OUT]    30 instruction: WRITE, value: 00007400 
+# [MONITOR IN ]    30 instruction: SB    x23, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 5b7f0674 
+# [SCOREBOARD ]    29 Write response: 00007400 
+# [SCOREBOARD ]    30 instruction: SB    x23, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 5b7f0674
+# [SCOREBOARD ]    30 - success - instruction: SB    x23, 2660(x2)       expected=00007400 actual=00007400 
+# [DRIVER     ]    30 instruction: SB    x23, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 5b7f0674
+# [MONITOR IN ]    31 instruction: LB    x19, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 00000000 
+# [SCOREBOARD ]    31 instruction: LB    x19, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 00000000
+# [DRIVER     ]    31 instruction: LB    x19, 2660(x2)       op1: 000019b3 op2: 00007dee op3: 00000000
+# [MONITOR OUT]    31 instruction: READ, value: 00000074 
+# [SCOREBOARD ]    31  Read response: 00000074 
+# [SCOREBOARD ]    31 - success - instruction: LB    x19, 2660(x2)       expected=00000074 actual=00000074 
+# [MONITOR OUT]    32 instruction: WRITE, value: 910ae9d0 
+# [MONITOR IN ]    32 instruction: SW    x14, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 910ae9d0 
+# [SCOREBOARD ]    31 Write response: 910ae9d0 
+# [SCOREBOARD ]    32 instruction: SW    x14, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 910ae9d0
+# [SCOREBOARD ]    32 - success - instruction: SW    x14, 3980(x29)      expected=910ae9d0 actual=910ae9d0 
+# [DRIVER     ]    32 instruction: SW    x14, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 910ae9d0
+# [MONITOR IN ]    33 instruction: LW     x2, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 00000000 
+# [SCOREBOARD ]    33 instruction: LW     x2, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 00000000
+# [DRIVER     ]    33 instruction: LW     x2, 3980(x29)      op1: 000018c4 op2: 00006bd0 op3: 00000000
+# [MONITOR OUT]    33 instruction: READ, value: 910ae9d0 
+# [SCOREBOARD ]    33  Read response: 910ae9d0 
+# [SCOREBOARD ]    33 - success - instruction: LW     x2, 3980(x29)      expected=910ae9d0 actual=910ae9d0 
+# [MONITOR OUT]    34 instruction: WRITE, value: 00002600 
+# [MONITOR IN ]    34 instruction: SB    x24, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: fe687f26 
+# [SCOREBOARD ]    33 Write response: 00002600 
+# [SCOREBOARD ]    34 instruction: SB    x24, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: fe687f26
+# [SCOREBOARD ]    34 - success - instruction: SB    x24, 1956(x12)      expected=00002600 actual=00002600 
+# [DRIVER     ]    34 instruction: SB    x24, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: fe687f26
+# [MONITOR IN ]    35 instruction: LBU    x5, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: 00000000 
+# [SCOREBOARD ]    35 instruction: LBU    x5, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: 00000000
+# [DRIVER     ]    35 instruction: LBU    x5, 1956(x12)      op1: 00000c2a op2: 000041d3 op3: 00000000
+# [MONITOR OUT]    35 instruction: READ, value: 00000026 
+# [SCOREBOARD ]    35  Read response: 00000026 
+# [SCOREBOARD ]    35 - success - instruction: LBU    x5, 1956(x12)      expected=00000026 actual=00000026 
+# [MONITOR OUT]    36 instruction: WRITE, value: 0b160000 
+# [MONITOR IN ]    36 instruction: SH    x21, 1332(x24)      op1: 000057d8 op2: 0000366a op3: a4e60b16 
+# [SCOREBOARD ]    35 Write response: 0b160000 
+# [SCOREBOARD ]    36 instruction: SH    x21, 1332(x24)      op1: 000057d8 op2: 0000366a op3: a4e60b16
+# [SCOREBOARD ]    36 - success - instruction: SH    x21, 1332(x24)      expected=0b160000 actual=0b160000 
+# [DRIVER     ]    36 instruction: SH    x21, 1332(x24)      op1: 000057d8 op2: 0000366a op3: a4e60b16
+# [MONITOR IN ]    37 instruction: LH    x20, 1332(x24)      op1: 000057d8 op2: 0000366a op3: 00000000 
+# [SCOREBOARD ]    37 instruction: LH    x20, 1332(x24)      op1: 000057d8 op2: 0000366a op3: 00000000
+# [DRIVER     ]    37 instruction: LH    x20, 1332(x24)      op1: 000057d8 op2: 0000366a op3: 00000000
+# [MONITOR OUT]    37 instruction: READ, value: 00000b16 
+# [SCOREBOARD ]    37  Read response: 00000b16 
+# [SCOREBOARD ]    37 - success - instruction: LH    x20, 1332(x24)      expected=00000b16 actual=00000b16 
+# [MONITOR OUT]    38 instruction: WRITE, value: cd110dcc 
+# [MONITOR IN ]    38 instruction: SW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: cd110dcc 
+# [SCOREBOARD ]    37 Write response: cd110dcc 
+# [SCOREBOARD ]    38 instruction: SW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: cd110dcc
+# [SCOREBOARD ]    38 - success - instruction: SW    x30, 2852(x26)      expected=cd110dcc actual=cd110dcc 
+# [DRIVER     ]    38 instruction: SW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: cd110dcc
+# [MONITOR IN ]    39 instruction: LW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: 00000000 
+# [SCOREBOARD ]    39 instruction: LW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: 00000000
+# [DRIVER     ]    39 instruction: LW    x30, 2852(x26)      op1: 00001998 op2: 00002e90 op3: 00000000
+# [MONITOR OUT]    39 instruction: READ, value: cd110dcc 
+# [SCOREBOARD ]    39  Read response: cd110dcc 
+# [SCOREBOARD ]    39 - success - instruction: LW    x30, 2852(x26)      expected=cd110dcc actual=cd110dcc 
+# [MONITOR OUT]    40 instruction: WRITE, value: 00000000 
+# [MONITOR IN ]    40 instruction: SB     x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: b92cef00 
+# [SCOREBOARD ]    39 Write response: 00000000 
+# [SCOREBOARD ]    40 instruction: SB     x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: b92cef00
+# [SCOREBOARD ]    40 - success - instruction: SB     x0, 1296(x28)      expected=00000000 actual=00000000 
+# [DRIVER     ]    40 instruction: SB     x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: b92cef00
+# [MONITOR IN ]    41 instruction: LBU    x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: 00000000 
+# [SCOREBOARD ]    41 instruction: LBU    x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: 00000000
+# [DRIVER     ]    41 instruction: LBU    x0, 1296(x28)      op1: 000002d7 op2: 00001dff op3: 00000000
+# [MONITOR OUT]    41 instruction: READ, value: 00000000 
+# [SCOREBOARD ]    41  Read response: 00000000 
+# [SCOREBOARD ]    41 - success - instruction: LBU    x0, 1296(x28)      expected=00000000 actual=00000000 
+# [MONITOR OUT]    42 instruction: WRITE, value: 13000000 
+# [MONITOR IN ]    42 instruction: SB    x14, 3101(x9)       op1: 00002249 op2: 00007e5a op3: eead9513 
+# [SCOREBOARD ]    41 Write response: 13000000 
+# [SCOREBOARD ]    42 instruction: SB    x14, 3101(x9)       op1: 00002249 op2: 00007e5a op3: eead9513
+# [SCOREBOARD ]    42 - success - instruction: SB    x14, 3101(x9)       expected=13000000 actual=13000000 
+# [DRIVER     ]    42 instruction: SB    x14, 3101(x9)       op1: 00002249 op2: 00007e5a op3: eead9513
+# [MONITOR IN ]    43 instruction: LBU   x29, 3101(x9)       op1: 00002249 op2: 00007e5a op3: 00000000 
+# [SCOREBOARD ]    43 instruction: LBU   x29, 3101(x9)       op1: 00002249 op2: 00007e5a op3: 00000000
+# [DRIVER     ]    43 instruction: LBU   x29, 3101(x9)       op1: 00002249 op2: 00007e5a op3: 00000000
+# [MONITOR OUT]    43 instruction: READ, value: 00000013 
+# [SCOREBOARD ]    43  Read response: 00000013 
+# [SCOREBOARD ]    43 - success - instruction: LBU   x29, 3101(x9)       expected=00000013 actual=00000013 
+# [MONITOR OUT]    44 instruction: WRITE, value: 3e2d9d7e 
+# [MONITOR IN ]    44 instruction: SW     x2, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 3e2d9d7e 
+# [SCOREBOARD ]    43 Write response: 3e2d9d7e 
+# [SCOREBOARD ]    44 instruction: SW     x2, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 3e2d9d7e
+# [SCOREBOARD ]    44 - success - instruction: SW     x2, 3976(x27)      expected=3e2d9d7e actual=3e2d9d7e 
+# [DRIVER     ]    44 instruction: SW     x2, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 3e2d9d7e
+# [MONITOR IN ]    45 instruction: LW    x28, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 00000000 
+# [SCOREBOARD ]    45 instruction: LW    x28, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 00000000
+# [DRIVER     ]    45 instruction: LW    x28, 3976(x27)      op1: 00003c88 op2: 00000574 op3: 00000000
+# [MONITOR OUT]    45 instruction: READ, value: 3e2d9d7e 
+# [SCOREBOARD ]    45  Read response: 3e2d9d7e 
+# [SCOREBOARD ]    45 - success - instruction: LW    x28, 3976(x27)      expected=3e2d9d7e actual=3e2d9d7e 
+# [MONITOR OUT]    46 instruction: WRITE, value: 00008f00 
+# [MONITOR IN ]    46 instruction: SB     x7, 4091(x22)      op1: 000013ff op2: 00003e06 op3: a1e4538f 
+# [SCOREBOARD ]    45 Write response: 00008f00 
+# [SCOREBOARD ]    46 instruction: SB     x7, 4091(x22)      op1: 000013ff op2: 00003e06 op3: a1e4538f
+# [SCOREBOARD ]    46 - success - instruction: SB     x7, 4091(x22)      expected=00008f00 actual=00008f00 
+# [DRIVER     ]    46 instruction: SB     x7, 4091(x22)      op1: 000013ff op2: 00003e06 op3: a1e4538f
+# [MONITOR IN ]    47 instruction: LBU   x19, 4091(x22)      op1: 000013ff op2: 00003e06 op3: 00000000 
+# [SCOREBOARD ]    47 instruction: LBU   x19, 4091(x22)      op1: 000013ff op2: 00003e06 op3: 00000000
+# [DRIVER     ]    47 instruction: LBU   x19, 4091(x22)      op1: 000013ff op2: 00003e06 op3: 00000000
+# [MONITOR OUT]    47 instruction: READ, value: 0000008f 
+# [SCOREBOARD ]    47  Read response: 0000008f 
+# [SCOREBOARD ]    47 - success - instruction: LBU   x19, 4091(x22)      expected=0000008f actual=0000008f 
+# [MONITOR OUT]    48 instruction: WRITE, value: 00f20000 
+# [MONITOR IN ]    48 instruction: SB    x31, 53(x1)         op1: 00004aec op2: 00002782 op3: b3f981f2 
+# [SCOREBOARD ]    47 Write response: 00f20000 
+# [SCOREBOARD ]    48 instruction: SB    x31, 53(x1)         op1: 00004aec op2: 00002782 op3: b3f981f2
+# [SCOREBOARD ]    48 - success - instruction: SB    x31, 53(x1)         expected=00f20000 actual=00f20000 
+# [DRIVER     ]    48 instruction: SB    x31, 53(x1)         op1: 00004aec op2: 00002782 op3: b3f981f2
+# [MONITOR IN ]    49 instruction: LB    x26, 53(x1)         op1: 00004aec op2: 00002782 op3: 00000000 
+# [SCOREBOARD ]    49 instruction: LB    x26, 53(x1)         op1: 00004aec op2: 00002782 op3: 00000000
+# [DRIVER     ]    49 instruction: LB    x26, 53(x1)         op1: 00004aec op2: 00002782 op3: 00000000
+# [MONITOR OUT]    49 instruction: READ, value: fffffff2 
+# [SCOREBOARD ]    49  Read response: fffffff2 
+# [SCOREBOARD ]    49 - success - instruction: LB    x26, 53(x1)         expected=fffffff2 actual=fffffff2 
+# [MONITOR OUT]    50 instruction: WRITE, value: d3000000 
+# [MONITOR IN ]    50 instruction: SB    x14, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 8505a1d3 
+# [SCOREBOARD ]    49 Write response: d3000000 
+# [SCOREBOARD ]    50 instruction: SB    x14, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 8505a1d3
+# [SCOREBOARD ]    50 - success - instruction: SB    x14, 1345(x21)      expected=d3000000 actual=d3000000 
+# [DRIVER     ]    50 instruction: SB    x14, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 8505a1d3
+# [MONITOR IN ]    51 instruction: LBU   x22, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 00000000 
+# [SCOREBOARD ]    51 instruction: LBU   x22, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 00000000
+# [DRIVER     ]    51 instruction: LBU   x22, 1345(x21)      op1: 000018a0 op2: 000062ab op3: 00000000
+# [MONITOR OUT]    51 instruction: READ, value: 000000d3 
+# [SCOREBOARD ]    51  Read response: 000000d3 
+# [SCOREBOARD ]    51 - success - instruction: LBU   x22, 1345(x21)      expected=000000d3 actual=000000d3 
+# [MONITOR OUT]    52 instruction: WRITE, value: 725c8ae2 
+# [MONITOR IN ]    52 instruction: SW    x11, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 725c8ae2 
+# [SCOREBOARD ]    51 Write response: 725c8ae2 
+# [SCOREBOARD ]    52 instruction: SW    x11, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 725c8ae2
+# [SCOREBOARD ]    52 - success - instruction: SW    x11, 3464(x27)      expected=725c8ae2 actual=725c8ae2 
+# [DRIVER     ]    52 instruction: SW    x11, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 725c8ae2
+# [MONITOR IN ]    53 instruction: LW    x10, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 00000000 
+# [SCOREBOARD ]    53 instruction: LW    x10, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 00000000
+# [DRIVER     ]    53 instruction: LW    x10, 3464(x27)      op1: 000068b4 op2: 00004f08 op3: 00000000
+# [MONITOR OUT]    53 instruction: READ, value: 725c8ae2 
+# [SCOREBOARD ]    53  Read response: 725c8ae2 
+# [SCOREBOARD ]    53 - success - instruction: LW    x10, 3464(x27)      expected=725c8ae2 actual=725c8ae2 
+# [MONITOR OUT]    54 instruction: WRITE, value: 0000001e 
+# [MONITOR IN ]    54 instruction: SB     x4, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: d1fa3c1e 
+# [SCOREBOARD ]    53 Write response: 0000001e 
+# [SCOREBOARD ]    54 instruction: SB     x4, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: d1fa3c1e
+# [SCOREBOARD ]    54 - success - instruction: SB     x4, 3082(x25)      expected=0000001e actual=0000001e 
+# [DRIVER     ]    54 instruction: SB     x4, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: d1fa3c1e
+# [MONITOR IN ]    55 instruction: LB    x28, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: 00000000 
+# [SCOREBOARD ]    55 instruction: LB    x28, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: 00000000
+# [DRIVER     ]    55 instruction: LB    x28, 3082(x25)      op1: 00004c01 op2: 00005f0b op3: 00000000
+# [MONITOR OUT]    55 instruction: READ, value: 0000001e 
+# [SCOREBOARD ]    55  Read response: 0000001e 
+# [SCOREBOARD ]    55 - success - instruction: LB    x28, 3082(x25)      expected=0000001e actual=0000001e 
+# [MONITOR OUT]    56 instruction: WRITE, value: d0e0d3cf 
+# [MONITOR IN ]    56 instruction: SW    x15, 1176(x24)      op1: 00000618 op2: 000034d8 op3: d0e0d3cf 
+# [SCOREBOARD ]    55 Write response: d0e0d3cf 
+# [SCOREBOARD ]    56 instruction: SW    x15, 1176(x24)      op1: 00000618 op2: 000034d8 op3: d0e0d3cf
+# [SCOREBOARD ]    56 - success - instruction: SW    x15, 1176(x24)      expected=d0e0d3cf actual=d0e0d3cf 
+# [DRIVER     ]    56 instruction: SW    x15, 1176(x24)      op1: 00000618 op2: 000034d8 op3: d0e0d3cf
+# [MONITOR IN ]    57 instruction: LW    x23, 1176(x24)      op1: 00000618 op2: 000034d8 op3: 00000000 
+# [SCOREBOARD ]    57 instruction: LW    x23, 1176(x24)      op1: 00000618 op2: 000034d8 op3: 00000000
+# [DRIVER     ]    57 instruction: LW    x23, 1176(x24)      op1: 00000618 op2: 000034d8 op3: 00000000
+# [MONITOR OUT]    57 instruction: READ, value: d0e0d3cf 
+# [SCOREBOARD ]    57  Read response: d0e0d3cf 
+# [SCOREBOARD ]    57 - success - instruction: LW    x23, 1176(x24)      expected=d0e0d3cf actual=d0e0d3cf 
+# [MONITOR OUT]    58 instruction: WRITE, value: 3a210000 
+# [MONITOR IN ]    58 instruction: SH    x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: a8613a21 
+# [SCOREBOARD ]    57 Write response: 3a210000 
+# [SCOREBOARD ]    58 instruction: SH    x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: a8613a21
+# [SCOREBOARD ]    58 - success - instruction: SH    x30, 486(x3)        expected=3a210000 actual=3a210000 
+# [DRIVER     ]    58 instruction: SH    x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: a8613a21
+# [MONITOR IN ]    59 instruction: LHU   x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: 00000000 
+# [SCOREBOARD ]    59 instruction: LHU   x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: 00000000
+# [DRIVER     ]    59 instruction: LHU   x30, 486(x3)        op1: 00007c14 op2: 00004c62 op3: 00000000
+# [MONITOR OUT]    59 instruction: READ, value: 00003a21 
+# [SCOREBOARD ]    59  Read response: 00003a21 
+# [SCOREBOARD ]    59 - success - instruction: LHU   x30, 486(x3)        expected=00003a21 actual=00003a21 
+# [MONITOR OUT]    60 instruction: WRITE, value: dd660000 
+# [MONITOR IN ]    60 instruction: SH    x17, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 42cadd66 
+# [SCOREBOARD ]    59 Write response: dd660000 
+# [SCOREBOARD ]    60 instruction: SH    x17, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 42cadd66
+# [SCOREBOARD ]    60 - success - instruction: SH    x17, 932(x30)       expected=dd660000 actual=dd660000 
+# [DRIVER     ]    60 instruction: SH    x17, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 42cadd66
+# [MONITOR IN ]    61 instruction: LHU    x7, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 00000000 
+# [SCOREBOARD ]    61 instruction: LHU    x7, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 00000000
+# [DRIVER     ]    61 instruction: LHU    x7, 932(x30)       op1: 000025a0 op2: 00002b6e op3: 00000000
+# [MONITOR OUT]    61 instruction: READ, value: 0000dd66 
+# [SCOREBOARD ]    61  Read response: 0000dd66 
+# [SCOREBOARD ]    61 - success - instruction: LHU    x7, 932(x30)       expected=0000dd66 actual=0000dd66 
+# [MONITOR OUT]    62 instruction: WRITE, value: 59533ea9 
+# [MONITOR IN ]    62 instruction: SW    x17, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 59533ea9 
+# [SCOREBOARD ]    61 Write response: 59533ea9 
+# [SCOREBOARD ]    62 instruction: SW    x17, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 59533ea9
+# [SCOREBOARD ]    62 - success - instruction: SW    x17, 1248(x16)      expected=59533ea9 actual=59533ea9 
+# [DRIVER     ]    62 instruction: SW    x17, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 59533ea9
+# [MONITOR IN ]    63 instruction: LW    x25, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 00000000 
+# [SCOREBOARD ]    63 instruction: LW    x25, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 00000000
+# [DRIVER     ]    63 instruction: LW    x25, 1248(x16)      op1: 00001b10 op2: 00002d78 op3: 00000000
+# [MONITOR OUT]    63 instruction: READ, value: 59533ea9 
+# [SCOREBOARD ]    63  Read response: 59533ea9 
+# [SCOREBOARD ]    63 - success - instruction: LW    x25, 1248(x16)      expected=59533ea9 actual=59533ea9 
+# [MONITOR OUT]    64 instruction: WRITE, value: c4000000 
+# [MONITOR IN ]    64 instruction: SB     x1, 244(x15)       op1: 0000396e op2: 00003641 op3: 3c470ac4 
+# [SCOREBOARD ]    63 Write response: c4000000 
+# [SCOREBOARD ]    64 instruction: SB     x1, 244(x15)       op1: 0000396e op2: 00003641 op3: 3c470ac4
+# [SCOREBOARD ]    64 - success - instruction: SB     x1, 244(x15)       expected=c4000000 actual=c4000000 
+# [DRIVER     ]    64 instruction: SB     x1, 244(x15)       op1: 0000396e op2: 00003641 op3: 3c470ac4
+# [MONITOR IN ]    65 instruction: LBU   x30, 244(x15)       op1: 0000396e op2: 00003641 op3: 00000000 
+# [SCOREBOARD ]    65 instruction: LBU   x30, 244(x15)       op1: 0000396e op2: 00003641 op3: 00000000
+# [DRIVER     ]    65 instruction: LBU   x30, 244(x15)       op1: 0000396e op2: 00003641 op3: 00000000
+# [MONITOR OUT]    65 instruction: READ, value: 000000c4 
+# [SCOREBOARD ]    65  Read response: 000000c4 
+# [SCOREBOARD ]    65 - success - instruction: LBU   x30, 244(x15)       expected=000000c4 actual=000000c4 
+# [MONITOR OUT]    66 instruction: WRITE, value: 826cf247 
+# [MONITOR IN ]    66 instruction: SW    x28, 988(x11)       op1: 000037c8 op2: 0000321c op3: 826cf247 
+# [SCOREBOARD ]    65 Write response: 826cf247 
+# [SCOREBOARD ]    66 instruction: SW    x28, 988(x11)       op1: 000037c8 op2: 0000321c op3: 826cf247
+# [SCOREBOARD ]    66 - success - instruction: SW    x28, 988(x11)       expected=826cf247 actual=826cf247 
+# [DRIVER     ]    66 instruction: SW    x28, 988(x11)       op1: 000037c8 op2: 0000321c op3: 826cf247
+# [MONITOR IN ]    67 instruction: LW    x25, 988(x11)       op1: 000037c8 op2: 0000321c op3: 00000000 
+# [SCOREBOARD ]    67 instruction: LW    x25, 988(x11)       op1: 000037c8 op2: 0000321c op3: 00000000
+# [DRIVER     ]    67 instruction: LW    x25, 988(x11)       op1: 000037c8 op2: 0000321c op3: 00000000
+# [MONITOR OUT]    67 instruction: READ, value: 826cf247 
+# [SCOREBOARD ]    67  Read response: 826cf247 
+# [SCOREBOARD ]    67 - success - instruction: LW    x25, 988(x11)       expected=826cf247 actual=826cf247 
+# [MONITOR OUT]    68 instruction: WRITE, value: a8ec0000 
+# [MONITOR IN ]    68 instruction: SH    x21, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: f6fda8ec 
+# [SCOREBOARD ]    67 Write response: a8ec0000 
+# [SCOREBOARD ]    68 instruction: SH    x21, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: f6fda8ec
+# [SCOREBOARD ]    68 - success - instruction: SH    x21, 2304(x20)      expected=a8ec0000 actual=a8ec0000 
+# [DRIVER     ]    68 instruction: SH    x21, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: f6fda8ec
+# [MONITOR IN ]    69 instruction: LHU   x23, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: 00000000 
+# [SCOREBOARD ]    69 instruction: LHU   x23, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: 00000000
+# [DRIVER     ]    69 instruction: LHU   x23, 2304(x20)      op1: 00005d9e op2: 00007ea8 op3: 00000000
+# [MONITOR OUT]    69 instruction: READ, value: 0000a8ec 
+# [SCOREBOARD ]    69  Read response: 0000a8ec 
+# [SCOREBOARD ]    69 - success - instruction: LHU   x23, 2304(x20)      expected=0000a8ec actual=0000a8ec 
+# [MONITOR OUT]    70 instruction: WRITE, value: 00002700 
+# [MONITOR IN ]    70 instruction: SB    x28, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 4589e427 
+# [SCOREBOARD ]    69 Write response: 00002700 
+# [SCOREBOARD ]    70 instruction: SB    x28, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 4589e427
+# [SCOREBOARD ]    70 - success - instruction: SB    x28, 3698(x9)       expected=00002700 actual=00002700 
+# [DRIVER     ]    70 instruction: SB    x28, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 4589e427
+# [MONITOR IN ]    71 instruction: LB     x7, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 00000000 
+# [SCOREBOARD ]    71 instruction: LB     x7, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 00000000
+# [DRIVER     ]    71 instruction: LB     x7, 3698(x9)       op1: 000074ba op2: 00004d0f op3: 00000000
+# [MONITOR OUT]    71 instruction: READ, value: 00000027 
+# [SCOREBOARD ]    71  Read response: 00000027 
+# [SCOREBOARD ]    71 - success - instruction: LB     x7, 3698(x9)       expected=00000027 actual=00000027 
+# [MONITOR OUT]    72 instruction: WRITE, value: ca190000 
+# [MONITOR IN ]    72 instruction: SH    x29, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 9d3aca19 
+# [SCOREBOARD ]    71 Write response: ca190000 
+# [SCOREBOARD ]    72 instruction: SH    x29, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 9d3aca19
+# [SCOREBOARD ]    72 - success - instruction: SH    x29, 2864(x7)       expected=ca190000 actual=ca190000 
+# [DRIVER     ]    72 instruction: SH    x29, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 9d3aca19
+# [MONITOR IN ]    73 instruction: LHU   x20, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 00000000 
+# [SCOREBOARD ]    73 instruction: LHU   x20, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 00000000
+# [DRIVER     ]    73 instruction: LHU   x20, 2864(x7)       op1: 00007a30 op2: 00004072 op3: 00000000
+# [MONITOR OUT]    73 instruction: READ, value: 0000ca19 
+# [SCOREBOARD ]    73  Read response: 0000ca19 
+# [SCOREBOARD ]    73 - success - instruction: LHU   x20, 2864(x7)       expected=0000ca19 actual=0000ca19 
+# [MONITOR OUT]    74 instruction: WRITE, value: 00000087 
+# [MONITOR IN ]    74 instruction: SB     x7, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: c35af387 
+# [SCOREBOARD ]    73 Write response: 00000087 
+# [SCOREBOARD ]    74 instruction: SB     x7, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: c35af387
+# [SCOREBOARD ]    74 - success - instruction: SB     x7, 1468(x14)      expected=00000087 actual=00000087 
+# [DRIVER     ]    74 instruction: SB     x7, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: c35af387
+# [MONITOR IN ]    75 instruction: LB    x15, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: 00000000 
+# [SCOREBOARD ]    75 instruction: LB    x15, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: 00000000
+# [DRIVER     ]    75 instruction: LB    x15, 1468(x14)      op1: 00003e8b op2: 00002d69 op3: 00000000
+# [MONITOR OUT]    75 instruction: READ, value: ffffff87 
+# [SCOREBOARD ]    75  Read response: ffffff87 
+# [SCOREBOARD ]    75 - success - instruction: LB    x15, 1468(x14)      expected=ffffff87 actual=ffffff87 
+# [MONITOR OUT]    76 instruction: WRITE, value: 48750000 
+# [MONITOR IN ]    76 instruction: SH    x26, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 21114875 
+# [SCOREBOARD ]    75 Write response: 48750000 
+# [SCOREBOARD ]    76 instruction: SH    x26, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 21114875
+# [SCOREBOARD ]    76 - success - instruction: SH    x26, 2902(x26)      expected=48750000 actual=48750000 
+# [DRIVER     ]    76 instruction: SH    x26, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 21114875
+# [MONITOR IN ]    77 instruction: LH    x14, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 00000000 
+# [SCOREBOARD ]    77 instruction: LH    x14, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 00000000
+# [DRIVER     ]    77 instruction: LH    x14, 2902(x26)      op1: 00005c54 op2: 00002bca op3: 00000000
+# [MONITOR OUT]    77 instruction: READ, value: 00004875 
+# [SCOREBOARD ]    77  Read response: 00004875 
+# [SCOREBOARD ]    77 - success - instruction: LH    x14, 2902(x26)      expected=00004875 actual=00004875 
+# [MONITOR OUT]    78 instruction: WRITE, value: 43126b90 
+# [MONITOR IN ]    78 instruction: SW    x14, 1284(x12)      op1: 00006238 op2: 000072bc op3: 43126b90 
+# [SCOREBOARD ]    77 Write response: 43126b90 
+# [SCOREBOARD ]    78 instruction: SW    x14, 1284(x12)      op1: 00006238 op2: 000072bc op3: 43126b90
+# [SCOREBOARD ]    78 - success - instruction: SW    x14, 1284(x12)      expected=43126b90 actual=43126b90 
+# [DRIVER     ]    78 instruction: SW    x14, 1284(x12)      op1: 00006238 op2: 000072bc op3: 43126b90
+# [MONITOR IN ]    79 instruction: LW     x0, 1284(x12)      op1: 00006238 op2: 000072bc op3: 00000000 
+# [SCOREBOARD ]    79 instruction: LW     x0, 1284(x12)      op1: 00006238 op2: 000072bc op3: 00000000
+# [DRIVER     ]    79 instruction: LW     x0, 1284(x12)      op1: 00006238 op2: 000072bc op3: 00000000
+# [MONITOR OUT]    79 instruction: READ, value: 43126b90 
+# [SCOREBOARD ]    79  Read response: 43126b90 
+# [SCOREBOARD ]    79 - success - instruction: LW     x0, 1284(x12)      expected=43126b90 actual=43126b90 
+# [MONITOR OUT]    80 instruction: WRITE, value: a6910000 
+# [MONITOR IN ]    80 instruction: SH    x11, 810(x25)       op1: 000047ba op2: 00003e48 op3: 8af0a691 
+# [SCOREBOARD ]    79 Write response: a6910000 
+# [SCOREBOARD ]    80 instruction: SH    x11, 810(x25)       op1: 000047ba op2: 00003e48 op3: 8af0a691
+# [SCOREBOARD ]    80 - success - instruction: SH    x11, 810(x25)       expected=a6910000 actual=a6910000 
+# [DRIVER     ]    80 instruction: SH    x11, 810(x25)       op1: 000047ba op2: 00003e48 op3: 8af0a691
+# [MONITOR IN ]    81 instruction: LHU    x1, 810(x25)       op1: 000047ba op2: 00003e48 op3: 00000000 
+# [SCOREBOARD ]    81 instruction: LHU    x1, 810(x25)       op1: 000047ba op2: 00003e48 op3: 00000000
+# [DRIVER     ]    81 instruction: LHU    x1, 810(x25)       op1: 000047ba op2: 00003e48 op3: 00000000
+# [MONITOR OUT]    81 instruction: READ, value: 0000a691 
+# [SCOREBOARD ]    81  Read response: 0000a691 
+# [SCOREBOARD ]    81 - success - instruction: LHU    x1, 810(x25)       expected=0000a691 actual=0000a691 
+# [MONITOR OUT]    82 instruction: WRITE, value: 00260000 
+# [MONITOR IN ]    82 instruction: SB    x15, 99(x17)        op1: 000033dd op2: 00002f89 op3: 618f5826 
+# [SCOREBOARD ]    81 Write response: 00260000 
+# [SCOREBOARD ]    82 instruction: SB    x15, 99(x17)        op1: 000033dd op2: 00002f89 op3: 618f5826
+# [SCOREBOARD ]    82 - success - instruction: SB    x15, 99(x17)        expected=00260000 actual=00260000 
+# [DRIVER     ]    82 instruction: SB    x15, 99(x17)        op1: 000033dd op2: 00002f89 op3: 618f5826
+# [MONITOR IN ]    83 instruction: LB    x27, 99(x17)        op1: 000033dd op2: 00002f89 op3: 00000000 
+# [SCOREBOARD ]    83 instruction: LB    x27, 99(x17)        op1: 000033dd op2: 00002f89 op3: 00000000
+# [DRIVER     ]    83 instruction: LB    x27, 99(x17)        op1: 000033dd op2: 00002f89 op3: 00000000
+# [MONITOR OUT]    83 instruction: READ, value: 00000026 
+# [SCOREBOARD ]    83  Read response: 00000026 
+# [SCOREBOARD ]    83 - success - instruction: LB    x27, 99(x17)        expected=00000026 actual=00000026 
+# [MONITOR OUT]    84 instruction: WRITE, value: f6440000 
+# [MONITOR IN ]    84 instruction: SH    x30, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 89cef644 
+# [SCOREBOARD ]    83 Write response: f6440000 
+# [SCOREBOARD ]    84 instruction: SH    x30, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 89cef644
+# [SCOREBOARD ]    84 - success - instruction: SH    x30, 2698(x11)      expected=f6440000 actual=f6440000 
+# [DRIVER     ]    84 instruction: SH    x30, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 89cef644
+# [MONITOR IN ]    85 instruction: LH    x11, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 00000000 
+# [SCOREBOARD ]    85 instruction: LH    x11, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 00000000
+# [DRIVER     ]    85 instruction: LH    x11, 2698(x11)      op1: 00007bfc op2: 000049f6 op3: 00000000
+# [MONITOR OUT]    85 instruction: READ, value: fffff644 
+# [SCOREBOARD ]    85  Read response: fffff644 
+# [SCOREBOARD ]    85 - success - instruction: LH    x11, 2698(x11)      expected=fffff644 actual=fffff644 
+# [MONITOR OUT]    86 instruction: WRITE, value: 63e0e54d 
+# [MONITOR IN ]    86 instruction: SW     x9, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 63e0e54d 
+# [SCOREBOARD ]    85 Write response: 63e0e54d 
+# [SCOREBOARD ]    86 instruction: SW     x9, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 63e0e54d
+# [SCOREBOARD ]    86 - success - instruction: SW     x9, 76(x31)        expected=63e0e54d actual=63e0e54d 
+# [DRIVER     ]    86 instruction: SW     x9, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 63e0e54d
+# [MONITOR IN ]    87 instruction: LW    x28, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 00000000 
+# [SCOREBOARD ]    87 instruction: LW    x28, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 00000000
+# [DRIVER     ]    87 instruction: LW    x28, 76(x31)        op1: 00006f88 op2: 00007fb4 op3: 00000000
+# [MONITOR OUT]    87 instruction: READ, value: 63e0e54d 
+# [SCOREBOARD ]    87  Read response: 63e0e54d 
+# [SCOREBOARD ]    87 - success - instruction: LW    x28, 76(x31)        expected=63e0e54d actual=63e0e54d 
+# [MONITOR OUT]    88 instruction: WRITE, value: 000071ff 
+# [MONITOR IN ]    88 instruction: SH     x2, 358(x26)       op1: 0000614e op2: 00005676 op3: e3e971ff 
+# [SCOREBOARD ]    87 Write response: 000071ff 
+# [SCOREBOARD ]    88 instruction: SH     x2, 358(x26)       op1: 0000614e op2: 00005676 op3: e3e971ff
+# [SCOREBOARD ]    88 - success - instruction: SH     x2, 358(x26)       expected=000071ff actual=000071ff 
+# [DRIVER     ]    88 instruction: SH     x2, 358(x26)       op1: 0000614e op2: 00005676 op3: e3e971ff
+# [MONITOR IN ]    89 instruction: LHU   x26, 358(x26)       op1: 0000614e op2: 00005676 op3: 00000000 
+# [SCOREBOARD ]    89 instruction: LHU   x26, 358(x26)       op1: 0000614e op2: 00005676 op3: 00000000
+# [DRIVER     ]    89 instruction: LHU   x26, 358(x26)       op1: 0000614e op2: 00005676 op3: 00000000
+# [MONITOR OUT]    89 instruction: READ, value: 000071ff 
+# [SCOREBOARD ]    89  Read response: 000071ff 
+# [SCOREBOARD ]    89 - success - instruction: LHU   x26, 358(x26)       expected=000071ff actual=000071ff 
+# [MONITOR OUT]    90 instruction: WRITE, value: a02aaf93 
+# [MONITOR IN ]    90 instruction: SW     x7, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: a02aaf93 
+# [SCOREBOARD ]    89 Write response: a02aaf93 
+# [SCOREBOARD ]    90 instruction: SW     x7, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: a02aaf93
+# [SCOREBOARD ]    90 - success - instruction: SW     x7, 2876(x31)      expected=a02aaf93 actual=a02aaf93 
+# [DRIVER     ]    90 instruction: SW     x7, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: a02aaf93
+# [MONITOR IN ]    91 instruction: LW    x28, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: 00000000 
+# [SCOREBOARD ]    91 instruction: LW    x28, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: 00000000
+# [DRIVER     ]    91 instruction: LW    x28, 2876(x31)      op1: 00001ae0 op2: 00003660 op3: 00000000
+# [MONITOR OUT]    91 instruction: READ, value: a02aaf93 
+# [SCOREBOARD ]    91  Read response: a02aaf93 
+# [SCOREBOARD ]    91 - success - instruction: LW    x28, 2876(x31)      expected=a02aaf93 actual=a02aaf93 
+# [MONITOR OUT]    92 instruction: WRITE, value: b0459546 
+# [MONITOR IN ]    92 instruction: SW     x4, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: b0459546 
+# [SCOREBOARD ]    91 Write response: b0459546 
+# [SCOREBOARD ]    92 instruction: SW     x4, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: b0459546
+# [SCOREBOARD ]    92 - success - instruction: SW     x4, 920(x0)        expected=b0459546 actual=b0459546 
+# [DRIVER     ]    92 instruction: SW     x4, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: b0459546
+# [MONITOR IN ]    93 instruction: LW    x28, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: 00000000 
+# [SCOREBOARD ]    93 instruction: LW    x28, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: 00000000
+# [DRIVER     ]    93 instruction: LW    x28, 920(x0)        op1: 000057c8 op2: 00002ef0 op3: 00000000
+# [MONITOR OUT]    93 instruction: READ, value: b0459546 
+# [SCOREBOARD ]    93  Read response: b0459546 
+# [SCOREBOARD ]    93 - success - instruction: LW    x28, 920(x0)        expected=b0459546 actual=b0459546 
+# [MONITOR OUT]    94 instruction: WRITE, value: 302d7650 
+# [MONITOR IN ]    94 instruction: SW    x21, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 302d7650 
+# [SCOREBOARD ]    93 Write response: 302d7650 
+# [SCOREBOARD ]    94 instruction: SW    x21, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 302d7650
+# [SCOREBOARD ]    94 - success - instruction: SW    x21, 1504(x16)      expected=302d7650 actual=302d7650 
+# [DRIVER     ]    94 instruction: SW    x21, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 302d7650
+# [MONITOR IN ]    95 instruction: LW    x10, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 00000000 
+# [SCOREBOARD ]    95 instruction: LW    x10, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 00000000
+# [DRIVER     ]    95 instruction: LW    x10, 1504(x16)      op1: 00004ee0 op2: 00006380 op3: 00000000
+# [MONITOR OUT]    95 instruction: READ, value: 302d7650 
+# [SCOREBOARD ]    95  Read response: 302d7650 
+# [SCOREBOARD ]    95 - success - instruction: LW    x10, 1504(x16)      expected=302d7650 actual=302d7650 
+# [MONITOR OUT]    96 instruction: WRITE, value: 000000bf 
+# [MONITOR IN ]    96 instruction: SB    x29, 4085(x17)      op1: 000055ec op2: 00005128 op3: 09b70cbf 
+# [SCOREBOARD ]    95 Write response: 000000bf 
+# [SCOREBOARD ]    96 instruction: SB    x29, 4085(x17)      op1: 000055ec op2: 00005128 op3: 09b70cbf
+# [SCOREBOARD ]    96 - success - instruction: SB    x29, 4085(x17)      expected=000000bf actual=000000bf 
+# [DRIVER     ]    96 instruction: SB    x29, 4085(x17)      op1: 000055ec op2: 00005128 op3: 09b70cbf
+# [MONITOR IN ]    97 instruction: LB    x19, 4085(x17)      op1: 000055ec op2: 00005128 op3: 00000000 
+# [SCOREBOARD ]    97 instruction: LB    x19, 4085(x17)      op1: 000055ec op2: 00005128 op3: 00000000
+# [DRIVER     ]    97 instruction: LB    x19, 4085(x17)      op1: 000055ec op2: 00005128 op3: 00000000
+# [MONITOR OUT]    97 instruction: READ, value: ffffffbf 
+# [SCOREBOARD ]    97  Read response: ffffffbf 
+# [SCOREBOARD ]    97 - success - instruction: LB    x19, 4085(x17)      expected=ffffffbf actual=ffffffbf 
+# [MONITOR OUT]    98 instruction: WRITE, value: 00000084 
+# [MONITOR IN ]    98 instruction: SB     x9, 705(x10)       op1: 000039a3 op2: 0000020d op3: 0c80d384 
+# [SCOREBOARD ]    97 Write response: 00000084 
+# [SCOREBOARD ]    98 instruction: SB     x9, 705(x10)       op1: 000039a3 op2: 0000020d op3: 0c80d384
+# [SCOREBOARD ]    98 - success - instruction: SB     x9, 705(x10)       expected=00000084 actual=00000084 
+# [DRIVER     ]    98 instruction: SB     x9, 705(x10)       op1: 000039a3 op2: 0000020d op3: 0c80d384
+# [MONITOR IN ]    99 instruction: LB    x28, 705(x10)       op1: 000039a3 op2: 0000020d op3: 00000000 
+# [SCOREBOARD ]    99 instruction: LB    x28, 705(x10)       op1: 000039a3 op2: 0000020d op3: 00000000
+# [DRIVER     ]    99 instruction: LB    x28, 705(x10)       op1: 000039a3 op2: 0000020d op3: 00000000
+# [MONITOR OUT]    99 instruction: READ, value: ffffff84 
+# [SCOREBOARD ]    99  Read response: ffffff84 
+# [SCOREBOARD ]    99 - success - instruction: LB    x28, 705(x10)       expected=ffffff84 actual=ffffff84 
+# [MONITOR OUT]   100 instruction: WRITE, value: da43cd33 
+# [MONITOR IN ]   100 instruction: SW    x15, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: da43cd33 
+# [SCOREBOARD ]    99 Write response: da43cd33 
+# [SCOREBOARD ]   100 instruction: SW    x15, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: da43cd33
+# [SCOREBOARD ]   100 - success - instruction: SW    x15, 656(x16)       expected=da43cd33 actual=da43cd33 
+# [DRIVER     ]   100 instruction: SW    x15, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: da43cd33
+# [MONITOR IN ]   101 instruction: LW    x21, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: 00000000 
+# [SCOREBOARD ]   101 instruction: LW    x21, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: 00000000
+# [DRIVER     ]   101 instruction: LW    x21, 656(x16)       op1: 000020b4 op2: 00004ed4 op3: 00000000
+# [MONITOR OUT]   101 instruction: READ, value: da43cd33 
+# [SCOREBOARD ]   101  Read response: da43cd33 
+# [SCOREBOARD ]   101 - success - instruction: LW    x21, 656(x16)       expected=da43cd33 actual=da43cd33 
+# [MONITOR OUT]   102 instruction: WRITE, value: 00003bfd 
+# [MONITOR IN ]   102 instruction: SH    x15, 2360(x11)      op1: 0000458c op2: 00003dcc op3: cc763bfd 
+# [SCOREBOARD ]   101 Write response: 00003bfd 
+# [SCOREBOARD ]   102 instruction: SH    x15, 2360(x11)      op1: 0000458c op2: 00003dcc op3: cc763bfd
+# [SCOREBOARD ]   102 - success - instruction: SH    x15, 2360(x11)      expected=00003bfd actual=00003bfd 
+# [DRIVER     ]   102 instruction: SH    x15, 2360(x11)      op1: 0000458c op2: 00003dcc op3: cc763bfd
+# [MONITOR IN ]   103 instruction: LHU   x27, 2360(x11)      op1: 0000458c op2: 00003dcc op3: 00000000 
+# [SCOREBOARD ]   103 instruction: LHU   x27, 2360(x11)      op1: 0000458c op2: 00003dcc op3: 00000000
+# [DRIVER     ]   103 instruction: LHU   x27, 2360(x11)      op1: 0000458c op2: 00003dcc op3: 00000000
+# [MONITOR OUT]   103 instruction: READ, value: 00003bfd 
+# [SCOREBOARD ]   103  Read response: 00003bfd 
+# [SCOREBOARD ]   103 - success - instruction: LHU   x27, 2360(x11)      expected=00003bfd actual=00003bfd 
+# [MONITOR OUT]   104 instruction: WRITE, value: ff6cdb30 
+# [MONITOR IN ]   104 instruction: SW    x31, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: ff6cdb30 
+# [SCOREBOARD ]   103 Write response: ff6cdb30 
+# [SCOREBOARD ]   104 instruction: SW    x31, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: ff6cdb30
+# [SCOREBOARD ]   104 - success - instruction: SW    x31, 1480(x7)       expected=ff6cdb30 actual=ff6cdb30 
+# [DRIVER     ]   104 instruction: SW    x31, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: ff6cdb30
+# [MONITOR IN ]   105 instruction: LW    x28, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: 00000000 
+# [SCOREBOARD ]   105 instruction: LW    x28, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: 00000000
+# [DRIVER     ]   105 instruction: LW    x28, 1480(x7)       op1: 00001fe0 op2: 00001afc op3: 00000000
+# [MONITOR OUT]   105 instruction: READ, value: ff6cdb30 
+# [SCOREBOARD ]   105  Read response: ff6cdb30 
+# [SCOREBOARD ]   105 - success - instruction: LW    x28, 1480(x7)       expected=ff6cdb30 actual=ff6cdb30 
+# [MONITOR OUT]   106 instruction: WRITE, value: 0000d300 
+# [MONITOR IN ]   106 instruction: SB    x15, 2258(x10)      op1: 00004052 op2: 000033ff op3: 1b1f01d3 
+# [SCOREBOARD ]   105 Write response: 0000d300 
+# [SCOREBOARD ]   106 instruction: SB    x15, 2258(x10)      op1: 00004052 op2: 000033ff op3: 1b1f01d3
+# [SCOREBOARD ]   106 - success - instruction: SB    x15, 2258(x10)      expected=0000d300 actual=0000d300 
+# [DRIVER     ]   106 instruction: SB    x15, 2258(x10)      op1: 00004052 op2: 000033ff op3: 1b1f01d3
+# [MONITOR IN ]   107 instruction: LBU   x13, 2258(x10)      op1: 00004052 op2: 000033ff op3: 00000000 
+# [SCOREBOARD ]   107 instruction: LBU   x13, 2258(x10)      op1: 00004052 op2: 000033ff op3: 00000000
+# [DRIVER     ]   107 instruction: LBU   x13, 2258(x10)      op1: 00004052 op2: 000033ff op3: 00000000
+# [MONITOR OUT]   107 instruction: READ, value: 000000d3 
+# [SCOREBOARD ]   107  Read response: 000000d3 
+# [SCOREBOARD ]   107 - success - instruction: LBU   x13, 2258(x10)      expected=000000d3 actual=000000d3 
+# [MONITOR OUT]   108 instruction: WRITE, value: 8edace27 
+# [MONITOR IN ]   108 instruction: SW    x12, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 8edace27 
+# [SCOREBOARD ]   107 Write response: 8edace27 
+# [SCOREBOARD ]   108 instruction: SW    x12, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 8edace27
+# [SCOREBOARD ]   108 - success - instruction: SW    x12, 3204(x28)      expected=8edace27 actual=8edace27 
+# [DRIVER     ]   108 instruction: SW    x12, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 8edace27
+# [MONITOR IN ]   109 instruction: LW     x9, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 00000000 
+# [SCOREBOARD ]   109 instruction: LW     x9, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 00000000
+# [DRIVER     ]   109 instruction: LW     x9, 3204(x28)      op1: 00007a90 op2: 0000123c op3: 00000000
+# [MONITOR OUT]   109 instruction: READ, value: 8edace27 
+# [SCOREBOARD ]   109  Read response: 8edace27 
+# [SCOREBOARD ]   109 - success - instruction: LW     x9, 3204(x28)      expected=8edace27 actual=8edace27 
+# [MONITOR OUT]   110 instruction: WRITE, value: 000061bd 
+# [MONITOR IN ]   110 instruction: SH     x1, 2830(x31)      op1: 0000536c op2: 00001788 op3: 0bb261bd 
+# [SCOREBOARD ]   109 Write response: 000061bd 
+# [SCOREBOARD ]   110 instruction: SH     x1, 2830(x31)      op1: 0000536c op2: 00001788 op3: 0bb261bd
+# [SCOREBOARD ]   110 - success - instruction: SH     x1, 2830(x31)      expected=000061bd actual=000061bd 
+# [DRIVER     ]   110 instruction: SH     x1, 2830(x31)      op1: 0000536c op2: 00001788 op3: 0bb261bd
+# [MONITOR IN ]   111 instruction: LHU   x17, 2830(x31)      op1: 0000536c op2: 00001788 op3: 00000000 
+# [SCOREBOARD ]   111 instruction: LHU   x17, 2830(x31)      op1: 0000536c op2: 00001788 op3: 00000000
+# [DRIVER     ]   111 instruction: LHU   x17, 2830(x31)      op1: 0000536c op2: 00001788 op3: 00000000
+# [MONITOR OUT]   111 instruction: READ, value: 000061bd 
+# [SCOREBOARD ]   111  Read response: 000061bd 
+# [SCOREBOARD ]   111 - success - instruction: LHU   x17, 2830(x31)      expected=000061bd actual=000061bd 
+# [MONITOR OUT]   112 instruction: WRITE, value: 4d28a975 
+# [MONITOR IN ]   112 instruction: SW    x27, 860(x2)        op1: 000001ac op2: 00000de4 op3: 4d28a975 
+# [SCOREBOARD ]   111 Write response: 4d28a975 
+# [SCOREBOARD ]   112 instruction: SW    x27, 860(x2)        op1: 000001ac op2: 00000de4 op3: 4d28a975
+# [SCOREBOARD ]   112 - success - instruction: SW    x27, 860(x2)        expected=4d28a975 actual=4d28a975 
+# [DRIVER     ]   112 instruction: SW    x27, 860(x2)        op1: 000001ac op2: 00000de4 op3: 4d28a975
+# [MONITOR IN ]   113 instruction: LW    x14, 860(x2)        op1: 000001ac op2: 00000de4 op3: 00000000 
+# [SCOREBOARD ]   113 instruction: LW    x14, 860(x2)        op1: 000001ac op2: 00000de4 op3: 00000000
+# [DRIVER     ]   113 instruction: LW    x14, 860(x2)        op1: 000001ac op2: 00000de4 op3: 00000000
+# [MONITOR OUT]   113 instruction: READ, value: 4d28a975 
+# [SCOREBOARD ]   113  Read response: 4d28a975 
+# [SCOREBOARD ]   113 - success - instruction: LW    x14, 860(x2)        expected=4d28a975 actual=4d28a975 
+# [MONITOR OUT]   114 instruction: WRITE, value: 000000bd 
+# [MONITOR IN ]   114 instruction: SB     x5, 137(x31)       op1: 000008f2 op2: 0000757a op3: 5f47fcbd 
+# [SCOREBOARD ]   113 Write response: 000000bd 
+# [SCOREBOARD ]   114 instruction: SB     x5, 137(x31)       op1: 000008f2 op2: 0000757a op3: 5f47fcbd
+# [SCOREBOARD ]   114 - success - instruction: SB     x5, 137(x31)       expected=000000bd actual=000000bd 
+# [DRIVER     ]   114 instruction: SB     x5, 137(x31)       op1: 000008f2 op2: 0000757a op3: 5f47fcbd
+# [MONITOR IN ]   115 instruction: LB    x28, 137(x31)       op1: 000008f2 op2: 0000757a op3: 00000000 
+# [SCOREBOARD ]   115 instruction: LB    x28, 137(x31)       op1: 000008f2 op2: 0000757a op3: 00000000
+# [DRIVER     ]   115 instruction: LB    x28, 137(x31)       op1: 000008f2 op2: 0000757a op3: 00000000
+# [MONITOR OUT]   115 instruction: READ, value: ffffffbd 
+# [SCOREBOARD ]   115  Read response: ffffffbd 
+# [SCOREBOARD ]   115 - success - instruction: LB    x28, 137(x31)       expected=ffffffbd actual=ffffffbd 
+# [MONITOR OUT]   116 instruction: WRITE, value: 7dd09552 
+# [MONITOR IN ]   116 instruction: SW     x0, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 7dd09552 
+# [SCOREBOARD ]   115 Write response: 7dd09552 
+# [SCOREBOARD ]   116 instruction: SW     x0, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 7dd09552
+# [SCOREBOARD ]   116 - success - instruction: SW     x0, 2888(x19)      expected=7dd09552 actual=7dd09552 
+# [DRIVER     ]   116 instruction: SW     x0, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 7dd09552
+# [MONITOR IN ]   117 instruction: LW    x26, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 00000000 
+# [SCOREBOARD ]   117 instruction: LW    x26, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 00000000
+# [DRIVER     ]   117 instruction: LW    x26, 2888(x19)      op1: 00004708 op2: 000014c8 op3: 00000000
+# [MONITOR OUT]   117 instruction: READ, value: 7dd09552 
+# [SCOREBOARD ]   117  Read response: 7dd09552 
+# [SCOREBOARD ]   117 - success - instruction: LW    x26, 2888(x19)      expected=7dd09552 actual=7dd09552 
+# [MONITOR OUT]   118 instruction: WRITE, value: 00004600 
+# [MONITOR IN ]   118 instruction: SB    x17, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 9fbd9c46 
+# [SCOREBOARD ]   117 Write response: 00004600 
+# [SCOREBOARD ]   118 instruction: SB    x17, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 9fbd9c46
+# [SCOREBOARD ]   118 - success - instruction: SB    x17, 658(x17)       expected=00004600 actual=00004600 
+# [DRIVER     ]   118 instruction: SB    x17, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 9fbd9c46
+# [MONITOR IN ]   119 instruction: LBU   x13, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 00000000 
+# [SCOREBOARD ]   119 instruction: LBU   x13, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 00000000
+# [DRIVER     ]   119 instruction: LBU   x13, 658(x17)       op1: 00006b3f op2: 00004d06 op3: 00000000
+# [MONITOR OUT]   119 instruction: READ, value: 00000046 
+# [SCOREBOARD ]   119  Read response: 00000046 
+# [SCOREBOARD ]   119 - success - instruction: LBU   x13, 658(x17)       expected=00000046 actual=00000046 
+# [MONITOR OUT]   120 instruction: WRITE, value: 000000e8 
+# [MONITOR IN ]   120 instruction: SB    x14, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: a00b27e8 
+# [SCOREBOARD ]   119 Write response: 000000e8 
+# [SCOREBOARD ]   120 instruction: SB    x14, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: a00b27e8
+# [SCOREBOARD ]   120 - success - instruction: SB    x14, 1154(x31)      expected=000000e8 actual=000000e8 
+# [DRIVER     ]   120 instruction: SB    x14, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: a00b27e8
+# [MONITOR IN ]   121 instruction: LB    x16, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: 00000000 
+# [SCOREBOARD ]   121 instruction: LB    x16, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: 00000000
+# [DRIVER     ]   121 instruction: LB    x16, 1154(x31)      op1: 00000cb6 op2: 00005bfa op3: 00000000
+# [MONITOR OUT]   121 instruction: READ, value: ffffffe8 
+# [SCOREBOARD ]   121  Read response: ffffffe8 
+# [SCOREBOARD ]   121 - success - instruction: LB    x16, 1154(x31)      expected=ffffffe8 actual=ffffffe8 
+# [MONITOR OUT]   122 instruction: WRITE, value: d5000000 
+# [MONITOR IN ]   122 instruction: SB     x8, 3821(x2)       op1: 00004355 op2: 00007206 op3: b1ed59d5 
+# [SCOREBOARD ]   121 Write response: d5000000 
+# [SCOREBOARD ]   122 instruction: SB     x8, 3821(x2)       op1: 00004355 op2: 00007206 op3: b1ed59d5
+# [SCOREBOARD ]   122 - success - instruction: SB     x8, 3821(x2)       expected=d5000000 actual=d5000000 
+# [DRIVER     ]   122 instruction: SB     x8, 3821(x2)       op1: 00004355 op2: 00007206 op3: b1ed59d5
+# [MONITOR IN ]   123 instruction: LBU    x7, 3821(x2)       op1: 00004355 op2: 00007206 op3: 00000000 
+# [SCOREBOARD ]   123 instruction: LBU    x7, 3821(x2)       op1: 00004355 op2: 00007206 op3: 00000000
+# [DRIVER     ]   123 instruction: LBU    x7, 3821(x2)       op1: 00004355 op2: 00007206 op3: 00000000
+# [MONITOR OUT]   123 instruction: READ, value: 000000d5 
+# [SCOREBOARD ]   123  Read response: 000000d5 
+# [SCOREBOARD ]   123 - success - instruction: LBU    x7, 3821(x2)       expected=000000d5 actual=000000d5 
+# [MONITOR OUT]   124 instruction: WRITE, value: ebd50000 
+# [MONITOR IN ]   124 instruction: SH     x0, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 6576ebd5 
+# [SCOREBOARD ]   123 Write response: ebd50000 
+# [SCOREBOARD ]   124 instruction: SH     x0, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 6576ebd5
+# [SCOREBOARD ]   124 - success - instruction: SH     x0, 2640(x25)      expected=ebd50000 actual=ebd50000 
+# [DRIVER     ]   124 instruction: SH     x0, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 6576ebd5
+# [MONITOR IN ]   125 instruction: LH    x12, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 00000000 
+# [SCOREBOARD ]   125 instruction: LH    x12, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 00000000
+# [DRIVER     ]   125 instruction: LH    x12, 2640(x25)      op1: 00004e52 op2: 000063d0 op3: 00000000
+# [MONITOR OUT]   125 instruction: READ, value: ffffebd5 
+# [SCOREBOARD ]   125  Read response: ffffebd5 
+# [SCOREBOARD ]   125 - success - instruction: LH    x12, 2640(x25)      expected=ffffebd5 actual=ffffebd5 
+# [MONITOR OUT]   126 instruction: WRITE, value: ed8c0000 
+# [MONITOR IN ]   126 instruction: SH     x1, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: d892ed8c 
+# [SCOREBOARD ]   125 Write response: ed8c0000 
+# [SCOREBOARD ]   126 instruction: SH     x1, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: d892ed8c
+# [SCOREBOARD ]   126 - success - instruction: SH     x1, 3882(x2)       expected=ed8c0000 actual=ed8c0000 
+# [DRIVER     ]   126 instruction: SH     x1, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: d892ed8c
+# [MONITOR IN ]   127 instruction: LH    x19, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: 00000000 
+# [SCOREBOARD ]   127 instruction: LH    x19, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: 00000000
+# [DRIVER     ]   127 instruction: LH    x19, 3882(x2)       op1: 00005ff8 op2: 00004c2a op3: 00000000
+# [MONITOR OUT]   127 instruction: READ, value: ffffed8c 
+# [SCOREBOARD ]   127  Read response: ffffed8c 
+# [SCOREBOARD ]   127 - success - instruction: LH    x19, 3882(x2)       expected=ffffed8c actual=ffffed8c 
+# [MONITOR OUT]   128 instruction: WRITE, value: 62d0ea89 
+# [MONITOR IN ]   128 instruction: SW    x28, 1096(x20)      op1: 00003440 op2: 000051cc op3: 62d0ea89 
+# [SCOREBOARD ]   127 Write response: 62d0ea89 
+# [SCOREBOARD ]   128 instruction: SW    x28, 1096(x20)      op1: 00003440 op2: 000051cc op3: 62d0ea89
+# [SCOREBOARD ]   128 - success - instruction: SW    x28, 1096(x20)      expected=62d0ea89 actual=62d0ea89 
+# [DRIVER     ]   128 instruction: SW    x28, 1096(x20)      op1: 00003440 op2: 000051cc op3: 62d0ea89
+# [MONITOR IN ]   129 instruction: LW    x20, 1096(x20)      op1: 00003440 op2: 000051cc op3: 00000000 
+# [SCOREBOARD ]   129 instruction: LW    x20, 1096(x20)      op1: 00003440 op2: 000051cc op3: 00000000
+# [DRIVER     ]   129 instruction: LW    x20, 1096(x20)      op1: 00003440 op2: 000051cc op3: 00000000
+# [MONITOR OUT]   129 instruction: READ, value: 62d0ea89 
+# [SCOREBOARD ]   129  Read response: 62d0ea89 
+# [SCOREBOARD ]   129 - success - instruction: LW    x20, 1096(x20)      expected=62d0ea89 actual=62d0ea89 
+# [MONITOR OUT]   130 instruction: WRITE, value: e0c67396 
+# [MONITOR IN ]   130 instruction: SW    x29, 1164(x14)      op1: 00003574 op2: 000033e8 op3: e0c67396 
+# [SCOREBOARD ]   129 Write response: e0c67396 
+# [SCOREBOARD ]   130 instruction: SW    x29, 1164(x14)      op1: 00003574 op2: 000033e8 op3: e0c67396
+# [SCOREBOARD ]   130 - success - instruction: SW    x29, 1164(x14)      expected=e0c67396 actual=e0c67396 
+# [DRIVER     ]   130 instruction: SW    x29, 1164(x14)      op1: 00003574 op2: 000033e8 op3: e0c67396
+# [MONITOR IN ]   131 instruction: LW    x31, 1164(x14)      op1: 00003574 op2: 000033e8 op3: 00000000 
+# [SCOREBOARD ]   131 instruction: LW    x31, 1164(x14)      op1: 00003574 op2: 000033e8 op3: 00000000
+# [DRIVER     ]   131 instruction: LW    x31, 1164(x14)      op1: 00003574 op2: 000033e8 op3: 00000000
+# [MONITOR OUT]   131 instruction: READ, value: e0c67396 
+# [SCOREBOARD ]   131  Read response: e0c67396 
+# [SCOREBOARD ]   131 - success - instruction: LW    x31, 1164(x14)      expected=e0c67396 actual=e0c67396 
+# [MONITOR OUT]   132 instruction: WRITE, value: fcf30000 
+# [MONITOR IN ]   132 instruction: SH     x4, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 8980fcf3 
+# [SCOREBOARD ]   131 Write response: fcf30000 
+# [SCOREBOARD ]   132 instruction: SH     x4, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 8980fcf3
+# [SCOREBOARD ]   132 - success - instruction: SH     x4, 3148(x2)       expected=fcf30000 actual=fcf30000 
+# [DRIVER     ]   132 instruction: SH     x4, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 8980fcf3
+# [MONITOR IN ]   133 instruction: LH    x19, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 00000000 
+# [SCOREBOARD ]   133 instruction: LH    x19, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 00000000
+# [DRIVER     ]   133 instruction: LH    x19, 3148(x2)       op1: 000001b2 op2: 00000680 op3: 00000000
+# [MONITOR OUT]   133 instruction: READ, value: fffffcf3 
+# [SCOREBOARD ]   133  Read response: fffffcf3 
+# [SCOREBOARD ]   133 - success - instruction: LH    x19, 3148(x2)       expected=fffffcf3 actual=fffffcf3 
+# [MONITOR OUT]   134 instruction: WRITE, value: 00007d00 
+# [MONITOR IN ]   134 instruction: SB    x17, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 8aeb597d 
+# [SCOREBOARD ]   133 Write response: 00007d00 
+# [SCOREBOARD ]   134 instruction: SB    x17, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 8aeb597d
+# [SCOREBOARD ]   134 - success - instruction: SB    x17, 2694(x16)      expected=00007d00 actual=00007d00 
+# [DRIVER     ]   134 instruction: SB    x17, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 8aeb597d
+# [MONITOR IN ]   135 instruction: LBU   x30, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 00000000 
+# [SCOREBOARD ]   135 instruction: LBU   x30, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 00000000
+# [DRIVER     ]   135 instruction: LBU   x30, 2694(x16)      op1: 000079c8 op2: 00006215 op3: 00000000
+# [MONITOR OUT]   135 instruction: READ, value: 0000007d 
+# [SCOREBOARD ]   135  Read response: 0000007d 
+# [SCOREBOARD ]   135 - success - instruction: LBU   x30, 2694(x16)      expected=0000007d actual=0000007d 
+# [MONITOR OUT]   136 instruction: WRITE, value: 0000ef00 
+# [MONITOR IN ]   136 instruction: SB    x23, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 61375fef 
+# [SCOREBOARD ]   135 Write response: 0000ef00 
+# [SCOREBOARD ]   136 instruction: SB    x23, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 61375fef
+# [SCOREBOARD ]   136 - success - instruction: SB    x23, 1628(x0)       expected=0000ef00 actual=0000ef00 
+# [DRIVER     ]   136 instruction: SB    x23, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 61375fef
+# [MONITOR IN ]   137 instruction: LB    x21, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 00000000 
+# [SCOREBOARD ]   137 instruction: LB    x21, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 00000000
+# [DRIVER     ]   137 instruction: LB    x21, 1628(x0)       op1: 00000dfa op2: 00002c67 op3: 00000000
+# [MONITOR OUT]   137 instruction: READ, value: ffffffef 
+# [SCOREBOARD ]   137  Read response: ffffffef 
+# [SCOREBOARD ]   137 - success - instruction: LB    x21, 1628(x0)       expected=ffffffef actual=ffffffef 
+# [MONITOR OUT]   138 instruction: WRITE, value: 1fed0000 
+# [MONITOR IN ]   138 instruction: SH    x19, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: b5491fed 
+# [SCOREBOARD ]   137 Write response: 1fed0000 
+# [SCOREBOARD ]   138 instruction: SH    x19, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: b5491fed
+# [SCOREBOARD ]   138 - success - instruction: SH    x19, 3522(x2)       expected=1fed0000 actual=1fed0000 
+# [DRIVER     ]   138 instruction: SH    x19, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: b5491fed
+# [MONITOR IN ]   139 instruction: LH     x0, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: 00000000 
+# [SCOREBOARD ]   139 instruction: LH     x0, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: 00000000
+# [DRIVER     ]   139 instruction: LH     x0, 3522(x2)       op1: 00001df4 op2: 000046f2 op3: 00000000
+# [MONITOR OUT]   139 instruction: READ, value: 00001fed 
+# [SCOREBOARD ]   139  Read response: 00001fed 
+# [SCOREBOARD ]   139 - success - instruction: LH     x0, 3522(x2)       expected=00001fed actual=00001fed 
+# [MONITOR OUT]   140 instruction: WRITE, value: 0000001f 
+# [MONITOR IN ]   140 instruction: SB     x3, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 236ebc1f 
+# [SCOREBOARD ]   139 Write response: 0000001f 
+# [SCOREBOARD ]   140 instruction: SB     x3, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 236ebc1f
+# [SCOREBOARD ]   140 - success - instruction: SB     x3, 2611(x2)       expected=0000001f actual=0000001f 
+# [DRIVER     ]   140 instruction: SB     x3, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 236ebc1f
+# [MONITOR IN ]   141 instruction: LBU   x18, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 00000000 
+# [SCOREBOARD ]   141 instruction: LBU   x18, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 00000000
+# [DRIVER     ]   141 instruction: LBU   x18, 2611(x2)       op1: 00003000 op2: 00005ed4 op3: 00000000
+# [MONITOR OUT]   141 instruction: READ, value: 0000001f 
+# [SCOREBOARD ]   141  Read response: 0000001f 
+# [SCOREBOARD ]   141 - success - instruction: LBU   x18, 2611(x2)       expected=0000001f actual=0000001f 
+# [MONITOR OUT]   142 instruction: WRITE, value: 0000c900 
+# [MONITOR IN ]   142 instruction: SB    x11, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 9e8c4bc9 
+# [SCOREBOARD ]   141 Write response: 0000c900 
+# [SCOREBOARD ]   142 instruction: SB    x11, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 9e8c4bc9
+# [SCOREBOARD ]   142 - success - instruction: SB    x11, 3747(x11)      expected=0000c900 actual=0000c900 
+# [DRIVER     ]   142 instruction: SB    x11, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 9e8c4bc9
+# [MONITOR IN ]   143 instruction: LB    x31, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 00000000 
+# [SCOREBOARD ]   143 instruction: LB    x31, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 00000000
+# [DRIVER     ]   143 instruction: LB    x31, 3747(x11)      op1: 0000748b op2: 00007ce2 op3: 00000000
+# [MONITOR OUT]   143 instruction: READ, value: ffffffc9 
+# [SCOREBOARD ]   143  Read response: ffffffc9 
+# [SCOREBOARD ]   143 - success - instruction: LB    x31, 3747(x11)      expected=ffffffc9 actual=ffffffc9 
+# [MONITOR OUT]   144 instruction: WRITE, value: fc7f15c1 
+# [MONITOR IN ]   144 instruction: SW    x25, 1600(x6)       op1: 00007258 op2: 00007514 op3: fc7f15c1 
+# [SCOREBOARD ]   143 Write response: fc7f15c1 
+# [SCOREBOARD ]   144 instruction: SW    x25, 1600(x6)       op1: 00007258 op2: 00007514 op3: fc7f15c1
+# [SCOREBOARD ]   144 - success - instruction: SW    x25, 1600(x6)       expected=fc7f15c1 actual=fc7f15c1 
+# [DRIVER     ]   144 instruction: SW    x25, 1600(x6)       op1: 00007258 op2: 00007514 op3: fc7f15c1
+# [MONITOR IN ]   145 instruction: LW    x29, 1600(x6)       op1: 00007258 op2: 00007514 op3: 00000000 
+# [SCOREBOARD ]   145 instruction: LW    x29, 1600(x6)       op1: 00007258 op2: 00007514 op3: 00000000
+# [DRIVER     ]   145 instruction: LW    x29, 1600(x6)       op1: 00007258 op2: 00007514 op3: 00000000
+# [MONITOR OUT]   145 instruction: READ, value: fc7f15c1 
+# [SCOREBOARD ]   145  Read response: fc7f15c1 
+# [SCOREBOARD ]   145 - success - instruction: LW    x29, 1600(x6)       expected=fc7f15c1 actual=fc7f15c1 
+# [MONITOR OUT]   146 instruction: WRITE, value: 5074d912 
+# [MONITOR IN ]   146 instruction: SW    x26, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 5074d912 
+# [SCOREBOARD ]   145 Write response: 5074d912 
+# [SCOREBOARD ]   146 instruction: SW    x26, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 5074d912
+# [SCOREBOARD ]   146 - success - instruction: SW    x26, 1040(x23)      expected=5074d912 actual=5074d912 
+# [DRIVER     ]   146 instruction: SW    x26, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 5074d912
+# [MONITOR IN ]   147 instruction: LW    x21, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 00000000 
+# [SCOREBOARD ]   147 instruction: LW    x21, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 00000000
+# [DRIVER     ]   147 instruction: LW    x21, 1040(x23)      op1: 00001800 op2: 00003ee8 op3: 00000000
+# [MONITOR OUT]   147 instruction: READ, value: 5074d912 
+# [SCOREBOARD ]   147  Read response: 5074d912 
+# [SCOREBOARD ]   147 - success - instruction: LW    x21, 1040(x23)      expected=5074d912 actual=5074d912 
+# [MONITOR OUT]   148 instruction: WRITE, value: 817c0000 
+# [MONITOR IN ]   148 instruction: SH     x0, 1280(x24)      op1: 00007a26 op2: 00001754 op3: fbfe817c 
+# [SCOREBOARD ]   147 Write response: 817c0000 
+# [SCOREBOARD ]   148 instruction: SH     x0, 1280(x24)      op1: 00007a26 op2: 00001754 op3: fbfe817c
+# [SCOREBOARD ]   148 - success - instruction: SH     x0, 1280(x24)      expected=817c0000 actual=817c0000 
+# [DRIVER     ]   148 instruction: SH     x0, 1280(x24)      op1: 00007a26 op2: 00001754 op3: fbfe817c
+# [MONITOR IN ]   149 instruction: LH    x17, 1280(x24)      op1: 00007a26 op2: 00001754 op3: 00000000 
+# [SCOREBOARD ]   149 instruction: LH    x17, 1280(x24)      op1: 00007a26 op2: 00001754 op3: 00000000
+# [DRIVER     ]   149 instruction: LH    x17, 1280(x24)      op1: 00007a26 op2: 00001754 op3: 00000000
+# [MONITOR OUT]   149 instruction: READ, value: ffff817c 
+# [SCOREBOARD ]   149  Read response: ffff817c 
+# [SCOREBOARD ]   149 - success - instruction: LH    x17, 1280(x24)      expected=ffff817c actual=ffff817c 
+# [MONITOR OUT]   150 instruction: WRITE, value: 934c0000 
+# [MONITOR IN ]   150 instruction: SH    x24, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 1a4c934c 
+# [SCOREBOARD ]   149 Write response: 934c0000 
+# [SCOREBOARD ]   150 instruction: SH    x24, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 1a4c934c
+# [SCOREBOARD ]   150 - success - instruction: SH    x24, 1462(x11)      expected=934c0000 actual=934c0000 
+# [DRIVER     ]   150 instruction: SH    x24, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 1a4c934c
+# [MONITOR IN ]   151 instruction: LHU   x16, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 00000000 
+# [SCOREBOARD ]   151 instruction: LHU   x16, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 00000000
+# [DRIVER     ]   151 instruction: LHU   x16, 1462(x11)      op1: 00002074 op2: 00001ae6 op3: 00000000
+# [MONITOR OUT]   151 instruction: READ, value: 0000934c 
+# [SCOREBOARD ]   151  Read response: 0000934c 
+# [SCOREBOARD ]   151 - success - instruction: LHU   x16, 1462(x11)      expected=0000934c actual=0000934c 
+# [MONITOR OUT]   152 instruction: WRITE, value: 04000000 
+# [MONITOR IN ]   152 instruction: SB     x8, 630(x3)        op1: 0000087f op2: 00000008 op3: 9c124d04 
+# [SCOREBOARD ]   151 Write response: 04000000 
+# [SCOREBOARD ]   152 instruction: SB     x8, 630(x3)        op1: 0000087f op2: 00000008 op3: 9c124d04
+# [SCOREBOARD ]   152 - success - instruction: SB     x8, 630(x3)        expected=04000000 actual=04000000 
+# [DRIVER     ]   152 instruction: SB     x8, 630(x3)        op1: 0000087f op2: 00000008 op3: 9c124d04
+# [MONITOR IN ]   153 instruction: LB    x11, 630(x3)        op1: 0000087f op2: 00000008 op3: 00000000 
+# [SCOREBOARD ]   153 instruction: LB    x11, 630(x3)        op1: 0000087f op2: 00000008 op3: 00000000
+# [DRIVER     ]   153 instruction: LB    x11, 630(x3)        op1: 0000087f op2: 00000008 op3: 00000000
+# [MONITOR OUT]   153 instruction: READ, value: 00000004 
+# [SCOREBOARD ]   153  Read response: 00000004 
+# [SCOREBOARD ]   153 - success - instruction: LB    x11, 630(x3)        expected=00000004 actual=00000004 
+# [MONITOR OUT]   154 instruction: WRITE, value: 0000b700 
+# [MONITOR IN ]   154 instruction: SB    x15, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 901ba4b7 
+# [SCOREBOARD ]   153 Write response: 0000b700 
+# [SCOREBOARD ]   154 instruction: SB    x15, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 901ba4b7
+# [SCOREBOARD ]   154 - success - instruction: SB    x15, 2934(x28)      expected=0000b700 actual=0000b700 
+# [DRIVER     ]   154 instruction: SB    x15, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 901ba4b7
+# [MONITOR IN ]   155 instruction: LB    x31, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 00000000 
+# [SCOREBOARD ]   155 instruction: LB    x31, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 00000000
+# [DRIVER     ]   155 instruction: LB    x31, 2934(x28)      op1: 000032c7 op2: 00003092 op3: 00000000
+# [MONITOR OUT]   155 instruction: READ, value: ffffffb7 
+# [SCOREBOARD ]   155  Read response: ffffffb7 
+# [SCOREBOARD ]   155 - success - instruction: LB    x31, 2934(x28)      expected=ffffffb7 actual=ffffffb7 
+# [MONITOR OUT]   156 instruction: WRITE, value: 000000e4 
+# [MONITOR IN ]   156 instruction: SB    x14, 1036(x14)      op1: 00005e41 op2: 00002347 op3: d18121e4 
+# [SCOREBOARD ]   155 Write response: 000000e4 
+# [SCOREBOARD ]   156 instruction: SB    x14, 1036(x14)      op1: 00005e41 op2: 00002347 op3: d18121e4
+# [SCOREBOARD ]   156 - success - instruction: SB    x14, 1036(x14)      expected=000000e4 actual=000000e4 
+# [DRIVER     ]   156 instruction: SB    x14, 1036(x14)      op1: 00005e41 op2: 00002347 op3: d18121e4
+# [MONITOR IN ]   157 instruction: LBU   x31, 1036(x14)      op1: 00005e41 op2: 00002347 op3: 00000000 
+# [SCOREBOARD ]   157 instruction: LBU   x31, 1036(x14)      op1: 00005e41 op2: 00002347 op3: 00000000
+# [DRIVER     ]   157 instruction: LBU   x31, 1036(x14)      op1: 00005e41 op2: 00002347 op3: 00000000
+# [MONITOR OUT]   157 instruction: READ, value: 000000e4 
+# [SCOREBOARD ]   157  Read response: 000000e4 
+# [SCOREBOARD ]   157 - success - instruction: LBU   x31, 1036(x14)      expected=000000e4 actual=000000e4 
+# [MONITOR OUT]   158 instruction: WRITE, value: 0000e800 
+# [MONITOR IN ]   158 instruction: SB    x28, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 5bd7bbe8 
+# [SCOREBOARD ]   157 Write response: 0000e800 
+# [SCOREBOARD ]   158 instruction: SB    x28, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 5bd7bbe8
+# [SCOREBOARD ]   158 - success - instruction: SB    x28, 3835(x26)      expected=0000e800 actual=0000e800 
+# [DRIVER     ]   158 instruction: SB    x28, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 5bd7bbe8
+# [MONITOR IN ]   159 instruction: LB    x19, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 00000000 
+# [SCOREBOARD ]   159 instruction: LB    x19, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 00000000
+# [DRIVER     ]   159 instruction: LB    x19, 3835(x26)      op1: 0000462a op2: 00002ef3 op3: 00000000
+# [MONITOR OUT]   159 instruction: READ, value: ffffffe8 
+# [SCOREBOARD ]   159  Read response: ffffffe8 
+# [SCOREBOARD ]   159 - success - instruction: LB    x19, 3835(x26)      expected=ffffffe8 actual=ffffffe8 
+# [MONITOR OUT]   160 instruction: WRITE, value: 19df3ca6 
+# [MONITOR IN ]   160 instruction: SW     x9, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 19df3ca6 
+# [SCOREBOARD ]   159 Write response: 19df3ca6 
+# [SCOREBOARD ]   160 instruction: SW     x9, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 19df3ca6
+# [SCOREBOARD ]   160 - success - instruction: SW     x9, 3804(x12)      expected=19df3ca6 actual=19df3ca6 
+# [DRIVER     ]   160 instruction: SW     x9, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 19df3ca6
+# [MONITOR IN ]   161 instruction: LW     x3, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 00000000 
+# [SCOREBOARD ]   161 instruction: LW     x3, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 00000000
+# [DRIVER     ]   161 instruction: LW     x3, 3804(x12)      op1: 00006dac op2: 000012f8 op3: 00000000
+# [MONITOR OUT]   161 instruction: READ, value: 19df3ca6 
+# [SCOREBOARD ]   161  Read response: 19df3ca6 
+# [SCOREBOARD ]   161 - success - instruction: LW     x3, 3804(x12)      expected=19df3ca6 actual=19df3ca6 
+# [MONITOR OUT]   162 instruction: WRITE, value: cc0efc45 
+# [MONITOR IN ]   162 instruction: SW    x21, 816(x25)       op1: 00004550 op2: 00001830 op3: cc0efc45 
+# [SCOREBOARD ]   161 Write response: cc0efc45 
+# [SCOREBOARD ]   162 instruction: SW    x21, 816(x25)       op1: 00004550 op2: 00001830 op3: cc0efc45
+# [SCOREBOARD ]   162 - success - instruction: SW    x21, 816(x25)       expected=cc0efc45 actual=cc0efc45 
+# [DRIVER     ]   162 instruction: SW    x21, 816(x25)       op1: 00004550 op2: 00001830 op3: cc0efc45
+# [MONITOR IN ]   163 instruction: LW    x20, 816(x25)       op1: 00004550 op2: 00001830 op3: 00000000 
+# [SCOREBOARD ]   163 instruction: LW    x20, 816(x25)       op1: 00004550 op2: 00001830 op3: 00000000
+# [DRIVER     ]   163 instruction: LW    x20, 816(x25)       op1: 00004550 op2: 00001830 op3: 00000000
+# [MONITOR OUT]   163 instruction: READ, value: cc0efc45 
+# [SCOREBOARD ]   163  Read response: cc0efc45 
+# [SCOREBOARD ]   163 - success - instruction: LW    x20, 816(x25)       expected=cc0efc45 actual=cc0efc45 
+# [MONITOR OUT]   164 instruction: WRITE, value: a654edd2 
+# [MONITOR IN ]   164 instruction: SW    x16, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: a654edd2 
+# [SCOREBOARD ]   163 Write response: a654edd2 
+# [SCOREBOARD ]   164 instruction: SW    x16, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: a654edd2
+# [SCOREBOARD ]   164 - success - instruction: SW    x16, 2988(x31)      expected=a654edd2 actual=a654edd2 
+# [DRIVER     ]   164 instruction: SW    x16, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: a654edd2
+# [MONITOR IN ]   165 instruction: LW    x20, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: 00000000 
+# [SCOREBOARD ]   165 instruction: LW    x20, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: 00000000
+# [DRIVER     ]   165 instruction: LW    x20, 2988(x31)      op1: 00007a38 op2: 00003a54 op3: 00000000
+# [MONITOR OUT]   165 instruction: READ, value: a654edd2 
+# [SCOREBOARD ]   165  Read response: a654edd2 
+# [SCOREBOARD ]   165 - success - instruction: LW    x20, 2988(x31)      expected=a654edd2 actual=a654edd2 
+# [MONITOR OUT]   166 instruction: WRITE, value: 0000a100 
+# [MONITOR IN ]   166 instruction: SB    x16, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: bb8d83a1 
+# [SCOREBOARD ]   165 Write response: 0000a100 
+# [SCOREBOARD ]   166 instruction: SB    x16, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: bb8d83a1
+# [SCOREBOARD ]   166 - success - instruction: SB    x16, 1808(x18)      expected=0000a100 actual=0000a100 
+# [DRIVER     ]   166 instruction: SB    x16, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: bb8d83a1
+# [MONITOR IN ]   167 instruction: LBU   x26, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: 00000000 
+# [SCOREBOARD ]   167 instruction: LBU   x26, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: 00000000
+# [DRIVER     ]   167 instruction: LBU   x26, 1808(x18)      op1: 00002d93 op2: 00006a56 op3: 00000000
+# [MONITOR OUT]   167 instruction: READ, value: 000000a1 
+# [SCOREBOARD ]   167  Read response: 000000a1 
+# [SCOREBOARD ]   167 - success - instruction: LBU   x26, 1808(x18)      expected=000000a1 actual=000000a1 
+# [MONITOR OUT]   168 instruction: WRITE, value: 1debe26e 
+# [MONITOR IN ]   168 instruction: SW    x27, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 1debe26e 
+# [SCOREBOARD ]   167 Write response: 1debe26e 
+# [SCOREBOARD ]   168 instruction: SW    x27, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 1debe26e
+# [SCOREBOARD ]   168 - success - instruction: SW    x27, 2828(x8)       expected=1debe26e actual=1debe26e 
+# [DRIVER     ]   168 instruction: SW    x27, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 1debe26e
+# [MONITOR IN ]   169 instruction: LW    x29, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 00000000 
+# [SCOREBOARD ]   169 instruction: LW    x29, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 00000000
+# [DRIVER     ]   169 instruction: LW    x29, 2828(x8)       op1: 00003af4 op2: 0000426c op3: 00000000
+# [MONITOR OUT]   169 instruction: READ, value: 1debe26e 
+# [SCOREBOARD ]   169  Read response: 1debe26e 
+# [SCOREBOARD ]   169 - success - instruction: LW    x29, 2828(x8)       expected=1debe26e actual=1debe26e 
+# [MONITOR OUT]   170 instruction: WRITE, value: 00d80000 
+# [MONITOR IN ]   170 instruction: SB    x25, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 4774ffd8 
+# [SCOREBOARD ]   169 Write response: 00d80000 
+# [SCOREBOARD ]   170 instruction: SB    x25, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 4774ffd8
+# [SCOREBOARD ]   170 - success - instruction: SB    x25, 2416(x9)       expected=00d80000 actual=00d80000 
+# [DRIVER     ]   170 instruction: SB    x25, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 4774ffd8
+# [MONITOR IN ]   171 instruction: LB     x3, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 00000000 
+# [SCOREBOARD ]   171 instruction: LB     x3, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 00000000
+# [DRIVER     ]   171 instruction: LB     x3, 2416(x9)       op1: 00001ca2 op2: 00005b2c op3: 00000000
+# [MONITOR OUT]   171 instruction: READ, value: ffffffd8 
+# [SCOREBOARD ]   171  Read response: ffffffd8 
+# [SCOREBOARD ]   171 - success - instruction: LB     x3, 2416(x9)       expected=ffffffd8 actual=ffffffd8 
+# [MONITOR OUT]   172 instruction: WRITE, value: d4000000 
+# [MONITOR IN ]   172 instruction: SB    x26, 3388(x8)       op1: 0000421f op2: 00000914 op3: bd05a0d4 
+# [SCOREBOARD ]   171 Write response: d4000000 
+# [SCOREBOARD ]   172 instruction: SB    x26, 3388(x8)       op1: 0000421f op2: 00000914 op3: bd05a0d4
+# [SCOREBOARD ]   172 - success - instruction: SB    x26, 3388(x8)       expected=d4000000 actual=d4000000 
+# [DRIVER     ]   172 instruction: SB    x26, 3388(x8)       op1: 0000421f op2: 00000914 op3: bd05a0d4
+# [MONITOR IN ]   173 instruction: LB    x19, 3388(x8)       op1: 0000421f op2: 00000914 op3: 00000000 
+# [SCOREBOARD ]   173 instruction: LB    x19, 3388(x8)       op1: 0000421f op2: 00000914 op3: 00000000
+# [DRIVER     ]   173 instruction: LB    x19, 3388(x8)       op1: 0000421f op2: 00000914 op3: 00000000
+# [MONITOR OUT]   173 instruction: READ, value: ffffffd4 
+# [SCOREBOARD ]   173  Read response: ffffffd4 
+# [SCOREBOARD ]   173 - success - instruction: LB    x19, 3388(x8)       expected=ffffffd4 actual=ffffffd4 
+# [MONITOR OUT]   174 instruction: WRITE, value: b564cdae 
+# [MONITOR IN ]   174 instruction: SW    x21, 1832(x22)      op1: 00004804 op2: 00006150 op3: b564cdae 
+# [SCOREBOARD ]   173 Write response: b564cdae 
+# [SCOREBOARD ]   174 instruction: SW    x21, 1832(x22)      op1: 00004804 op2: 00006150 op3: b564cdae
+# [SCOREBOARD ]   174 - success - instruction: SW    x21, 1832(x22)      expected=b564cdae actual=b564cdae 
+# [DRIVER     ]   174 instruction: SW    x21, 1832(x22)      op1: 00004804 op2: 00006150 op3: b564cdae
+# [MONITOR IN ]   175 instruction: LW     x4, 1832(x22)      op1: 00004804 op2: 00006150 op3: 00000000 
+# [SCOREBOARD ]   175 instruction: LW     x4, 1832(x22)      op1: 00004804 op2: 00006150 op3: 00000000
+# [DRIVER     ]   175 instruction: LW     x4, 1832(x22)      op1: 00004804 op2: 00006150 op3: 00000000
+# [MONITOR OUT]   175 instruction: READ, value: b564cdae 
+# [SCOREBOARD ]   175  Read response: b564cdae 
+# [SCOREBOARD ]   175 - success - instruction: LW     x4, 1832(x22)      expected=b564cdae actual=b564cdae 
+# [MONITOR OUT]   176 instruction: WRITE, value: 00000011 
+# [MONITOR IN ]   176 instruction: SB    x13, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00f97111 
+# [SCOREBOARD ]   175 Write response: 00000011 
+# [SCOREBOARD ]   176 instruction: SB    x13, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00f97111
+# [SCOREBOARD ]   176 - success - instruction: SB    x13, 3843(x12)      expected=00000011 actual=00000011 
+# [DRIVER     ]   176 instruction: SB    x13, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00f97111
+# [MONITOR IN ]   177 instruction: LBU   x26, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00000000 
+# [SCOREBOARD ]   177 instruction: LBU   x26, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00000000
+# [DRIVER     ]   177 instruction: LBU   x26, 3843(x12)      op1: 000006f5 op2: 00005547 op3: 00000000
+# [MONITOR OUT]   177 instruction: READ, value: 00000011 
+# [SCOREBOARD ]   177  Read response: 00000011 
+# [SCOREBOARD ]   177 - success - instruction: LBU   x26, 3843(x12)      expected=00000011 actual=00000011 
+# [MONITOR OUT]   178 instruction: WRITE, value: f0bf3745 
+# [MONITOR IN ]   178 instruction: SW     x8, 2160(x23)      op1: 00007504 op2: 00006838 op3: f0bf3745 
+# [SCOREBOARD ]   177 Write response: f0bf3745 
+# [SCOREBOARD ]   178 instruction: SW     x8, 2160(x23)      op1: 00007504 op2: 00006838 op3: f0bf3745
+# [SCOREBOARD ]   178 - success - instruction: SW     x8, 2160(x23)      expected=f0bf3745 actual=f0bf3745 
+# [DRIVER     ]   178 instruction: SW     x8, 2160(x23)      op1: 00007504 op2: 00006838 op3: f0bf3745
+# [MONITOR IN ]   179 instruction: LW    x29, 2160(x23)      op1: 00007504 op2: 00006838 op3: 00000000 
+# [SCOREBOARD ]   179 instruction: LW    x29, 2160(x23)      op1: 00007504 op2: 00006838 op3: 00000000
+# [DRIVER     ]   179 instruction: LW    x29, 2160(x23)      op1: 00007504 op2: 00006838 op3: 00000000
+# [MONITOR OUT]   179 instruction: READ, value: f0bf3745 
+# [SCOREBOARD ]   179  Read response: f0bf3745 
+# [SCOREBOARD ]   179 - success - instruction: LW    x29, 2160(x23)      expected=f0bf3745 actual=f0bf3745 
+# [MONITOR OUT]   180 instruction: WRITE, value: f054a2f2 
+# [MONITOR IN ]   180 instruction: SW     x5, 392(x4)        op1: 00003094 op2: 00007754 op3: f054a2f2 
+# [SCOREBOARD ]   179 Write response: f054a2f2 
+# [SCOREBOARD ]   180 instruction: SW     x5, 392(x4)        op1: 00003094 op2: 00007754 op3: f054a2f2
+# [SCOREBOARD ]   180 - success - instruction: SW     x5, 392(x4)        expected=f054a2f2 actual=f054a2f2 
+# [DRIVER     ]   180 instruction: SW     x5, 392(x4)        op1: 00003094 op2: 00007754 op3: f054a2f2
+# [MONITOR IN ]   181 instruction: LW    x16, 392(x4)        op1: 00003094 op2: 00007754 op3: 00000000 
+# [SCOREBOARD ]   181 instruction: LW    x16, 392(x4)        op1: 00003094 op2: 00007754 op3: 00000000
+# [DRIVER     ]   181 instruction: LW    x16, 392(x4)        op1: 00003094 op2: 00007754 op3: 00000000
+# [MONITOR OUT]   181 instruction: READ, value: f054a2f2 
+# [SCOREBOARD ]   181  Read response: f054a2f2 
+# [SCOREBOARD ]   181 - success - instruction: LW    x16, 392(x4)        expected=f054a2f2 actual=f054a2f2 
+# [MONITOR OUT]   182 instruction: WRITE, value: 00e70000 
+# [MONITOR IN ]   182 instruction: SB     x1, 3917(x12)      op1: 00003094 op2: 00003bba op3: 8d22e8e7 
+# [SCOREBOARD ]   181 Write response: 00e70000 
+# [SCOREBOARD ]   182 instruction: SB     x1, 3917(x12)      op1: 00003094 op2: 00003bba op3: 8d22e8e7
+# [SCOREBOARD ]   182 - success - instruction: SB     x1, 3917(x12)      expected=00e70000 actual=00e70000 
+# [DRIVER     ]   182 instruction: SB     x1, 3917(x12)      op1: 00003094 op2: 00003bba op3: 8d22e8e7
+# [MONITOR IN ]   183 instruction: LBU    x5, 3917(x12)      op1: 00003094 op2: 00003bba op3: 00000000 
+# [SCOREBOARD ]   183 instruction: LBU    x5, 3917(x12)      op1: 00003094 op2: 00003bba op3: 00000000
+# [DRIVER     ]   183 instruction: LBU    x5, 3917(x12)      op1: 00003094 op2: 00003bba op3: 00000000
+# [MONITOR OUT]   183 instruction: READ, value: 000000e7 
+# [SCOREBOARD ]   183  Read response: 000000e7 
+# [SCOREBOARD ]   183 - success - instruction: LBU    x5, 3917(x12)      expected=000000e7 actual=000000e7 
+# [MONITOR OUT]   184 instruction: WRITE, value: c9128391 
+# [MONITOR IN ]   184 instruction: SW     x7, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: c9128391 
+# [SCOREBOARD ]   183 Write response: c9128391 
+# [SCOREBOARD ]   184 instruction: SW     x7, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: c9128391
+# [SCOREBOARD ]   184 - success - instruction: SW     x7, 1540(x11)      expected=c9128391 actual=c9128391 
+# [DRIVER     ]   184 instruction: SW     x7, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: c9128391
+# [MONITOR IN ]   185 instruction: LW     x8, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: 00000000 
+# [SCOREBOARD ]   185 instruction: LW     x8, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: 00000000
+# [DRIVER     ]   185 instruction: LW     x8, 1540(x11)      op1: 00006004 op2: 00001fc0 op3: 00000000
+# [MONITOR OUT]   185 instruction: READ, value: c9128391 
+# [SCOREBOARD ]   185  Read response: c9128391 
+# [SCOREBOARD ]   185 - success - instruction: LW     x8, 1540(x11)      expected=c9128391 actual=c9128391 
+# [MONITOR OUT]   186 instruction: WRITE, value: 80f54b96 
+# [MONITOR IN ]   186 instruction: SW    x14, 1296(x1)       op1: 00001708 op2: 00001038 op3: 80f54b96 
+# [SCOREBOARD ]   185 Write response: 80f54b96 
+# [SCOREBOARD ]   186 instruction: SW    x14, 1296(x1)       op1: 00001708 op2: 00001038 op3: 80f54b96
+# [SCOREBOARD ]   186 - success - instruction: SW    x14, 1296(x1)       expected=80f54b96 actual=80f54b96 
+# [DRIVER     ]   186 instruction: SW    x14, 1296(x1)       op1: 00001708 op2: 00001038 op3: 80f54b96
+# [MONITOR IN ]   187 instruction: LW    x13, 1296(x1)       op1: 00001708 op2: 00001038 op3: 00000000 
+# [SCOREBOARD ]   187 instruction: LW    x13, 1296(x1)       op1: 00001708 op2: 00001038 op3: 00000000
+# [DRIVER     ]   187 instruction: LW    x13, 1296(x1)       op1: 00001708 op2: 00001038 op3: 00000000
+# [MONITOR OUT]   187 instruction: READ, value: 80f54b96 
+# [SCOREBOARD ]   187  Read response: 80f54b96 
+# [SCOREBOARD ]   187 - success - instruction: LW    x13, 1296(x1)       expected=80f54b96 actual=80f54b96 
+# [MONITOR OUT]   188 instruction: WRITE, value: 00de0000 
+# [MONITOR IN ]   188 instruction: SB    x12, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 570accde 
+# [SCOREBOARD ]   187 Write response: 00de0000 
+# [SCOREBOARD ]   188 instruction: SB    x12, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 570accde
+# [SCOREBOARD ]   188 - success - instruction: SB    x12, 1307(x3)       expected=00de0000 actual=00de0000 
+# [DRIVER     ]   188 instruction: SB    x12, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 570accde
+# [MONITOR IN ]   189 instruction: LB    x23, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 00000000 
+# [SCOREBOARD ]   189 instruction: LB    x23, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 00000000
+# [DRIVER     ]   189 instruction: LB    x23, 1307(x3)       op1: 000077b9 op2: 0000378d op3: 00000000
+# [MONITOR OUT]   189 instruction: READ, value: ffffffde 
+# [SCOREBOARD ]   189  Read response: ffffffde 
+# [SCOREBOARD ]   189 - success - instruction: LB    x23, 1307(x3)       expected=ffffffde actual=ffffffde 
+# [MONITOR OUT]   190 instruction: WRITE, value: 7149db7e 
+# [MONITOR IN ]   190 instruction: SW    x25, 392(x1)        op1: 00001a08 op2: 00006154 op3: 7149db7e 
+# [SCOREBOARD ]   189 Write response: 7149db7e 
+# [SCOREBOARD ]   190 instruction: SW    x25, 392(x1)        op1: 00001a08 op2: 00006154 op3: 7149db7e
+# [SCOREBOARD ]   190 - success - instruction: SW    x25, 392(x1)        expected=7149db7e actual=7149db7e 
+# [DRIVER     ]   190 instruction: SW    x25, 392(x1)        op1: 00001a08 op2: 00006154 op3: 7149db7e
+# [MONITOR IN ]   191 instruction: LW    x18, 392(x1)        op1: 00001a08 op2: 00006154 op3: 00000000 
+# [SCOREBOARD ]   191 instruction: LW    x18, 392(x1)        op1: 00001a08 op2: 00006154 op3: 00000000
+# [DRIVER     ]   191 instruction: LW    x18, 392(x1)        op1: 00001a08 op2: 00006154 op3: 00000000
+# [MONITOR OUT]   191 instruction: READ, value: 7149db7e 
+# [SCOREBOARD ]   191  Read response: 7149db7e 
+# [SCOREBOARD ]   191 - success - instruction: LW    x18, 392(x1)        expected=7149db7e actual=7149db7e 
+# [MONITOR OUT]   192 instruction: WRITE, value: 2c000000 
+# [MONITOR IN ]   192 instruction: SB    x26, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 4d8c542c 
+# [SCOREBOARD ]   191 Write response: 2c000000 
+# [SCOREBOARD ]   192 instruction: SB    x26, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 4d8c542c
+# [SCOREBOARD ]   192 - success - instruction: SB    x26, 1610(x9)       expected=2c000000 actual=2c000000 
+# [DRIVER     ]   192 instruction: SB    x26, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 4d8c542c
+# [MONITOR IN ]   193 instruction: LBU    x5, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 00000000 
+# [SCOREBOARD ]   193 instruction: LBU    x5, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 00000000
+# [DRIVER     ]   193 instruction: LBU    x5, 1610(x9)       op1: 000034a8 op2: 000068bb op3: 00000000
+# [MONITOR OUT]   193 instruction: READ, value: 0000002c 
+# [SCOREBOARD ]   193  Read response: 0000002c 
+# [SCOREBOARD ]   193 - success - instruction: LBU    x5, 1610(x9)       expected=0000002c actual=0000002c 
+# [MONITOR OUT]   194 instruction: WRITE, value: 00940000 
+# [MONITOR IN ]   194 instruction: SB     x8, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 18e1fa94 
+# [SCOREBOARD ]   193 Write response: 00940000 
+# [SCOREBOARD ]   194 instruction: SB     x8, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 18e1fa94
+# [SCOREBOARD ]   194 - success - instruction: SB     x8, 3815(x16)      expected=00940000 actual=00940000 
+# [DRIVER     ]   194 instruction: SB     x8, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 18e1fa94
+# [MONITOR IN ]   195 instruction: LBU   x15, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 00000000 
+# [SCOREBOARD ]   195 instruction: LBU   x15, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 00000000
+# [DRIVER     ]   195 instruction: LBU   x15, 3815(x16)      op1: 000014d8 op2: 000040b6 op3: 00000000
+# [MONITOR OUT]   195 instruction: READ, value: 00000094 
+# [SCOREBOARD ]   195  Read response: 00000094 
+# [SCOREBOARD ]   195 - success - instruction: LBU   x15, 3815(x16)      expected=00000094 actual=00000094 
+# [MONITOR OUT]   196 instruction: WRITE, value: fd65bb19 
+# [MONITOR IN ]   196 instruction: SW    x22, 2956(x3)       op1: 000040bc op2: 00001d54 op3: fd65bb19 
+# [SCOREBOARD ]   195 Write response: fd65bb19 
+# [SCOREBOARD ]   196 instruction: SW    x22, 2956(x3)       op1: 000040bc op2: 00001d54 op3: fd65bb19
+# [SCOREBOARD ]   196 - success - instruction: SW    x22, 2956(x3)       expected=fd65bb19 actual=fd65bb19 
+# [DRIVER     ]   196 instruction: SW    x22, 2956(x3)       op1: 000040bc op2: 00001d54 op3: fd65bb19
+# [MONITOR IN ]   197 instruction: LW    x26, 2956(x3)       op1: 000040bc op2: 00001d54 op3: 00000000 
+# [SCOREBOARD ]   197 instruction: LW    x26, 2956(x3)       op1: 000040bc op2: 00001d54 op3: 00000000
+# [DRIVER     ]   197 instruction: LW    x26, 2956(x3)       op1: 000040bc op2: 00001d54 op3: 00000000
+# [MONITOR OUT]   197 instruction: READ, value: fd65bb19 
+# [SCOREBOARD ]   197  Read response: fd65bb19 
+# [SCOREBOARD ]   197 - success - instruction: LW    x26, 2956(x3)       expected=fd65bb19 actual=fd65bb19 
+# [MONITOR OUT]   198 instruction: WRITE, value: 6e97921e 
+# [MONITOR IN ]   198 instruction: SW    x29, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 6e97921e 
+# [SCOREBOARD ]   197 Write response: 6e97921e 
+# [SCOREBOARD ]   198 instruction: SW    x29, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 6e97921e
+# [SCOREBOARD ]   198 - success - instruction: SW    x29, 2596(x28)      expected=6e97921e actual=6e97921e 
+# [DRIVER     ]   198 instruction: SW    x29, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 6e97921e
+# [MONITOR IN ]   199 instruction: LW    x28, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 00000000 
+# [SCOREBOARD ]   199 instruction: LW    x28, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 00000000
+# [DRIVER     ]   199 instruction: LW    x28, 2596(x28)      op1: 00001c18 op2: 00002488 op3: 00000000
+# [MONITOR OUT]   199 instruction: READ, value: 6e97921e 
+# [SCOREBOARD ]   199  Read response: 6e97921e 
+# [SCOREBOARD ]   199 - success - instruction: LW    x28, 2596(x28)      expected=6e97921e actual=6e97921e 
+# [MONITOR OUT] End of test marker received 
+# [MONITOR IN ]     0 instruction: EBREAK                    op1: 00000000 op2: 00000000 op3: 00000000 
+# [SCOREBOARD ]   199  Read response: 00000000 
+# [SCOREBOARD ]     0 instruction: EBREAK                    op1: 00000000 op2: 00000000 op3: 00000000
+# ==================================================
+# ||                                              ||
+# || Mem_Ctrl Object Oriented Test Case Complete  ||
+# || Test Name: Random_Test                       ||
+# ||                                              ||
+# || Tests Run:     200                           ||
+# || Errors:          0                           ||
+# ||                                              ||
+# ||  >>> Test Passed! <<<                        ||
+# ||                                              ||
+# ==================================================
+# end of test reached 
+# ** Note: $finish    : environment.sv(77)
+#    Time: 4845 ns  Iteration: 2  Instance: /top
+# End time: 12:43:23 on Feb 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

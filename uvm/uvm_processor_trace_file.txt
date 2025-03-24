@@ -1,0 +1,265 @@
+Log file for Processor Execution Trace 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 96: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC  x5, 539351          set: x5 = 83ad7000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 112: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ANDI  x13, x27, 877        set: x13 = 00000341 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 128: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI   x6, x11, 6          set: x6 = bda2b180 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 144: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH    x17, 3046(x28)       set: x17 = ffffbd05 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 160: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x21, x15, 7          set: x21 = 5af23680 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 176: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL   x24, 860278          set: x24 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 192: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI  x18, x17, 1025       set: x18 = c61f2ff8 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 208: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT    x8, x29, 1452       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 224: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x5, x10, 1055       set: x5 = ffffffff 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 240: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x22, 2448(x21)       set: @00003bc4 = 000061a0 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 256: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD    x3, x27, x30        set: x3 = d6daf7ec 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 272: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x19, x12, 2176       set: x19 = 468a0aec 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 288: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x23, 2150(x19)       set: @00000714 = 00008e9e 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 304: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLTU  x10, x16, 2846       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 320: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BNE   x25,  x5, 1378       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 336: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x19, x26, x14        set: x19 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 352: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB    x7, x12, x12        set: x7 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 368: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGEU   x9, x29, 3368       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 384: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ANDI  x19,  x6, 3734       set: x19 = a7e15084 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 400: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x19,  x5, x10        set: x19 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 416: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH     x8, 742(x0)         set: @000002e6 = 0000e537 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 432: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x20, x29,  x9        set: x20 = 13424226 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 448: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ANDI  x28, x23, 3541       set: x28 = 484a9d10 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 464: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH    x22, 1020(x5)        set: x22 = 00005073 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 480: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x23, x12,  x9        set: x23 = 870c8e14 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 496: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x3, x17, x16        set: x3 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 512: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC  x6, 234528          set: x6 = 39420000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 528: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI   x28,  x6, 80         set: x28 = 9bc42afd 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 544: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x1, x31, 1044       set: x1 = ffffff31 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 560: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x30, x27, 2776       set: x30 = 2f9bf08b 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 576: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW     x9, 2980(x1)        set: x9 = 6441a817 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 592: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB     x8, 3498(x9)        set: x8 = 00000033 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 608: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR     x9, x27,  x5        set: x9 = bb3fec76 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 624: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL   x10, 616310          set: x10 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 640: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB     x8, 3108(x5)        set: x8 = ffffffd5 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 656: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LBU    x9, 2252(x6)        set: x9 = 0000003d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 672: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRLI  x14, x14, 3          set: x14 = 19dc3008 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 688: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI   x10,  x0, 2487       set: x10 = fffff9b7 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 704: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BEQ   x31, x21, 2280       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 720: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BNE   x23, x21, 3408       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 736: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLUI x28, x26, 31         set: x28 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 752: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR    x17, x31,  x4        set: x17 = dfdf77bf 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 768: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x12, x25, 3814       set: x12 = 9a6c4dc7 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 784: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x28, x31, 1408       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 800: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x10, 3064(x14)       set: x10 = be1d1186 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 816: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR    x22, x31, x25        set: x22 = 4cfbfc9f 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 832: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BEQ   x14, x16, 1230       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 848: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH     x5, 2046(x3)        set: @00001e08 = 00002070 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 864: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI   x7, x29, 1553       set: x7 = 4ba565cd 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 880: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x11,  x7, x21        set: x11 = 000049b9 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 896: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x26, x13, 1215       set: x26 = ab7a8b06 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 912: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x5, x30, 1032       set: x5 = 00152955 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 928: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x18, x11, 29         set: x18 = a0000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 944: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC x20, 95543           set: x20 = 17537000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 960: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x17, 463198          set: x17 = 7115e000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 976: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x17, 3888(x27)       set: x17 = b7f75655 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 992: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x12, 343772          set: x12 = 53edc000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1008: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI   x6, x17, 95         set: x6 = 0dcdef07 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1024: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x25, x11, 3834       set: x25 = 199709af 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1040: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLI  x27,  x1, 27         set: x27 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1056: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI   x1,  x5, 16         set: x1 = 5e2d0000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1072: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LBU   x26, 2189(x12)       set: x26 = 000000b6 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1088: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI    x8, 573012          set: x8 = 8be54000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1104: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x19, 1526(x16)       set: @0000687e = 00002ed8 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1120: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x17, x16, 30         set: x17 = c0000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1136: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SW     x0, 456(x21)        set: @00004bdc = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1152: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x29, x11, x21        set: x29 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1168: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x16, x18, x28        set: x16 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1184: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGEU  x15,  x0, 1246       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1200: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x26, x31, x11        set: x26 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1216: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL   x23, x13, x23        set: x23 = 3ca00000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1232: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND   x20,  x4, x29        set: x20 = 46100420 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1248: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLUI x10, x24, 9          set: x10 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1264: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LHU   x23, 2704(x23)       set: x23 = 0000edae 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1280: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL   x12, x24, x21        set: x12 = 58858770 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1296: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x13, x29, 179        set: x13 = 16149bfa 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1312: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH     x8, 1912(x29)       set: x8 = 00000460 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1328: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x25, x23, 15         set: x25 = 6f1b8000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1344: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL    x8, 634107          set: x8 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1360: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x10, x29, x20        set: x10 = 5183b049 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1376: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL    x9, x10, x15        set: x9 = a0000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1392: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB    x30, 2098(x5)        set: x30 = 00000021 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1408: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGE   x23,  x7, 2594       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1424: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI   x7, x19, 1842       set: x7 = c0d76430 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1440: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x30, 3914(x2)        set: @000043b8 = 00002d48 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1456: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x28, x21,  x5        set: x28 = 25644403 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1472: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x3,  x3, x16        set: x3 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1488: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SB     x6, 1821(x10)       set: @00003663 = 00000049 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1504: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB    x25, 2261(x0)        set: x25 = ffffff8e 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1520: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLI  x13, x13, 27         set: x13 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1536: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI  x22, x22, 1042       set: x22 = 0000096d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1552: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB     x9, 416(x4)         set: x9 = 0000002d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1568: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR    x27, x13, x30        set: x27 = fd7716bf 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1584: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x27, 422(x8)         set: @00007eea = 0000413c 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1600: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x10, x25,  x0        set: x10 = 48025f80 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1616: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x27, x25, x24        set: x27 = 00028aa1 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1632: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x12, 636424          set: x12 = 9b608000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1648: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB    x10, 2009(x18)       set: x10 = 00000002 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1664: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x18, x21, 999        set: x18 = abdaae4d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1680: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x13, x28,  x1        set: x13 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1696: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH     x2, 1226(x7)        set: @00006248 = 000019f7 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1712: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x18,  x1, x26        set: x18 = 2c395f29 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1728: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLI  x11, x29, 12         set: x11 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1744: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JALR  x27, 154(x9)         set: x27 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1760: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JALR  x13, 1113(x21)       set: x13 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1776: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI   x5, x30, 208        set: x5 = 1e0bb2c2 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1792: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGE    x6,  x0, 682        
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1808: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI  x24, x23, 1037       set: x24 = 000335bb 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1824: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x25, x25, 1710       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1840: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x31, 44644           set: x31 = 0ae64000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1856: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x31, 3540(x22)       set: x31 = 4f4d5481 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1872: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW     x6, 584(x19)        set: x6 = 94002511 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1888: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC  x7, 1010095         set: x7 = f69af000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1904: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x4, x27, 1042       set: x4 = ffffe108 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1920: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI   x11,  x9, 366        set: x11 = 42278b6e 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1936: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x14, 3880(x12)       set: x14 = 72b67477 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1952: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x24, x24,  x6        set: x24 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1968: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x23, x23,  x0        set: x23 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 1984: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x18, x17,  x3        set: x18 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2000: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLUI x24, x20, 22         set: x24 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2016: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC  x8, 49040           set: x8 = 0bf90000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2032: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI   x4, x19, 4020       set: x4 = c39904dc 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2048: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BNE    x0, x29, 3728       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2064: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI   x22,  x8, 2888       set: x22 = ffffffe9 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2080: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL    x4, x30, x14        set: x4 = 01cfb6e9 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2096: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x22, 1006786         set: x22 = f5cc2000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2112: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLI   x5,  x0, 22         set: x5 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2128: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND    x5,  x3,  x8        set: x5 = 018a4602 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2144: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x28, x29, 791        set: x28 = 44f13978 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2160: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB    x31, 1005(x30)       set: x31 = ffffff81 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2176: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x16, 388(x9)         set: x16 = 517790b0 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2192: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB    x19, 1139(x21)       set: x19 = 00000052 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2208: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH     x7, 3724(x6)        set: x7 = ffffaeef 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2224: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x17, 272(x11)        set: x17 = 9665e5f6 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2240: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLTU   x2, x22, 1484       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2256: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB    x8, x18, x19        set: x8 = cbe2ddb7 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2272: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x13, x15,  x5        set: x13 = 000053e3 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2288: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x15,  x7, x21        set: x15 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2304: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x13, x14, x10        set: x13 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2320: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR     x6, x19,  x6        set: x6 = c7f7bf97 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2336: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL   x15, 249064          set: x15 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2352: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x25, x22, 1621       set: x25 = 9bb31824 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2368: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LBU    x8, 2498(x10)       set: x8 = 00000042 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2384: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BEQ    x2,  x7, 1202       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2400: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI   x8, x19, 27         set: x8 = 48000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2416: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL    x7, 954387          set: x7 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2432: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x3, x21, x26        set: x3 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2448: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLUI x24, x23, 31         set: x24 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2464: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRLI   x6, x31, 1          set: x6 = 1b31d11c 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2480: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND   x31,  x2,  x3        set: x31 = 90058820 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2496: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x18,  x2, x17        set: x18 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2512: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW    x17, 4000(x3)        set: x17 = dfe6e48b 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2528: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ANDI  x18,  x7, 2404       set: x18 = a1a71004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2544: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x15, x13, 1489       set: x15 = 5e19a2be 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2560: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x14, 3308(x3)        set: @00001cb0 = 0000ccbb 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2576: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JALR  x17, 1174(x11)       set: x17 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2592: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x29,  x8, 2438       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2608: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x29, 701019          set: x29 = ab25b000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2624: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB    x4, x13, x18        set: x4 = 6adbe784 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2640: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL    x7, 865695          set: x7 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2656: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB    x1, x31,  x2        set: x1 = 72fe1334 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2672: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x26, 276643          set: x26 = 438a3000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2688: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC x24, 541879          set: x24 = 844b7000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2704: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BNE    x7,  x4, 2606       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2720: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL   x22, 500886          set: x22 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2736: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x26,  x5,  x2        set: x26 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2752: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLI  x19, x30, 1          set: x19 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2768: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL    x8, 327332          set: x8 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2784: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW     x4, 3844(x17)       set: x4 = c2f01a80 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2800: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGEU  x12, x29, 2546       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2816: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x29,  x9,  x2        set: x29 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2832: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x25,  x5, 765        set: x25 = aba78d4c 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2848: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC x30, 883788          set: x30 = d7c4c000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2864: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH     x7, 2822(x22)       set: x7 = ffff9e1d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2880: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH     x3, 2868(x12)       set: x3 = 00007ae1 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2896: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x18, x11,  x7        set: x18 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2912: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x14, x13,  x0        set: x14 = cd6da05b 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2928: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LW     x7, 1288(x16)       set: x7 = 4bcb20d9 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2944: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LB     x5, 2872(x9)        set: x5 = fffffff1 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2960: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLTU  x30,  x2, 3608       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2976: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LBU    x3, 395(x10)        set: x3 = 000000cd 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 2992: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x10, x26, 632        set: x10 = 006edd68 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3008: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LHU    x4, 410(x22)        set: x4 = 00006253 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3024: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x19, x31, 31         set: x19 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3040: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x21, 639529          set: x21 = 9c229000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3056: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XOR   x21, x24, x31        set: x21 = 88efb850 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3072: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x5,  x7, 1032       set: x5 = ffcccaab 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3088: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLUI x15, x31, 6          set: x15 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3104: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI   x8, x26, 1048       set: x8 = 00000009 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3120: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGE    x8,  x0, 2190       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3136: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XOR   x24, x21,  x0        set: x24 = 7febd768 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3152: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRA   x18, x23, x11        set: x18 = fffffb38 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3168: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI   x1,  x4, 3824       set: x1 = 62e8f261 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3184: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI    x4, 528333          set: x4 = 80fcd000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3200: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI   x3, x13, 20         set: x3 = a1d00000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3216: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x5, x11, x19        set: x5 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3232: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH     x6, 1068(x18)       set: x6 = 00003fec 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3248: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ANDI   x5, x13, 1588       set: x5 = 00000030 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3264: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x22, x16, x29        set: x22 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3280: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  OR    x21,  x0, x14        set: x21 = b6bbf8c4 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3296: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XOR   x12, x12, x23        set: x12 = 5b2d0135 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3312: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH    x26, 3300(x22)       set: x26 = 000071c5 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3328: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x30,  x6, 2435       set: x30 = 82aca0a2 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3344: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGEU   x9, x19, 960        
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3360: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRA    x4,  x0,  x0        set: x4 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3376: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LUI   x30, 638403          set: x30 = 9bdc3000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3392: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x24, x17,  x8        set: x24 = d95732d2 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3408: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x30, x11, x14        set: x30 = 00000074 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3424: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND    x8, x25,  x7        set: x8 = 54800c1d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3440: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SB    x26, 2352(x26)       set: @00000611 = 000000e1 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3456: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  JAL   x22, 143443          set: x22 = 00000004 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3472: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STLU  x26, x24, x24        set: x26 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3488: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLTU  x29,  x3, 1918       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3504: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI   x5,  x7, 2828       set: x5 = af51b402 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3520: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x15, x25, x15        set: x15 = 0000007b 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3536: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC x27, 963554          set: x27 = eb3e2000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3552: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BNE    x1, x12, 1474       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3568: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x15, 1164(x7)        set: @000080bc = 00001c75 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3584: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x12, x19, 3610       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3600: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LH    x12, 3944(x14)       set: x12 = ffff815c 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3616: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND    x2, x15, x19        set: x2 = 00842280 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3632: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x14,  x9, 1874       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3648: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x25, x17, x25        set: x25 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3664: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BGEU  x20,  x1, 1798       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3680: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRA   x26, x11, x29        set: x26 = fffc418d 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3696: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x19, x20, x28        set: x19 = 588c98df 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3712: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x12, x27, 1817       set: x12 = 486ddc55 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3728: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x21,  x9,  x6        set: x21 = 6b3a725b 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3744: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL   x20, x26, x13        set: x20 = 90000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3760: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x10, x31, 1664       set: x10 = a37028bd 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3776: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x22,  x2,  x8        set: x22 = 83213887 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3792: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC x20, 299074          set: x20 = 49042000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3808: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x21, x29, x22        set: x21 = 897a0a81 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3824: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x26, x27,  x0        set: x26 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3840: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI  x31, x15, 1028       set: x31 = ff347706 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3856: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADD   x21,  x2,  x5        set: x21 = 4aa576e9 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3872: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI   x2,  x4, 89         set: x2 = 389535aa 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3888: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI    x6, x23, 886        set: x6 = 0cf90ffe 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3904: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT   x19, x16, 2768       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3920: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRAI  x23, x21, 1027       set: x23 = fc7b7124 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3936: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL   x23, x22, x29        set: x23 = 4c000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3952: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AUIPC  x3, 149944          set: x3 = 249b8000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3968: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND    x2, x24, x10        set: x2 = 31287684 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 3984: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BLT    x5, x26, 980        
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4000: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH     x0, 2428(x3)        set: @0000549c = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4016: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x23, 3090(x6)        set: @00000062 = 00006ce0 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4032: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x23, x20, x20        set: x23 = 000001bc 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4048: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL   x23, x18, x26        set: x23 = 00000001 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4064: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SH    x17, 388(x21)        set: @00001f62 = 00001da8 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4080: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  BEQ   x26, x25, 3872       
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4096: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x27, x18, 143        set: x27 = e6473f2f 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4112: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LBU    x2, 2493(x10)       set: x2 = 00000002 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4128: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  AND   x17, x29, x14        set: x17 = 08020080 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4144: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  LHU   x25, 2062(x22)       set: x25 = 000016db 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4160: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x1, x27, x25        set: x1 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4176: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  STL    x1, x18, x31        set: x1 = 00000000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4192: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ADDI  x23, x24, 1044       set: x23 = e6bd5baf 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4208: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SRL   x31, x21, x16        set: x31 = 00000050 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4224: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLL   x13, x11, x20        set: x13 = 492f0000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4240: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SLLI  x20, x27, 12         set: x20 = 14e9a000 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4256: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SW    x29, 480(x13)        set: @00001668 = 1503910c 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4272: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  SUB   x26, x31,  x5        set: x26 = e2e880bc 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4288: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  ORI   x12, x23, 645        set: x12 = 9be3e2d7 
+UVM_INFO ./tb_sources/riscv_tracer.svh(49) @ 4304: uvm_test_top.opcode_env.riscv_tracer [riscv_tracer_c]  XORI  x12,  x2, 216        set: x12 = e61df45a 

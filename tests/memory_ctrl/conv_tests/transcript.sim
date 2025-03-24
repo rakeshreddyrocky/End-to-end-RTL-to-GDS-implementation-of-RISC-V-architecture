@@ -1,0 +1,277 @@
+# vsim -voptargs="+acc" -work work -c -do "run.do" top 
+# Start time: 12:17:47 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "memory_ctrl(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.opcodes(fast)
+# Loading work.memory_ctrl_unit_test_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.memory_ctrl_sv_unit(fast)
+# Loading work.memory_ctrl(fast)
+# Loading work.ssram(fast)
+# do run.do
+# Memory Test: size:           4 count:          16 
+# Testing opcode: SW     x3, 1(x2)
+# write of 00000000 to address 00000000 
+# write of 00000001 to address 00000004 
+# write of 00000002 to address 00000008 
+# write of 00000003 to address 0000000c 
+# write of 00000004 to address 00000010 
+# write of 00000005 to address 00000014 
+# write of 00000006 to address 00000018 
+# write of 00000007 to address 0000001c 
+# write of 00000008 to address 00000020 
+# write of 00000009 to address 00000024 
+# write of 0000000a to address 00000028 
+# write of 0000000b to address 0000002c 
+# write of 0000000c to address 00000030 
+# write of 0000000d to address 00000034 
+# write of 0000000e to address 00000038 
+# write of 0000000f to address 0000003c 
+# Testing opcode: LW     x1, 3(x2)
+# read 00000000 from address 00000000 
+# read 00000001 from address 00000004 
+# read 00000002 from address 00000008 
+# read 00000003 from address 0000000c 
+# read 00000004 from address 00000010 
+# read 00000005 from address 00000014 
+# read 00000006 from address 00000018 
+# read 00000007 from address 0000001c 
+# read 00000008 from address 00000020 
+# read 00000009 from address 00000024 
+# read 0000000a from address 00000028 
+# read 0000000b from address 0000002c 
+# read 0000000c from address 00000030 
+# read 0000000d from address 00000034 
+# read 0000000e from address 00000038 
+# read 0000000f from address 0000003c 
+# memory test finished 
+# 
+# Memory Test: size:           2 count:          32 
+# Testing opcode: SH     x3, 1(x2)
+# write of 0000 to address 00000000 
+# write of 0001 to address 00000002 
+# write of 0002 to address 00000004 
+# write of 0003 to address 00000006 
+# write of 0004 to address 00000008 
+# write of 0005 to address 0000000a 
+# write of 0006 to address 0000000c 
+# write of 0007 to address 0000000e 
+# write of 0008 to address 00000010 
+# write of 0009 to address 00000012 
+# write of 000a to address 00000014 
+# write of 000b to address 00000016 
+# write of 000c to address 00000018 
+# write of 000d to address 0000001a 
+# write of 000e to address 0000001c 
+# write of 000f to address 0000001e 
+# write of 0010 to address 00000020 
+# write of 0011 to address 00000022 
+# write of 0012 to address 00000024 
+# write of 0013 to address 00000026 
+# write of 0014 to address 00000028 
+# write of 0015 to address 0000002a 
+# write of 0016 to address 0000002c 
+# write of 0017 to address 0000002e 
+# write of 0018 to address 00000030 
+# write of 0019 to address 00000032 
+# write of 001a to address 00000034 
+# write of 001b to address 00000036 
+# write of 001c to address 00000038 
+# write of 001d to address 0000003a 
+# write of 001e to address 0000003c 
+# write of 001f to address 0000003e 
+# Testing opcode: LH     x1, 3(x2)
+# read 0000 from address 00000000 
+# read 0001 from address 00000002 
+# read 0002 from address 00000004 
+# read 0003 from address 00000006 
+# read 0004 from address 00000008 
+# read 0005 from address 0000000a 
+# read 0006 from address 0000000c 
+# read 0007 from address 0000000e 
+# read 0008 from address 00000010 
+# read 0009 from address 00000012 
+# read 000a from address 00000014 
+# read 000b from address 00000016 
+# read 000c from address 00000018 
+# read 000d from address 0000001a 
+# read 000e from address 0000001c 
+# read 000f from address 0000001e 
+# read 0010 from address 00000020 
+# read 0011 from address 00000022 
+# read 0012 from address 00000024 
+# read 0013 from address 00000026 
+# read 0014 from address 00000028 
+# read 0015 from address 0000002a 
+# read 0016 from address 0000002c 
+# read 0017 from address 0000002e 
+# read 0018 from address 00000030 
+# read 0019 from address 00000032 
+# read 001a from address 00000034 
+# read 001b from address 00000036 
+# read 001c from address 00000038 
+# read 001d from address 0000003a 
+# read 001e from address 0000003c 
+# read 001f from address 0000003e 
+# memory test finished 
+# 
+# Memory Test: size:           1 count:          64 
+# Testing opcode: SB     x3, 1(x2)
+# write of 00 to address 00000000 
+# write of 01 to address 00000001 
+# write of 02 to address 00000002 
+# write of 03 to address 00000003 
+# write of 04 to address 00000004 
+# write of 05 to address 00000005 
+# write of 06 to address 00000006 
+# write of 07 to address 00000007 
+# write of 08 to address 00000008 
+# write of 09 to address 00000009 
+# write of 0a to address 0000000a 
+# write of 0b to address 0000000b 
+# write of 0c to address 0000000c 
+# write of 0d to address 0000000d 
+# write of 0e to address 0000000e 
+# write of 0f to address 0000000f 
+# write of 10 to address 00000010 
+# write of 11 to address 00000011 
+# write of 12 to address 00000012 
+# write of 13 to address 00000013 
+# write of 14 to address 00000014 
+# write of 15 to address 00000015 
+# write of 16 to address 00000016 
+# write of 17 to address 00000017 
+# write of 18 to address 00000018 
+# write of 19 to address 00000019 
+# write of 1a to address 0000001a 
+# write of 1b to address 0000001b 
+# write of 1c to address 0000001c 
+# write of 1d to address 0000001d 
+# write of 1e to address 0000001e 
+# write of 1f to address 0000001f 
+# write of 20 to address 00000020 
+# write of 21 to address 00000021 
+# write of 22 to address 00000022 
+# write of 23 to address 00000023 
+# write of 24 to address 00000024 
+# write of 25 to address 00000025 
+# write of 26 to address 00000026 
+# write of 27 to address 00000027 
+# write of 28 to address 00000028 
+# write of 29 to address 00000029 
+# write of 2a to address 0000002a 
+# write of 2b to address 0000002b 
+# write of 2c to address 0000002c 
+# write of 2d to address 0000002d 
+# write of 2e to address 0000002e 
+# write of 2f to address 0000002f 
+# write of 30 to address 00000030 
+# write of 31 to address 00000031 
+# write of 32 to address 00000032 
+# write of 33 to address 00000033 
+# write of 34 to address 00000034 
+# write of 35 to address 00000035 
+# write of 36 to address 00000036 
+# write of 37 to address 00000037 
+# write of 38 to address 00000038 
+# write of 39 to address 00000039 
+# write of 3a to address 0000003a 
+# write of 3b to address 0000003b 
+# write of 3c to address 0000003c 
+# write of 3d to address 0000003d 
+# write of 3e to address 0000003e 
+# write of 3f to address 0000003f 
+# Testing opcode: LB     x1, 3(x2)
+# read 00 from address 00000000 
+# read 01 from address 00000001 
+# read 02 from address 00000002 
+# read 03 from address 00000003 
+# read 04 from address 00000004 
+# read 05 from address 00000005 
+# read 06 from address 00000006 
+# read 07 from address 00000007 
+# read 08 from address 00000008 
+# read 09 from address 00000009 
+# read 0a from address 0000000a 
+# read 0b from address 0000000b 
+# read 0c from address 0000000c 
+# read 0d from address 0000000d 
+# read 0e from address 0000000e 
+# read 0f from address 0000000f 
+# read 10 from address 00000010 
+# read 11 from address 00000011 
+# read 12 from address 00000012 
+# read 13 from address 00000013 
+# read 14 from address 00000014 
+# read 15 from address 00000015 
+# read 16 from address 00000016 
+# read 17 from address 00000017 
+# read 18 from address 00000018 
+# read 19 from address 00000019 
+# read 1a from address 0000001a 
+# read 1b from address 0000001b 
+# read 1c from address 0000001c 
+# read 1d from address 0000001d 
+# read 1e from address 0000001e 
+# read 1f from address 0000001f 
+# read 20 from address 00000020 
+# read 21 from address 00000021 
+# read 22 from address 00000022 
+# read 23 from address 00000023 
+# read 24 from address 00000024 
+# read 25 from address 00000025 
+# read 26 from address 00000026 
+# read 27 from address 00000027 
+# read 28 from address 00000028 
+# read 29 from address 00000029 
+# read 2a from address 0000002a 
+# read 2b from address 0000002b 
+# read 2c from address 0000002c 
+# read 2d from address 0000002d 
+# read 2e from address 0000002e 
+# read 2f from address 0000002f 
+# read 30 from address 00000030 
+# read 31 from address 00000031 
+# read 32 from address 00000032 
+# read 33 from address 00000033 
+# read 34 from address 00000034 
+# read 35 from address 00000035 
+# read 36 from address 00000036 
+# read 37 from address 00000037 
+# read 38 from address 00000038 
+# read 39 from address 00000039 
+# read 3a from address 0000003a 
+# read 3b from address 0000003b 
+# read 3c from address 0000003c 
+# read 3d from address 0000003d 
+# read 3e from address 0000003e 
+# read 3f from address 0000003f 
+# memory test finished 
+# 
+# memory test complete 
+# 
+# Test Passed! 
+# 
+# ** Note: $finish    : .//memory_ctrl_unit_test.sv(139)
+#    Time: 8980 ns  Iteration: 1  Instance: /top
+# End time: 12:17:49 on Feb 19,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

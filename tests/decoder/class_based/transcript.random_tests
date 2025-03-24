@@ -1,0 +1,1257 @@
+# vsim -voptargs="+acc" -work work -c -do "run.do" top -gTEST_NO=1 
+# Start time: 11:56:57 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: .//top.sv(36): (vopt-8386) An enum variable 'decoder_test' may only be assigned the same enum typed variable or one of its values. Parameter TEST_NO requires an explicit cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.decoder_if_i(fast)
+# Loading work.opcodes(fast)
+# Loading work.decoder_oo_tb_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.decoder_interface_sv_unit(fast)
+# Loading work.decoder_if_i(fast__2)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# do run.do
+# generator: started
+# generator: in main
+# New instruction created: BLTU  x19, x24, 1950 
+# [GENERATOR  ]     0 instruction: BLTU  x19, x24, 1950      register[1]: c704e700 register[2]: c704e700 register[3]: ba142621 
+# New instruction created: ANDI   x4,  x3, 1494 
+# [GENERATOR  ]     1 instruction: ANDI   x4,  x3, 1494      register[1]: f0a6ed6b register[2]: f0a6ed6b register[3]: 02b3741c 
+# New instruction created: BLT   x14, x29, 2424 
+# [GENERATOR  ]     2 instruction: BLT   x14, x29, 2424      register[1]: 8abd6c3f register[2]: 8abd6c3f register[3]: 1f92bd63 
+# New instruction created: LUI   x27, 410686 
+# [GENERATOR  ]     3 instruction: LUI   x27, 410686         register[1]: 6fe3bab3 register[2]: 6fe3bab3 register[3]: a5b1d53e 
+# New instruction created: STLUI x24,  x9, 6 
+# [GENERATOR  ]     4 instruction: STLUI x24,  x9, 6         register[1]: 6aab6dbd register[2]: 6aab6dbd register[3]: 727c24ce 
+# New instruction created: SRLI  x29, x15, 8 
+# [GENERATOR  ]     5 instruction: SRLI  x29, x15, 8         register[1]: 9825d368 register[2]: 9825d368 register[3]: c0994c66 
+# New instruction created: STLUI x20, x25, 5 
+# [GENERATOR  ]     6 instruction: STLUI x20, x25, 5         register[1]: ce9a73ae register[2]: ce9a73ae register[3]: 93edb5f8 
+# New instruction created: STLU  x21, x19, x16 
+# [GENERATOR  ]     7 instruction: STLU  x21, x19, x16       register[1]: 6ba3fe24 register[2]: 6ba3fe24 register[3]: c2313a0c 
+# New instruction created: LHU   x30, 3518(x12) 
+# [GENERATOR  ]     8 instruction: LHU   x30, 3518(x12)      register[1]: 59848fd1 register[2]: 59848fd1 register[3]: c484e14b 
+# New instruction created: ADD   x24, x14, x24 
+# [GENERATOR  ]     9 instruction: ADD   x24, x14, x24       register[1]: 79e47fcb register[2]: 79e47fcb register[3]: 71c351b9 
+# New instruction created: BNE   x13, x16, 3012 
+# [GENERATOR  ]    10 instruction: BNE   x13, x16, 3012      register[1]: 24d284e8 register[2]: 24d284e8 register[3]: 6ec05071 
+# New instruction created: STLU   x5,  x8,  x6 
+# [GENERATOR  ]    11 instruction: STLU   x5,  x8,  x6       register[1]: 2e1b6e44 register[2]: 2e1b6e44 register[3]: dcebe924 
+# New instruction created: SLL    x2, x18, x17 
+# [GENERATOR  ]    12 instruction: SLL    x2, x18, x17       register[1]: 9d8481ad register[2]: 9d8481ad register[3]: 72b53a3f 
+# New instruction created: STLU  x16, x19, x31 
+# [GENERATOR  ]    13 instruction: STLU  x16, x19, x31       register[1]: ab931411 register[2]: ab931411 register[3]: 03d197b3 
+# New instruction created: BGE    x7, x19, 1126 
+# [GENERATOR  ]    14 instruction: BGE    x7, x19, 1126      register[1]: 9a7e8679 register[2]: 9a7e8679 register[3]: aa979b93 
+# New instruction created: LH    x19, 2660(x2) 
+# [GENERATOR  ]    15 instruction: LH    x19, 2660(x2)       register[1]: 8326c070 register[2]: 8326c070 register[3]: 59518fb0 
+# New instruction created: LBU    x2, 3982(x29) 
+# [GENERATOR  ]    16 instruction: LBU    x2, 3982(x29)      register[1]: d8c35acf register[2]: d8c35acf register[3]: 315f40e8 
+# New instruction created: SRL    x5, x12, x24 
+# [GENERATOR  ]    17 instruction: SRL    x5, x12, x24       register[1]: 59047539 register[2]: 59047539 register[3]: 51a5d1f5 
+# New instruction created: AUIPC x20, 562485 
+# [GENERATOR  ]    18 instruction: AUIPC x20, 562485         register[1]: 7077b2e1 register[2]: 7077b2e1 register[3]: dd161de6 
+# New instruction created: LUI   x30, 887589 
+# [GENERATOR  ]    19 instruction: LUI   x30, 887589         register[1]: c2eb5aae register[2]: c2eb5aae register[3]: 28d87e03 
+# New instruction created: ADD    x0, x28,  x0 
+# [GENERATOR  ]    20 instruction: ADD    x0, x28,  x0       register[1]: b14f7a68 register[2]: b14f7a68 register[3]: e4bb68f7 
+# New instruction created: LUI   x29, 789533 
+# [GENERATOR  ]    21 instruction: LUI   x29, 789533         register[1]: ca7a6e22 register[2]: ca7a6e22 register[3]: 92ee212d 
+# New instruction created: STLI  x28, x27, 11 
+# [GENERATOR  ]    22 instruction: STLI  x28, x27, 11        register[1]: b23bc914 register[2]: b23bc914 register[3]: b8c1c6bf 
+# New instruction created: LW    x19, 4091(x22) 
+# [GENERATOR  ]    23 instruction: LW    x19, 4091(x22)      register[1]: 091cb29f register[2]: 091cb29f register[3]: 0ee05952 
+# New instruction created: JAL   x26, 464922 
+# [GENERATOR  ]    24 instruction: JAL   x26, 464922         register[1]: b28bb894 register[2]: b28bb894 register[3]: 9458cb48 
+# New instruction created: SRA   x22, x21, x14 
+# [GENERATOR  ]    25 instruction: SRA   x22, x21, x14       register[1]: 8adc9cfa register[2]: 8adc9cfa register[3]: e1e01427 
+# New instruction created: SRA   x10, x27, x11 
+# [GENERATOR  ]    26 instruction: SRA   x10, x27, x11       register[1]: 0a5a3b21 register[2]: 0a5a3b21 register[3]: 85c988d5 
+# New instruction created: LHU   x28, 3082(x25) 
+# [GENERATOR  ]    27 instruction: LHU   x28, 3082(x25)      register[1]: 59d9a969 register[2]: 59d9a969 register[3]: 055d061c 
+# New instruction created: BLT   x24, x15, 2636 
+# [GENERATOR  ]    28 instruction: BLT   x24, x15, 2636      register[1]: f0ce3b3e register[2]: f0ce3b3e register[3]: 7ca910e2 
+# New instruction created: SH    x30, 486(x3) 
+# [GENERATOR  ]    29 instruction: SH    x30, 486(x3)        register[1]: ebbfa198 register[2]: ebbfa198 register[3]: ac7f9f40 
+# New instruction created: AND    x7, x30, x17 
+# [GENERATOR  ]    30 instruction: AND    x7, x30, x17       register[1]: dc386b89 register[2]: dc386b89 register[3]: fb7e6300 
+# New instruction created: SLLI  x25, x16, 3 
+# [GENERATOR  ]    31 instruction: SLLI  x25, x16, 3         register[1]: b7e539ca register[2]: b7e539ca register[3]: 385f1254 
+# New instruction created: BGE   x15,  x1, 122 
+# [GENERATOR  ]    32 instruction: BGE   x15,  x1, 122       register[1]: cfe88653 register[2]: cfe88653 register[3]: 9f4c5afb 
+# New instruction created: ADD   x25, x11, x28 
+# [GENERATOR  ]    33 instruction: ADD   x25, x11, x28       register[1]: 7f35e541 register[2]: 7f35e541 register[3]: 09f4cf2e 
+# New instruction created: SRLI  x23, x20, 0 
+# [GENERATOR  ]    34 instruction: SRLI  x23, x20, 0         register[1]: 591f7514 register[2]: 591f7514 register[3]: 0ddaceee 
+# New instruction created: STL    x7,  x9, x28 
+# [GENERATOR  ]    35 instruction: STL    x7,  x9, x28       register[1]: 91e4d2cc register[2]: 91e4d2cc register[3]: 34def974 
+# New instruction created: AUIPC x20, 383793 
+# [GENERATOR  ]    36 instruction: AUIPC x20, 383793         register[1]: b6fc24a1 register[2]: b6fc24a1 register[3]: 4770590e 
+# New instruction created: BLTU  x14,  x7, 734 
+# [GENERATOR  ]    37 instruction: BLTU  x14,  x7, 734       register[1]: 6fac91d9 register[2]: 6fac91d9 register[3]: 56e4d324 
+# New instruction created: ADD   x14, x26, x26 
+# [GENERATOR  ]    38 instruction: ADD   x14, x26, x26       register[1]: 93aa7fb1 register[2]: 93aa7fb1 register[3]: 1fd3ba5e 
+# New instruction created: BEQ   x12, x14, 642 
+# [GENERATOR  ]    39 instruction: BEQ   x12, x14, 642       register[1]: 014731dc register[2]: 014731dc register[3]: 229baece 
+# New instruction created: LBU    x1, 810(x25) 
+# [GENERATOR  ]    40 instruction: LBU    x1, 810(x25)       register[1]: 19ccfb24 register[2]: 19ccfb24 register[3]: 4e2d7c0d 
+# New instruction created: SB    x15, 99(x17) 
+# [GENERATOR  ]    41 instruction: SB    x15, 99(x17)        register[1]: e4e4e7bc register[2]: e4e4e7bc register[3]: 4f7785c7 
+# New instruction created: LH    x11, 2699(x11) 
+# [GENERATOR  ]    42 instruction: LH    x11, 2699(x11)      register[1]: ead6afe4 register[2]: ead6afe4 register[3]: 6b88fd29 
+# New instruction created: SB     x9, 78(x31) 
+# [GENERATOR  ]    43 instruction: SB     x9, 78(x31)        register[1]: a96e9b08 register[2]: a96e9b08 register[3]: 59eab020 
+# New instruction created: SW     x2, 358(x26) 
+# [GENERATOR  ]    44 instruction: SW     x2, 358(x26)       register[1]: b2870cd7 register[2]: b2870cd7 register[3]: 7a7eaba5 
+# New instruction created: SUB   x28, x31,  x7 
+# [GENERATOR  ]    45 instruction: SUB   x28, x31,  x7       register[1]: 58402bbc register[2]: 58402bbc register[3]: 52ebcf3a 
+# New instruction created: XOR   x28,  x0,  x4 
+# [GENERATOR  ]    46 instruction: XOR   x28,  x0,  x4       register[1]: e53a5a25 register[2]: e53a5a25 register[3]: 9efe2a1a 
+# New instruction created: SLLI  x10, x16, 0 
+# [GENERATOR  ]    47 instruction: SLLI  x10, x16, 0         register[1]: 3bd9a385 register[2]: 3bd9a385 register[3]: 9509336e 
+# New instruction created: BGEU  x17, x29, 2042 
+# [GENERATOR  ]    48 instruction: BGEU  x17, x29, 2042      register[1]: 7307acda register[2]: 7307acda register[3]: 657c59c8 
+# New instruction created: AUIPC x28, 398017 
+# [GENERATOR  ]    49 instruction: AUIPC x28, 398017         register[1]: 5fcd57a7 register[2]: 5fcd57a7 register[3]: c4a6b072 
+# New instruction created: LH    x21, 658(x16) 
+# [GENERATOR  ]    50 instruction: LH    x21, 658(x16)       register[1]: 1abc6d1b register[2]: 1abc6d1b register[3]: 26f57a31 
+# New instruction created: BGEU  x11, x15, 3228 
+# [GENERATOR  ]    51 instruction: BGEU  x11, x15, 3228      register[1]: dd933e95 register[2]: dd933e95 register[3]: 3abbc6b0 
+# New instruction created: STL   x28,  x7, x31 
+# [GENERATOR  ]    52 instruction: STL   x28,  x7, x31       register[1]: 289696ad register[2]: 289696ad register[3]: ee366dd0 
+# New instruction created: BGEU  x10, x15, 1128 
+# [GENERATOR  ]    53 instruction: BGEU  x10, x15, 1128      register[1]: a9fd8bb0 register[2]: a9fd8bb0 register[3]: 49034721 
+# New instruction created: SW    x12, 3207(x28) 
+# [GENERATOR  ]    54 instruction: SW    x12, 3207(x28)      register[1]: 560bb68c register[2]: 560bb68c register[3]: bcbf5f10 
+# New instruction created: BLTU  x31,  x1, 3462 
+# [GENERATOR  ]    55 instruction: BLTU  x31,  x1, 3462      register[1]: 3b6e649b register[2]: 3b6e649b register[3]: 9711af1a 
+# New instruction created: ADD   x14,  x2, x27 
+# [GENERATOR  ]    56 instruction: ADD   x14,  x2, x27       register[1]: 8bf9af79 register[2]: 8bf9af79 register[3]: e28f0d4f 
+# New instruction created: STLI  x28, x31, 9 
+# [GENERATOR  ]    57 instruction: STLI  x28, x31, 9         register[1]: 49061970 register[2]: 49061970 register[3]: fe8ccb43 
+# New instruction created: STLU  x26, x19,  x0 
+# [GENERATOR  ]    58 instruction: STLU  x26, x19,  x0       register[1]: d1a37008 register[2]: d1a37008 register[3]: e686fe93 
+# New instruction created: JALR  x13, 658(x17) 
+# [GENERATOR  ]    59 instruction: JALR  x13, 658(x17)       register[1]: 62347894 register[2]: 62347894 register[3]: 13cf466b 
+# New instruction created: SB    x14, 1154(x31) 
+# [GENERATOR  ]    60 instruction: SB    x14, 1154(x31)      register[1]: db925112 register[2]: db925112 register[3]: 8bb3a351 
+# New instruction created: SW     x8, 3821(x2) 
+# [GENERATOR  ]    61 instruction: SW     x8, 3821(x2)       register[1]: 4e70821b register[2]: 4e70821b register[3]: b9af93af 
+# New instruction created: OR    x12, x25,  x0 
+# [GENERATOR  ]    62 instruction: OR    x12, x25,  x0       register[1]: 80eb93ee register[2]: 80eb93ee register[3]: 041c535a 
+# New instruction created: SB     x1, 3882(x2) 
+# [GENERATOR  ]    63 instruction: SB     x1, 3882(x2)       register[1]: b4462c87 register[2]: b4462c87 register[3]: a3a56745 
+# New instruction created: SB    x28, 1099(x20) 
+# [GENERATOR  ]    64 instruction: SB    x28, 1099(x20)      register[1]: bc8f8f91 register[2]: bc8f8f91 register[3]: 0c21c84e 
+# New instruction created: LB    x31, 1167(x14) 
+# [GENERATOR  ]    65 instruction: LB    x31, 1167(x14)      register[1]: 8b303ca5 register[2]: 8b303ca5 register[3]: 2bf23497 
+# New instruction created: JAL   x19, 720422 
+# [GENERATOR  ]    66 instruction: JAL   x19, 720422         register[1]: 08acf76e register[2]: 08acf76e register[3]: 8c27dc89 
+# New instruction created: OR    x30, x16, x17 
+# [GENERATOR  ]    67 instruction: OR    x30, x16, x17       register[1]: 80325357 register[2]: 80325357 register[3]: b564b839 
+# New instruction created: LHU   x21, 1628(x0) 
+# [GENERATOR  ]    68 instruction: LHU   x21, 1628(x0)       register[1]: 70d02bf3 register[2]: 70d02bf3 register[3]: 33ebdd8e 
+# New instruction created: BNE    x2, x19, 3808 
+# [GENERATOR  ]    69 instruction: BNE    x2, x19, 3808      register[1]: 3a73f15a register[2]: 3a73f15a register[3]: 7f04089f 
+# New instruction created: SRLI  x18,  x2, 19 
+# [GENERATOR  ]    70 instruction: SRLI  x18,  x2, 19        register[1]: d45d58d7 register[2]: d45d58d7 register[3]: 2358905a 
+# New instruction created: XORI  x31, x11, 3747 
+# [GENERATOR  ]    71 instruction: XORI  x31, x11, 3747      register[1]: 4183d60e register[2]: 4183d60e register[3]: 81e1bcf4 
+# New instruction created: SB    x25, 1603(x6) 
+# [GENERATOR  ]    72 instruction: SB    x25, 1603(x6)       register[1]: 57d4c370 register[2]: 57d4c370 register[3]: 945c11c4 
+# New instruction created: AUIPC x21, 214033 
+# [GENERATOR  ]    73 instruction: AUIPC x21, 214033         register[1]: 85cead95 register[2]: 85cead95 register[3]: ab7d3651 
+# New instruction created: SH     x0, 1280(x24) 
+# [GENERATOR  ]    74 instruction: SH     x0, 1280(x24)      register[1]: dc61eff6 register[2]: dc61eff6 register[3]: ddef35f5 
+# New instruction created: BLTU  x11, x24, 730 
+# [GENERATOR  ]    75 instruction: BLTU  x11, x24, 730       register[1]: afbb86d6 register[2]: afbb86d6 register[3]: 57b3aa82 
+# New instruction created: LB    x11, 630(x3) 
+# [GENERATOR  ]    76 instruction: LB    x11, 630(x3)        register[1]: dc70b750 register[2]: dc70b750 register[3]: 47e1f9a0 
+# New instruction created: BEQ   x28, x15, 3514 
+# [GENERATOR  ]    77 instruction: BEQ   x28, x15, 3514      register[1]: d22a0610 register[2]: d22a0610 register[3]: bdbdb6f9 
+# New instruction created: JAL   x31, 166406 
+# [GENERATOR  ]    78 instruction: JAL   x31, 166406         register[1]: f0ab66a8 register[2]: f0ab66a8 register[3]: 294ac816 
+# New instruction created: ANDI  x19, x26, 3835 
+# [GENERATOR  ]    79 instruction: ANDI  x19, x26, 3835      register[1]: 6fd000ae register[2]: 6fd000ae register[3]: efed679d 
+# New instruction created: AND    x3, x12,  x9 
+# [GENERATOR  ]    80 instruction: AND    x3, x12,  x9       register[1]: bfe0df3b register[2]: bfe0df3b register[3]: 2cfb7368 
+# New instruction created: STLU  x20, x25, x21 
+# [GENERATOR  ]    81 instruction: STLU  x20, x25, x21       register[1]: daf0257e register[2]: daf0257e register[3]: 1a80f1c4 
+# New instruction created: SLL   x20, x31, x16 
+# [GENERATOR  ]    82 instruction: SLL   x20, x31, x16       register[1]: 028b1652 register[2]: 028b1652 register[3]: a918c802 
+# New instruction created: BLTU  x18, x16, 2952 
+# [GENERATOR  ]    83 instruction: BLTU  x18, x16, 2952      register[1]: 08ab34a8 register[2]: 08ab34a8 register[3]: 98d3da1a 
+# New instruction created: BEQ    x8, x27, 1414 
+# [GENERATOR  ]    84 instruction: BEQ    x8, x27, 1414      register[1]: 696ed605 register[2]: 696ed605 register[3]: 70f249ba 
+# New instruction created: STLI   x3,  x9, 16 
+# [GENERATOR  ]    85 instruction: STLI   x3,  x9, 16        register[1]: cfc18eee register[2]: cfc18eee register[3]: 13604d83 
+# New instruction created: LW    x19, 3388(x8) 
+# [GENERATOR  ]    86 instruction: LW    x19, 3388(x8)       register[1]: 686e0ea3 register[2]: 686e0ea3 register[3]: b080eedb 
+# New instruction created: BGE   x22, x21, 2964 
+# [GENERATOR  ]    87 instruction: BGE   x22, x21, 2964      register[1]: 7aeb6827 register[2]: 7aeb6827 register[3]: cc2cd92b 
+# New instruction created: SB    x13, 3843(x12) 
+# [GENERATOR  ]    88 instruction: SB    x13, 3843(x12)      register[1]: 7946930e register[2]: 7946930e register[3]: 6f23834b 
+# New instruction created: SRA   x29, x23,  x8 
+# [GENERATOR  ]    89 instruction: SRA   x29, x23,  x8       register[1]: c9a13034 register[2]: c9a13034 register[3]: 4812a726 
+# New instruction created: SRL   x16,  x4,  x5 
+# [GENERATOR  ]    90 instruction: SRL   x16,  x4,  x5       register[1]: 5a56b7a5 register[2]: 5a56b7a5 register[3]: 67c29f7f 
+# New instruction created: STLU   x5, x12,  x1 
+# [GENERATOR  ]    91 instruction: STLU   x5, x12,  x1       register[1]: e6485d0c register[2]: e6485d0c register[3]: ab4d0282 
+# New instruction created: BLTU  x11,  x7, 770 
+# [GENERATOR  ]    92 instruction: BLTU  x11,  x7, 770       register[1]: b4f596fb register[2]: b4f596fb register[3]: 2ec889a0 
+# New instruction created: SW    x14, 1297(x1) 
+# [GENERATOR  ]    93 instruction: SW    x14, 1297(x1)       register[1]: 681fec62 register[2]: 681fec62 register[3]: ac8bb222 
+# New instruction created: STL   x23,  x3, x12 
+# [GENERATOR  ]    94 instruction: STL   x23,  x3, x12       register[1]: 4d2a9a2e register[2]: 4d2a9a2e register[3]: 699ad868 
+# New instruction created: SRLI  x18,  x1, 8 
+# [GENERATOR  ]    95 instruction: SRLI  x18,  x1, 8         register[1]: 03d8fb1d register[2]: 03d8fb1d register[3]: 9f0cf6f6 
+# New instruction created: LBU    x5, 1610(x9) 
+# [GENERATOR  ]    96 instruction: LBU    x5, 1610(x9)       register[1]: d75286df register[2]: d75286df register[3]: e49d56fc 
+# New instruction created: AUIPC x15, 65255 
+# [GENERATOR  ]    97 instruction: AUIPC x15, 65255          register[1]: dbd174a0 register[2]: dbd174a0 register[3]: c070724c 
+# New instruction created: AND   x26,  x3, x22 
+# [GENERATOR  ]    98 instruction: AND   x26,  x3, x22       register[1]: 2f5403b9 register[2]: 2f5403b9 register[3]: 10c8ac61 
+# New instruction created: STL   x28, x28, x29 
+# [GENERATOR  ]    99 instruction: STL   x28, x28, x29       register[1]: 43be7b0b register[2]: 43be7b0b register[3]: 84014a19 
+# Sending EBREAK
+# [GENERATOR  ] --- end of test sent
+# [MONITOR IN ]     0 instruction: BLTU  x19, x24, 1950      registers[1]: c704e700 registers[2]: ba142621 registers[3]: e9fc6f4e 
+# [SCOREBOARD ]     0 instruction: BLTU  x19, x24, 1950      registers[1]: c704e700 registers[2]: ba142621 registers[3]: e9fc6f4e 
+# [DRIVER     ]     0 instruction: BLTU  x19, x24, 1950      registers[1]: c704e700 registers[2]: ba142621 registers[3]: e9fc6f4e
+# [MONITOR OUT]     0 op1: 9c2a43d2 op2: 81a2cfb5 op3: ffffff3c , rd: 00
+# [SCOREBOARD ]     0 operands: op1: 9c2a43d2 op2: 81a2cfb5 op3: ffffff3c rd: 00 
+#                  instruction: BLTU  x19, x24, 1950 
+#                    expected:  op1: 9c2a43d2 op2: 81a2cfb5 op3: ffffff3c rd: 0 
+#                    actual:    op1: 9c2a43d2 op2: 81a2cfb5 op3: ffffff3c rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     1 instruction: ANDI   x4,  x3, 1494      registers[1]: f0a6ed6b registers[2]: 02b3741c registers[3]: 7864c017 
+# [SCOREBOARD ]     1 instruction: ANDI   x4,  x3, 1494      registers[1]: f0a6ed6b registers[2]: 02b3741c registers[3]: 7864c017 
+# [DRIVER     ]     1 instruction: ANDI   x4,  x3, 1494      registers[1]: f0a6ed6b registers[2]: 02b3741c registers[3]: 7864c017
+# [MONITOR OUT]     1 op1: 7864c017 op2: 000005d6 op3: 00000000 , rd: 04
+# [SCOREBOARD ]     1 operands: op1: 7864c017 op2: 000005d6 op3: 00000000 rd: 04 
+#                  instruction: ANDI   x4,  x3, 1494 
+#                    expected:  op1: 7864c017 op2: 000005d6 op3: 00000000 rd: 4 
+#                    actual:    op1: 7864c017 op2: 000005d6 op3: 00000000 rd: 4 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     2 instruction: BLT   x14, x29, 2424      registers[1]: 8abd6c3f registers[2]: 1f92bd63 registers[3]: f35ddd14 
+# [SCOREBOARD ]     2 instruction: BLT   x14, x29, 2424      registers[1]: 8abd6c3f registers[2]: 1f92bd63 registers[3]: f35ddd14 
+# [DRIVER     ]     2 instruction: BLT   x14, x29, 2424      registers[1]: 8abd6c3f registers[2]: 1f92bd63 registers[3]: f35ddd14
+# [MONITOR OUT]     2 op1: b35d8e82 op2: dfb2c44b op3: 000002f0 , rd: 00
+# [SCOREBOARD ]     2 operands: op1: b35d8e82 op2: dfb2c44b op3: 000002f0 rd: 00 
+#                  instruction: BLT   x14, x29, 2424 
+#                    expected:  op1: b35d8e82 op2: dfb2c44b op3: 000002f0 rd: 0 
+#                    actual:    op1: b35d8e82 op2: dfb2c44b op3: 000002f0 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     3 instruction: LUI   x27, 410686         registers[1]: 6fe3bab3 registers[2]: a5b1d53e registers[3]: db5e3434 
+# [SCOREBOARD ]     3 instruction: LUI   x27, 410686         registers[1]: 6fe3bab3 registers[2]: a5b1d53e registers[3]: db5e3434 
+# [DRIVER     ]     3 instruction: LUI   x27, 410686         registers[1]: 6fe3bab3 registers[2]: a5b1d53e registers[3]: db5e3434
+# [MONITOR OUT]     3 op1: 6443e000 op2: 00000000 op3: 00000000 , rd: 1b
+# [SCOREBOARD ]     3 operands: op1: 6443e000 op2: 00000000 op3: 00000000 rd: 1b 
+#                  instruction: LUI   x27, 410686 
+#                    expected:  op1: 6443e000 op2: 00000000 op3: 00000000 rd: 27 
+#                    actual:    op1: 6443e000 op2: 00000000 op3: 00000000 rd: 27 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     4 instruction: STLUI x24,  x9, 6         registers[1]: 6aab6dbd registers[2]: 727c24ce registers[3]: 4cc8e39f 
+# [SCOREBOARD ]     4 instruction: STLUI x24,  x9, 6         registers[1]: 6aab6dbd registers[2]: 727c24ce registers[3]: 4cc8e39f 
+# [DRIVER     ]     4 instruction: STLUI x24,  x9, 6         registers[1]: 6aab6dbd registers[2]: 727c24ce registers[3]: 4cc8e39f
+# [MONITOR OUT]     4 op1: b997887e op2: fffffbe6 op3: 00000000 , rd: 18
+# [SCOREBOARD ]     4 operands: op1: b997887e op2: fffffbe6 op3: 00000000 rd: 18 
+#                  instruction: STLUI x24,  x9, 6 
+#                    expected:  op1: b997887e op2: fffffbe6 op3: 00000000 rd: 24 
+#                    actual:    op1: b997887e op2: fffffbe6 op3: 00000000 rd: 24 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     5 instruction: SRLI  x29, x15, 8         registers[1]: 9825d368 registers[2]: c0994c66 registers[3]: fab175a5 
+# [SCOREBOARD ]     5 instruction: SRLI  x29, x15, 8         registers[1]: 9825d368 registers[2]: c0994c66 registers[3]: fab175a5 
+# [DRIVER     ]     5 instruction: SRLI  x29, x15, 8         registers[1]: 9825d368 registers[2]: c0994c66 registers[3]: fab175a5
+# [MONITOR OUT]     5 op1: 0ed7c5ec op2: 00000008 op3: 00000000 , rd: 1d
+# [SCOREBOARD ]     5 operands: op1: 0ed7c5ec op2: 00000008 op3: 00000000 rd: 1d 
+#                  instruction: SRLI  x29, x15, 8 
+#                    expected:  op1: 0ed7c5ec op2: 00000008 op3: 00000000 rd: 29 
+#                    actual:    op1: 0ed7c5ec op2: 00000008 op3: 00000000 rd: 29 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     6 instruction: STLUI x20, x25, 5         registers[1]: ce9a73ae registers[2]: 93edb5f8 registers[3]: b8b509d8 
+# [SCOREBOARD ]     6 instruction: STLUI x20, x25, 5         registers[1]: ce9a73ae registers[2]: 93edb5f8 registers[3]: b8b509d8 
+# [DRIVER     ]     6 instruction: STLUI x20, x25, 5         registers[1]: ce9a73ae registers[2]: 93edb5f8 registers[3]: b8b509d8
+# [MONITOR OUT]     6 op1: 2804789d op2: 000005c5 op3: 00000000 , rd: 14
+# [SCOREBOARD ]     6 operands: op1: 2804789d op2: 000005c5 op3: 00000000 rd: 14 
+#                  instruction: STLUI x20, x25, 5 
+#                    expected:  op1: 2804789d op2: 000005c5 op3: 00000000 rd: 20 
+#                    actual:    op1: 2804789d op2: 000005c5 op3: 00000000 rd: 20 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     7 instruction: STLU  x21, x19, x16       registers[1]: 6ba3fe24 registers[2]: c2313a0c registers[3]: b4d02b21 
+# [SCOREBOARD ]     7 instruction: STLU  x21, x19, x16       registers[1]: 6ba3fe24 registers[2]: c2313a0c registers[3]: b4d02b21 
+# [DRIVER     ]     7 instruction: STLU  x21, x19, x16       registers[1]: 6ba3fe24 registers[2]: c2313a0c registers[3]: b4d02b21
+# [MONITOR OUT]     7 op1: 8ecfc57d op2: 3968b2e7 op3: 00000000 , rd: 15
+# [SCOREBOARD ]     7 operands: op1: 8ecfc57d op2: 3968b2e7 op3: 00000000 rd: 15 
+#                  instruction: STLU  x21, x19, x16 
+#                    expected:  op1: 8ecfc57d op2: 3968b2e7 op3: 00000000 rd: 21 
+#                    actual:    op1: 8ecfc57d op2: 3968b2e7 op3: 00000000 rd: 21 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     8 instruction: LHU   x30, 3518(x12)      registers[1]: 59848fd1 registers[2]: c484e14b registers[3]: e3ce949f 
+# [SCOREBOARD ]     8 instruction: LHU   x30, 3518(x12)      registers[1]: 59848fd1 registers[2]: c484e14b registers[3]: e3ce949f 
+# [DRIVER     ]     8 instruction: LHU   x30, 3518(x12)      registers[1]: 59848fd1 registers[2]: c484e14b registers[3]: e3ce949f
+# [MONITOR OUT]     8 op1: 9f1a8771 op2: fffffdbe op3: 00000000 , rd: 1e
+# [SCOREBOARD ]     8 operands: op1: 9f1a8771 op2: fffffdbe op3: 00000000 rd: 1e 
+#                  instruction: LHU   x30, 3518(x12) 
+#                    expected:  op1: 9f1a8771 op2: fffffdbe op3: 00000000 rd: 30 
+#                    actual:    op1: 9f1a8771 op2: fffffdbe op3: 00000000 rd: 30 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]     9 instruction: ADD   x24, x14, x24       registers[1]: 79e47fcb registers[2]: 71c351b9 registers[3]: 825abbd4 
+# [SCOREBOARD ]     9 instruction: ADD   x24, x14, x24       registers[1]: 79e47fcb registers[2]: 71c351b9 registers[3]: 825abbd4 
+# [DRIVER     ]     9 instruction: ADD   x24, x14, x24       registers[1]: 79e47fcb registers[2]: 71c351b9 registers[3]: 825abbd4
+# [MONITOR OUT]     9 op1: eee284d4 op2: 00fa9625 op3: 00000000 , rd: 18
+# [SCOREBOARD ]     9 operands: op1: eee284d4 op2: 00fa9625 op3: 00000000 rd: 18 
+#                  instruction: ADD   x24, x14, x24 
+#                    expected:  op1: eee284d4 op2: 00fa9625 op3: 00000000 rd: 24 
+#                    actual:    op1: eee284d4 op2: 00fa9625 op3: 00000000 rd: 24 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    10 instruction: BNE   x13, x16, 3012      registers[1]: 24d284e8 registers[2]: 6ec05071 registers[3]: d09f6ca5 
+# [SCOREBOARD ]    10 instruction: BNE   x13, x16, 3012      registers[1]: 24d284e8 registers[2]: 6ec05071 registers[3]: d09f6ca5 
+# [DRIVER     ]    10 instruction: BNE   x13, x16, 3012      registers[1]: 24d284e8 registers[2]: 6ec05071 registers[3]: d09f6ca5
+# [MONITOR OUT]    10 op1: 7342d076 op2: e945a5f2 op3: 00000788 , rd: 00
+# [SCOREBOARD ]    10 operands: op1: 7342d076 op2: e945a5f2 op3: 00000788 rd: 00 
+#                  instruction: BNE   x13, x16, 3012 
+#                    expected:  op1: 7342d076 op2: e945a5f2 op3: 00000788 rd: 0 
+#                    actual:    op1: 7342d076 op2: e945a5f2 op3: 00000788 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    11 instruction: STLU   x5,  x8,  x6       registers[1]: 2e1b6e44 registers[2]: dcebe924 registers[3]: f103f63e 
+# [SCOREBOARD ]    11 instruction: STLU   x5,  x8,  x6       registers[1]: 2e1b6e44 registers[2]: dcebe924 registers[3]: f103f63e 
+# [DRIVER     ]    11 instruction: STLU   x5,  x8,  x6       registers[1]: 2e1b6e44 registers[2]: dcebe924 registers[3]: f103f63e
+# [MONITOR OUT]    11 op1: 69a78954 op2: 46f5350b op3: 00000000 , rd: 05
+# [SCOREBOARD ]    11 operands: op1: 69a78954 op2: 46f5350b op3: 00000000 rd: 05 
+#                  instruction: STLU   x5,  x8,  x6 
+#                    expected:  op1: 69a78954 op2: 46f5350b op3: 00000000 rd: 5 
+#                    actual:    op1: 69a78954 op2: 46f5350b op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    12 instruction: SLL    x2, x18, x17       registers[1]: 9d8481ad registers[2]: 72b53a3f registers[3]: 64a0b6d5 
+# [SCOREBOARD ]    12 instruction: SLL    x2, x18, x17       registers[1]: 9d8481ad registers[2]: 72b53a3f registers[3]: 64a0b6d5 
+# [DRIVER     ]    12 instruction: SLL    x2, x18, x17       registers[1]: 9d8481ad registers[2]: 72b53a3f registers[3]: 64a0b6d5
+# [MONITOR OUT]    12 op1: d5d19aa0 op2: 2e9859e1 op3: 00000000 , rd: 02
+# [SCOREBOARD ]    12 operands: op1: d5d19aa0 op2: 2e9859e1 op3: 00000000 rd: 02 
+#                  instruction: SLL    x2, x18, x17 
+#                    expected:  op1: d5d19aa0 op2: 2e9859e1 op3: 00000000 rd: 2 
+#                    actual:    op1: d5d19aa0 op2: 2e9859e1 op3: 00000000 rd: 2 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    13 instruction: STLU  x16, x19, x31       registers[1]: ab931411 registers[2]: 03d197b3 registers[3]: 672f6965 
+# [SCOREBOARD ]    13 instruction: STLU  x16, x19, x31       registers[1]: ab931411 registers[2]: 03d197b3 registers[3]: 672f6965 
+# [DRIVER     ]    13 instruction: STLU  x16, x19, x31       registers[1]: ab931411 registers[2]: 03d197b3 registers[3]: 672f6965
+# [MONITOR OUT]    13 op1: 325e29db op2: 7f0efac4 op3: 00000000 , rd: 10
+# [SCOREBOARD ]    13 operands: op1: 325e29db op2: 7f0efac4 op3: 00000000 rd: 10 
+#                  instruction: STLU  x16, x19, x31 
+#                    expected:  op1: 325e29db op2: 7f0efac4 op3: 00000000 rd: 16 
+#                    actual:    op1: 325e29db op2: 7f0efac4 op3: 00000000 rd: 16 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    14 instruction: BGE    x7, x19, 1126      registers[1]: 9a7e8679 registers[2]: aa979b93 registers[3]: f01282f3 
+# [SCOREBOARD ]    14 instruction: BGE    x7, x19, 1126      registers[1]: 9a7e8679 registers[2]: aa979b93 registers[3]: f01282f3 
+# [DRIVER     ]    14 instruction: BGE    x7, x19, 1126      registers[1]: 9a7e8679 registers[2]: aa979b93 registers[3]: f01282f3
+# [MONITOR OUT]    14 op1: bb67c20d op2: 9bdc75e4 op3: fffff8cc , rd: 00
+# [SCOREBOARD ]    14 operands: op1: bb67c20d op2: 9bdc75e4 op3: fffff8cc rd: 00 
+#                  instruction: BGE    x7, x19, 1126 
+#                    expected:  op1: bb67c20d op2: 9bdc75e4 op3: fffff8cc rd: 0 
+#                    actual:    op1: bb67c20d op2: 9bdc75e4 op3: fffff8cc rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    15 instruction: LH    x19, 2660(x2)       registers[1]: 8326c070 registers[2]: 59518fb0 registers[3]: 5c2b61e1 
+# [SCOREBOARD ]    15 instruction: LH    x19, 2660(x2)       registers[1]: 8326c070 registers[2]: 59518fb0 registers[3]: 5c2b61e1 
+# [DRIVER     ]    15 instruction: LH    x19, 2660(x2)       registers[1]: 8326c070 registers[2]: 59518fb0 registers[3]: 5c2b61e1
+# [MONITOR OUT]    15 op1: 59518fb0 op2: fffffa64 op3: 00000000 , rd: 13
+# [SCOREBOARD ]    15 operands: op1: 59518fb0 op2: fffffa64 op3: 00000000 rd: 13 
+#                  instruction: LH    x19, 2660(x2) 
+#                    expected:  op1: 59518fb0 op2: fffffa64 op3: 00000000 rd: 19 
+#                    actual:    op1: 59518fb0 op2: fffffa64 op3: 00000000 rd: 19 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    16 instruction: LBU    x2, 3982(x29)      registers[1]: d8c35acf registers[2]: 315f40e8 registers[3]: d4d2730a 
+# [SCOREBOARD ]    16 instruction: LBU    x2, 3982(x29)      registers[1]: d8c35acf registers[2]: 315f40e8 registers[3]: d4d2730a 
+# [DRIVER     ]    16 instruction: LBU    x2, 3982(x29)      registers[1]: d8c35acf registers[2]: 315f40e8 registers[3]: d4d2730a
+# [MONITOR OUT]    16 op1: 950d076f op2: ffffff8e op3: 00000000 , rd: 02
+# [SCOREBOARD ]    16 operands: op1: 950d076f op2: ffffff8e op3: 00000000 rd: 02 
+#                  instruction: LBU    x2, 3982(x29) 
+#                    expected:  op1: 950d076f op2: ffffff8e op3: 00000000 rd: 2 
+#                    actual:    op1: 950d076f op2: ffffff8e op3: 00000000 rd: 2 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    17 instruction: SRL    x5, x12, x24       registers[1]: 59047539 registers[2]: 51a5d1f5 registers[3]: 8045e6fb 
+# [SCOREBOARD ]    17 instruction: SRL    x5, x12, x24       registers[1]: 59047539 registers[2]: 51a5d1f5 registers[3]: 8045e6fb 
+# [DRIVER     ]    17 instruction: SRL    x5, x12, x24       registers[1]: 59047539 registers[2]: 51a5d1f5 registers[3]: 8045e6fb
+# [MONITOR OUT]    17 op1: 99c5787a op2: 7259f7e0 op3: 00000000 , rd: 05
+# [SCOREBOARD ]    17 operands: op1: 99c5787a op2: 7259f7e0 op3: 00000000 rd: 05 
+#                  instruction: SRL    x5, x12, x24 
+#                    expected:  op1: 99c5787a op2: 7259f7e0 op3: 00000000 rd: 5 
+#                    actual:    op1: 99c5787a op2: 7259f7e0 op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    18 instruction: AUIPC x20, 562485         registers[1]: 7077b2e1 registers[2]: dd161de6 registers[3]: 516b6f7c 
+# [SCOREBOARD ]    18 instruction: AUIPC x20, 562485         registers[1]: 7077b2e1 registers[2]: dd161de6 registers[3]: 516b6f7c 
+# [DRIVER     ]    18 instruction: AUIPC x20, 562485         registers[1]: 7077b2e1 registers[2]: dd161de6 registers[3]: 516b6f7c
+# [MONITOR OUT]    18 op1: 89535000 op2: 00000000 op3: 00000000 , rd: 14
+# [SCOREBOARD ]    18 operands: op1: 89535000 op2: 00000000 op3: 00000000 rd: 14 
+#                  instruction: AUIPC x20, 562485 
+#                    expected:  op1: 89535000 op2: 00000000 op3: 00000000 rd: 20 
+#                    actual:    op1: 89535000 op2: 00000000 op3: 00000000 rd: 20 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    19 instruction: LUI   x30, 887589         registers[1]: c2eb5aae registers[2]: 28d87e03 registers[3]: 9c81e332 
+# [SCOREBOARD ]    19 instruction: LUI   x30, 887589         registers[1]: c2eb5aae registers[2]: 28d87e03 registers[3]: 9c81e332 
+# [DRIVER     ]    19 instruction: LUI   x30, 887589         registers[1]: c2eb5aae registers[2]: 28d87e03 registers[3]: 9c81e332
+# [MONITOR OUT]    19 op1: d8b25000 op2: 00000000 op3: 00000000 , rd: 1e
+# [SCOREBOARD ]    19 operands: op1: d8b25000 op2: 00000000 op3: 00000000 rd: 1e 
+#                  instruction: LUI   x30, 887589 
+#                    expected:  op1: d8b25000 op2: 00000000 op3: 00000000 rd: 30 
+#                    actual:    op1: d8b25000 op2: 00000000 op3: 00000000 rd: 30 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    20 instruction: ADD    x0, x28,  x0       registers[1]: b14f7a68 registers[2]: e4bb68f7 registers[3]: a9419f6f 
+# [SCOREBOARD ]    20 instruction: ADD    x0, x28,  x0       registers[1]: b14f7a68 registers[2]: e4bb68f7 registers[3]: a9419f6f 
+# [DRIVER     ]    20 instruction: ADD    x0, x28,  x0       registers[1]: b14f7a68 registers[2]: e4bb68f7 registers[3]: a9419f6f
+# [MONITOR OUT]    20 op1: 7b937f4f op2: 00000000 op3: 00000000 , rd: 00
+# [SCOREBOARD ]    20 operands: op1: 7b937f4f op2: 00000000 op3: 00000000 rd: 00 
+#                  instruction: ADD    x0, x28,  x0 
+#                    expected:  op1: 7b937f4f op2: 00000000 op3: 00000000 rd: 0 
+#                    actual:    op1: 7b937f4f op2: 00000000 op3: 00000000 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    21 instruction: LUI   x29, 789533         registers[1]: ca7a6e22 registers[2]: 92ee212d registers[3]: 85986c3f 
+# [SCOREBOARD ]    21 instruction: LUI   x29, 789533         registers[1]: ca7a6e22 registers[2]: 92ee212d registers[3]: 85986c3f 
+# [DRIVER     ]    21 instruction: LUI   x29, 789533         registers[1]: ca7a6e22 registers[2]: 92ee212d registers[3]: 85986c3f
+# [MONITOR OUT]    21 op1: c0c1d000 op2: 00000000 op3: 00000000 , rd: 1d
+# [SCOREBOARD ]    21 operands: op1: c0c1d000 op2: 00000000 op3: 00000000 rd: 1d 
+#                  instruction: LUI   x29, 789533 
+#                    expected:  op1: c0c1d000 op2: 00000000 op3: 00000000 rd: 29 
+#                    actual:    op1: c0c1d000 op2: 00000000 op3: 00000000 rd: 29 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    22 instruction: STLI  x28, x27, 11        registers[1]: b23bc914 registers[2]: b8c1c6bf registers[3]: 3da591c0 
+# [SCOREBOARD ]    22 instruction: STLI  x28, x27, 11        registers[1]: b23bc914 registers[2]: b8c1c6bf registers[3]: 3da591c0 
+# [DRIVER     ]    22 instruction: STLI  x28, x27, 11        registers[1]: b23bc914 registers[2]: b8c1c6bf registers[3]: 3da591c0
+# [MONITOR OUT]    22 op1: 850f15ad op2: ffffff8b op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    22 operands: op1: 850f15ad op2: ffffff8b op3: 00000000 rd: 1c 
+#                  instruction: STLI  x28, x27, 11 
+#                    expected:  op1: 850f15ad op2: ffffff8b op3: 00000000 rd: 28 
+#                    actual:    op1: 850f15ad op2: ffffff8b op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    23 instruction: LW    x19, 4091(x22)      registers[1]: 091cb29f registers[2]: 0ee05952 registers[3]: 244395c2 
+# [SCOREBOARD ]    23 instruction: LW    x19, 4091(x22)      registers[1]: 091cb29f registers[2]: 0ee05952 registers[3]: 244395c2 
+# [DRIVER     ]    23 instruction: LW    x19, 4091(x22)      registers[1]: 091cb29f registers[2]: 0ee05952 registers[3]: 244395c2
+# [MONITOR OUT]    23 op1: 57e6bf6c op2: fffffffb op3: 00000000 , rd: 13
+# [SCOREBOARD ]    23 operands: op1: 57e6bf6c op2: fffffffb op3: 00000000 rd: 13 
+#                  instruction: LW    x19, 4091(x22) 
+#                    expected:  op1: 57e6bf6c op2: fffffffb op3: 00000000 rd: 19 
+#                    actual:    op1: 57e6bf6c op2: fffffffb op3: 00000000 rd: 19 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    24 instruction: JAL   x26, 464922         registers[1]: b28bb894 registers[2]: 9458cb48 registers[3]: f451dcc2 
+# [SCOREBOARD ]    24 instruction: JAL   x26, 464922         registers[1]: b28bb894 registers[2]: 9458cb48 registers[3]: f451dcc2 
+# [DRIVER     ]    24 instruction: JAL   x26, 464922         registers[1]: b28bb894 registers[2]: 9458cb48 registers[3]: f451dcc2
+# [MONITOR OUT]    24 op1: fffe3034 op2: 00000000 op3: 00000000 , rd: 1a
+# [SCOREBOARD ]    24 operands: op1: fffe3034 op2: 00000000 op3: 00000000 rd: 1a 
+#                  instruction: JAL   x26, 464922 
+#                    expected:  op1: fffe3034 op2: 00000000 op3: 00000000 rd: 26 
+#                    actual:    op1: fffe3034 op2: 00000000 op3: 00000000 rd: 26 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    25 instruction: SRA   x22, x21, x14       registers[1]: 8adc9cfa registers[2]: e1e01427 registers[3]: b595cb4e 
+# [SCOREBOARD ]    25 instruction: SRA   x22, x21, x14       registers[1]: 8adc9cfa registers[2]: e1e01427 registers[3]: b595cb4e 
+# [DRIVER     ]    25 instruction: SRA   x22, x21, x14       registers[1]: 8adc9cfa registers[2]: e1e01427 registers[3]: b595cb4e
+# [MONITOR OUT]    25 op1: e20f7435 op2: 31f4f89b op3: 00000000 , rd: 16
+# [SCOREBOARD ]    25 operands: op1: e20f7435 op2: 31f4f89b op3: 00000000 rd: 16 
+#                  instruction: SRA   x22, x21, x14 
+#                    expected:  op1: e20f7435 op2: 31f4f89b op3: 00000000 rd: 22 
+#                    actual:    op1: e20f7435 op2: 31f4f89b op3: 00000000 rd: 22 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    26 instruction: SRA   x10, x27, x11       registers[1]: 0a5a3b21 registers[2]: 85c988d5 registers[3]: 874b58f0 
+# [SCOREBOARD ]    26 instruction: SRA   x10, x27, x11       registers[1]: 0a5a3b21 registers[2]: 85c988d5 registers[3]: 874b58f0 
+# [DRIVER     ]    26 instruction: SRA   x10, x27, x11       registers[1]: 0a5a3b21 registers[2]: 85c988d5 registers[3]: 874b58f0
+# [MONITOR OUT]    26 op1: 05633a5b op2: f4529aad op3: 00000000 , rd: 0a
+# [SCOREBOARD ]    26 operands: op1: 05633a5b op2: f4529aad op3: 00000000 rd: 0a 
+#                  instruction: SRA   x10, x27, x11 
+#                    expected:  op1: 05633a5b op2: f4529aad op3: 00000000 rd: 10 
+#                    actual:    op1: 05633a5b op2: f4529aad op3: 00000000 rd: 10 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    27 instruction: LHU   x28, 3082(x25)      registers[1]: 59d9a969 registers[2]: 055d061c registers[3]: 4f98da60 
+# [SCOREBOARD ]    27 instruction: LHU   x28, 3082(x25)      registers[1]: 59d9a969 registers[2]: 055d061c registers[3]: 4f98da60 
+# [DRIVER     ]    27 instruction: LHU   x28, 3082(x25)      registers[1]: 59d9a969 registers[2]: 055d061c registers[3]: 4f98da60
+# [MONITOR OUT]    27 op1: c3621f3f op2: fffffc0a op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    27 operands: op1: c3621f3f op2: fffffc0a op3: 00000000 rd: 1c 
+#                  instruction: LHU   x28, 3082(x25) 
+#                    expected:  op1: c3621f3f op2: fffffc0a op3: 00000000 rd: 28 
+#                    actual:    op1: c3621f3f op2: fffffc0a op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    28 instruction: BLT   x24, x15, 2636      registers[1]: f0ce3b3e registers[2]: 7ca910e2 registers[3]: bcb61d37 
+# [SCOREBOARD ]    28 instruction: BLT   x24, x15, 2636      registers[1]: f0ce3b3e registers[2]: 7ca910e2 registers[3]: bcb61d37 
+# [DRIVER     ]    28 instruction: BLT   x24, x15, 2636      registers[1]: f0ce3b3e registers[2]: 7ca910e2 registers[3]: bcb61d37
+# [MONITOR OUT]    28 op1: af9f47a7 op2: 373fcb91 op3: 00000498 , rd: 00
+# [SCOREBOARD ]    28 operands: op1: af9f47a7 op2: 373fcb91 op3: 00000498 rd: 00 
+#                  instruction: BLT   x24, x15, 2636 
+#                    expected:  op1: af9f47a7 op2: 373fcb91 op3: 00000498 rd: 0 
+#                    actual:    op1: af9f47a7 op2: 373fcb91 op3: 00000498 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    29 instruction: SH    x30, 486(x3)        registers[1]: ebbfa198 registers[2]: ac7f9f40 registers[3]: 90ea97da 
+# [SCOREBOARD ]    29 instruction: SH    x30, 486(x3)        registers[1]: ebbfa198 registers[2]: ac7f9f40 registers[3]: 90ea97da 
+# [DRIVER     ]    29 instruction: SH    x30, 486(x3)        registers[1]: ebbfa198 registers[2]: ac7f9f40 registers[3]: 90ea97da
+# [MONITOR OUT]    29 op1: 90ea97da op2: 000001e6 op3: e9aeccd4 , rd: 00
+# [SCOREBOARD ]    29 operands: op1: 90ea97da op2: 000001e6 op3: e9aeccd4 rd: 00 
+#                  instruction: SH    x30, 486(x3) 
+#                    expected:  op1: 90ea97da op2: 000001e6 op3: e9aeccd4 rd: 0 
+#                    actual:    op1: 90ea97da op2: 000001e6 op3: e9aeccd4 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    30 instruction: AND    x7, x30, x17       registers[1]: dc386b89 registers[2]: fb7e6300 registers[3]: 56787b24 
+# [SCOREBOARD ]    30 instruction: AND    x7, x30, x17       registers[1]: dc386b89 registers[2]: fb7e6300 registers[3]: 56787b24 
+# [DRIVER     ]    30 instruction: AND    x7, x30, x17       registers[1]: dc386b89 registers[2]: fb7e6300 registers[3]: 56787b24
+# [MONITOR OUT]    30 op1: 055a998c op2: 2b858012 op3: 00000000 , rd: 07
+# [SCOREBOARD ]    30 operands: op1: 055a998c op2: 2b858012 op3: 00000000 rd: 07 
+#                  instruction: AND    x7, x30, x17 
+#                    expected:  op1: 055a998c op2: 2b858012 op3: 00000000 rd: 7 
+#                    actual:    op1: 055a998c op2: 2b858012 op3: 00000000 rd: 7 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    31 instruction: SLLI  x25, x16, 3         registers[1]: b7e539ca registers[2]: 385f1254 registers[3]: 4be74adf 
+# [SCOREBOARD ]    31 instruction: SLLI  x25, x16, 3         registers[1]: b7e539ca registers[2]: 385f1254 registers[3]: 4be74adf 
+# [DRIVER     ]    31 instruction: SLLI  x25, x16, 3         registers[1]: b7e539ca registers[2]: 385f1254 registers[3]: 4be74adf
+# [MONITOR OUT]    31 op1: 925c5f43 op2: 00000003 op3: 00000000 , rd: 19
+# [SCOREBOARD ]    31 operands: op1: 925c5f43 op2: 00000003 op3: 00000000 rd: 19 
+#                  instruction: SLLI  x25, x16, 3 
+#                    expected:  op1: 925c5f43 op2: 00000003 op3: 00000000 rd: 25 
+#                    actual:    op1: 925c5f43 op2: 00000003 op3: 00000000 rd: 25 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    32 instruction: BGE   x15,  x1, 122       registers[1]: cfe88653 registers[2]: 9f4c5afb registers[3]: ba7be8b9 
+# [SCOREBOARD ]    32 instruction: BGE   x15,  x1, 122       registers[1]: cfe88653 registers[2]: 9f4c5afb registers[3]: ba7be8b9 
+# [DRIVER     ]    32 instruction: BGE   x15,  x1, 122       registers[1]: cfe88653 registers[2]: 9f4c5afb registers[3]: ba7be8b9
+# [MONITOR OUT]    32 op1: fb902923 op2: cfe88653 op3: 000000f4 , rd: 00
+# [SCOREBOARD ]    32 operands: op1: fb902923 op2: cfe88653 op3: 000000f4 rd: 00 
+#                  instruction: BGE   x15,  x1, 122 
+#                    expected:  op1: fb902923 op2: cfe88653 op3: 000000f4 rd: 0 
+#                    actual:    op1: fb902923 op2: cfe88653 op3: 000000f4 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    33 instruction: ADD   x25, x11, x28       registers[1]: 7f35e541 registers[2]: 09f4cf2e registers[3]: eb1184c1 
+# [SCOREBOARD ]    33 instruction: ADD   x25, x11, x28       registers[1]: 7f35e541 registers[2]: 09f4cf2e registers[3]: eb1184c1 
+# [DRIVER     ]    33 instruction: ADD   x25, x11, x28       registers[1]: 7f35e541 registers[2]: 09f4cf2e registers[3]: eb1184c1
+# [MONITOR OUT]    33 op1: 857f7a8c op2: 19954237 op3: 00000000 , rd: 19
+# [SCOREBOARD ]    33 operands: op1: 857f7a8c op2: 19954237 op3: 00000000 rd: 19 
+#                  instruction: ADD   x25, x11, x28 
+#                    expected:  op1: 857f7a8c op2: 19954237 op3: 00000000 rd: 25 
+#                    actual:    op1: 857f7a8c op2: 19954237 op3: 00000000 rd: 25 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    34 instruction: SRLI  x23, x20, 0         registers[1]: 591f7514 registers[2]: 0ddaceee registers[3]: 4867fe1f 
+# [SCOREBOARD ]    34 instruction: SRLI  x23, x20, 0         registers[1]: 591f7514 registers[2]: 0ddaceee registers[3]: 4867fe1f 
+# [DRIVER     ]    34 instruction: SRLI  x23, x20, 0         registers[1]: 591f7514 registers[2]: 0ddaceee registers[3]: 4867fe1f
+# [MONITOR OUT]    34 op1: 17c459fb op2: 00000000 op3: 00000000 , rd: 17
+# [SCOREBOARD ]    34 operands: op1: 17c459fb op2: 00000000 op3: 00000000 rd: 17 
+#                  instruction: SRLI  x23, x20, 0 
+#                    expected:  op1: 17c459fb op2: 00000000 op3: 00000000 rd: 23 
+#                    actual:    op1: 17c459fb op2: 00000000 op3: 00000000 rd: 23 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    35 instruction: STL    x7,  x9, x28       registers[1]: 91e4d2cc registers[2]: 34def974 registers[3]: 291dcc5b 
+# [SCOREBOARD ]    35 instruction: STL    x7,  x9, x28       registers[1]: 91e4d2cc registers[2]: 34def974 registers[3]: 291dcc5b 
+# [DRIVER     ]    35 instruction: STL    x7,  x9, x28       registers[1]: 91e4d2cc registers[2]: 34def974 registers[3]: 291dcc5b
+# [MONITOR OUT]    35 op1: 02e38b94 op2: af1cd895 op3: 00000000 , rd: 07
+# [SCOREBOARD ]    35 operands: op1: 02e38b94 op2: af1cd895 op3: 00000000 rd: 07 
+#                  instruction: STL    x7,  x9, x28 
+#                    expected:  op1: 02e38b94 op2: af1cd895 op3: 00000000 rd: 7 
+#                    actual:    op1: 02e38b94 op2: af1cd895 op3: 00000000 rd: 7 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    36 instruction: AUIPC x20, 383793         registers[1]: b6fc24a1 registers[2]: 4770590e registers[3]: b58504f8 
+# [SCOREBOARD ]    36 instruction: AUIPC x20, 383793         registers[1]: b6fc24a1 registers[2]: 4770590e registers[3]: b58504f8 
+# [DRIVER     ]    36 instruction: AUIPC x20, 383793         registers[1]: b6fc24a1 registers[2]: 4770590e registers[3]: b58504f8
+# [MONITOR OUT]    36 op1: 5db31000 op2: 00000000 op3: 00000000 , rd: 14
+# [SCOREBOARD ]    36 operands: op1: 5db31000 op2: 00000000 op3: 00000000 rd: 14 
+#                  instruction: AUIPC x20, 383793 
+#                    expected:  op1: 5db31000 op2: 00000000 op3: 00000000 rd: 20 
+#                    actual:    op1: 5db31000 op2: 00000000 op3: 00000000 rd: 20 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    37 instruction: BLTU  x14,  x7, 734       registers[1]: 6fac91d9 registers[2]: 56e4d324 registers[3]: 4e9d87ad 
+# [SCOREBOARD ]    37 instruction: BLTU  x14,  x7, 734       registers[1]: 6fac91d9 registers[2]: 56e4d324 registers[3]: 4e9d87ad 
+# [DRIVER     ]    37 instruction: BLTU  x14,  x7, 734       registers[1]: 6fac91d9 registers[2]: 56e4d324 registers[3]: 4e9d87ad
+# [MONITOR OUT]    37 op1: 67478f18 op2: c7bc333f op3: 000005bc , rd: 00
+# [SCOREBOARD ]    37 operands: op1: 67478f18 op2: c7bc333f op3: 000005bc rd: 00 
+#                  instruction: BLTU  x14,  x7, 734 
+#                    expected:  op1: 67478f18 op2: c7bc333f op3: 000005bc rd: 0 
+#                    actual:    op1: 67478f18 op2: c7bc333f op3: 000005bc rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    38 instruction: ADD   x14, x26, x26       registers[1]: 93aa7fb1 registers[2]: 1fd3ba5e registers[3]: 92563e3c 
+# [SCOREBOARD ]    38 instruction: ADD   x14, x26, x26       registers[1]: 93aa7fb1 registers[2]: 1fd3ba5e registers[3]: 92563e3c 
+# [DRIVER     ]    38 instruction: ADD   x14, x26, x26       registers[1]: 93aa7fb1 registers[2]: 1fd3ba5e registers[3]: 92563e3c
+# [MONITOR OUT]    38 op1: 761a9150 op2: 761a9150 op3: 00000000 , rd: 0e
+# [SCOREBOARD ]    38 operands: op1: 761a9150 op2: 761a9150 op3: 00000000 rd: 0e 
+#                  instruction: ADD   x14, x26, x26 
+#                    expected:  op1: 761a9150 op2: 761a9150 op3: 00000000 rd: 14 
+#                    actual:    op1: 761a9150 op2: 761a9150 op3: 00000000 rd: 14 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    39 instruction: BEQ   x12, x14, 642       registers[1]: 014731dc registers[2]: 229baece registers[3]: 0679f2fe 
+# [SCOREBOARD ]    39 instruction: BEQ   x12, x14, 642       registers[1]: 014731dc registers[2]: 229baece registers[3]: 0679f2fe 
+# [DRIVER     ]    39 instruction: BEQ   x12, x14, 642       registers[1]: 014731dc registers[2]: 229baece registers[3]: 0679f2fe
+# [MONITOR OUT]    39 op1: ca97f457 op2: b8ea8080 op3: 00000504 , rd: 00
+# [SCOREBOARD ]    39 operands: op1: ca97f457 op2: b8ea8080 op3: 00000504 rd: 00 
+#                  instruction: BEQ   x12, x14, 642 
+#                    expected:  op1: ca97f457 op2: b8ea8080 op3: 00000504 rd: 0 
+#                    actual:    op1: ca97f457 op2: b8ea8080 op3: 00000504 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    40 instruction: LBU    x1, 810(x25)       registers[1]: 19ccfb24 registers[2]: 4e2d7c0d registers[3]: ca700136 
+# [SCOREBOARD ]    40 instruction: LBU    x1, 810(x25)       registers[1]: 19ccfb24 registers[2]: 4e2d7c0d registers[3]: ca700136 
+# [DRIVER     ]    40 instruction: LBU    x1, 810(x25)       registers[1]: 19ccfb24 registers[2]: 4e2d7c0d registers[3]: ca700136
+# [MONITOR OUT]    40 op1: 666cc784 op2: 0000032a op3: 00000000 , rd: 01
+# [SCOREBOARD ]    40 operands: op1: 666cc784 op2: 0000032a op3: 00000000 rd: 01 
+#                  instruction: LBU    x1, 810(x25) 
+#                    expected:  op1: 666cc784 op2: 0000032a op3: 00000000 rd: 1 
+#                    actual:    op1: 666cc784 op2: 0000032a op3: 00000000 rd: 1 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    41 instruction: SB    x15, 99(x17)        registers[1]: e4e4e7bc registers[2]: 4f7785c7 registers[3]: 69c4ea91 
+# [SCOREBOARD ]    41 instruction: SB    x15, 99(x17)        registers[1]: e4e4e7bc registers[2]: 4f7785c7 registers[3]: 69c4ea91 
+# [DRIVER     ]    41 instruction: SB    x15, 99(x17)        registers[1]: e4e4e7bc registers[2]: 4f7785c7 registers[3]: 69c4ea91
+# [MONITOR OUT]    41 op1: 60f40062 op2: 00000063 op3: f343e184 , rd: 00
+# [SCOREBOARD ]    41 operands: op1: 60f40062 op2: 00000063 op3: f343e184 rd: 00 
+#                  instruction: SB    x15, 99(x17) 
+#                    expected:  op1: 60f40062 op2: 00000063 op3: f343e184 rd: 0 
+#                    actual:    op1: 60f40062 op2: 00000063 op3: f343e184 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    42 instruction: LH    x11, 2699(x11)      registers[1]: ead6afe4 registers[2]: 6b88fd29 registers[3]: 68cb25f2 
+# [SCOREBOARD ]    42 instruction: LH    x11, 2699(x11)      registers[1]: ead6afe4 registers[2]: 6b88fd29 registers[3]: 68cb25f2 
+# [DRIVER     ]    42 instruction: LH    x11, 2699(x11)      registers[1]: ead6afe4 registers[2]: 6b88fd29 registers[3]: 68cb25f2
+# [MONITOR OUT]    42 op1: b7c9f3dd op2: fffffa8b op3: 00000000 , rd: 0b
+# [SCOREBOARD ]    42 operands: op1: b7c9f3dd op2: fffffa8b op3: 00000000 rd: 0b 
+#                  instruction: LH    x11, 2699(x11) 
+#                    expected:  op1: b7c9f3dd op2: fffffa8b op3: 00000000 rd: 11 
+#                    actual:    op1: b7c9f3dd op2: fffffa8b op3: 00000000 rd: 11 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    43 instruction: SB     x9, 78(x31)        registers[1]: a96e9b08 registers[2]: 59eab020 registers[3]: 3dc5047d 
+# [SCOREBOARD ]    43 instruction: SB     x9, 78(x31)        registers[1]: a96e9b08 registers[2]: 59eab020 registers[3]: 3dc5047d 
+# [DRIVER     ]    43 instruction: SB     x9, 78(x31)        registers[1]: a96e9b08 registers[2]: 59eab020 registers[3]: 3dc5047d
+# [MONITOR OUT]    43 op1: 8ebe6266 op2: 0000004e op3: 993ff648 , rd: 00
+# [SCOREBOARD ]    43 operands: op1: 8ebe6266 op2: 0000004e op3: 993ff648 rd: 00 
+#                  instruction: SB     x9, 78(x31) 
+#                    expected:  op1: 8ebe6266 op2: 0000004e op3: 993ff648 rd: 0 
+#                    actual:    op1: 8ebe6266 op2: 0000004e op3: 993ff648 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    44 instruction: SW     x2, 358(x26)       registers[1]: b2870cd7 registers[2]: 7a7eaba5 registers[3]: c17f70a8 
+# [SCOREBOARD ]    44 instruction: SW     x2, 358(x26)       registers[1]: b2870cd7 registers[2]: 7a7eaba5 registers[3]: c17f70a8 
+# [DRIVER     ]    44 instruction: SW     x2, 358(x26)       registers[1]: b2870cd7 registers[2]: 7a7eaba5 registers[3]: c17f70a8
+# [MONITOR OUT]    44 op1: 620b2818 op2: 00000166 op3: 7a7eaba5 , rd: 00
+# [SCOREBOARD ]    44 operands: op1: 620b2818 op2: 00000166 op3: 7a7eaba5 rd: 00 
+#                  instruction: SW     x2, 358(x26) 
+#                    expected:  op1: 620b2818 op2: 00000166 op3: 7a7eaba5 rd: 0 
+#                    actual:    op1: 620b2818 op2: 00000166 op3: 7a7eaba5 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    45 instruction: SUB   x28, x31,  x7       registers[1]: 58402bbc registers[2]: 52ebcf3a registers[3]: 2f95693a 
+# [SCOREBOARD ]    45 instruction: SUB   x28, x31,  x7       registers[1]: 58402bbc registers[2]: 52ebcf3a registers[3]: 2f95693a 
+# [DRIVER     ]    45 instruction: SUB   x28, x31,  x7       registers[1]: 58402bbc registers[2]: 52ebcf3a registers[3]: 2f95693a
+# [MONITOR OUT]    45 op1: 6b194874 op2: 2cc9a208 op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    45 operands: op1: 6b194874 op2: 2cc9a208 op3: 00000000 rd: 1c 
+#                  instruction: SUB   x28, x31,  x7 
+#                    expected:  op1: 6b194874 op2: 2cc9a208 op3: 00000000 rd: 28 
+#                    actual:    op1: 6b194874 op2: 2cc9a208 op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    46 instruction: XOR   x28,  x0,  x4       registers[1]: e53a5a25 registers[2]: 9efe2a1a registers[3]: b362bac3 
+# [SCOREBOARD ]    46 instruction: XOR   x28,  x0,  x4       registers[1]: e53a5a25 registers[2]: 9efe2a1a registers[3]: b362bac3 
+# [DRIVER     ]    46 instruction: XOR   x28,  x0,  x4       registers[1]: e53a5a25 registers[2]: 9efe2a1a registers[3]: b362bac3
+# [MONITOR OUT]    46 op1: 00000000 op2: cd5bda90 op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    46 operands: op1: 00000000 op2: cd5bda90 op3: 00000000 rd: 1c 
+#                  instruction: XOR   x28,  x0,  x4 
+#                    expected:  op1: 00000000 op2: cd5bda90 op3: 00000000 rd: 28 
+#                    actual:    op1: 00000000 op2: cd5bda90 op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    47 instruction: SLLI  x10, x16, 0         registers[1]: 3bd9a385 registers[2]: 9509336e registers[3]: 0dc97050 
+# [SCOREBOARD ]    47 instruction: SLLI  x10, x16, 0         registers[1]: 3bd9a385 registers[2]: 9509336e registers[3]: 0dc97050 
+# [DRIVER     ]    47 instruction: SLLI  x10, x16, 0         registers[1]: 3bd9a385 registers[2]: 9509336e registers[3]: 0dc97050
+# [MONITOR OUT]    47 op1: 6d08d0d3 op2: 00000000 op3: 00000000 , rd: 0a
+# [SCOREBOARD ]    47 operands: op1: 6d08d0d3 op2: 00000000 op3: 00000000 rd: 0a 
+#                  instruction: SLLI  x10, x16, 0 
+#                    expected:  op1: 6d08d0d3 op2: 00000000 op3: 00000000 rd: 10 
+#                    actual:    op1: 6d08d0d3 op2: 00000000 op3: 00000000 rd: 10 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    48 instruction: BGEU  x17, x29, 2042      registers[1]: 7307acda registers[2]: 657c59c8 registers[3]: 8478a26f 
+# [SCOREBOARD ]    48 instruction: BGEU  x17, x29, 2042      registers[1]: 7307acda registers[2]: 657c59c8 registers[3]: 8478a26f 
+# [DRIVER     ]    48 instruction: BGEU  x17, x29, 2042      registers[1]: 7307acda registers[2]: 657c59c8 registers[3]: 8478a26f
+# [MONITOR OUT]    48 op1: fa8c2732 op2: 95b1e5f2 op3: fffffff4 , rd: 00
+# [SCOREBOARD ]    48 operands: op1: fa8c2732 op2: 95b1e5f2 op3: fffffff4 rd: 00 
+#                  instruction: BGEU  x17, x29, 2042 
+#                    expected:  op1: fa8c2732 op2: 95b1e5f2 op3: fffffff4 rd: 0 
+#                    actual:    op1: fa8c2732 op2: 95b1e5f2 op3: fffffff4 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    49 instruction: AUIPC x28, 398017         registers[1]: 5fcd57a7 registers[2]: c4a6b072 registers[3]: ae1f538e 
+# [SCOREBOARD ]    49 instruction: AUIPC x28, 398017         registers[1]: 5fcd57a7 registers[2]: c4a6b072 registers[3]: ae1f538e 
+# [DRIVER     ]    49 instruction: AUIPC x28, 398017         registers[1]: 5fcd57a7 registers[2]: c4a6b072 registers[3]: ae1f538e
+# [MONITOR OUT]    49 op1: 612c1000 op2: 00000000 op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    49 operands: op1: 612c1000 op2: 00000000 op3: 00000000 rd: 1c 
+#                  instruction: AUIPC x28, 398017 
+#                    expected:  op1: 612c1000 op2: 00000000 op3: 00000000 rd: 28 
+#                    actual:    op1: 612c1000 op2: 00000000 op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    50 instruction: LH    x21, 658(x16)       registers[1]: 1abc6d1b registers[2]: 26f57a31 registers[3]: 2d218f53 
+# [SCOREBOARD ]    50 instruction: LH    x21, 658(x16)       registers[1]: 1abc6d1b registers[2]: 26f57a31 registers[3]: 2d218f53 
+# [DRIVER     ]    50 instruction: LH    x21, 658(x16)       registers[1]: 1abc6d1b registers[2]: 26f57a31 registers[3]: 2d218f53
+# [MONITOR OUT]    50 op1: b6cb2864 op2: 00000292 op3: 00000000 , rd: 15
+# [SCOREBOARD ]    50 operands: op1: b6cb2864 op2: 00000292 op3: 00000000 rd: 15 
+#                  instruction: LH    x21, 658(x16) 
+#                    expected:  op1: b6cb2864 op2: 00000292 op3: 00000000 rd: 21 
+#                    actual:    op1: b6cb2864 op2: 00000292 op3: 00000000 rd: 21 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    51 instruction: BGEU  x11, x15, 3228      registers[1]: dd933e95 registers[2]: 3abbc6b0 registers[3]: 9962c1d6 
+# [SCOREBOARD ]    51 instruction: BGEU  x11, x15, 3228      registers[1]: dd933e95 registers[2]: 3abbc6b0 registers[3]: 9962c1d6 
+# [DRIVER     ]    51 instruction: BGEU  x11, x15, 3228      registers[1]: dd933e95 registers[2]: 3abbc6b0 registers[3]: 9962c1d6
+# [MONITOR OUT]    51 op1: b4b63625 op2: 0502ad96 op3: fffff938 , rd: 00
+# [SCOREBOARD ]    51 operands: op1: b4b63625 op2: 0502ad96 op3: fffff938 rd: 00 
+#                  instruction: BGEU  x11, x15, 3228 
+#                    expected:  op1: b4b63625 op2: 0502ad96 op3: fffff938 rd: 0 
+#                    actual:    op1: b4b63625 op2: 0502ad96 op3: fffff938 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    52 instruction: STL   x28,  x7, x31       registers[1]: 289696ad registers[2]: ee366dd0 registers[3]: 7c72a407 
+# [SCOREBOARD ]    52 instruction: STL   x28,  x7, x31       registers[1]: 289696ad registers[2]: ee366dd0 registers[3]: 7c72a407 
+# [DRIVER     ]    52 instruction: STL   x28,  x7, x31       registers[1]: 289696ad registers[2]: ee366dd0 registers[3]: 7c72a407
+# [MONITOR OUT]    52 op1: c5ca3b9e op2: dcc3064c op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    52 operands: op1: c5ca3b9e op2: dcc3064c op3: 00000000 rd: 1c 
+#                  instruction: STL   x28,  x7, x31 
+#                    expected:  op1: c5ca3b9e op2: dcc3064c op3: 00000000 rd: 28 
+#                    actual:    op1: c5ca3b9e op2: dcc3064c op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    53 instruction: BGEU  x10, x15, 1128      registers[1]: a9fd8bb0 registers[2]: 49034721 registers[3]: 563298ab 
+# [SCOREBOARD ]    53 instruction: BGEU  x10, x15, 1128      registers[1]: a9fd8bb0 registers[2]: 49034721 registers[3]: 563298ab 
+# [DRIVER     ]    53 instruction: BGEU  x10, x15, 1128      registers[1]: a9fd8bb0 registers[2]: 49034721 registers[3]: 563298ab
+# [MONITOR OUT]    53 op1: a44c8bd2 op2: 16a7917b op3: fffff8d0 , rd: 00
+# [SCOREBOARD ]    53 operands: op1: a44c8bd2 op2: 16a7917b op3: fffff8d0 rd: 00 
+#                  instruction: BGEU  x10, x15, 1128 
+#                    expected:  op1: a44c8bd2 op2: 16a7917b op3: fffff8d0 rd: 0 
+#                    actual:    op1: a44c8bd2 op2: 16a7917b op3: fffff8d0 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    54 instruction: SW    x12, 3207(x28)      registers[1]: 560bb68c registers[2]: bcbf5f10 registers[3]: 2942106a 
+# [SCOREBOARD ]    54 instruction: SW    x12, 3207(x28)      registers[1]: 560bb68c registers[2]: bcbf5f10 registers[3]: 2942106a 
+# [DRIVER     ]    54 instruction: SW    x12, 3207(x28)      registers[1]: 560bb68c registers[2]: bcbf5f10 registers[3]: 2942106a
+# [MONITOR OUT]    54 op1: b66fb82c op2: fffffc87 op3: 09c49990 , rd: 00
+# [SCOREBOARD ]    54 operands: op1: b66fb82c op2: fffffc87 op3: 09c49990 rd: 00 
+#                  instruction: SW    x12, 3207(x28) 
+#                    expected:  op1: b66fb82c op2: fffffc87 op3: 09c49990 rd: 0 
+#                    actual:    op1: b66fb82c op2: fffffc87 op3: 09c49990 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    55 instruction: BLTU  x31,  x1, 3462      registers[1]: 3b6e649b registers[2]: 9711af1a registers[3]: 849137f5 
+# [SCOREBOARD ]    55 instruction: BLTU  x31,  x1, 3462      registers[1]: 3b6e649b registers[2]: 9711af1a registers[3]: 849137f5 
+# [DRIVER     ]    55 instruction: BLTU  x31,  x1, 3462      registers[1]: 3b6e649b registers[2]: 9711af1a registers[3]: 849137f5
+# [MONITOR OUT]    55 op1: bce9ce5c op2: 3b6e649b op3: fffffb0c , rd: 00
+# [SCOREBOARD ]    55 operands: op1: bce9ce5c op2: 3b6e649b op3: fffffb0c rd: 00 
+#                  instruction: BLTU  x31,  x1, 3462 
+#                    expected:  op1: bce9ce5c op2: 3b6e649b op3: fffffb0c rd: 0 
+#                    actual:    op1: bce9ce5c op2: 3b6e649b op3: fffffb0c rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    56 instruction: ADD   x14,  x2, x27       registers[1]: 8bf9af79 registers[2]: e28f0d4f registers[3]: 1a6e3aaf 
+# [SCOREBOARD ]    56 instruction: ADD   x14,  x2, x27       registers[1]: 8bf9af79 registers[2]: e28f0d4f registers[3]: 1a6e3aaf 
+# [DRIVER     ]    56 instruction: ADD   x14,  x2, x27       registers[1]: 8bf9af79 registers[2]: e28f0d4f registers[3]: 1a6e3aaf
+# [MONITOR OUT]    56 op1: e28f0d4f op2: 4fc0eac1 op3: 00000000 , rd: 0e
+# [SCOREBOARD ]    56 operands: op1: e28f0d4f op2: 4fc0eac1 op3: 00000000 rd: 0e 
+#                  instruction: ADD   x14,  x2, x27 
+#                    expected:  op1: e28f0d4f op2: 4fc0eac1 op3: 00000000 rd: 14 
+#                    actual:    op1: e28f0d4f op2: 4fc0eac1 op3: 00000000 rd: 14 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    57 instruction: STLI  x28, x31, 9         registers[1]: 49061970 registers[2]: fe8ccb43 registers[3]: ee33d7d7 
+# [SCOREBOARD ]    57 instruction: STLI  x28, x31, 9         registers[1]: 49061970 registers[2]: fe8ccb43 registers[3]: ee33d7d7 
+# [DRIVER     ]    57 instruction: STLI  x28, x31, 9         registers[1]: 49061970 registers[2]: fe8ccb43 registers[3]: ee33d7d7
+# [MONITOR OUT]    57 op1: da27a563 op2: 00000089 op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    57 operands: op1: da27a563 op2: 00000089 op3: 00000000 rd: 1c 
+#                  instruction: STLI  x28, x31, 9 
+#                    expected:  op1: da27a563 op2: 00000089 op3: 00000000 rd: 28 
+#                    actual:    op1: da27a563 op2: 00000089 op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    58 instruction: STLU  x26, x19,  x0       registers[1]: d1a37008 registers[2]: e686fe93 registers[3]: fab9b2be 
+# [SCOREBOARD ]    58 instruction: STLU  x26, x19,  x0       registers[1]: d1a37008 registers[2]: e686fe93 registers[3]: fab9b2be 
+# [DRIVER     ]    58 instruction: STLU  x26, x19,  x0       registers[1]: d1a37008 registers[2]: e686fe93 registers[3]: fab9b2be
+# [MONITOR OUT]    58 op1: 19ed97ee op2: 00000000 op3: 00000000 , rd: 1a
+# [SCOREBOARD ]    58 operands: op1: 19ed97ee op2: 00000000 op3: 00000000 rd: 1a 
+#                  instruction: STLU  x26, x19,  x0 
+#                    expected:  op1: 19ed97ee op2: 00000000 op3: 00000000 rd: 26 
+#                    actual:    op1: 19ed97ee op2: 00000000 op3: 00000000 rd: 26 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    59 instruction: JALR  x13, 658(x17)       registers[1]: 62347894 registers[2]: 13cf466b registers[3]: acc48161 
+# [SCOREBOARD ]    59 instruction: JALR  x13, 658(x17)       registers[1]: 62347894 registers[2]: 13cf466b registers[3]: acc48161 
+# [DRIVER     ]    59 instruction: JALR  x13, 658(x17)       registers[1]: 62347894 registers[2]: 13cf466b registers[3]: acc48161
+# [MONITOR OUT]    59 op1: 20855832 op2: 00000292 op3: 00000000 , rd: 0d
+# [SCOREBOARD ]    59 operands: op1: 20855832 op2: 00000292 op3: 00000000 rd: 0d 
+#                  instruction: JALR  x13, 658(x17) 
+#                    expected:  op1: 20855832 op2: 00000292 op3: 00000000 rd: 13 
+#                    actual:    op1: 20855832 op2: 00000292 op3: 00000000 rd: 13 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    60 instruction: SB    x14, 1154(x31)      registers[1]: db925112 registers[2]: 8bb3a351 registers[3]: b3c83d98 
+# [SCOREBOARD ]    60 instruction: SB    x14, 1154(x31)      registers[1]: db925112 registers[2]: 8bb3a351 registers[3]: b3c83d98 
+# [DRIVER     ]    60 instruction: SB    x14, 1154(x31)      registers[1]: db925112 registers[2]: 8bb3a351 registers[3]: b3c83d98
+# [MONITOR OUT]    60 op1: 1c6c3018 op2: 00000482 op3: 59e1f30b , rd: 00
+# [SCOREBOARD ]    60 operands: op1: 1c6c3018 op2: 00000482 op3: 59e1f30b rd: 00 
+#                  instruction: SB    x14, 1154(x31) 
+#                    expected:  op1: 1c6c3018 op2: 00000482 op3: 59e1f30b rd: 0 
+#                    actual:    op1: 1c6c3018 op2: 00000482 op3: 59e1f30b rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    61 instruction: SW     x8, 3821(x2)       registers[1]: 4e70821b registers[2]: b9af93af registers[3]: 0cb3cd8c 
+# [SCOREBOARD ]    61 instruction: SW     x8, 3821(x2)       registers[1]: 4e70821b registers[2]: b9af93af registers[3]: 0cb3cd8c 
+# [DRIVER     ]    61 instruction: SW     x8, 3821(x2)       registers[1]: 4e70821b registers[2]: b9af93af registers[3]: 0cb3cd8c
+# [MONITOR OUT]    61 op1: b9af93af op2: fffffeed op3: 16f5cbc4 , rd: 00
+# [SCOREBOARD ]    61 operands: op1: b9af93af op2: fffffeed op3: 16f5cbc4 rd: 00 
+#                  instruction: SW     x8, 3821(x2) 
+#                    expected:  op1: b9af93af op2: fffffeed op3: 16f5cbc4 rd: 0 
+#                    actual:    op1: b9af93af op2: fffffeed op3: 16f5cbc4 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    62 instruction: OR    x12, x25,  x0       registers[1]: 80eb93ee registers[2]: 041c535a registers[3]: f8b90d8d 
+# [SCOREBOARD ]    62 instruction: OR    x12, x25,  x0       registers[1]: 80eb93ee registers[2]: 041c535a registers[3]: f8b90d8d 
+# [DRIVER     ]    62 instruction: OR    x12, x25,  x0       registers[1]: 80eb93ee registers[2]: 041c535a registers[3]: f8b90d8d
+# [MONITOR OUT]    62 op1: 95fc5a44 op2: 00000000 op3: 00000000 , rd: 0c
+# [SCOREBOARD ]    62 operands: op1: 95fc5a44 op2: 00000000 op3: 00000000 rd: 0c 
+#                  instruction: OR    x12, x25,  x0 
+#                    expected:  op1: 95fc5a44 op2: 00000000 op3: 00000000 rd: 12 
+#                    actual:    op1: 95fc5a44 op2: 00000000 op3: 00000000 rd: 12 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    63 instruction: SB     x1, 3882(x2)       registers[1]: b4462c87 registers[2]: a3a56745 registers[3]: 4cdf6f00 
+# [SCOREBOARD ]    63 instruction: SB     x1, 3882(x2)       registers[1]: b4462c87 registers[2]: a3a56745 registers[3]: 4cdf6f00 
+# [DRIVER     ]    63 instruction: SB     x1, 3882(x2)       registers[1]: b4462c87 registers[2]: a3a56745 registers[3]: 4cdf6f00
+# [MONITOR OUT]    63 op1: a3a56745 op2: ffffff2a op3: b4462c87 , rd: 00
+# [SCOREBOARD ]    63 operands: op1: a3a56745 op2: ffffff2a op3: b4462c87 rd: 00 
+#                  instruction: SB     x1, 3882(x2) 
+#                    expected:  op1: a3a56745 op2: ffffff2a op3: b4462c87 rd: 0 
+#                    actual:    op1: a3a56745 op2: ffffff2a op3: b4462c87 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    64 instruction: SB    x28, 1099(x20)      registers[1]: bc8f8f91 registers[2]: 0c21c84e registers[3]: 6c7211b9 
+# [SCOREBOARD ]    64 instruction: SB    x28, 1099(x20)      registers[1]: bc8f8f91 registers[2]: 0c21c84e registers[3]: 6c7211b9 
+# [DRIVER     ]    64 instruction: SB    x28, 1099(x20)      registers[1]: bc8f8f91 registers[2]: 0c21c84e registers[3]: 6c7211b9
+# [MONITOR OUT]    64 op1: d134de39 op2: 0000044b op3: 2641fb8e , rd: 00
+# [SCOREBOARD ]    64 operands: op1: d134de39 op2: 0000044b op3: 2641fb8e rd: 00 
+#                  instruction: SB    x28, 1099(x20) 
+#                    expected:  op1: d134de39 op2: 0000044b op3: 2641fb8e rd: 0 
+#                    actual:    op1: d134de39 op2: 0000044b op3: 2641fb8e rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    65 instruction: LB    x31, 1167(x14)      registers[1]: 8b303ca5 registers[2]: 2bf23497 registers[3]: 6d482d2d 
+# [SCOREBOARD ]    65 instruction: LB    x31, 1167(x14)      registers[1]: 8b303ca5 registers[2]: 2bf23497 registers[3]: 6d482d2d 
+# [DRIVER     ]    65 instruction: LB    x31, 1167(x14)      registers[1]: 8b303ca5 registers[2]: 2bf23497 registers[3]: 6d482d2d
+# [MONITOR OUT]    65 op1: 9f6ffa3d op2: 0000048f op3: 00000000 , rd: 1f
+# [SCOREBOARD ]    65 operands: op1: 9f6ffa3d op2: 0000048f op3: 00000000 rd: 1f 
+#                  instruction: LB    x31, 1167(x14) 
+#                    expected:  op1: 9f6ffa3d op2: 0000048f op3: 00000000 rd: 31 
+#                    actual:    op1: 9f6ffa3d op2: 0000048f op3: 00000000 rd: 31 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    66 instruction: JAL   x19, 720422         registers[1]: 08acf76e registers[2]: 8c27dc89 registers[3]: 44f9367a 
+# [SCOREBOARD ]    66 instruction: JAL   x19, 720422         registers[1]: 08acf76e registers[2]: 8c27dc89 registers[3]: 44f9367a 
+# [DRIVER     ]    66 instruction: JAL   x19, 720422         registers[1]: 08acf76e registers[2]: 8c27dc89 registers[3]: 44f9367a
+# [MONITOR OUT]    66 op1: 0005fc4c op2: 00000000 op3: 00000000 , rd: 13
+# [SCOREBOARD ]    66 operands: op1: 0005fc4c op2: 00000000 op3: 00000000 rd: 13 
+#                  instruction: JAL   x19, 720422 
+#                    expected:  op1: 0005fc4c op2: 00000000 op3: 00000000 rd: 19 
+#                    actual:    op1: 0005fc4c op2: 00000000 op3: 00000000 rd: 19 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    67 instruction: OR    x30, x16, x17       registers[1]: 80325357 registers[2]: b564b839 registers[3]: b10c516a 
+# [SCOREBOARD ]    67 instruction: OR    x30, x16, x17       registers[1]: 80325357 registers[2]: b564b839 registers[3]: b10c516a 
+# [DRIVER     ]    67 instruction: OR    x30, x16, x17       registers[1]: 80325357 registers[2]: b564b839 registers[3]: b10c516a
+# [MONITOR OUT]    67 op1: 76f4ede5 op2: 77d23de8 op3: 00000000 , rd: 1e
+# [SCOREBOARD ]    67 operands: op1: 76f4ede5 op2: 77d23de8 op3: 00000000 rd: 1e 
+#                  instruction: OR    x30, x16, x17 
+#                    expected:  op1: 76f4ede5 op2: 77d23de8 op3: 00000000 rd: 30 
+#                    actual:    op1: 76f4ede5 op2: 77d23de8 op3: 00000000 rd: 30 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    68 instruction: LHU   x21, 1628(x0)       registers[1]: 70d02bf3 registers[2]: 33ebdd8e registers[3]: 4038698b 
+# [SCOREBOARD ]    68 instruction: LHU   x21, 1628(x0)       registers[1]: 70d02bf3 registers[2]: 33ebdd8e registers[3]: 4038698b 
+# [DRIVER     ]    68 instruction: LHU   x21, 1628(x0)       registers[1]: 70d02bf3 registers[2]: 33ebdd8e registers[3]: 4038698b
+# [MONITOR OUT]    68 op1: 00000000 op2: 0000065c op3: 00000000 , rd: 15
+# [SCOREBOARD ]    68 operands: op1: 00000000 op2: 0000065c op3: 00000000 rd: 15 
+#                  instruction: LHU   x21, 1628(x0) 
+#                    expected:  op1: 00000000 op2: 0000065c op3: 00000000 rd: 21 
+#                    actual:    op1: 00000000 op2: 0000065c op3: 00000000 rd: 21 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    69 instruction: BNE    x2, x19, 3808      registers[1]: 3a73f15a registers[2]: 7f04089f registers[3]: a92bcfd5 
+# [SCOREBOARD ]    69 instruction: BNE    x2, x19, 3808      registers[1]: 3a73f15a registers[2]: 7f04089f registers[3]: a92bcfd5 
+# [DRIVER     ]    69 instruction: BNE    x2, x19, 3808      registers[1]: 3a73f15a registers[2]: 7f04089f registers[3]: a92bcfd5
+# [MONITOR OUT]    69 op1: 7f04089f op2: 7529e1ab op3: fffffdc0 , rd: 00
+# [SCOREBOARD ]    69 operands: op1: 7f04089f op2: 7529e1ab op3: fffffdc0 rd: 00 
+#                  instruction: BNE    x2, x19, 3808 
+#                    expected:  op1: 7f04089f op2: 7529e1ab op3: fffffdc0 rd: 0 
+#                    actual:    op1: 7f04089f op2: 7529e1ab op3: fffffdc0 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    70 instruction: SRLI  x18,  x2, 19        registers[1]: d45d58d7 registers[2]: 2358905a registers[3]: aa0cc959 
+# [SCOREBOARD ]    70 instruction: SRLI  x18,  x2, 19        registers[1]: d45d58d7 registers[2]: 2358905a registers[3]: aa0cc959 
+# [DRIVER     ]    70 instruction: SRLI  x18,  x2, 19        registers[1]: d45d58d7 registers[2]: 2358905a registers[3]: aa0cc959
+# [MONITOR OUT]    70 op1: 2358905a op2: 00000013 op3: 00000000 , rd: 12
+# [SCOREBOARD ]    70 operands: op1: 2358905a op2: 00000013 op3: 00000000 rd: 12 
+#                  instruction: SRLI  x18,  x2, 19 
+#                    expected:  op1: 2358905a op2: 00000013 op3: 00000000 rd: 18 
+#                    actual:    op1: 2358905a op2: 00000013 op3: 00000000 rd: 18 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    71 instruction: XORI  x31, x11, 3747      registers[1]: 4183d60e registers[2]: 81e1bcf4 registers[3]: 478b3ca4 
+# [SCOREBOARD ]    71 instruction: XORI  x31, x11, 3747      registers[1]: 4183d60e registers[2]: 81e1bcf4 registers[3]: 478b3ca4 
+# [DRIVER     ]    71 instruction: XORI  x31, x11, 3747      registers[1]: 4183d60e registers[2]: 81e1bcf4 registers[3]: 478b3ca4
+# [MONITOR OUT]    71 op1: cabf3760 op2: fffffea3 op3: 00000000 , rd: 1f
+# [SCOREBOARD ]    71 operands: op1: cabf3760 op2: fffffea3 op3: 00000000 rd: 1f 
+#                  instruction: XORI  x31, x11, 3747 
+#                    expected:  op1: cabf3760 op2: fffffea3 op3: 00000000 rd: 31 
+#                    actual:    op1: cabf3760 op2: fffffea3 op3: 00000000 rd: 31 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    72 instruction: SB    x25, 1603(x6)       registers[1]: 57d4c370 registers[2]: 945c11c4 registers[3]: ef0a1dc9 
+# [SCOREBOARD ]    72 instruction: SB    x25, 1603(x6)       registers[1]: 57d4c370 registers[2]: 945c11c4 registers[3]: ef0a1dc9 
+# [DRIVER     ]    72 instruction: SB    x25, 1603(x6)       registers[1]: 57d4c370 registers[2]: 945c11c4 registers[3]: ef0a1dc9
+# [MONITOR OUT]    72 op1: 3bc9e5f5 op2: 00000643 op3: d13c4746 , rd: 00
+# [SCOREBOARD ]    72 operands: op1: 3bc9e5f5 op2: 00000643 op3: d13c4746 rd: 00 
+#                  instruction: SB    x25, 1603(x6) 
+#                    expected:  op1: 3bc9e5f5 op2: 00000643 op3: d13c4746 rd: 0 
+#                    actual:    op1: 3bc9e5f5 op2: 00000643 op3: d13c4746 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    73 instruction: AUIPC x21, 214033         registers[1]: 85cead95 registers[2]: ab7d3651 registers[3]: 02cbc601 
+# [SCOREBOARD ]    73 instruction: AUIPC x21, 214033         registers[1]: 85cead95 registers[2]: ab7d3651 registers[3]: 02cbc601 
+# [DRIVER     ]    73 instruction: AUIPC x21, 214033         registers[1]: 85cead95 registers[2]: ab7d3651 registers[3]: 02cbc601
+# [MONITOR OUT]    73 op1: 34411000 op2: 00000000 op3: 00000000 , rd: 15
+# [SCOREBOARD ]    73 operands: op1: 34411000 op2: 00000000 op3: 00000000 rd: 15 
+#                  instruction: AUIPC x21, 214033 
+#                    expected:  op1: 34411000 op2: 00000000 op3: 00000000 rd: 21 
+#                    actual:    op1: 34411000 op2: 00000000 op3: 00000000 rd: 21 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    74 instruction: SH     x0, 1280(x24)      registers[1]: dc61eff6 registers[2]: ddef35f5 registers[3]: 78747d4a 
+# [SCOREBOARD ]    74 instruction: SH     x0, 1280(x24)      registers[1]: dc61eff6 registers[2]: ddef35f5 registers[3]: 78747d4a 
+# [DRIVER     ]    74 instruction: SH     x0, 1280(x24)      registers[1]: dc61eff6 registers[2]: ddef35f5 registers[3]: 78747d4a
+# [MONITOR OUT]    74 op1: 3c9dcd55 op2: 00000500 op3: 00000000 , rd: 00
+# [SCOREBOARD ]    74 operands: op1: 3c9dcd55 op2: 00000500 op3: 00000000 rd: 00 
+#                  instruction: SH     x0, 1280(x24) 
+#                    expected:  op1: 3c9dcd55 op2: 00000500 op3: 00000000 rd: 0 
+#                    actual:    op1: 3c9dcd55 op2: 00000500 op3: 00000000 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    75 instruction: BLTU  x11, x24, 730       registers[1]: afbb86d6 registers[2]: 57b3aa82 registers[3]: 2d2eaebd 
+# [SCOREBOARD ]    75 instruction: BLTU  x11, x24, 730       registers[1]: afbb86d6 registers[2]: 57b3aa82 registers[3]: 2d2eaebd 
+# [DRIVER     ]    75 instruction: BLTU  x11, x24, 730       registers[1]: afbb86d6 registers[2]: 57b3aa82 registers[3]: 2d2eaebd
+# [MONITOR OUT]    75 op1: 7879c5a0 op2: deea14fa op3: 000005b4 , rd: 00
+# [SCOREBOARD ]    75 operands: op1: 7879c5a0 op2: deea14fa op3: 000005b4 rd: 00 
+#                  instruction: BLTU  x11, x24, 730 
+#                    expected:  op1: 7879c5a0 op2: deea14fa op3: 000005b4 rd: 0 
+#                    actual:    op1: 7879c5a0 op2: deea14fa op3: 000005b4 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    76 instruction: LB    x11, 630(x3)        registers[1]: dc70b750 registers[2]: 47e1f9a0 registers[3]: f96bc2a3 
+# [SCOREBOARD ]    76 instruction: LB    x11, 630(x3)        registers[1]: dc70b750 registers[2]: 47e1f9a0 registers[3]: f96bc2a3 
+# [DRIVER     ]    76 instruction: LB    x11, 630(x3)        registers[1]: dc70b750 registers[2]: 47e1f9a0 registers[3]: f96bc2a3
+# [MONITOR OUT]    76 op1: f96bc2a3 op2: 00000276 op3: 00000000 , rd: 0b
+# [SCOREBOARD ]    76 operands: op1: f96bc2a3 op2: 00000276 op3: 00000000 rd: 0b 
+#                  instruction: LB    x11, 630(x3) 
+#                    expected:  op1: f96bc2a3 op2: 00000276 op3: 00000000 rd: 11 
+#                    actual:    op1: f96bc2a3 op2: 00000276 op3: 00000000 rd: 11 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    77 instruction: BEQ   x28, x15, 3514      registers[1]: d22a0610 registers[2]: bdbdb6f9 registers[3]: 434c67df 
+# [SCOREBOARD ]    77 instruction: BEQ   x28, x15, 3514      registers[1]: d22a0610 registers[2]: bdbdb6f9 registers[3]: 434c67df 
+# [DRIVER     ]    77 instruction: BEQ   x28, x15, 3514      registers[1]: d22a0610 registers[2]: bdbdb6f9 registers[3]: 434c67df
+# [MONITOR OUT]    77 op1: 21223f30 op2: 37cebd64 op3: fffffb74 , rd: 00
+# [SCOREBOARD ]    77 operands: op1: 21223f30 op2: 37cebd64 op3: fffffb74 rd: 00 
+#                  instruction: BEQ   x28, x15, 3514 
+#                    expected:  op1: 21223f30 op2: 37cebd64 op3: fffffb74 rd: 0 
+#                    actual:    op1: 21223f30 op2: 37cebd64 op3: fffffb74 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    78 instruction: JAL   x31, 166406         registers[1]: f0ab66a8 registers[2]: 294ac816 registers[3]: aeb1b4a2 
+# [SCOREBOARD ]    78 instruction: JAL   x31, 166406         registers[1]: f0ab66a8 registers[2]: 294ac816 registers[3]: aeb1b4a2 
+# [DRIVER     ]    78 instruction: JAL   x31, 166406         registers[1]: f0ab66a8 registers[2]: 294ac816 registers[3]: aeb1b4a2
+# [MONITOR OUT]    78 op1: 0005140c op2: 00000000 op3: 00000000 , rd: 1f
+# [SCOREBOARD ]    78 operands: op1: 0005140c op2: 00000000 op3: 00000000 rd: 1f 
+#                  instruction: JAL   x31, 166406 
+#                    expected:  op1: 0005140c op2: 00000000 op3: 00000000 rd: 31 
+#                    actual:    op1: 0005140c op2: 00000000 op3: 00000000 rd: 31 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    79 instruction: ANDI  x19, x26, 3835      registers[1]: 6fd000ae registers[2]: efed679d registers[3]: 1e1c0ff3 
+# [SCOREBOARD ]    79 instruction: ANDI  x19, x26, 3835      registers[1]: 6fd000ae registers[2]: efed679d registers[3]: 1e1c0ff3 
+# [DRIVER     ]    79 instruction: ANDI  x19, x26, 3835      registers[1]: 6fd000ae registers[2]: efed679d registers[3]: 1e1c0ff3
+# [MONITOR OUT]    79 op1: d22309dd op2: fffffefb op3: 00000000 , rd: 13
+# [SCOREBOARD ]    79 operands: op1: d22309dd op2: fffffefb op3: 00000000 rd: 13 
+#                  instruction: ANDI  x19, x26, 3835 
+#                    expected:  op1: d22309dd op2: fffffefb op3: 00000000 rd: 19 
+#                    actual:    op1: d22309dd op2: fffffefb op3: 00000000 rd: 19 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    80 instruction: AND    x3, x12,  x9       registers[1]: bfe0df3b registers[2]: 2cfb7368 registers[3]: 870455d7 
+# [SCOREBOARD ]    80 instruction: AND    x3, x12,  x9       registers[1]: bfe0df3b registers[2]: 2cfb7368 registers[3]: 870455d7 
+# [DRIVER     ]    80 instruction: AND    x3, x12,  x9       registers[1]: bfe0df3b registers[2]: 2cfb7368 registers[3]: 870455d7
+# [MONITOR OUT]    80 op1: ae465425 op2: 0583b6f5 op3: 00000000 , rd: 03
+# [SCOREBOARD ]    80 operands: op1: ae465425 op2: 0583b6f5 op3: 00000000 rd: 03 
+#                  instruction: AND    x3, x12,  x9 
+#                    expected:  op1: ae465425 op2: 0583b6f5 op3: 00000000 rd: 3 
+#                    actual:    op1: ae465425 op2: 0583b6f5 op3: 00000000 rd: 3 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    81 instruction: STLU  x20, x25, x21       registers[1]: daf0257e registers[2]: 1a80f1c4 registers[3]: b18495fa 
+# [SCOREBOARD ]    81 instruction: STLU  x20, x25, x21       registers[1]: daf0257e registers[2]: 1a80f1c4 registers[3]: b18495fa 
+# [DRIVER     ]    81 instruction: STLU  x20, x25, x21       registers[1]: daf0257e registers[2]: 1a80f1c4 registers[3]: b18495fa
+# [MONITOR OUT]    81 op1: 7d13da32 op2: 4d9fc8f8 op3: 00000000 , rd: 14
+# [SCOREBOARD ]    81 operands: op1: 7d13da32 op2: 4d9fc8f8 op3: 00000000 rd: 14 
+#                  instruction: STLU  x20, x25, x21 
+#                    expected:  op1: 7d13da32 op2: 4d9fc8f8 op3: 00000000 rd: 20 
+#                    actual:    op1: 7d13da32 op2: 4d9fc8f8 op3: 00000000 rd: 20 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    82 instruction: SLL   x20, x31, x16       registers[1]: 028b1652 registers[2]: a918c802 registers[3]: 0b2a89f3 
+# [SCOREBOARD ]    82 instruction: SLL   x20, x31, x16       registers[1]: 028b1652 registers[2]: a918c802 registers[3]: 0b2a89f3 
+# [DRIVER     ]    82 instruction: SLL   x20, x31, x16       registers[1]: 028b1652 registers[2]: a918c802 registers[3]: 0b2a89f3
+# [MONITOR OUT]    82 op1: 557793e8 op2: 77ff0541 op3: 00000000 , rd: 14
+# [SCOREBOARD ]    82 operands: op1: 557793e8 op2: 77ff0541 op3: 00000000 rd: 14 
+#                  instruction: SLL   x20, x31, x16 
+#                    expected:  op1: 557793e8 op2: 77ff0541 op3: 00000000 rd: 20 
+#                    actual:    op1: 557793e8 op2: 77ff0541 op3: 00000000 rd: 20 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    83 instruction: BLTU  x18, x16, 2952      registers[1]: 08ab34a8 registers[2]: 98d3da1a registers[3]: ac8e4d74 
+# [SCOREBOARD ]    83 instruction: BLTU  x18, x16, 2952      registers[1]: 08ab34a8 registers[2]: 98d3da1a registers[3]: ac8e4d74 
+# [DRIVER     ]    83 instruction: BLTU  x18, x16, 2952      registers[1]: 08ab34a8 registers[2]: 98d3da1a registers[3]: ac8e4d74
+# [MONITOR OUT]    83 op1: 9110e48a op2: 116ce9a1 op3: 00000710 , rd: 00
+# [SCOREBOARD ]    83 operands: op1: 9110e48a op2: 116ce9a1 op3: 00000710 rd: 00 
+#                  instruction: BLTU  x18, x16, 2952 
+#                    expected:  op1: 9110e48a op2: 116ce9a1 op3: 00000710 rd: 0 
+#                    actual:    op1: 9110e48a op2: 116ce9a1 op3: 00000710 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    84 instruction: BEQ    x8, x27, 1414      registers[1]: 696ed605 registers[2]: 70f249ba registers[3]: cf9ab387 
+# [SCOREBOARD ]    84 instruction: BEQ    x8, x27, 1414      registers[1]: 696ed605 registers[2]: 70f249ba registers[3]: cf9ab387 
+# [DRIVER     ]    84 instruction: BEQ    x8, x27, 1414      registers[1]: 696ed605 registers[2]: 70f249ba registers[3]: cf9ab387
+# [MONITOR OUT]    84 op1: 677c9626 op2: 86040df9 op3: fffffb0c , rd: 00
+# [SCOREBOARD ]    84 operands: op1: 677c9626 op2: 86040df9 op3: fffffb0c rd: 00 
+#                  instruction: BEQ    x8, x27, 1414 
+#                    expected:  op1: 677c9626 op2: 86040df9 op3: fffffb0c rd: 0 
+#                    actual:    op1: 677c9626 op2: 86040df9 op3: fffffb0c rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    85 instruction: STLI   x3,  x9, 16        registers[1]: cfc18eee registers[2]: 13604d83 registers[3]: fb44b42b 
+# [SCOREBOARD ]    85 instruction: STLI   x3,  x9, 16        registers[1]: cfc18eee registers[2]: 13604d83 registers[3]: fb44b42b 
+# [DRIVER     ]    85 instruction: STLI   x3,  x9, 16        registers[1]: cfc18eee registers[2]: 13604d83 registers[3]: fb44b42b
+# [MONITOR OUT]    85 op1: 843e3765 op2: fffff970 op3: 00000000 , rd: 03
+# [SCOREBOARD ]    85 operands: op1: 843e3765 op2: fffff970 op3: 00000000 rd: 03 
+#                  instruction: STLI   x3,  x9, 16 
+#                    expected:  op1: 843e3765 op2: fffff970 op3: 00000000 rd: 3 
+#                    actual:    op1: 843e3765 op2: fffff970 op3: 00000000 rd: 3 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    86 instruction: LW    x19, 3388(x8)       registers[1]: 686e0ea3 registers[2]: b080eedb registers[3]: 48695a54 
+# [SCOREBOARD ]    86 instruction: LW    x19, 3388(x8)       registers[1]: 686e0ea3 registers[2]: b080eedb registers[3]: 48695a54 
+# [DRIVER     ]    86 instruction: LW    x19, 3388(x8)       registers[1]: 686e0ea3 registers[2]: b080eedb registers[3]: 48695a54
+# [MONITOR OUT]    86 op1: dd9d3cd9 op2: fffffd3c op3: 00000000 , rd: 13
+# [SCOREBOARD ]    86 operands: op1: dd9d3cd9 op2: fffffd3c op3: 00000000 rd: 13 
+#                  instruction: LW    x19, 3388(x8) 
+#                    expected:  op1: dd9d3cd9 op2: fffffd3c op3: 00000000 rd: 19 
+#                    actual:    op1: dd9d3cd9 op2: fffffd3c op3: 00000000 rd: 19 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    87 instruction: BGE   x22, x21, 2964      registers[1]: 7aeb6827 registers[2]: cc2cd92b registers[3]: 701ddf20 
+# [SCOREBOARD ]    87 instruction: BGE   x22, x21, 2964      registers[1]: 7aeb6827 registers[2]: cc2cd92b registers[3]: 701ddf20 
+# [DRIVER     ]    87 instruction: BGE   x22, x21, 2964      registers[1]: 7aeb6827 registers[2]: cc2cd92b registers[3]: 701ddf20
+# [MONITOR OUT]    87 op1: de1c047b op2: f13c4d04 op3: 00000728 , rd: 00
+# [SCOREBOARD ]    87 operands: op1: de1c047b op2: f13c4d04 op3: 00000728 rd: 00 
+#                  instruction: BGE   x22, x21, 2964 
+#                    expected:  op1: de1c047b op2: f13c4d04 op3: 00000728 rd: 0 
+#                    actual:    op1: de1c047b op2: f13c4d04 op3: 00000728 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    88 instruction: SB    x13, 3843(x12)      registers[1]: 7946930e registers[2]: 6f23834b registers[3]: 9243673b 
+# [SCOREBOARD ]    88 instruction: SB    x13, 3843(x12)      registers[1]: 7946930e registers[2]: 6f23834b registers[3]: 9243673b 
+# [DRIVER     ]    88 instruction: SB    x13, 3843(x12)      registers[1]: 7946930e registers[2]: 6f23834b registers[3]: 9243673b
+# [MONITOR OUT]    88 op1: b044d20c op2: ffffff03 op3: 34039b8b , rd: 00
+# [SCOREBOARD ]    88 operands: op1: b044d20c op2: ffffff03 op3: 34039b8b rd: 00 
+#                  instruction: SB    x13, 3843(x12) 
+#                    expected:  op1: b044d20c op2: ffffff03 op3: 34039b8b rd: 0 
+#                    actual:    op1: b044d20c op2: ffffff03 op3: 34039b8b rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    89 instruction: SRA   x29, x23,  x8       registers[1]: c9a13034 registers[2]: 4812a726 registers[3]: d793f019 
+# [SCOREBOARD ]    89 instruction: SRA   x29, x23,  x8       registers[1]: c9a13034 registers[2]: 4812a726 registers[3]: d793f019 
+# [DRIVER     ]    89 instruction: SRA   x29, x23,  x8       registers[1]: c9a13034 registers[2]: 4812a726 registers[3]: d793f019
+# [MONITOR OUT]    89 op1: da4b974f op2: c80e0c7f op3: 00000000 , rd: 1d
+# [SCOREBOARD ]    89 operands: op1: da4b974f op2: c80e0c7f op3: 00000000 rd: 1d 
+#                  instruction: SRA   x29, x23,  x8 
+#                    expected:  op1: da4b974f op2: c80e0c7f op3: 00000000 rd: 29 
+#                    actual:    op1: da4b974f op2: c80e0c7f op3: 00000000 rd: 29 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    90 instruction: SRL   x16,  x4,  x5       registers[1]: 5a56b7a5 registers[2]: 67c29f7f registers[3]: f89d3812 
+# [SCOREBOARD ]    90 instruction: SRL   x16,  x4,  x5       registers[1]: 5a56b7a5 registers[2]: 67c29f7f registers[3]: f89d3812 
+# [DRIVER     ]    90 instruction: SRL   x16,  x4,  x5       registers[1]: 5a56b7a5 registers[2]: 67c29f7f registers[3]: f89d3812
+# [MONITOR OUT]    90 op1: 314c9640 op2: 71afd884 op3: 00000000 , rd: 10
+# [SCOREBOARD ]    90 operands: op1: 314c9640 op2: 71afd884 op3: 00000000 rd: 10 
+#                  instruction: SRL   x16,  x4,  x5 
+#                    expected:  op1: 314c9640 op2: 71afd884 op3: 00000000 rd: 16 
+#                    actual:    op1: 314c9640 op2: 71afd884 op3: 00000000 rd: 16 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    91 instruction: STLU   x5, x12,  x1       registers[1]: e6485d0c registers[2]: ab4d0282 registers[3]: 78a8eae1 
+# [SCOREBOARD ]    91 instruction: STLU   x5, x12,  x1       registers[1]: e6485d0c registers[2]: ab4d0282 registers[3]: 78a8eae1 
+# [DRIVER     ]    91 instruction: STLU   x5, x12,  x1       registers[1]: e6485d0c registers[2]: ab4d0282 registers[3]: 78a8eae1
+# [MONITOR OUT]    91 op1: 3e3d678d op2: e6485d0c op3: 00000000 , rd: 05
+# [SCOREBOARD ]    91 operands: op1: 3e3d678d op2: e6485d0c op3: 00000000 rd: 05 
+#                  instruction: STLU   x5, x12,  x1 
+#                    expected:  op1: 3e3d678d op2: e6485d0c op3: 00000000 rd: 5 
+#                    actual:    op1: 3e3d678d op2: e6485d0c op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    92 instruction: BLTU  x11,  x7, 770       registers[1]: b4f596fb registers[2]: 2ec889a0 registers[3]: 5551bc98 
+# [SCOREBOARD ]    92 instruction: BLTU  x11,  x7, 770       registers[1]: b4f596fb registers[2]: 2ec889a0 registers[3]: 5551bc98 
+# [DRIVER     ]    92 instruction: BLTU  x11,  x7, 770       registers[1]: b4f596fb registers[2]: 2ec889a0 registers[3]: 5551bc98
+# [MONITOR OUT]    92 op1: c4a6a1f6 op2: 56cb8eaf op3: 00000604 , rd: 00
+# [SCOREBOARD ]    92 operands: op1: c4a6a1f6 op2: 56cb8eaf op3: 00000604 rd: 00 
+#                  instruction: BLTU  x11,  x7, 770 
+#                    expected:  op1: c4a6a1f6 op2: 56cb8eaf op3: 00000604 rd: 0 
+#                    actual:    op1: c4a6a1f6 op2: 56cb8eaf op3: 00000604 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    93 instruction: SW    x14, 1297(x1)       registers[1]: 681fec62 registers[2]: ac8bb222 registers[3]: 3454b4cf 
+# [SCOREBOARD ]    93 instruction: SW    x14, 1297(x1)       registers[1]: 681fec62 registers[2]: ac8bb222 registers[3]: 3454b4cf 
+# [DRIVER     ]    93 instruction: SW    x14, 1297(x1)       registers[1]: 681fec62 registers[2]: ac8bb222 registers[3]: 3454b4cf
+# [MONITOR OUT]    93 op1: 681fec62 op2: 00000511 op3: e0d614f0 , rd: 00
+# [SCOREBOARD ]    93 operands: op1: 681fec62 op2: 00000511 op3: e0d614f0 rd: 00 
+#                  instruction: SW    x14, 1297(x1) 
+#                    expected:  op1: 681fec62 op2: 00000511 op3: e0d614f0 rd: 0 
+#                    actual:    op1: 681fec62 op2: 00000511 op3: e0d614f0 rd: 0 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    94 instruction: STL   x23,  x3, x12       registers[1]: 4d2a9a2e registers[2]: 699ad868 registers[3]: 776a4885 
+# [SCOREBOARD ]    94 instruction: STL   x23,  x3, x12       registers[1]: 4d2a9a2e registers[2]: 699ad868 registers[3]: 776a4885 
+# [DRIVER     ]    94 instruction: STL   x23,  x3, x12       registers[1]: 4d2a9a2e registers[2]: 699ad868 registers[3]: 776a4885
+# [MONITOR OUT]    94 op1: 776a4885 op2: d009d0ab op3: 00000000 , rd: 17
+# [SCOREBOARD ]    94 operands: op1: 776a4885 op2: d009d0ab op3: 00000000 rd: 17 
+#                  instruction: STL   x23,  x3, x12 
+#                    expected:  op1: 776a4885 op2: d009d0ab op3: 00000000 rd: 23 
+#                    actual:    op1: 776a4885 op2: d009d0ab op3: 00000000 rd: 23 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    95 instruction: SRLI  x18,  x1, 8         registers[1]: 03d8fb1d registers[2]: 9f0cf6f6 registers[3]: f888f28d 
+# [SCOREBOARD ]    95 instruction: SRLI  x18,  x1, 8         registers[1]: 03d8fb1d registers[2]: 9f0cf6f6 registers[3]: f888f28d 
+# [DRIVER     ]    95 instruction: SRLI  x18,  x1, 8         registers[1]: 03d8fb1d registers[2]: 9f0cf6f6 registers[3]: f888f28d
+# [MONITOR OUT]    95 op1: 03d8fb1d op2: 00000008 op3: 00000000 , rd: 12
+# [SCOREBOARD ]    95 operands: op1: 03d8fb1d op2: 00000008 op3: 00000000 rd: 12 
+#                  instruction: SRLI  x18,  x1, 8 
+#                    expected:  op1: 03d8fb1d op2: 00000008 op3: 00000000 rd: 18 
+#                    actual:    op1: 03d8fb1d op2: 00000008 op3: 00000000 rd: 18 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    96 instruction: LBU    x5, 1610(x9)       registers[1]: d75286df registers[2]: e49d56fc registers[3]: ebd4cd89 
+# [SCOREBOARD ]    96 instruction: LBU    x5, 1610(x9)       registers[1]: d75286df registers[2]: e49d56fc registers[3]: ebd4cd89 
+# [DRIVER     ]    96 instruction: LBU    x5, 1610(x9)       registers[1]: d75286df registers[2]: e49d56fc registers[3]: ebd4cd89
+# [MONITOR OUT]    96 op1: a0f71657 op2: 0000064a op3: 00000000 , rd: 05
+# [SCOREBOARD ]    96 operands: op1: a0f71657 op2: 0000064a op3: 00000000 rd: 05 
+#                  instruction: LBU    x5, 1610(x9) 
+#                    expected:  op1: a0f71657 op2: 0000064a op3: 00000000 rd: 5 
+#                    actual:    op1: a0f71657 op2: 0000064a op3: 00000000 rd: 5 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    97 instruction: AUIPC x15, 65255          registers[1]: dbd174a0 registers[2]: c070724c registers[3]: da66c851 
+# [SCOREBOARD ]    97 instruction: AUIPC x15, 65255          registers[1]: dbd174a0 registers[2]: c070724c registers[3]: da66c851 
+# [DRIVER     ]    97 instruction: AUIPC x15, 65255          registers[1]: dbd174a0 registers[2]: c070724c registers[3]: da66c851
+# [MONITOR OUT]    97 op1: 0fee7000 op2: 00000000 op3: 00000000 , rd: 0f
+# [SCOREBOARD ]    97 operands: op1: 0fee7000 op2: 00000000 op3: 00000000 rd: 0f 
+#                  instruction: AUIPC x15, 65255 
+#                    expected:  op1: 0fee7000 op2: 00000000 op3: 00000000 rd: 15 
+#                    actual:    op1: 0fee7000 op2: 00000000 op3: 00000000 rd: 15 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    98 instruction: AND   x26,  x3, x22       registers[1]: 2f5403b9 registers[2]: 10c8ac61 registers[3]: 5add982b 
+# [SCOREBOARD ]    98 instruction: AND   x26,  x3, x22       registers[1]: 2f5403b9 registers[2]: 10c8ac61 registers[3]: 5add982b 
+# [DRIVER     ]    98 instruction: AND   x26,  x3, x22       registers[1]: 2f5403b9 registers[2]: 10c8ac61 registers[3]: 5add982b
+# [MONITOR OUT]    98 op1: 5add982b op2: e1a9ce0e op3: 00000000 , rd: 1a
+# [SCOREBOARD ]    98 operands: op1: 5add982b op2: e1a9ce0e op3: 00000000 rd: 1a 
+#                  instruction: AND   x26,  x3, x22 
+#                    expected:  op1: 5add982b op2: e1a9ce0e op3: 00000000 rd: 26 
+#                    actual:    op1: 5add982b op2: e1a9ce0e op3: 00000000 rd: 26 
+#                  >>> correct! 
+# 
+# [MONITOR IN ]    99 instruction: STL   x28, x28, x29       registers[1]: 43be7b0b registers[2]: 84014a19 registers[3]: 8a82235e 
+# [SCOREBOARD ]    99 instruction: STL   x28, x28, x29       registers[1]: 43be7b0b registers[2]: 84014a19 registers[3]: 8a82235e 
+# [DRIVER     ]    99 instruction: STL   x28, x28, x29       registers[1]: 43be7b0b registers[2]: 84014a19 registers[3]: 8a82235e
+# [MONITOR OUT]    99 op1: 6baab5b7 op2: d4e550e0 op3: 00000000 , rd: 1c
+# [SCOREBOARD ]    99 operands: op1: 6baab5b7 op2: d4e550e0 op3: 00000000 rd: 1c 
+#                  instruction: STL   x28, x28, x29 
+#                    expected:  op1: 6baab5b7 op2: d4e550e0 op3: 00000000 rd: 28 
+#                    actual:    op1: 6baab5b7 op2: d4e550e0 op3: 00000000 rd: 28 
+#                  >>> correct! 
+# 
+# [MONITOR OUT] End of test marker received 
+# [MONITOR IN ]     0 instruction: EBREAK                    registers[1]: 00000000 registers[2]: 00000000 registers[3]: 00000000 
+# [SCOREBOARD ]     0 operands: op1: 00000000 op2: 00000000 op3: 00000000 rd: 00 
+# [SCOREBOARD ]     0 instruction: EBREAK                    registers[1]: 00000000 registers[2]: 00000000 registers[3]: 00000000 
+# [SCOREBOARD ] --- End of test received 
+# ==================================================
+# ||                                              ||
+# || Decoder Object Oriented Test Case Complete   ||
+# || Test Name: Random_Test                       ||
+# ||                                              ||
+# || Tests Run:     100                           ||
+# || Errors:          0                           ||
+# ||                                              ||
+# ||  >>> Test Passed! <<<                        ||
+# ||                                              ||
+# ==================================================
+# ** Note: $finish    : environment.sv(77)
+#    Time: 2445 ns  Iteration: 2  Instance: /top
+# End time: 11:56:58 on Feb 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

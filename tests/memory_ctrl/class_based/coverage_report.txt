@@ -1,0 +1,1496 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: ../../../design_rtl/memory_ctrl.sv
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        61        53         8    86.88%
+
+================================Branch Details================================
+
+Branch Coverage for file ../../../design_rtl/memory_ctrl.sv --
+
+------------------------------------IF Branch------------------------------------
+    49                                      8196     Count coming in to IF
+    49              1                          2          if (rst) state <= ADDR_PHASE; // IDLE;
+    50              1                       8194          else state <= next_state;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    53                                     12805     Count coming in to CASE
+    54              1                    ***0***            IDLE       : if (enable) next_state = ADDR_PHASE; else next_state = IDLE;
+    56              1                       7426            ADDR_PHASE : if (enable) next_state = DATA_PHASE; else next_state = ADDR_PHASE;
+    57              1                       2048            DATA_PHASE : if ((read_op & read_ack) || (!read_op & write_ack)) next_state = DONE;
+    58              1                       3328            DONE       : next_state = ADDR_PHASE;
+                                               3     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    54                                   ***0***     Count coming in to IF
+    54              2                    ***0***            IDLE       : if (enable) next_state = ADDR_PHASE; else next_state = IDLE;
+    54              3                    ***0***            IDLE       : if (enable) next_state = ADDR_PHASE; else next_state = IDLE;
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                      7426     Count coming in to IF
+    56              2                       3329            ADDR_PHASE : if (enable) next_state = DATA_PHASE; else next_state = ADDR_PHASE;
+    56              3                       4097            ADDR_PHASE : if (enable) next_state = DATA_PHASE; else next_state = ADDR_PHASE;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    57                                      2048     Count coming in to IF
+    57              2                       2048            DATA_PHASE : if ((read_op & read_ack) || (!read_op & write_ack)) next_state = DONE;
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                     10246     Count coming in to IF
+    69              1                          3          if (rst) result_reg <= '0;
+    70              1                       1280          else if ((state == DATA_PHASE) & (read_op & read_ack)) begin 
+                                            8963     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    71                                      1280     Count coming in to IF
+    71              1                        512            if (sign_ex) begin
+    75              1                        768            end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    72                                       512     Count coming in to IF
+    72              1                    ***0***              if (size == 4) result_reg <= read_data;
+                                             512     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                       512     Count coming in to IF
+    73              1                        256              if (size == 2) result_reg <= signed_short'((read_data >> (8 * offset)) & 32'h0000FFFF);
+                                             256     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                       512     Count coming in to IF
+    74              1                        256              if (size == 1) result_reg <= signed_byte'((read_data >> (8 * offset)) & 32'h000000FF);
+                                             256     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                       768     Count coming in to IF
+    76              1                        256              if (size == 4) result_reg <= read_data;
+                                             512     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                       768     Count coming in to IF
+    77              1                        256              if (size == 2) result_reg <= unsigned_short'((read_data >> (8 * offset)) & 32'h0000FFFF);
+                                             512     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                       768     Count coming in to IF
+    78              1                        256              if (size == 1) result_reg <= unsigned_byte'((read_data >> (8 * offset)) & 32'h000000FF);
+                                             512     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    87                                      4097     Count coming in to IF
+    87              1                       3329        assign write_byte_enable = (!write_op) ? '0 :
+    88              1                        768                                   (size == 4) ? 4'hF :
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    88                                       768     Count coming in to IF
+    88              2                        256                                   (size == 4) ? 4'hF :
+    89              1                        512                                   (size == 2) ? 4'h3 << offset :
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    89                                       512     Count coming in to IF
+    89              2                        256                                   (size == 2) ? 4'h3 << offset :
+    90              1                        256                                   (size == 1) ? 4'h1 << offset : '0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    90                                       256     Count coming in to IF
+    90              2                        256                                   (size == 1) ? 4'h1 << offset : '0;
+    90              3                    ***0***                                   (size == 1) ? 4'h1 << offset : '0;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                      4097     Count coming in to IF
+    93              1                       3329        assign write_data = (!write_op) ? '0 :
+    94              1                        768                            (size == 4) ? wdata :
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    94                                       768     Count coming in to IF
+    94              2                        256                            (size == 4) ? wdata :
+    95              1                        512                            (size == 2) ? (wdata & 32'h0000FFFF) << (offset * 8) :
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                       512     Count coming in to IF
+    95              2                        256                            (size == 2) ? (wdata & 32'h0000FFFF) << (offset * 8) :
+    96              1                        256                            (size == 1) ? (wdata & 32'h000000FF) << (offset * 8) : '0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    96                                       256     Count coming in to IF
+    96              2                        256                            (size == 1) ? (wdata & 32'h000000FF) << (offset * 8) : '0;
+    96              3                    ***0***                            (size == 1) ? (wdata & 32'h000000FF) << (offset * 8) : '0;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    99                                     10246     Count coming in to IF
+    99              1                          2          if (rst) begin 
+    106             1                      10244          end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    107                                    10244     Count coming in to IF
+    107             1                       2048            if (state == DONE) begin
+                                            8196     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                    10244     Count coming in to IF
+    115             1                       2048            if (enable & is_memory_op(instr)) begin
+                                            8196     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    124                                     2048     Count coming in to CASE
+    125             1                        256                M_LW   : begin  size = 4;  read_op  = 1; sign_ex = 0; end
+    126             1                        256                M_LH   : begin  size = 2;  read_op  = 1; sign_ex = 1; end
+    127             1                        256                M_LHU  : begin  size = 2;  read_op  = 1; sign_ex = 0; end
+    128             1                        256                M_LB   : begin  size = 1;  read_op  = 1; sign_ex = 1; end
+    129             1                        256                M_LBU  : begin  size = 1;  read_op  = 1; sign_ex = 0; end
+    130             1                        256                M_SW   : begin  size = 4;  write_op = 1; sign_ex = 0; end
+    131             1                        256                M_SH   : begin  size = 2;  write_op = 1; sign_ex = 0; end
+    132             1                        256                M_SB   : begin  size = 1;  write_op = 1; sign_ex = 0; end
+                                         ***0***     All False Count
+Branch totals: 8 hits of 9 branches = 88.88%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      21        14         7    66.66%
+
+================================Condition Details================================
+
+Condition Coverage for file ../../../design_rtl/memory_ctrl.sv --
+
+-----------Focused Condition View (Bimodal)--------------
+Line       57 Item    1  ((read_op & read_ack) || (~read_op & write_ack))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage                  Hint
+  -----------  --------  --------------------------------------  --------------
+      read_op         N  Both rows hit for same output ->1      Hit either row for output ->0
+     read_ack         N  '_1' hit but '_0' is not hit           Hit '_0' for output ->0
+    write_ack         N  '_1' hit but '_0' is not hit           Hit '_0' for output ->0
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)                        
+
+---------  ----------  ----------  --------------------  -------------------------                       
+ Row   1:           0           1  read_op_0             (~(~read_op & write_ack) && read_ack), write_ack
+ Row   2:           0           1  read_op_1             read_ack, (~(read_op & read_ack) && write_ack)  
+ Row   3:           0           0  read_ack_0            read_op                                         
+ Row   4:           0           1  read_ack_1            read_op                                         
+ Row   5:           0           0  write_ack_0           ~read_op                                        
+ Row   6:           0           1  write_ack_1           ~read_op                                        
+
+----------------Focused Condition View-------------------
+Line       70 Item    1  (((state == DATA_PHASE) & read_op) & read_ack)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+  (state == DATA_PHASE)         Y
+                read_op         Y
+               read_ack         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:          1  (state == DATA_PHASE)_0  (read_ack && read_op)         
+  Row   2:          1  (state == DATA_PHASE)_1  (read_ack && read_op)         
+  Row   3:          1  read_op_0                (read_ack && (state == DATA_PHASE))
+  Row   4:          1  read_op_1                (read_ack && (state == DATA_PHASE))
+  Row   5:    ***0***  read_ack_0               ((state == DATA_PHASE) & read_op)
+  Row   6:          1  read_ack_1               ((state == DATA_PHASE) & read_op)
+
+----------------Focused Condition View-------------------
+Line       72 Item    1  (size == 4)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 4)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 4)_0         -                             
+  Row   2:    ***0***  (size == 4)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       73 Item    1  (size == 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 2)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 2)_0         -                             
+  Row   2:          1  (size == 2)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       74 Item    1  (size == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 1)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 1)_0         -                             
+  Row   2:          1  (size == 1)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       76 Item    1  (size == 4)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 4)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 4)_0         -                             
+  Row   2:          1  (size == 4)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       77 Item    1  (size == 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 2)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 2)_0         -                             
+  Row   2:          1  (size == 2)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (size == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 1)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 1)_0         -                             
+  Row   2:          1  (size == 1)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       88 Item    1  (size == 4)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 4)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 4)_0         -                             
+  Row   2:          1  (size == 4)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       89 Item    1  (size == 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 2)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 2)_0         -                             
+  Row   2:          1  (size == 2)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       90 Item    1  (size == 1)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 1)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (size == 1)_0         -                             
+  Row   2:          1  (size == 1)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       94 Item    1  (size == 4)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 4)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 4)_0         -                             
+  Row   2:          1  (size == 4)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (size == 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 2)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (size == 2)_0         -                             
+  Row   2:          1  (size == 2)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       96 Item    1  (size == 1)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (size == 1)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (size == 1)_0         -                             
+  Row   2:          1  (size == 1)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       107 Item    1  (state == DONE)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (state == DONE)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (state == DONE)_0     -                             
+  Row   2:          1  (state == DONE)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       115 Item    1  (enable & is_memory_op(instr))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+               enable         Y
+  is_memory_op(instr)         Y
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:          1  enable_0               is_memory_op(instr)           
+  Row   2:          1  enable_1               is_memory_op(instr)           
+  Row   3:          1  is_memory_op(instr)_0  enable                        
+  Row   4:          1  is_memory_op(instr)_1  enable                        
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      7         6         1    85.71%
+
+================================Expression Details================================
+
+Expression Coverage for file ../../../design_rtl/memory_ctrl.sv --
+
+----------------Focused Expression View-----------------
+Line       84 Item    1  ((read_op & read_ack) & (state == DATA_PHASE))
+Expression totals: 2 of 3 input terms covered = 66.66%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+                read_op         Y
+               read_ack         N  '_0' not hit             Hit '_0'
+  (state == DATA_PHASE)         Y
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:          1  read_op_0                ((state == DATA_PHASE) && read_ack)
+  Row   2:          1  read_op_1                ((state == DATA_PHASE) && read_ack)
+  Row   3:    ***0***  read_ack_0               ((state == DATA_PHASE) && read_op)
+  Row   4:          1  read_ack_1               ((state == DATA_PHASE) && read_op)
+  Row   5:          1  (state == DATA_PHASE)_0  (read_op & read_ack)          
+  Row   6:          1  (state == DATA_PHASE)_1  (read_op & read_ack)          
+
+----------------Focused Expression View-----------------
+Line       85 Item    1  (read_op & (state == ADDR_PHASE))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+                read_op         Y
+  (state == ADDR_PHASE)         Y
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:          1  read_op_0                (state == ADDR_PHASE)         
+  Row   2:          1  read_op_1                (state == ADDR_PHASE)         
+  Row   3:          1  (state == ADDR_PHASE)_0  read_op                       
+  Row   4:          1  (state == ADDR_PHASE)_1  read_op                       
+
+----------------Focused Expression View-----------------
+Line       86 Item    1  (write_op & (state == ADDR_PHASE))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+               write_op         Y
+  (state == ADDR_PHASE)         Y
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:          1  write_op_0               (state == ADDR_PHASE)         
+  Row   2:          1  write_op_1               (state == ADDR_PHASE)         
+  Row   3:          1  (state == ADDR_PHASE)_0  write_op                      
+  Row   4:          1  (state == ADDR_PHASE)_1  write_op                      
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       4         3         1    75.00%
+    FSM Transitions                  5         3         2    60.00%
+
+================================FSM Details================================
+
+FSM Coverage for file ../../../design_rtl/memory_ctrl.sv --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  54                IDLE                   0
+  56          ADDR_PHASE                   1
+  57          DATA_PHASE                   2
+  58                DONE                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+              ADDR_PHASE                4099          
+              DATA_PHASE                2048          
+                    DONE                2048          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  56                   1                2048          ADDR_PHASE -> DATA_PHASE          
+  57                   2                2048          DATA_PHASE -> DONE            
+  58                   4                2048          DONE -> ADDR_PHASE            
+    Uncovered States :
+    ------------------
+                   State
+                   -----
+                    IDLE
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  54                   0          IDLE -> ADDR_PHASE  
+  49                   3          DATA_PHASE -> ADDR_PHASE
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         3         1    75.00%
+        FSM Transitions              5         3         2    60.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      69        66         3    95.65%
+
+================================Statement Details================================
+
+Statement Coverage for file ../../../design_rtl/memory_ctrl.sv --
+
+    1                                                
+    2                                                import opcodes::*;
+    3                                                
+    4                                                module memory_ctrl #(
+    5                                                   parameter random_errors = 0
+    6                                                 )(
+    7                                                   input logic          clk, rst,
+    8                                                
+    9                                                   input wire instruction_t  instr,
+    10                                                  input register_t     op1, op2, op3,
+    11                                                  input logic          enable,
+    12                                                  output register_t    result,
+    13                                                  output logic         result_valid,
+    14                                               
+    15                                                  output logic [31:0]  address,
+    16                                                  output logic         read_enable,
+    17                                                  input  logic [31:0]  read_data,
+    18                                                  input  logic         read_ack,
+    19                                                  output logic         write_enable,
+    20                                                  output logic [3:0]   write_byte_enable,
+    21                                                  output logic [31:0]  write_data,
+    22                                                  input  logic         write_ack);
+    23                                               
+    24                                                  typedef enum logic[2:0] { IDLE, ADDR_PHASE, DATA_PHASE, DONE } state_t;
+    25                                               
+    26                                                  typedef logic unsigned [15:0]  unsigned_short;
+    27                                                  typedef logic signed   [15:0]  signed_short;
+    28                                                  typedef logic unsigned  [7:0]  unsigned_byte;
+    29                                                  typedef logic signed    [7:0]  signed_byte; 
+    30                                               
+    31                                                  state_t state, next_state;
+    32                                                  logic read_op, write_op;
+    33                                                  logic read_instr, write_instr;
+    34                                                  logic sign_ex;
+    35                                                  logic [1:0] offset;
+    36                                                  logic [2:0] size;
+    37                                                  register_t wdata;
+    38                                                  register_t result_reg;
+    39                                               
+    40                                                  function automatic register_t induce_errors(register_t data);
+    41                                                    if (random_errors) begin
+    42                                                      if ($urandom_range(1,10)==7)   // 10% of the time flip a bit at random 
+    43                                                        return data ^ register_t'(32'h1 << $urandom_range(0,31));
+    44                                                    end 
+    45              1                       3329          return(data);
+    46                                                  endfunction
+    47                                               
+    48              1                       8196        always_ff @(posedge clk) 
+    49              1                          2          if (rst) state <= ADDR_PHASE; // IDLE;
+    50              1                       8194          else state <= next_state;
+    51                                               
+    52              1                      12805        always_comb begin
+    53                                                    case (state) 
+    54              1                    ***0***            IDLE       : if (enable) next_state = ADDR_PHASE; else next_state = IDLE;
+    54              2                    ***0***     
+    55                                                      // ADDR_PHASE : next_state = DATA_PHASE;
+    56              1                       3329            ADDR_PHASE : if (enable) next_state = DATA_PHASE; else next_state = ADDR_PHASE;
+    56              2                       4097     
+    57              1                       2048            DATA_PHASE : if ((read_op & read_ack) || (!read_op & write_ack)) next_state = DONE;
+    58              1                       3328            DONE       : next_state = ADDR_PHASE;
+    59                                                    endcase
+    60                                                  end
+    61                                               
+    62                                               `ifndef SYNTHESIS
+    63              1                       1281        assign result = induce_errors(result_reg);
+    64                                               `else
+    65                                                  assign result = result_reg;
+    66                                               `endif
+    67                                               
+    68              1                      10246        always_comb begin 
+    69              1                          3          if (rst) result_reg <= '0;
+    70                                                    else if ((state == DATA_PHASE) & (read_op & read_ack)) begin 
+    71                                                      if (sign_ex) begin
+    72              1                    ***0***              if (size == 4) result_reg <= read_data;
+    73              1                        256              if (size == 2) result_reg <= signed_short'((read_data >> (8 * offset)) & 32'h0000FFFF);
+    74              1                        256              if (size == 1) result_reg <= signed_byte'((read_data >> (8 * offset)) & 32'h000000FF);
+    75                                                      end else begin
+    76              1                        256              if (size == 4) result_reg <= read_data;
+    77              1                        256              if (size == 2) result_reg <= unsigned_short'((read_data >> (8 * offset)) & 32'h0000FFFF);
+    78              1                        256              if (size == 1) result_reg <= unsigned_byte'((read_data >> (8 * offset)) & 32'h000000FF);
+    79                                                      end
+    80                                                    end
+    81                                                  end
+    82                                               
+    83                                                  // assign result_valid = ((read_op & read_ack) || (write_op & write_ack)) & (state == DONE);
+    84              1                       8708        assign result_valid = (read_op & read_ack) & (state == DATA_PHASE);
+    85              1                       8707        assign read_enable = (read_op & (state == ADDR_PHASE));
+    86              1                       7683        assign write_enable = (write_op & (state == ADDR_PHASE));
+    87              1                       4098        assign write_byte_enable = (!write_op) ? '0 :
+    88                                                                             (size == 4) ? 4'hF :
+    89                                                                             (size == 2) ? 4'h3 << offset :
+    90                                                                             (size == 1) ? 4'h1 << offset : '0;
+    91                                               
+    92                                               
+    93              1                       4098        assign write_data = (!write_op) ? '0 :
+    94                                                                      (size == 4) ? wdata :
+    95                                                                      (size == 2) ? (wdata & 32'h0000FFFF) << (offset * 8) :
+    96                                                                      (size == 1) ? (wdata & 32'h000000FF) << (offset * 8) : '0;
+    97                                               
+    98              1                      10246        always_comb begin
+    99                                                    if (rst) begin 
+    100             1                          2            size = '0;
+    101             1                          2            offset = '0;
+    102             1                          2            address = '0;
+    103             1                          2            read_op = 0;
+    104             1                          2            write_op = 0;
+    105             1                          2            wdata = '0;
+    106                                                   end else begin
+    107                                                     if (state == DONE) begin
+    108             1                       2048              size = '0;
+    109             1                       2048              offset = '0;
+    110             1                       2048              address = '0;
+    111             1                       2048              read_op = 0;
+    112             1                       2048              write_op = 0;
+    113             1                       2048              wdata = '0;
+    114                                                     end
+    115                                                     if (enable & is_memory_op(instr)) begin
+    116                                                     // $display("executing %s ", decode_instr(instr));
+    117             1                       2048              address = (op1 + op2) >> 2;
+    118             1                       2048              offset  = (op1 + op2) & 32'h00000003;
+    119                                              `ifndef SYNTHESIS
+    120             1                       2048              wdata = induce_errors(op3);
+    121                                              `else
+    122                                                       wdata = op3;
+    123                                              `endif
+    124                                                       casez (instr) 
+    125             1                        256                M_LW   : begin  size = 4;  read_op  = 1; sign_ex = 0; end
+    125             2                        256     
+    125             3                        256     
+    126             1                        256                M_LH   : begin  size = 2;  read_op  = 1; sign_ex = 1; end
+    126             2                        256     
+    126             3                        256     
+    127             1                        256                M_LHU  : begin  size = 2;  read_op  = 1; sign_ex = 0; end
+    127             2                        256     
+    127             3                        256     
+    128             1                        256                M_LB   : begin  size = 1;  read_op  = 1; sign_ex = 1; end
+    128             2                        256     
+    128             3                        256     
+    129             1                        256                M_LBU  : begin  size = 1;  read_op  = 1; sign_ex = 0; end
+    129             2                        256     
+    129             3                        256     
+    130             1                        256                M_SW   : begin  size = 4;  write_op = 1; sign_ex = 0; end
+    130             2                        256     
+    130             3                        256     
+    131             1                        256                M_SH   : begin  size = 2;  write_op = 1; sign_ex = 0; end
+    131             2                        256     
+    131             3                        256     
+    132             1                        256                M_SB   : begin  size = 1;  write_op = 1; sign_ex = 0; end
+    132             2                        256     
+    132             3                        256     
+    133                                                       endcase
+    134                                                     end
+    135                                                   end
+    136                                                 end
+    137                                              
+    138                                                 opcode_mask_t opcode;
+    139             1                         11        assign opcode = opc_base(instr);
+    140                                              
+    141                                                 covergroup mcu_cg @(posedge clk); 
+    142                                                   coverpoint opcode {
+    143                                                      bins instr[] = {M_LW, M_LH, M_LHU, M_LB, M_LBU, M_SW, M_SH, M_SB};
+    144                                                      // ignore_bins: others;
+    145                                                    }
+    146                                                    coverpoint result_reg {
+    147                                                      bins positive = { [1:$] };
+    148                                                      bins zero     = { 0 };
+    149                                                      bins negative = { [$:-1] };
+    150                                                    }
+    151                                                    cross opcode, result_reg;
+    152                                                 endgroup  
+    153                                              
+    154                                                 covergroup mcu_halfword_cg @(posedge clk);
+    155                                                   coverpoint opcode {
+    156                                                      bins instr[] = {M_LH, M_LHU};
+    157                                                      //ignore_bins: others;
+    158                                                    }
+    159                                                    coverpoint result_reg {
+    160                                                      bins positive = { [1:$] };
+    161                                                      bins zero     = { 0 };
+    162                                                      bins negative = { [$:-1] };
+    163                                                    }
+    164                                                    coverpoint offset {
+    165                                                      bins offset[2] = {0, 2};
+    166                                                      ignore_bins misaligned = {1, 3};
+    167                                                    }
+    168                                                    cross opcode, result_reg, offset;
+    169                                                 endgroup  
+    170                                              
+    171                                                 covergroup mcu_byte_cg @(posedge clk);
+    172                                                   coverpoint opcode {
+    173                                                      bins instr[] = {M_LB, M_LBU};
+    174                                                      //ignore_bins: others;
+    175                                                    }
+    176                                                    coverpoint result_reg {
+    177                                                      bins positive = { [1:$] };
+    178                                                      bins zero     = { 0 };
+    179                                                      bins negative = { [$:-1] };
+    180                                                    }
+    181                                                    coverpoint offset {
+    182                                                      bins offset[2] = {[0:3]};
+    183                                                    }
+    184                                                    cross opcode, result_reg, offset;
+    185                                                 endgroup  
+    186                                              
+    187             1                          1        mcu_cg          mcu_cg_inst           = new();
+    188             1                          1        mcu_halfword_cg mcu_halfword_cg_inst  = new();
+    189             1                          1        mcu_byte_cg     mcu_byte_cg_inst      = new();
+    190                                              
+    191                                              endmodule
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        729       401       328    55.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for File ../../../design_rtl/memory_ctrl.sv --
+
+       Line                                   Node      1H->0L      0L->1H                          "Coverage"
+--------------------------------------------------------------------------------------------------------------
+          7                                    rst           1           1                              100.00 
+          7                                    clk           1           1                              100.00 
+          9                          instr.j.rd[4]           0           0                                0.00 
+          9                          instr.j.rd[3]           0           0                                0.00 
+          9                          instr.j.rd[2]           1           1                              100.00 
+          9                          instr.j.rd[1]           0           0                                0.00 
+          9                          instr.j.rd[0]           1           1                              100.00 
+          9                     instr.j.opcode1[6]           0           1                               50.00 
+          9                     instr.j.opcode1[5]           1           1                              100.00 
+          9                     instr.j.opcode1[4]           1           1                              100.00 
+          9                     instr.j.opcode1[3]           0           0                                0.00 
+          9                     instr.j.opcode1[2]           0           0                                0.00 
+          9                     instr.j.opcode1[1]           0           0                                0.00 
+          9                     instr.j.opcode1[0]           0           0                                0.00 
+          9                           instr.j.imm3           0           0                                0.00 
+          9                        instr.j.imm2[7]           0           0                                0.00 
+          9                        instr.j.imm2[6]           0           0                                0.00 
+          9                        instr.j.imm2[5]           0           0                                0.00 
+          9                        instr.j.imm2[4]           1           1                              100.00 
+          9                        instr.j.imm2[3]           0           0                                0.00 
+          9                        instr.j.imm2[2]           1           1                              100.00 
+          9                        instr.j.imm2[1]           1           1                              100.00 
+          9                        instr.j.imm2[0]           1           1                              100.00 
+          9                           instr.j.imm1           1           1                              100.00 
+          9                        instr.j.imm0[9]           0           0                                0.00 
+          9                        instr.j.imm0[8]           0           0                                0.00 
+          9                        instr.j.imm0[7]           0           0                                0.00 
+          9                        instr.j.imm0[6]           0           0                                0.00 
+          9                        instr.j.imm0[5]           0           0                                0.00 
+          9                        instr.j.imm0[4]           0           0                                0.00 
+          9                        instr.j.imm0[3]           0           0                                0.00 
+          9                        instr.j.imm0[2]           0           0                                0.00 
+          9                        instr.j.imm0[1]           1           1                              100.00 
+          9                        instr.j.imm0[0]           1           1                              100.00 
+         10                                 op3[9]           0           0                                0.00 
+         10                                 op3[8]           0           0                                0.00 
+         10                                 op3[7]           1           1                              100.00 
+         10                                 op3[6]           1           1                              100.00 
+         10                                 op3[5]           1           1                              100.00 
+         10                                 op3[4]           1           1                              100.00 
+         10                                 op3[3]           1           1                              100.00 
+         10                                op3[31]           0           0                                0.00 
+         10                                op3[30]           0           0                                0.00 
+         10                                 op3[2]           1           1                              100.00 
+         10                                op3[29]           0           0                                0.00 
+         10                                op3[28]           0           0                                0.00 
+         10                                op3[27]           0           0                                0.00 
+         10                                op3[26]           0           0                                0.00 
+         10                                op3[25]           0           0                                0.00 
+         10                                op3[24]           0           0                                0.00 
+         10                                op3[23]           0           0                                0.00 
+         10                                op3[22]           0           0                                0.00 
+         10                                op3[21]           0           0                                0.00 
+         10                                op3[20]           0           0                                0.00 
+         10                                 op3[1]           1           1                              100.00 
+         10                                op3[19]           0           0                                0.00 
+         10                                op3[18]           0           0                                0.00 
+         10                                op3[17]           0           0                                0.00 
+         10                                op3[16]           0           0                                0.00 
+         10                                op3[15]           0           0                                0.00 
+         10                                op3[14]           0           0                                0.00 
+         10                                op3[13]           0           0                                0.00 
+         10                                op3[12]           0           0                                0.00 
+         10                                op3[11]           0           0                                0.00 
+         10                                op3[10]           0           0                                0.00 
+         10                                 op3[0]           1           1                              100.00 
+         10                                 op2[9]           1           1                              100.00 
+         10                                 op2[8]           1           1                              100.00 
+         10                                 op2[7]           1           1                              100.00 
+         10                                 op2[6]           1           1                              100.00 
+         10                                 op2[5]           1           1                              100.00 
+         10                                 op2[4]           1           1                              100.00 
+         10                                 op2[3]           1           1                              100.00 
+         10                                op2[31]           0           0                                0.00 
+         10                                op2[30]           0           0                                0.00 
+         10                                 op2[2]           1           1                              100.00 
+         10                                op2[29]           0           0                                0.00 
+         10                                op2[28]           0           0                                0.00 
+         10                                op2[27]           0           0                                0.00 
+         10                                op2[26]           0           0                                0.00 
+         10                                op2[25]           0           0                                0.00 
+         10                                op2[24]           0           0                                0.00 
+         10                                op2[23]           0           0                                0.00 
+         10                                op2[22]           0           0                                0.00 
+         10                                op2[21]           0           0                                0.00 
+         10                                op2[20]           0           0                                0.00 
+         10                                 op2[1]           1           1                              100.00 
+         10                                op2[19]           0           0                                0.00 
+         10                                op2[18]           0           0                                0.00 
+         10                                op2[17]           0           0                                0.00 
+         10                                op2[16]           0           0                                0.00 
+         10                                op2[15]           0           0                                0.00 
+         10                                op2[14]           0           0                                0.00 
+         10                                op2[13]           1           1                              100.00 
+         10                                op2[12]           1           1                              100.00 
+         10                                op2[11]           0           0                                0.00 
+         10                                op2[10]           0           0                                0.00 
+         10                                 op2[0]           1           1                              100.00 
+         10                                 op1[9]           0           0                                0.00 
+         10                                 op1[8]           0           0                                0.00 
+         10                                 op1[7]           0           0                                0.00 
+         10                                 op1[6]           0           0                                0.00 
+         10                                 op1[5]           0           0                                0.00 
+         10                                 op1[4]           0           0                                0.00 
+         10                                 op1[3]           0           0                                0.00 
+         10                                op1[31]           0           0                                0.00 
+         10                                op1[30]           0           0                                0.00 
+         10                                 op1[2]           0           0                                0.00 
+         10                                op1[29]           0           0                                0.00 
+         10                                op1[28]           0           0                                0.00 
+         10                                op1[27]           0           0                                0.00 
+         10                                op1[26]           0           0                                0.00 
+         10                                op1[25]           0           0                                0.00 
+         10                                op1[24]           0           0                                0.00 
+         10                                op1[23]           0           0                                0.00 
+         10                                op1[22]           0           0                                0.00 
+         10                                op1[21]           0           0                                0.00 
+         10                                op1[20]           0           0                                0.00 
+         10                                 op1[1]           0           0                                0.00 
+         10                                op1[19]           0           0                                0.00 
+         10                                op1[18]           0           0                                0.00 
+         10                                op1[17]           0           0                                0.00 
+         10                                op1[16]           0           0                                0.00 
+         10                                op1[15]           0           0                                0.00 
+         10                                op1[14]           0           0                                0.00 
+         10                                op1[13]           0           0                                0.00 
+         10                                op1[12]           0           0                                0.00 
+         10                                op1[11]           0           0                                0.00 
+         10                                op1[10]           0           0                                0.00 
+         10                                 op1[0]           0           0                                0.00 
+         11                                 enable           1           1                              100.00 
+         12                              result[9]           1           1                              100.00 
+         12                              result[8]           1           1                              100.00 
+         12                              result[7]           1           1                              100.00 
+         12                              result[6]           1           1                              100.00 
+         12                              result[5]           1           1                              100.00 
+         12                              result[4]           1           1                              100.00 
+         12                              result[3]           1           1                              100.00 
+         12                             result[31]           1           1                              100.00 
+         12                             result[30]           1           1                              100.00 
+         12                              result[2]           1           1                              100.00 
+         12                             result[29]           1           1                              100.00 
+         12                             result[28]           1           1                              100.00 
+         12                             result[27]           1           1                              100.00 
+         12                             result[26]           1           1                              100.00 
+         12                             result[25]           1           1                              100.00 
+         12                             result[24]           1           1                              100.00 
+         12                             result[23]           1           1                              100.00 
+         12                             result[22]           1           1                              100.00 
+         12                             result[21]           1           1                              100.00 
+         12                             result[20]           1           1                              100.00 
+         12                              result[1]           1           1                              100.00 
+         12                             result[19]           1           1                              100.00 
+         12                             result[18]           1           1                              100.00 
+         12                             result[17]           1           1                              100.00 
+         12                             result[16]           1           1                              100.00 
+         12                             result[15]           1           1                              100.00 
+         12                             result[14]           1           1                              100.00 
+         12                             result[13]           1           1                              100.00 
+         12                             result[12]           1           1                              100.00 
+         12                             result[11]           1           1                              100.00 
+         12                             result[10]           1           1                              100.00 
+         12                              result[0]           1           1                              100.00 
+         13                           result_valid           1           1                              100.00 
+         15                             address[9]           0           0                                0.00 
+         15                             address[8]           0           0                                0.00 
+         15                             address[7]           1           1                              100.00 
+         15                             address[6]           1           1                              100.00 
+         15                             address[5]           1           1                              100.00 
+         15                             address[4]           1           1                              100.00 
+         15                             address[3]           1           1                              100.00 
+         15                            address[31]           0           0                                0.00 
+         15                            address[30]           0           0                                0.00 
+         15                             address[2]           1           1                              100.00 
+         15                            address[29]           0           0                                0.00 
+         15                            address[28]           0           0                                0.00 
+         15                            address[27]           0           0                                0.00 
+         15                            address[26]           0           0                                0.00 
+         15                            address[25]           0           0                                0.00 
+         15                            address[24]           0           0                                0.00 
+         15                            address[23]           0           0                                0.00 
+         15                            address[22]           0           0                                0.00 
+         15                            address[21]           0           0                                0.00 
+         15                            address[20]           0           0                                0.00 
+         15                             address[1]           1           1                              100.00 
+         15                            address[19]           0           0                                0.00 
+         15                            address[18]           0           0                                0.00 
+         15                            address[17]           0           0                                0.00 
+         15                            address[16]           0           0                                0.00 
+         15                            address[15]           0           0                                0.00 
+         15                            address[14]           0           0                                0.00 
+         15                            address[13]           0           0                                0.00 
+         15                            address[12]           0           0                                0.00 
+         15                            address[11]           1           1                              100.00 
+         15                            address[10]           1           1                              100.00 
+         15                             address[0]           1           1                              100.00 
+         16                            read_enable           1           1                              100.00 
+         17                           read_data[9]           0           0                                0.00 
+         17                           read_data[8]           1           1                              100.00 
+         17                           read_data[7]           1           1                              100.00 
+         17                           read_data[6]           1           1                              100.00 
+         17                           read_data[5]           1           1                              100.00 
+         17                           read_data[4]           1           1                              100.00 
+         17                           read_data[3]           1           1                              100.00 
+         17                          read_data[31]           1           1                              100.00 
+         17                          read_data[30]           1           1                              100.00 
+         17                           read_data[2]           1           1                              100.00 
+         17                          read_data[29]           1           1                              100.00 
+         17                          read_data[28]           1           1                              100.00 
+         17                          read_data[27]           1           1                              100.00 
+         17                          read_data[26]           1           1                              100.00 
+         17                          read_data[25]           1           1                              100.00 
+         17                          read_data[24]           1           1                              100.00 
+         17                          read_data[23]           1           1                              100.00 
+         17                          read_data[22]           1           1                              100.00 
+         17                          read_data[21]           1           1                              100.00 
+         17                          read_data[20]           1           1                              100.00 
+         17                           read_data[1]           1           1                              100.00 
+         17                          read_data[19]           1           1                              100.00 
+         17                          read_data[18]           1           1                              100.00 
+         17                          read_data[17]           1           1                              100.00 
+         17                          read_data[16]           1           1                              100.00 
+         17                          read_data[15]           1           1                              100.00 
+         17                          read_data[14]           1           1                              100.00 
+         17                          read_data[13]           1           1                              100.00 
+         17                          read_data[12]           1           1                              100.00 
+         17                          read_data[11]           1           1                              100.00 
+         17                          read_data[10]           1           1                              100.00 
+         17                           read_data[0]           1           1                              100.00 
+         18                               read_ack           0           0                                0.00 
+         19                           write_enable           1           1                              100.00 
+         20                   write_byte_enable[3]           1           1                              100.00 
+         20                   write_byte_enable[2]           1           1                              100.00 
+         20                   write_byte_enable[1]           1           1                              100.00 
+         20                   write_byte_enable[0]           1           1                              100.00 
+         21                          write_data[9]           0           0                                0.00 
+         21                          write_data[8]           1           1                              100.00 
+         21                          write_data[7]           1           1                              100.00 
+         21                          write_data[6]           1           1                              100.00 
+         21                          write_data[5]           1           1                              100.00 
+         21                          write_data[4]           1           1                              100.00 
+         21                          write_data[3]           1           1                              100.00 
+         21                         write_data[31]           1           1                              100.00 
+         21                         write_data[30]           1           1                              100.00 
+         21                          write_data[2]           1           1                              100.00 
+         21                         write_data[29]           1           1                              100.00 
+         21                         write_data[28]           1           1                              100.00 
+         21                         write_data[27]           1           1                              100.00 
+         21                         write_data[26]           1           1                              100.00 
+         21                         write_data[25]           1           1                              100.00 
+         21                         write_data[24]           1           1                              100.00 
+         21                         write_data[23]           1           1                              100.00 
+         21                         write_data[22]           1           1                              100.00 
+         21                         write_data[21]           1           1                              100.00 
+         21                         write_data[20]           1           1                              100.00 
+         21                          write_data[1]           1           1                              100.00 
+         21                         write_data[19]           1           1                              100.00 
+         21                         write_data[18]           1           1                              100.00 
+         21                         write_data[17]           1           1                              100.00 
+         21                         write_data[16]           1           1                              100.00 
+         21                         write_data[15]           1           1                              100.00 
+         21                         write_data[14]           1           1                              100.00 
+         21                         write_data[13]           1           1                              100.00 
+         21                         write_data[12]           1           1                              100.00 
+         21                         write_data[11]           1           1                              100.00 
+         21                         write_data[10]           1           1                              100.00 
+         21                          write_data[0]           1           1                              100.00 
+         22                              write_ack           0           0                                0.00 
+         31                                  state               ENUM type       Value       Count 
+                                                                      IDLE           0        0.00 
+                                                                ADDR_PHASE        2049      100.00 
+                                                                DATA_PHASE        2048      100.00 
+                                                                      DONE        2048      100.00 
+         31                             next_state               ENUM type       Value       Count 
+                                                                      IDLE           0        0.00 
+                                                                ADDR_PHASE        4097      100.00 
+                                                                DATA_PHASE        2049      100.00 
+                                                                      DONE           0        0.00 
+         32                               write_op           1           1                              100.00 
+         32                                read_op           1           1                              100.00 
+         33                            write_instr           0           0                                0.00 
+         33                             read_instr           0           0                                0.00 
+         34                                sign_ex           1           1                              100.00 
+         35                              offset[1]           1           1                              100.00 
+         35                              offset[0]           1           1                              100.00 
+         36                                size[2]           1           1                              100.00 
+         36                                size[1]           1           1                              100.00 
+         36                                size[0]           1           1                              100.00 
+         37                               wdata[9]           0           0                                0.00 
+         37                               wdata[8]           0           0                                0.00 
+         37                               wdata[7]           1           1                              100.00 
+         37                               wdata[6]           1           1                              100.00 
+         37                               wdata[5]           1           1                              100.00 
+         37                               wdata[4]           1           1                              100.00 
+         37                               wdata[3]           1           1                              100.00 
+         37                              wdata[31]           0           0                                0.00 
+         37                              wdata[30]           0           0                                0.00 
+         37                               wdata[2]           1           1                              100.00 
+         37                              wdata[29]           0           0                                0.00 
+         37                              wdata[28]           0           0                                0.00 
+         37                              wdata[27]           0           0                                0.00 
+         37                              wdata[26]           0           0                                0.00 
+         37                              wdata[25]           0           0                                0.00 
+         37                              wdata[24]           0           0                                0.00 
+         37                              wdata[23]           0           0                                0.00 
+         37                              wdata[22]           0           0                                0.00 
+         37                              wdata[21]           0           0                                0.00 
+         37                              wdata[20]           0           0                                0.00 
+         37                               wdata[1]           1           1                              100.00 
+         37                              wdata[19]           0           0                                0.00 
+         37                              wdata[18]           0           0                                0.00 
+         37                              wdata[17]           0           0                                0.00 
+         37                              wdata[16]           0           0                                0.00 
+         37                              wdata[15]           0           0                                0.00 
+         37                              wdata[14]           0           0                                0.00 
+         37                              wdata[13]           0           0                                0.00 
+         37                              wdata[12]           0           0                                0.00 
+         37                              wdata[11]           0           0                                0.00 
+         37                              wdata[10]           0           0                                0.00 
+         37                               wdata[0]           1           1                              100.00 
+         38                          result_reg[9]           1           1                              100.00 
+         38                          result_reg[8]           1           1                              100.00 
+         38                          result_reg[7]           1           1                              100.00 
+         38                          result_reg[6]           1           1                              100.00 
+         38                          result_reg[5]           1           1                              100.00 
+         38                          result_reg[4]           1           1                              100.00 
+         38                          result_reg[3]           1           1                              100.00 
+         38                         result_reg[31]           1           1                              100.00 
+         38                         result_reg[30]           1           1                              100.00 
+         38                          result_reg[2]           1           1                              100.00 
+         38                         result_reg[29]           1           1                              100.00 
+         38                         result_reg[28]           1           1                              100.00 
+         38                         result_reg[27]           1           1                              100.00 
+         38                         result_reg[26]           1           1                              100.00 
+         38                         result_reg[25]           1           1                              100.00 
+         38                         result_reg[24]           1           1                              100.00 
+         38                         result_reg[23]           1           1                              100.00 
+         38                         result_reg[22]           1           1                              100.00 
+         38                         result_reg[21]           1           1                              100.00 
+         38                         result_reg[20]           1           1                              100.00 
+         38                          result_reg[1]           1           1                              100.00 
+         38                         result_reg[19]           1           1                              100.00 
+         38                         result_reg[18]           1           1                              100.00 
+         38                         result_reg[17]           1           1                              100.00 
+         38                         result_reg[16]           1           1                              100.00 
+         38                         result_reg[15]           1           1                              100.00 
+         38                         result_reg[14]           1           1                              100.00 
+         38                         result_reg[13]           1           1                              100.00 
+         38                         result_reg[12]           1           1                              100.00 
+         38                         result_reg[11]           1           1                              100.00 
+         38                         result_reg[10]           1           1                              100.00 
+         38                          result_reg[0]           1           1                              100.00 
+        138                                 opcode               ENUM type       Value       Count 
+                                                                    M_ADDI           1      100.00 
+                                                                    M_STLI           0        0.00 
+                                                                   M_STLUI           0        0.00 
+                                                                    M_ANDI           0        0.00 
+                                                                     M_ORI           0        0.00 
+                                                                    M_XORI           0        0.00 
+                                                                    M_SLLI           0        0.00 
+                                                                    M_SRLI           0        0.00 
+                                                                    M_SRAI           0        0.00 
+                                                                     M_LUI           0        0.00 
+                                                                   M_AUIPC           0        0.00 
+                                                                     M_ADD           0        0.00 
+                                                                     M_SUB           0        0.00 
+                                                                     M_STL           0        0.00 
+                                                                    M_STLU           0        0.00 
+                                                                     M_AND           0        0.00 
+                                                                      M_OR           0        0.00 
+                                                                     M_XOR           0        0.00 
+                                                                     M_SLL           0        0.00 
+                                                                     M_SRL           0        0.00 
+                                                                     M_SRA           0        0.00 
+                                                                     M_JAL           0        0.00 
+                                                                    M_JALR           0        0.00 
+                                                                     M_BEQ           0        0.00 
+                                                                     M_BNE           0        0.00 
+                                                                     M_BLT           0        0.00 
+                                                                    M_BLTU           0        0.00 
+                                                                     M_BGE           0        0.00 
+                                                                    M_BGEU           0        0.00 
+                                                                      M_LW           1      100.00 
+                                                                      M_LH           1      100.00 
+                                                                     M_LHU           1      100.00 
+                                                                      M_LB           1      100.00 
+                                                                     M_LBU           1      100.00 
+                                                                      M_SW           1      100.00 
+                                                                      M_SH           1      100.00 
+                                                                      M_SB           1      100.00 
+
+Total Node Count     =        387 
+Toggled Node Count   =        207 
+Untoggled Node Count =        180 
+
+Toggle Coverage      =      55.00% (401 of 729 bins)
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /top/DUT/mcu_cg                                  87.50%        100          -    Uncovered            
+    covered/total bins:                                    26         35          -                      
+    missing/total bins:                                     9         35          -                      
+    % Hit:                                             74.28%        100          -                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross #cross__0#                                   62.50%        100          -    Uncovered            
+        covered/total bins:                                15         24          -                      
+        missing/total bins:                                 9         24          -                      
+        % Hit:                                         62.50%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/top/DUT/mcu_cg_inst             87.50%        100          -    Uncovered            
+    covered/total bins:                                    26         35          -                      
+    missing/total bins:                                     9         35          -                      
+    % Hit:                                             74.28%        100          -                      
+    option.name=\/top/DUT/mcu_cg_inst 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin instr[M_LB]                                  1536          1          -    Covered              
+        bin instr[M_SB]                                  1536          1          -    Covered              
+        bin instr[M_LH]                                  1536          1          -    Covered              
+        bin instr[M_SH]                                  1536          1          -    Covered              
+        bin instr[M_LW]                                  1536          1          -    Covered              
+        bin instr[M_SW]                                  1536          1          -    Covered              
+        bin instr[M_LBU]                                 1536          1          -    Covered              
+        bin instr[M_LHU]                                 1536          1          -    Covered              
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin positive                                     9953          1          -    Covered              
+        bin zero                                         1578          1          -    Covered              
+        bin negative                                      768          1          -    Covered              
+    Cross #cross__0#                                   62.50%        100          -    Uncovered            
+        covered/total bins:                                15         24          -                      
+        missing/total bins:                                 9         24          -                      
+        % Hit:                                         62.50%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        Auto, Default and User Defined Bins:
+            bin <instr[M_LBU],negative>                     1          1          -    Covered              
+            bin <instr[M_LB],negative>                    767          1          -    Covered              
+            bin <instr[M_LHU],zero>                         6          1          -    Covered              
+            bin <instr[M_LBU],zero>                         6          1          -    Covered              
+            bin <instr[M_LW],zero>                          6          1          -    Covered              
+            bin <instr[M_LH],zero>                          6          1          -    Covered              
+            bin <instr[M_SB],zero>                       1536          1          -    Covered              
+            bin <instr[M_LB],zero>                          7          1          -    Covered              
+            bin <instr[M_LHU],positive>                  1530          1          -    Covered              
+            bin <instr[M_LBU],positive>                  1529          1          -    Covered              
+            bin <instr[M_SW],positive>                   1536          1          -    Covered              
+            bin <instr[M_LW],positive>                   1530          1          -    Covered              
+            bin <instr[M_SH],positive>                   1536          1          -    Covered              
+            bin <instr[M_LH],positive>                   1530          1          -    Covered              
+            bin <instr[M_LB],positive>                    762          1          -    Covered              
+            bin <instr[M_LHU],negative>                     0          1          1    ZERO                 
+            bin <instr[M_SW],negative>                      0          1          1    ZERO                 
+            bin <instr[M_LW],negative>                      0          1          1    ZERO                 
+            bin <instr[M_SH],negative>                      0          1          1    ZERO                 
+            bin <instr[M_LH],negative>                      0          1          1    ZERO                 
+            bin <instr[M_SB],negative>                      0          1          1    ZERO                 
+            bin <instr[M_SW],zero>                          0          1          1    ZERO                 
+            bin <instr[M_SH],zero>                          0          1          1    ZERO                 
+            bin <instr[M_SB],positive>                      0          1          1    ZERO                 
+ TYPE /top/DUT/mcu_halfword_cg                         91.66%        100          -    Uncovered            
+    covered/total bins:                                    15         19          -                      
+    missing/total bins:                                     4         19          -                      
+    % Hit:                                             78.94%        100          -                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross #cross__0#                                   66.66%        100          -    Uncovered            
+        covered/total bins:                                 8         12          -                      
+        missing/total bins:                                 4         12          -                      
+        % Hit:                                         66.66%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/top/DUT/mcu_halfword_cg_inst  
+                                                       91.66%        100          -    Uncovered            
+    covered/total bins:                                    15         19          -                      
+    missing/total bins:                                     4         19          -                      
+    % Hit:                                             78.94%        100          -                      
+    option.name=\/top/DUT/mcu_halfword_cg_inst 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin instr[M_LH]                                  1536          1          -    Covered              
+        bin instr[M_LHU]                                 1536          1          -    Covered              
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin positive                                     9953          1          -    Covered              
+        bin zero                                         1578          1          -    Covered              
+        bin negative                                      768          1          -    Covered              
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        ignore_bin misaligned                             768                     -    Occurred             
+        bin offset[0]                                   10379          1          -    Covered              
+        bin offset[1]                                    1152          1          -    Covered              
+    Cross #cross__0#                                   66.66%        100          -    Uncovered            
+        covered/total bins:                                 8         12          -                      
+        missing/total bins:                                 4         12          -                      
+        % Hit:                                         66.66%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        Auto, Default and User Defined Bins:
+            bin <instr[M_LHU],zero,offset[1]>               1          1          -    Covered              
+            bin <instr[M_LH],zero,offset[1]>                1          1          -    Covered              
+            bin <instr[M_LHU],zero,offset[0]>               5          1          -    Covered              
+            bin <instr[M_LH],zero,offset[0]>                5          1          -    Covered              
+            bin <instr[M_LHU],positive,offset[1]>         255          1          -    Covered              
+            bin <instr[M_LH],positive,offset[1]>          255          1          -    Covered              
+            bin <instr[M_LHU],positive,offset[0]>        1275          1          -    Covered              
+            bin <instr[M_LH],positive,offset[0]>         1275          1          -    Covered              
+            bin <*,negative,*>                              0          1          4    ZERO                 
+ TYPE /top/DUT/mcu_byte_cg                             93.75%        100          -    Uncovered            
+    covered/total bins:                                    16         19          -                      
+    missing/total bins:                                     3         19          -                      
+    % Hit:                                             84.21%        100          -                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross #cross__0#                                   75.00%        100          -    Uncovered            
+        covered/total bins:                                 9         12          -                      
+        missing/total bins:                                 3         12          -                      
+        % Hit:                                         75.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/top/DUT/mcu_byte_cg_inst        93.75%        100          -    Uncovered            
+    covered/total bins:                                    16         19          -                      
+    missing/total bins:                                     3         19          -                      
+    % Hit:                                             84.21%        100          -                      
+    option.name=\/top/DUT/mcu_byte_cg_inst 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint opcode                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin instr[M_LB]                                  1536          1          -    Covered              
+        bin instr[M_LBU]                                 1536          1          -    Covered              
+    Coverpoint result_reg                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin positive                                     9953          1          -    Covered              
+        bin zero                                         1578          1          -    Covered              
+        bin negative                                      768          1          -    Covered              
+    Coverpoint offset                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin offset[0]                                   10763          1          -    Covered              
+        bin offset[1]                                    1536          1          -    Covered              
+    Cross #cross__0#                                   75.00%        100          -    Uncovered            
+        covered/total bins:                                 9         12          -                      
+        missing/total bins:                                 3         12          -                      
+        % Hit:                                         75.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        Auto, Default and User Defined Bins:
+            bin <instr[M_LB],negative,offset[1]>          128          1          -    Covered              
+            bin <instr[M_LBU],negative,offset[0]>           1          1          -    Covered              
+            bin <instr[M_LB],negative,offset[0]>          639          1          -    Covered              
+            bin <instr[M_LBU],zero,offset[0]>               6          1          -    Covered              
+            bin <instr[M_LB],zero,offset[0]>                7          1          -    Covered              
+            bin <instr[M_LBU],positive,offset[1]>         256          1          -    Covered              
+            bin <instr[M_LB],positive,offset[1]>          128          1          -    Covered              
+            bin <instr[M_LBU],positive,offset[0]>        1273          1          -    Covered              
+            bin <instr[M_LB],positive,offset[0]>          634          1          -    Covered              
+            bin <*,zero,offset[1]>                          0          1          2    ZERO                 
+            bin <instr[M_LBU],negative,offset[1]>           0          1          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 90.97%  COVERGROUP TYPES: 3
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/opcodes/opc_base/immed__432
+                     ../../../design_rtl/opcode_pkg.sv(432)
+                                                        2          0
+
+Total Coverage By File (code coverage only, filtered view): 74.98%
+
